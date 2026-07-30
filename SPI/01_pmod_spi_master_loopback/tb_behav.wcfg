@@ -11,12 +11,12 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
-      <ZoomEndTime time="6,360.001 ns"></ZoomEndTime>
-      <Cursor1Time time="575.000 ns"></Cursor1Time>
+      <ZoomStartTime time="0.000000 us"></ZoomStartTime>
+      <ZoomEndTime time="12.770001 us"></ZoomEndTime>
+      <Cursor1Time time="0.005000 us"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="192"></NameColumnWidth>
+      <NameColumnWidth column_width="187"></NameColumnWidth>
       <ValueColumnWidth column_width="72"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="30" />
@@ -36,10 +36,6 @@
       <obj_property name="ElementShortName">data_in[7:0]</obj_property>
       <obj_property name="ObjectShortName">data_in[7:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb/spi_miso" type="logic">
-      <obj_property name="ElementShortName">spi_miso</obj_property>
-      <obj_property name="ObjectShortName">spi_miso</obj_property>
-   </wvobject>
    <wvobject fp_name="/tb/done" type="logic">
       <obj_property name="ElementShortName">done</obj_property>
       <obj_property name="ObjectShortName">done</obj_property>
@@ -55,6 +51,10 @@
    <wvobject fp_name="/tb/spi_clk" type="logic">
       <obj_property name="ElementShortName">spi_clk</obj_property>
       <obj_property name="ObjectShortName">spi_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/spi_miso" type="logic">
+      <obj_property name="ElementShortName">spi_miso</obj_property>
+      <obj_property name="ObjectShortName">spi_miso</obj_property>
    </wvobject>
    <wvobject fp_name="/tb/spi_mosi" type="logic">
       <obj_property name="ElementShortName">spi_mosi</obj_property>

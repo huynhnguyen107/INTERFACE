@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Wed Jul 29 13:06:07 2026
+# Process ID: 27092
+# Current directory: D:/FPGA/Vivaldo Project/INTERFACE/SPI/01_pmod_spi_master_loopback/01_pmod_spi_master_loopback.runs/impl_1
+# Command line: vivado.exe -log top_spi_master_loopback.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top_spi_master_loopback.tcl -notrace
+# Log file: D:/FPGA/Vivaldo Project/INTERFACE/SPI/01_pmod_spi_master_loopback/01_pmod_spi_master_loopback.runs/impl_1/top_spi_master_loopback.vdi
+# Journal file: D:/FPGA/Vivaldo Project/INTERFACE/SPI/01_pmod_spi_master_loopback/01_pmod_spi_master_loopback.runs/impl_1\vivado.jou
+# Running On: LAPTOP-CHCSI1R5, OS: Windows, CPU Frequency: 3194 MHz, CPU Physical cores: 16, Host memory: 21319 MB
+#-----------------------------------------------------------
+source top_spi_master_loopback.tcl -notrace
