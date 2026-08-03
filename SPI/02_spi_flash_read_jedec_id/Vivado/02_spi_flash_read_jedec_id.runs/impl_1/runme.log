@@ -1,0 +1,70 @@
+
+*** Running vivado
+    with args -log top_spi_flash_read_jedec_id.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source top_spi_flash_read_jedec_id.tcl -notrace
+
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source top_spi_flash_read_jedec_id.tcl -notrace
+Command: link_design -top top_spi_flash_read_jedec_id -part xck26-sfvc784-2LV-c
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.050 . Memory (MB): peak = 1455.969 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 131 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [d:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.gen/sources_1/ip/ila_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'ila_0/inst'
+Finished Parsing XDC File [d:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.gen/sources_1/ip/ila_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'ila_0/inst'
+Parsing XDC File [d:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.gen/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc] for cell 'ila_0/inst'
+Finished Parsing XDC File [d:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.gen/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc] for cell 'ila_0/inst'
+Parsing XDC File [d:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.gen/sources_1/ip/vio_0/vio_0.xdc] for cell 'vio_0'
+Finished Parsing XDC File [d:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.gen/sources_1/ip/vio_0/vio_0.xdc] for cell 'vio_0'
+Parsing XDC File [d:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clk_wiz_0/inst'
+Finished Parsing XDC File [d:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clk_wiz_0/inst'
+Parsing XDC File [d:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clk_wiz_0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [d:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [d:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:57]
+Finished Parsing XDC File [d:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clk_wiz_0/inst'
+Parsing XDC File [D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/constrs_1/new/spi_flash_read_jedec_id.xdc]
+WARNING: [Constraints 18-619] A clock with name 'clk_25mhz' already exists, overwriting the previous clock with the same name. [D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/constrs_1/new/spi_flash_read_jedec_id.xdc:5]
+Finished Parsing XDC File [D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/constrs_1/new/spi_flash_read_jedec_id.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1887.352 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 100 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 96 instances
+  IBUF => IBUF (IBUFCTRL, INBUF): 4 instances
+
+9 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.statsThreshold
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xck26'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1887.352 ; gain = 0.000
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 1408b8c9b
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.276 . Memory (MB): peak = 1887.352 ; gain = 0.000
+
+Starting Logic Optimization Task
+
+Phase 1 Generate And Synthesize Debug Cores
+INFO: [Chipscope 16-329] Generating Script for core instance : dbg_hub 
+INFO: [IP_Flow 19-3806] Processing IP xilinx.com:ip:xsdbm:3.0 for cell dbg_hub_CV.

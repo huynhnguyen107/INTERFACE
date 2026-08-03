@@ -1,0 +1,207 @@
+/*
+
+Xilinx Vivado v2022.2 (64-bit) [Major: 2022, Minor: 2]
+SW Build: 3671981 on Fri Oct 14 05:00:03 MDT 2022
+IP Build: 3669848 on Fri Oct 14 08:30:02 MDT 2022
+
+Process ID (PID): 24228
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Fri Jul 31 10:10:03 EDT 2026
+Time zone: 	Eastern Standard Time (America/New_York)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 16
+
+Screen size: 1920x1080
+Screen resolution (DPI): 125
+Available screens: 2
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=15
+Scale size: 19
+
+Java version: 	11.0.11 64-bit
+Java home: 	D:/Xilinx/Vivado/2022.2/tps/win64/jre11.0.11_9
+Java executable: 	D:/Xilinx/Vivado/2022.2/tps/win64/jre11.0.11_9/bin/java.exe
+Java arguments: 	[-Dsun.java2d.pmoffscreen=false, -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2, -Dsun.java2d.xrender=false, -Dsun.java2d.d3d=false, -Dsun.awt.nopixfmt=true, -Dsun.java2d.dpiaware=true, -Dsun.java2d.uiScale.enabled=false, -Xverify:none, -Dswing.aatext=true, -XX:-UsePerfData, -Djdk.map.althashing.threshold=512, -XX:StringTableSize=4072, --add-opens=java.desktop/com.sun.awt=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.desktop/sun.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/java.awt.event=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.base/java.nio=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.table=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.desktop/sun.awt.shell=ALL-UNNAMED, --add-exports=java.base/sun.security.action=ALL-UNNAMED, --add-exports=java.desktop/sun.font=ALL-UNNAMED, -XX:NewSize=60m, -XX:MaxNewSize=60m, -Xms256m, -Xmx3072m, -Xss5m]
+Java initial memory (-Xms): 	256 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	ADMIN
+User home directory: C:/Users/ADMIN
+User working directory: D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: D:/Xilinx/Vivado
+HDI_APPROOT: D:/Xilinx/Vivado/2022.2
+RDI_DATADIR: D:/Xilinx/Vivado/2022.2/data
+RDI_BINDIR: D:/Xilinx/Vivado/2022.2/bin
+
+Vivado preferences file: C:/Users/ADMIN/AppData/Roaming/Xilinx/Vivado/2022.2/vivado.xml
+Vivado preferences directory: C:/Users/ADMIN/AppData/Roaming/Xilinx/Vivado/2022.2/
+Vivado layouts directory: C:/Users/ADMIN/AppData/Roaming/Xilinx/Vivado/2022.2/data/layouts
+PlanAhead jar file: 	D:/Xilinx/Vivado/2022.2/lib/classes/planAhead.jar
+Vivado log file: 	D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/vivado.log
+Vivado journal file: 	D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/vivado.jou
+Engine tmp dir: 	D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/.Xil/Vivado-24228-LAPTOP-CHCSI1R5
+
+Xilinx Environment Variables
+----------------------------
+RDI_APPROOT: D:/Xilinx/Vivado/2022.2
+RDI_ARGS:  -gui_launcher_event rodinguilauncherevent33568 "D:\FPGA\Vivaldo Project\INTERFACE\SPI\02_spi_flash_read_jedec_id\Vivado\02_spi_flash_read_jedec_id.xpr"
+RDI_ARGS_FUNCTION: RDI_EXEC_DEFAULT
+RDI_BASEROOT: D:/Xilinx/Vivado
+RDI_BINDIR: D:/Xilinx/Vivado/2022.2/bin
+RDI_BINROOT: D:/Xilinx/Vivado/2022.2/bin
+RDI_BUILD: yes
+RDI_CHECK_PROG: True
+RDI_DATADIR: D:/Xilinx/Vivado/2022.2/data
+RDI_INSTALLROOT: D:/Xilinx
+RDI_INSTALLVER: 2022.2
+RDI_INSTALLVERSION: 2022.2
+RDI_JAVACEFROOT: D:/Xilinx/Vivado/2022.2/tps/win64/java-cef-95.0.4638.69
+RDI_JAVAFXROOT: D:/Xilinx/Vivado/2022.2/tps/win64/javafx-sdk-11.0.2
+RDI_JAVAROOT: D:/Xilinx/Vivado/2022.2/tps/win64/jre11.0.11_9
+RDI_JAVA_VERSION: 11.0.11_9
+RDI_LIBDIR: D:/Xilinx/Vivado/2022.2/lib/win64.o
+RDI_MINGW_LIB: D:/Xilinx/Vivado/2022.2\tps\mingw\6.2.0\win64.o\nt\bin;D:/Xilinx/Vivado/2022.2\tps\mingw\6.2.0\win64.o\nt\libexec\gcc\x86_64-w64-mingw32\6.2.0
+RDI_OPT_EXT: .o
+RDI_PLATFORM: win64
+RDI_PREPEND_PATH: D:/Xilinx/Vitis/2022.2/bin
+RDI_PROG: D:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/vivado.exe
+RDI_PROGNAME: vivado.exe
+RDI_PYTHON3: D:/Xilinx/Vivado/2022.2\tps\win64\python-3.8.3
+RDI_PYTHON3_VERSION: 3.8.3
+RDI_PYTHONHOME: D:/Xilinx/Vivado/2022.2\tps\win64\python-3.8.3
+RDI_PYTHONPATH: D:/Xilinx/Vivado/2022.2\tps\win64\python-3.8.3;D:/Xilinx/Vivado/2022.2\tps\win64\python-3.8.3\bin;D:/Xilinx/Vivado/2022.2\tps\win64\python-3.8.3\lib;D:/Xilinx/Vivado/2022.2\tps\win64\python-3.8.3\lib\site-packages
+RDI_PYTHON_LD_LIBPATH: D:/Xilinx/Vivado/2022.2\tps\win64\python-3.8.3\lib
+RDI_TPS_ROOT: D:/Xilinx/Vivado/2022.2/tps/win64
+RDI_USE_JDK11: True
+RDI_VERBOSE: False
+XILINX_HLS: D:/Xilinx/Vitis_HLS/2022.2
+XILINX_PLANAHEAD: D:/Xilinx/Vivado/2022.2
+XILINX_SDK: D:/Xilinx/Vitis/2022.2
+XILINX_VITIS: D:/Xilinx/Vitis/2022.2
+XILINX_VIVADO: D:/Xilinx/Vivado/2022.2
+XILINX_VIVADO_HLS: D:/Xilinx/Vivado/2022.2
+_RDI_BINROOT: D:\Xilinx\Vivado\2022.2\bin
+_RDI_CWD: D:\FPGA\Vivaldo Project\INTERFACE\SPI\02_spi_flash_read_jedec_id\Vivado
+
+
+GUI allocated memory:	424 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 879 MB
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: D:\FPGA\Vivaldo Project\INTERFACE\SPI\02_spi_flash_read_jedec_id\Vivado\02_spi_flash_read_jedec_id.xpr. Version: Vivado v2022.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// Tcl Message: open_project {D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.xpr} 
+// HMemoryUtils.trashcanNow. Engine heap size: 911 MB. GUI used memory: 59 MB. Current time: 7/31/26, 10:10:04 AM EDT
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project {D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.xpr} 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id' since last save. INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.gen/sources_1'. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 73 MB (+73974kb) [00:00:13]
+// [Engine Memory]: 923 MB (+815925kb) [00:00:13]
+// [GUI Memory]: 102 MB (+26250kb) [00:00:14]
+// WARNING: HEventQueue.dispatchEvent() is taking  1973 ms.
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2022.2/data/ip'. 
+// [GUI Memory]: 123 MB (+16974kb) [00:00:15]
+// [Engine Memory]: 979 MB (+10954kb) [00:00:15]
+// Project name: 02_spi_flash_read_jedec_id; location: D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado; part: xck26-sfvc784-2LV-c
+// Tcl Message: open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:09 . Memory (MB): peak = 1203.840 ; gain = 192.285 
+dismissDialog("Open Project"); // bq
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 29 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, spi_flash_read_jedec_id (spi_flash_read_jedec_id.v)]", 1, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, spi_flash_read_jedec_id (spi_flash_read_jedec_id.v)]", 1, false, false, false, false, false, true); // D - Double Click
+// [Engine Memory]: 1,036 MB (+8294kb) [00:00:48]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,036 MB. GUI used memory: 70 MB. Current time: 7/31/26, 10:10:45 AM EDT
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, spi_flash_read_jedec_id (spi_flash_read_jedec_id.v)]", 1, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, spi_flash_read_jedec_id (spi_flash_read_jedec_id.v)]", 1, false, false, false, false, false, true); // D - Double Click
+selectCodeEditor("spi_flash_read_jedec_id.v", 162, 177); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 129 MB (+132kb) [00:11:49]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 1500 seconds
+selectButton(PAResourceAtoD.AbstractFileView_RELOAD, "Reload"); // g
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // f
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_SIMULATION_SPECIFIC_HDL_FILES, "Add or create simulation sources"); // a
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "tb"); // Q
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Tcl Command: 'file mkdir D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/sim_1/new'
+dismissDialog("Create Source File"); // m
+// Tcl Message: file mkdir D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/sim_1/new 
+// Tcl Command: 'file mkdir D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/sim_1/new'
+// Tcl Message: file mkdir D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/sim_1/new 
+// Tcl Command: 'file mkdir D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/sim_1/new'
+// Tcl Command: 'file mkdir D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/sim_1/new'
+selectButton("FINISH", "Finish"); // JButton
+// 'f' command handler elapsed time: 7 seconds
+// Tcl Message: file mkdir D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/sim_1/new 
+// Tcl Command: 'file mkdir D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/sim_1/new'
+// Tcl Message: file mkdir D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/sim_1/new 
+dismissDialog("Add Sources"); // c
+// Tcl Message: file mkdir D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/sim_1/new 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Command: 'file mkdir D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/sim_1/new'
+// Tcl Message: set_property SOURCE_SET sources_1 [get_filesets sim_1] 
+// Tcl Message: file mkdir D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/sim_1/new 
+// Tcl Message: file mkdir {D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/sim_1/new} 
+// Tcl Message: close [ open {D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/sim_1/new/tb.v} w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -fileset sim_1 {{D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/sim_1/new/tb.v}} 
+dismissDialog("Add Simulation Sources"); // bq
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: FILE_SET_CHANGE
+selectButton("OptionPane.button", "Yes"); // JButton
+dismissDialog("Define Module"); // p
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sim_1 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,036 MB. GUI used memory: 71 MB. Current time: 7/31/26, 10:40:46 AM EDT
