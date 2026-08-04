@@ -80,3 +80,807 @@ file mkdir {D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Viv
 close [ open {D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/sim_1/new/tb.v} w ]
 add_files -fileset sim_1 {{D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/sim_1/new/tb.v}}
 update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'spi_flash_read_jedec_id'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'spi_flash_read_jedec_id' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj spi_flash_read_jedec_id_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/sources_1/new/spi_flash_read_jedec_id.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spi_flash_read_jedec_id
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot spi_flash_read_jedec_id_behav xil_defaultlib.spi_flash_read_jedec_id xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot spi_flash_read_jedec_id_behav xil_defaultlib.spi_flash_read_jedec_id xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.spi_flash_read_jedec_id
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot spi_flash_read_jedec_id_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "spi_flash_read_jedec_id_behav -key {Behavioral:sim_1:Functional:spi_flash_read_jedec_id} -tclbatch {spi_flash_read_jedec_id.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source spi_flash_read_jedec_id.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'spi_flash_read_jedec_id_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 1203.840 ; gain = 0.000
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+boost::filesystem::remove: The process cannot access the file because it is being used by another process: "D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.sim/sim_1/behav/xsim/simulate.log"
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.spi_flash_read_jedec_id
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1213.039 ; gain = 0.000
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+boost::filesystem::remove: The process cannot access the file because it is being used by another process: "D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.sim/sim_1/behav/xsim/simulate.log"
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1213.039 ; gain = 0.000
+run 50000 ns
+run 50000 ns
+run 50000 ns
+current_wave_config {Untitled 2}
+Untitled 2
+add_wave {{/tb/spi_flash_read_jedec_id/clk}} {{/tb/spi_flash_read_jedec_id/rst_n}} {{/tb/spi_flash_read_jedec_id/start}} {{/tb/spi_flash_read_jedec_id/data_in}} {{/tb/spi_flash_read_jedec_id/done}} {{/tb/spi_flash_read_jedec_id/busy}} {{/tb/spi_flash_read_jedec_id/data_out}} {{/tb/spi_flash_read_jedec_id/spi_clk}} {{/tb/spi_flash_read_jedec_id/spi_mosi}} {{/tb/spi_flash_read_jedec_id/spi_cs_n}} {{/tb/spi_flash_read_jedec_id/spi_miso}} {{/tb/spi_flash_read_jedec_id/d_start}} {{/tb/spi_flash_read_jedec_id/rasing_edge_start}} {{/tb/spi_flash_read_jedec_id/reg_data_in}} {{/tb/spi_flash_read_jedec_id/state}} {{/tb/spi_flash_read_jedec_id/next_state}} {{/tb/spi_flash_read_jedec_id/cnt_clk}} {{/tb/spi_flash_read_jedec_id/cnt_bit}} {{/tb/spi_flash_read_jedec_id/data_shift}} {{/tb/spi_flash_read_jedec_id/CLK_DIV}} {{/tb/spi_flash_read_jedec_id/BYTE_SEND}} {{/tb/spi_flash_read_jedec_id/IDLE}} {{/tb/spi_flash_read_jedec_id/INSE}} {{/tb/spi_flash_read_jedec_id/TRAN}} {{/tb/spi_flash_read_jedec_id/FINI}} 
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1213.039 ; gain = 0.000
+run 50000 ns
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/sources_1/new/spi_flash_read_jedec_id.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spi_flash_read_jedec_id
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.spi_flash_read_jedec_id
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 1213.039 ; gain = 0.000
+run 50000 ns
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/sources_1/new/spi_flash_read_jedec_id.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spi_flash_read_jedec_id
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.spi_flash_read_jedec_id
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1213.039 ; gain = 0.000
+run 50000 ns
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/sources_1/new/spi_flash_read_jedec_id.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spi_flash_read_jedec_id
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.spi_flash_read_jedec_id
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1213.039 ; gain = 0.000
+run 50000 ns
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/sources_1/new/spi_flash_read_jedec_id.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spi_flash_read_jedec_id
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.spi_flash_read_jedec_id
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1213.039 ; gain = 0.000
+run 50000 ns
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/sources_1/new/spi_flash_read_jedec_id.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spi_flash_read_jedec_id
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.spi_flash_read_jedec_id
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1213.039 ; gain = 0.000
+run 50000 ns
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/sources_1/new/spi_flash_read_jedec_id.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spi_flash_read_jedec_id
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.spi_flash_read_jedec_id
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1213.039 ; gain = 0.000
+run 50000 ns
+save_wave_config {D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/tb_behav.wcfg}
+add_files -fileset sim_1 -norecurse {{D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/tb_behav.wcfg}}
+set_property xsim.view {{D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/tb_behav.wcfg}} [get_filesets sim_1]
+close [ open {D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/sources_1/new/top_spi_flash_read_jedec_id.v} w ]
+add_files {{D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/sources_1/new/top_spi_flash_read_jedec_id.v}}
+update_compile_order -fileset sources_1
+set_property top top_spi_flash_read_jedec_id [current_fileset]
+update_compile_order -fileset sources_1
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+ERROR: [Common 17-69] Command failed: Port 'clk_100mhz' already exists
+CRITICAL WARNING: [IP_Flow 19-1747] Failed to deliver file 'd:/Xilinx/Vivado/2022.2/data/ip/xilinx/clk_wiz_v6_0/elaborate/ports.xit': ERROR: [Common 17-69] Command failed: Port 'clk_100mhz' already exists
+
+ERROR: [IP_Flow 19-167] Failed to deliver one or more file(s).
+ERROR: [IP_Flow 19-3541] IP Elaboration error: Failed to generate IP 'clk_wiz_0'. Failed to generate 'Elaborate Ports' outputs: 
+create_ip -name clk_wiz -vendor xilinx.com -library ip -version 6.0 -module_name clk_wiz_0
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+set_property -dict [list \
+  CONFIG.CLKIN1_JITTER_PS {400.0} \
+  CONFIG.CLKOUT1_JITTER {190.517} \
+  CONFIG.CLKOUT1_PHASE_ERROR {222.305} \
+  CONFIG.CLK_OUT1_PORT {clk_100mhz} \
+  CONFIG.MMCM_CLKFBOUT_MULT_F {48.000} \
+  CONFIG.MMCM_CLKIN1_PERIOD {40.000} \
+  CONFIG.MMCM_CLKIN2_PERIOD {10.0} \
+  CONFIG.PRIMARY_PORT {clk_25mhz} \
+  CONFIG.PRIM_IN_FREQ {25} \
+  CONFIG.USE_LOCKED {false} \
+  CONFIG.USE_RESET {false} \
+] [get_ips clk_wiz_0]
+generate_target {instantiation_template} [get_files {{d:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz_0'...
+set_property generate_synth_checkpoint false [get_files  {{d:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci}}]
+generate_target all [get_files  {{d:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_wiz_0'...
+export_ip_user_files -of_objects [get_files {{d:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci}}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{d:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci}}] -directory {D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.ip_user_files/sim_scripts} -ip_user_files_dir {D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.ip_user_files} -ipstatic_source_dir {D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.cache/compile_simlib/modelsim} {questa=D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.cache/compile_simlib/questa} {riviera=D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.cache/compile_simlib/riviera} {activehdl=D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+create_ip -name vio -vendor xilinx.com -library ip -version 3.0 -module_name vio_0
+set_property -dict [list \
+  CONFIG.C_NUM_PROBE_IN {0} \
+  CONFIG.C_PROBE_OUT0_INIT_VAL {0x9f000000} \
+  CONFIG.C_PROBE_OUT0_WIDTH {32} \
+] [get_ips vio_0]
+generate_target {instantiation_template} [get_files {{d:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/sources_1/ip/vio_0/vio_0.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'vio_0'...
+update_compile_order -fileset sources_1
+set_property generate_synth_checkpoint false [get_files  {{d:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/sources_1/ip/vio_0/vio_0.xci}}]
+generate_target all [get_files  {{d:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/sources_1/ip/vio_0/vio_0.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'vio_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'vio_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'vio_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'vio_0'...
+export_ip_user_files -of_objects [get_files {{d:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/sources_1/ip/vio_0/vio_0.xci}}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{d:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/sources_1/ip/vio_0/vio_0.xci}}] -directory {D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.ip_user_files/sim_scripts} -ip_user_files_dir {D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.ip_user_files} -ipstatic_source_dir {D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.cache/compile_simlib/modelsim} {questa=D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.cache/compile_simlib/questa} {riviera=D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.cache/compile_simlib/riviera} {activehdl=D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+file mkdir D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/constrs_1
+file mkdir D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/constrs_1
+file mkdir D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/constrs_1/new
+file mkdir D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/constrs_1/new
+file mkdir D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/constrs_1/new
+file mkdir D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/constrs_1/new
+file mkdir D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/constrs_1
+file mkdir {D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/constrs_1/new}
+close [ open {D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/constrs_1/new/spi_flash_read_jedec_id.xdc} w ]
+add_files -fileset constrs_1 {{D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/constrs_1/new/spi_flash_read_jedec_id.xdc}}
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Aug  3 12:12:24 2026] Launched synth_1...
+Run output will be captured here: D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.runs/synth_1/runme.log
+[Mon Aug  3 12:12:24 2026] Launched impl_1...
+Run output will be captured here: D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.runs/impl_1/runme.log
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+create_ip -name ila -vendor xilinx.com -library ip -version 6.2 -module_name ila_0
+set_property -dict [list \
+  CONFIG.C_NUM_OF_PROBES {10} \
+  CONFIG.C_PROBE8_WIDTH {32} \
+  CONFIG.C_PROBE9_WIDTH {32} \
+] [get_ips ila_0]
+generate_target {instantiation_template} [get_files {{d:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/sources_1/ip/ila_0/ila_0.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ila_0'...
+set_property generate_synth_checkpoint false [get_files  {{d:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/sources_1/ip/ila_0/ila_0.xci}}]
+generate_target all [get_files  {{d:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/sources_1/ip/ila_0/ila_0.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ila_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ila_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ila_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'ila_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ila_0'...
+export_ip_user_files -of_objects [get_files {{d:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/sources_1/ip/ila_0/ila_0.xci}}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{d:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/sources_1/ip/ila_0/ila_0.xci}}] -directory {D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.ip_user_files/sim_scripts} -ip_user_files_dir {D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.ip_user_files} -ipstatic_source_dir {D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.cache/compile_simlib/modelsim} {questa=D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.cache/compile_simlib/questa} {riviera=D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.cache/compile_simlib/riviera} {activehdl=D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+INFO: [Project 1-1160] Copying file D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.runs/synth_1/top_spi_flash_read_jedec_id.dcp to D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/utils_1/imports/synth_1 and adding it to utils fileset
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Aug  3 12:56:43 2026] Launched synth_1...
+Run output will be captured here: D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.runs/synth_1/runme.log
+[Mon Aug  3 12:56:43 2026] Launched impl_1...
+Run output will be captured here: D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Aug  3 12:59:53 2026] Launched synth_1...
+Run output will be captured here: D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.runs/synth_1/runme.log
+[Mon Aug  3 12:59:53 2026] Launched impl_1...
+Run output will be captured here: D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.050 . Memory (MB): peak = 2836.980 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 140 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.2
+INFO: [Common 17-344] 'open_run' was cancelled
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/utils_1/imports/synth_1/top_spi_flash_read_jedec_id.dcp with file D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.runs/synth_1/top_spi_flash_read_jedec_id.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Aug  3 13:26:36 2026] Launched synth_1...
+Run output will be captured here: D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.runs/synth_1/runme.log
+[Mon Aug  3 13:26:36 2026] Launched impl_1...
+Run output will be captured here: D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.runs/impl_1/runme.log
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-12490] The selected simulation model for 'clk_wiz_0' IP changed to 'rtl' from '', the simulation run directory will be deleted.
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-13660] Precompiled IP simulation library mode is enabled (default). The design IP libraries will be referenced from the compiled library path. Please note that if the precompiled version of the library is not found from the path or the IP is in locked state, then the library source files for these IPs will be compiled locally as part of the compile order.
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/sources_1/new/spi_flash_read_jedec_id.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spi_flash_read_jedec_id
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-13660] Precompiled IP simulation library mode is enabled (default). The design IP libraries will be referenced from the compiled library path. Please note that if the precompiled version of the library is not found from the path or the IP is in locked state, then the library source files for these IPs will be compiled locally as part of the compile order.
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.spi_flash_read_jedec_id
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Time resolution is 1 ps
+couldn't read file "tb.tcl": no such file or directory
+run 50000 ns
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-13660] Precompiled IP simulation library mode is enabled (default). The design IP libraries will be referenced from the compiled library path. Please note that if the precompiled version of the library is not found from the path or the IP is in locked state, then the library source files for these IPs will be compiled locally as part of the compile order.
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/sources_1/new/spi_flash_read_jedec_id.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spi_flash_read_jedec_id
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-13660] Precompiled IP simulation library mode is enabled (default). The design IP libraries will be referenced from the compiled library path. Please note that if the precompiled version of the library is not found from the path or the IP is in locked state, then the library source files for these IPs will be compiled locally as part of the compile order.
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.spi_flash_read_jedec_id
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Time resolution is 1 ps
+couldn't read file "tb.tcl": no such file or directory
+run 50000 ns
+save_wave_config {D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/tb_behav.wcfg}
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/utils_1/imports/synth_1/top_spi_flash_read_jedec_id.dcp with file D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.runs/synth_1/top_spi_flash_read_jedec_id.dcp
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Aug  3 14:08:38 2026] Launched synth_1...
+Run output will be captured here: D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.runs/synth_1/runme.log
+[Mon Aug  3 14:08:38 2026] Launched impl_1...
+Run output will be captured here: D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.runs/impl_1/runme.log
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-13660] Precompiled IP simulation library mode is enabled (default). The design IP libraries will be referenced from the compiled library path. Please note that if the precompiled version of the library is not found from the path or the IP is in locked state, then the library source files for these IPs will be compiled locally as part of the compile order.
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/sources_1/new/spi_flash_read_jedec_id.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spi_flash_read_jedec_id
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-13660] Precompiled IP simulation library mode is enabled (default). The design IP libraries will be referenced from the compiled library path. Please note that if the precompiled version of the library is not found from the path or the IP is in locked state, then the library source files for these IPs will be compiled locally as part of the compile order.
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.spi_flash_read_jedec_id
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Time resolution is 1 ps
+couldn't read file "tb.tcl": no such file or directory
+run 50000 ns
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/utils_1/imports/synth_1/top_spi_flash_read_jedec_id.dcp with file D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.runs/synth_1/top_spi_flash_read_jedec_id.dcp
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Aug  3 14:43:17 2026] Launched synth_1...
+Run output will be captured here: D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.runs/synth_1/runme.log
+[Mon Aug  3 14:43:17 2026] Launched impl_1...
+Run output will be captured here: D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.runs/impl_1/runme.log
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/utils_1/imports/synth_1/top_spi_flash_read_jedec_id.dcp with file D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.runs/synth_1/top_spi_flash_read_jedec_id.dcp
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Aug  3 16:14:03 2026] Launched synth_1...
+Run output will be captured here: D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.runs/synth_1/runme.log
+[Mon Aug  3 16:14:03 2026] Launched impl_1...
+Run output will be captured here: D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.runs/impl_1/runme.log
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-13660] Precompiled IP simulation library mode is enabled (default). The design IP libraries will be referenced from the compiled library path. Please note that if the precompiled version of the library is not found from the path or the IP is in locked state, then the library source files for these IPs will be compiled locally as part of the compile order.
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/sources_1/new/spi_flash_read_jedec_id.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spi_flash_read_jedec_id
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-13660] Precompiled IP simulation library mode is enabled (default). The design IP libraries will be referenced from the compiled library path. Please note that if the precompiled version of the library is not found from the path or the IP is in locked state, then the library source files for these IPs will be compiled locally as part of the compile order.
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.spi_flash_read_jedec_id
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+Time resolution is 1 ps
+couldn't read file "tb.tcl": no such file or directory
+run 50000 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Aug  4 11:02:42 2026...

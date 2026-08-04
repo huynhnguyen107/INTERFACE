@@ -24,3 +24,133 @@ file mkdir {D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Viv
 close [ open {D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/sim_1/new/tb.v} w ]
 add_files -fileset sim_1 {{D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/sim_1/new/tb.v}}
 update_compile_order -fileset sim_1
+launch_simulation
+source spi_flash_read_jedec_id.tcl
+launch_simulation
+relaunch_sim
+update_compile_order -fileset sim_1
+launch_simulation
+close_sim
+launch_simulation
+source tb.tcl
+run 50000 ns
+run 50000 ns
+run 50000 ns
+current_wave_config {Untitled 2}
+add_wave {{/tb/spi_flash_read_jedec_id/clk}} {{/tb/spi_flash_read_jedec_id/rst_n}} {{/tb/spi_flash_read_jedec_id/start}} {{/tb/spi_flash_read_jedec_id/data_in}} {{/tb/spi_flash_read_jedec_id/done}} {{/tb/spi_flash_read_jedec_id/busy}} {{/tb/spi_flash_read_jedec_id/data_out}} {{/tb/spi_flash_read_jedec_id/spi_clk}} {{/tb/spi_flash_read_jedec_id/spi_mosi}} {{/tb/spi_flash_read_jedec_id/spi_cs_n}} {{/tb/spi_flash_read_jedec_id/spi_miso}} {{/tb/spi_flash_read_jedec_id/d_start}} {{/tb/spi_flash_read_jedec_id/rasing_edge_start}} {{/tb/spi_flash_read_jedec_id/reg_data_in}} {{/tb/spi_flash_read_jedec_id/state}} {{/tb/spi_flash_read_jedec_id/next_state}} {{/tb/spi_flash_read_jedec_id/cnt_clk}} {{/tb/spi_flash_read_jedec_id/cnt_bit}} {{/tb/spi_flash_read_jedec_id/data_shift}} {{/tb/spi_flash_read_jedec_id/CLK_DIV}} {{/tb/spi_flash_read_jedec_id/BYTE_SEND}} {{/tb/spi_flash_read_jedec_id/IDLE}} {{/tb/spi_flash_read_jedec_id/INSE}} {{/tb/spi_flash_read_jedec_id/TRAN}} {{/tb/spi_flash_read_jedec_id/FINI}} 
+relaunch_sim
+run 50000 ns
+relaunch_sim
+run 50000 ns
+relaunch_sim
+run 50000 ns
+relaunch_sim
+run 50000 ns
+relaunch_sim
+run 50000 ns
+relaunch_sim
+run 50000 ns
+relaunch_sim
+run 50000 ns
+save_wave_config {D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/tb_behav.wcfg}
+add_files -fileset sim_1 -norecurse {{D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/tb_behav.wcfg}}
+set_property xsim.view {{D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/tb_behav.wcfg}} [get_filesets sim_1]
+close [ open {D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/sources_1/new/top_spi_flash_read_jedec_id.v} w ]
+add_files {{D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/sources_1/new/top_spi_flash_read_jedec_id.v}}
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top top_spi_flash_read_jedec_id [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+create_ip -name clk_wiz -vendor xilinx.com -library ip -version 6.0 -module_name clk_wiz_0
+set_property -dict [list \
+  CONFIG.CLKIN1_JITTER_PS {400.0} \
+  CONFIG.CLKOUT1_JITTER {190.517} \
+  CONFIG.CLKOUT1_PHASE_ERROR {222.305} \
+  CONFIG.CLK_OUT1_PORT {clk_100mhz} \
+  CONFIG.MMCM_CLKFBOUT_MULT_F {48.000} \
+  CONFIG.MMCM_CLKIN1_PERIOD {40.000} \
+  CONFIG.MMCM_CLKIN2_PERIOD {10.0} \
+  CONFIG.PRIMARY_PORT {clk_25mhz} \
+  CONFIG.PRIM_IN_FREQ {25} \
+  CONFIG.USE_LOCKED {false} \
+  CONFIG.USE_RESET {false} \
+] [get_ips clk_wiz_0]
+generate_target {instantiation_template} [get_files {{d:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci}}]
+set_property generate_synth_checkpoint false [get_files  {{d:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci}}]
+generate_target all [get_files  {{d:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci}}]
+export_ip_user_files -of_objects [get_files {{d:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci}}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{d:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci}}] -directory {D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.ip_user_files/sim_scripts} -ip_user_files_dir {D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.ip_user_files} -ipstatic_source_dir {D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.cache/compile_simlib/modelsim} {questa=D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.cache/compile_simlib/questa} {riviera=D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.cache/compile_simlib/riviera} {activehdl=D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+create_ip -name vio -vendor xilinx.com -library ip -version 3.0 -module_name vio_0
+set_property -dict [list \
+  CONFIG.C_NUM_PROBE_IN {0} \
+  CONFIG.C_PROBE_OUT0_INIT_VAL {0x9f000000} \
+  CONFIG.C_PROBE_OUT0_WIDTH {32} \
+] [get_ips vio_0]
+generate_target {instantiation_template} [get_files {{d:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/sources_1/ip/vio_0/vio_0.xci}}]
+update_compile_order -fileset sources_1
+set_property generate_synth_checkpoint false [get_files  {{d:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/sources_1/ip/vio_0/vio_0.xci}}]
+generate_target all [get_files  {{d:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/sources_1/ip/vio_0/vio_0.xci}}]
+export_ip_user_files -of_objects [get_files {{d:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/sources_1/ip/vio_0/vio_0.xci}}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{d:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/sources_1/ip/vio_0/vio_0.xci}}] -directory {D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.ip_user_files/sim_scripts} -ip_user_files_dir {D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.ip_user_files} -ipstatic_source_dir {D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.cache/compile_simlib/modelsim} {questa=D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.cache/compile_simlib/questa} {riviera=D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.cache/compile_simlib/riviera} {activehdl=D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+file mkdir D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/constrs_1
+file mkdir D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/constrs_1
+file mkdir D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/constrs_1/new
+file mkdir D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/constrs_1/new
+file mkdir D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/constrs_1/new
+file mkdir D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/constrs_1/new
+file mkdir D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/constrs_1
+file mkdir {D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/constrs_1/new}
+close [ open {D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/constrs_1/new/spi_flash_read_jedec_id.xdc} w ]
+add_files -fileset constrs_1 {{D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/constrs_1/new/spi_flash_read_jedec_id.xdc}}
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+create_ip -name ila -vendor xilinx.com -library ip -version 6.2 -module_name ila_0
+set_property -dict [list \
+  CONFIG.C_NUM_OF_PROBES {10} \
+  CONFIG.C_PROBE8_WIDTH {32} \
+  CONFIG.C_PROBE9_WIDTH {32} \
+] [get_ips ila_0]
+generate_target {instantiation_template} [get_files {{d:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/sources_1/ip/ila_0/ila_0.xci}}]
+set_property generate_synth_checkpoint false [get_files  {{d:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/sources_1/ip/ila_0/ila_0.xci}}]
+generate_target all [get_files  {{d:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/sources_1/ip/ila_0/ila_0.xci}}]
+export_ip_user_files -of_objects [get_files {{d:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/sources_1/ip/ila_0/ila_0.xci}}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{d:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.srcs/sources_1/ip/ila_0/ila_0.xci}}] -directory {D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.ip_user_files/sim_scripts} -ip_user_files_dir {D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.ip_user_files} -ipstatic_source_dir {D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.cache/compile_simlib/modelsim} {questa=D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.cache/compile_simlib/questa} {riviera=D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.cache/compile_simlib/riviera} {activehdl=D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/02_spi_flash_read_jedec_id.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+relaunch_sim
+run 50000 ns
+relaunch_sim
+run 50000 ns
+save_wave_config {D:/FPGA/Vivaldo Project/INTERFACE/SPI/02_spi_flash_read_jedec_id/Vivado/tb_behav.wcfg}
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+relaunch_sim
+run 50000 ns
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+relaunch_sim
+run 50000 ns
+close_sim
