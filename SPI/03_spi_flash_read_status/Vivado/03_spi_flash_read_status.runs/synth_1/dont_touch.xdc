@@ -12,21 +12,21 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==vio_0 || OR
 # IP: ip/clk_wiz_0/clk_wiz_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==clk_wiz_0 || ORIG_REF_NAME==clk_wiz_0} -quiet] -quiet
 
-# XDC: d:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status/03_spi_flash_read_status.gen/sources_1/ip/ila_0/ila_v6_2/constraints/ila_impl.xdc
+# XDC: d:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status.gen/sources_1/ip/ila_0/ila_v6_2/constraints/ila_impl.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==ila_0 || ORIG_REF_NAME==ila_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
 
-# XDC: d:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status/03_spi_flash_read_status.gen/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc
+# XDC: d:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status.gen/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc
 #dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==ila_0 || ORIG_REF_NAME==ila_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
 
-# XDC: d:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status/03_spi_flash_read_status.gen/sources_1/ip/ila_0/ila_0_ooc.xdc
+# XDC: d:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status.gen/sources_1/ip/ila_0/ila_0_ooc.xdc
 
-# XDC: d:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status/03_spi_flash_read_status.gen/sources_1/ip/vio_0/vio_0.xdc
+# XDC: d:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status.gen/sources_1/ip/vio_0/vio_0.xdc
 #dup# set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==vio_0 || ORIG_REF_NAME==vio_0} -quiet] -quiet
 
-# XDC: d:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status/03_spi_flash_read_status.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc
+# XDC: d:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==clk_wiz_0 || ORIG_REF_NAME==clk_wiz_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
 
-# XDC: d:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status/03_spi_flash_read_status.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc
+# XDC: d:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc
 #dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==clk_wiz_0 || ORIG_REF_NAME==clk_wiz_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
 
-# XDC: d:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status/03_spi_flash_read_status.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc
+# XDC: d:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc

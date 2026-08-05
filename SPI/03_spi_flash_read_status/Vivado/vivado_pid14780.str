@@ -108,3 +108,93 @@ Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 // TclEventType: DEBUG_PROBE_SET_CHANGE
 // TclEventType: FLOW_ADDED
 // Tcl Message: open_project {D:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status.xpr} 
+// HMemoryUtils.trashcanNow. Engine heap size: 800 MB. GUI used memory: 59 MB. Current time: 8/4/26, 11:30:00 AM EDT
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 85 MB (+86378kb) [00:00:18]
+// [Engine Memory]: 1,035 MB (+933833kb) [00:00:18]
+// [GUI Memory]: 93 MB (+4295kb) [00:00:19]
+// [Engine Memory]: 1,097 MB (+10347kb) [00:00:19]
+// WARNING: HEventQueue.dispatchEvent() is taking  2688 ms.
+// Tcl Message: open_project {D:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status.xpr} 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'D:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2022.2/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:29 ; elapsed = 00:00:12 . Memory (MB): peak = 1301.188 ; gain = 467.125 
+// Project name: 03_spi_flash_read_status; location: D:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado; part: xck26-sfvc784-2LV-c
+dismissDialog("Open Project"); // bq
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 101 MB (+3313kb) [00:00:24]
+// [GUI Memory]: 107 MB (+1407kb) [00:00:30]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // f
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("No Implementation Results Available"); // u
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // cz
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// [GUI Memory]: 123 MB (+11044kb) [00:00:33]
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Tue Aug  4 11:30:22 2026] Launched impl_1... Run output will be captured here: D:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// [GUI Memory]: 133 MB (+4209kb) [00:17:04]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,146 MB. GUI used memory: 72 MB. Current time: 8/4/26, 12:00:02 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,146 MB. GUI used memory: 60 MB. Current time: 8/4/26, 12:30:05 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,146 MB. GUI used memory: 59 MB. Current time: 8/4/26, 3:33:26 PM EDT
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 2672720ms to process. Increasing delay to 3000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2673113 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,146 MB. GUI used memory: 63 MB. Current time: 8/4/26, 4:18:19 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,146 MB. GUI used memory: 59 MB. Current time: 8/4/26, 4:48:21 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,146 MB. GUI used memory: 59 MB. Current time: 8/4/26, 5:18:24 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,146 MB. GUI used memory: 59 MB. Current time: 8/4/26, 5:48:27 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,146 MB. GUI used memory: 59 MB. Current time: 8/4/26, 6:18:30 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,146 MB. GUI used memory: 59 MB. Current time: 8/4/26, 6:48:33 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,146 MB. GUI used memory: 60 MB. Current time: 8/4/26, 7:18:35 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,146 MB. GUI used memory: 59 MB. Current time: 8/4/26, 7:48:38 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,146 MB. GUI used memory: 59 MB. Current time: 8/4/26, 8:18:41 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,146 MB. GUI used memory: 59 MB. Current time: 8/4/26, 8:48:44 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,146 MB. GUI used memory: 59 MB. Current time: 8/4/26, 9:18:46 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,146 MB. GUI used memory: 59 MB. Current time: 8/4/26, 9:48:49 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,146 MB. GUI used memory: 59 MB. Current time: 8/4/26, 10:18:52 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,146 MB. GUI used memory: 59 MB. Current time: 8/4/26, 10:48:55 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,146 MB. GUI used memory: 59 MB. Current time: 8/4/26, 11:18:57 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,146 MB. GUI used memory: 59 MB. Current time: 8/4/26, 11:49:00 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,146 MB. GUI used memory: 59 MB. Current time: 8/5/26, 12:19:03 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,146 MB. GUI used memory: 59 MB. Current time: 8/5/26, 12:49:06 AM EDT
+// WARNING: HEventQueue.dispatchEvent() is taking  10797934 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,146 MB. GUI used memory: 59 MB. Current time: 8/5/26, 3:58:31 AM EDT
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 10798520 ms. Increasing delay to 3000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4358 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 12988479 ms. Increasing delay to 4000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  12988355 ms.

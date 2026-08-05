@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "D:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status/03_spi_flash_read_status.runs/synth_1/top_spi_master_mode0.tcl"
+  variable script "D:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status.runs/synth_1/top_spi_master_mode0.tcl"
   variable category "vivado_synth"
 }
 
@@ -79,33 +79,33 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir {D:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status/03_spi_flash_read_status.cache/wt} [current_project]
-set_property parent.project_path {D:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status/03_spi_flash_read_status.xpr} [current_project]
+set_property webtalk.parent_dir {D:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status.cache/wt} [current_project]
+set_property parent.project_path {D:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status.xpr} [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part xilinx.com:kr260_som:part0:1.1 [current_project]
-set_property ip_output_repo {d:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status/03_spi_flash_read_status.cache/ip} [current_project]
+set_property ip_output_repo {d:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status.cache/ip} [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib {
-  {D:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status/03_spi_flash_read_status.srcs/sources_1/new/03_spi_flash_read_status.v}
-  {D:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status/03_spi_flash_read_status.srcs/sources_1/new/top_spi_master_mode0.v}
+  {D:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status.srcs/sources_1/new/03_spi_flash_read_status.v}
+  {D:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status.srcs/sources_1/new/top_spi_master_mode0.v}
 }
-read_ip -quiet {{d:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status/03_spi_flash_read_status.srcs/sources_1/ip/ila_0/ila_0.xci}}
-set_property used_in_synthesis false [get_files -all {{d:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status/03_spi_flash_read_status.gen/sources_1/ip/ila_0/ila_v6_2/constraints/ila_impl.xdc}}]
-set_property used_in_implementation false [get_files -all {{d:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status/03_spi_flash_read_status.gen/sources_1/ip/ila_0/ila_v6_2/constraints/ila_impl.xdc}}]
-set_property used_in_implementation false [get_files -all {{d:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status/03_spi_flash_read_status.gen/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc}}]
-set_property used_in_implementation false [get_files -all {{d:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status/03_spi_flash_read_status.gen/sources_1/ip/ila_0/ila_0_ooc.xdc}}]
+read_ip -quiet {{D:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status.srcs/sources_1/ip/ila_0/ila_0.xci}}
+set_property used_in_synthesis false [get_files -all {{d:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status.gen/sources_1/ip/ila_0/ila_v6_2/constraints/ila_impl.xdc}}]
+set_property used_in_implementation false [get_files -all {{d:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status.gen/sources_1/ip/ila_0/ila_v6_2/constraints/ila_impl.xdc}}]
+set_property used_in_implementation false [get_files -all {{d:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status.gen/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc}}]
+set_property used_in_implementation false [get_files -all {{d:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status.gen/sources_1/ip/ila_0/ila_0_ooc.xdc}}]
 
-read_ip -quiet {{d:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status/03_spi_flash_read_status.srcs/sources_1/ip/vio_0/vio_0.xci}}
-set_property used_in_implementation false [get_files -all {{d:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status/03_spi_flash_read_status.gen/sources_1/ip/vio_0/vio_0.xdc}}]
+read_ip -quiet {{D:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status.srcs/sources_1/ip/vio_0/vio_0.xci}}
+set_property used_in_implementation false [get_files -all {{d:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status.gen/sources_1/ip/vio_0/vio_0.xdc}}]
 
-read_ip -quiet {{d:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status/03_spi_flash_read_status.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci}}
-set_property used_in_implementation false [get_files -all {{d:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status/03_spi_flash_read_status.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc}}]
-set_property used_in_implementation false [get_files -all {{d:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status/03_spi_flash_read_status.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc}}]
-set_property used_in_implementation false [get_files -all {{d:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status/03_spi_flash_read_status.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc}}]
+read_ip -quiet {{D:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci}}
+set_property used_in_implementation false [get_files -all {{d:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc}}]
+set_property used_in_implementation false [get_files -all {{d:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc}}]
+set_property used_in_implementation false [get_files -all {{d:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc}}]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -116,12 +116,14 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc {{D:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status/03_spi_flash_read_status.srcs/constrs_1/new/03_spi_flash_read_status.xdc}}
-set_property used_in_implementation false [get_files {{D:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status/03_spi_flash_read_status.srcs/constrs_1/new/03_spi_flash_read_status.xdc}}]
+read_xdc {{D:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status.srcs/constrs_1/new/03_spi_flash_read_status.xdc}}
+set_property used_in_implementation false [get_files {{D:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status.srcs/constrs_1/new/03_spi_flash_read_status.xdc}}]
 
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
+
+read_checkpoint -auto_incremental -incremental {D:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status.srcs/utils_1/imports/synth_1/top_spi_master_mode0.dcp}
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

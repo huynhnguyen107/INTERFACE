@@ -10,3 +10,9 @@
 # Journal file: D:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado\vivado.jou
 # Running On: LAPTOP-CHCSI1R5, OS: Windows, CPU Frequency: 3194 MHz, CPU Physical cores: 16, Host memory: 21319 MB
 #-----------------------------------------------------------
+start_gui
+open_project {D:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status.xpr}
+update_compile_order -fileset sources_1
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1

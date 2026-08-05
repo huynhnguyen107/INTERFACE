@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-| Date             : Tue Aug  4 11:34:11 2026
+| Date             : Wed Aug  5 11:44:49 2026
 | Host             : LAPTOP-CHCSI1R5 running 64-bit major release  (build 9200)
 | Command          : report_power -file top_spi_master_mode0_power_routed.rpt -pb top_spi_master_mode0_power_summary_routed.pb -rpx top_spi_master_mode0_power_routed.rpx
 | Design           : top_spi_master_mode0
@@ -30,7 +30,7 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.419        |
+| Total On-Chip Power (W)  | 0.420        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
 | Dynamic (W)              | 0.108        |
@@ -53,20 +53,20 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.006 |        5 |       --- |             --- |
-| CLB Logic                |     0.001 |     5176 |       --- |             --- |
-|   LUT as Logic           |    <0.001 |     1487 |    117120 |            1.27 |
-|   LUT as Shift Register  |    <0.001 |      141 |     57600 |            0.24 |
+| CLB Logic                |     0.001 |     5694 |       --- |             --- |
+|   LUT as Logic           |    <0.001 |     1583 |    117120 |            1.35 |
+|   LUT as Shift Register  |    <0.001 |      178 |     57600 |            0.31 |
 |   LUT as Distributed RAM |    <0.001 |       20 |     57600 |            0.03 |
-|   Register               |    <0.001 |     2740 |    234240 |            1.17 |
-|   CARRY8                 |    <0.001 |       31 |     14640 |            0.21 |
-|   Others                 |     0.000 |      309 |       --- |             --- |
-|   F7/F8 Muxes            |     0.000 |        4 |    117120 |           <0.01 |
-| Signals                  |    <0.001 |     3846 |       --- |             --- |
-| Block RAM                |    <0.001 |      1.5 |       144 |            1.04 |
+|   Register               |    <0.001 |     3016 |    234240 |            1.29 |
+|   CARRY8                 |    <0.001 |       34 |     14640 |            0.23 |
+|   Others                 |     0.000 |      329 |       --- |             --- |
+|   F7/F8 Muxes            |     0.000 |        3 |    117120 |           <0.01 |
+| Signals                  |    <0.001 |     4225 |       --- |             --- |
+| Block RAM                |     0.001 |      2.5 |       144 |            1.74 |
 | MMCM                     |     0.097 |        0 |       --- |             --- |
 | I/O                      |     0.001 |        9 |       189 |            4.76 |
 | Static Power             |     0.311 |          |           |                 |
-| Total                    |     0.419 |          |           |                 |
+| Total                    |     0.420 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -76,7 +76,7 @@ Table of Contents
 +-----------------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source          | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint          |       0.720 |     0.081 |       0.013 |      0.068 |       NA    | Unspecified | NA         |
+| Vccint          |       0.720 |     0.082 |       0.013 |      0.068 |       NA    | Unspecified | NA         |
 | Vccint_io       |       0.850 |     0.035 |       0.000 |      0.035 |       NA    | Unspecified | NA         |
 | Vccbram         |       0.850 |     0.001 |       0.000 |      0.001 |       NA    | Unspecified | NA         |
 | Vccaux          |       1.800 |     0.131 |       0.054 |      0.077 |       NA    | Unspecified | NA         |
@@ -171,9 +171,9 @@ Table of Contents
 |   dbg_hub                |     0.002 |
 |     inst                 |     0.002 |
 |       BSCANID.u_xsdbm_id |     0.002 |
-|   ila_0                  |     0.006 |
-|     inst                 |     0.006 |
-|       ila_core_inst      |     0.006 |
+|   ila_0                  |     0.007 |
+|     inst                 |     0.007 |
+|       ila_core_inst      |     0.007 |
 +--------------------------+-----------+
 
 

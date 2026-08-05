@@ -21,34 +21,36 @@
 
 
 module spi_master_mode0
-#(parameter CLK_DIV=50, BYTE_SEND=2)//100/(2*50)=1MHz
+#(parameter CLK_DIV=50)//100/(2*50)=1MHz
 	(	input clk,
 		input rst_n,
 		//data_in flow 
 		input start,
-		input [8*BYTE_SEND-1:0] data_in,
+		input [2:0] byte_transfer,
+		input [8*MAX_BYTE_SEND-1:0] data_in,
 		//data_out flow
 		output done,
 		output busy,
-		output reg [8*BYTE_SEND-1:0] data_out,
+		output reg [8*MAX_BYTE_SEND-1:0] data_out,
 		//MASTER-SLAVE SPI
 		output reg spi_clk, //1MHz
 		output reg spi_mosi, //master out
 		output reg spi_cs_n, //chip select
 		input  spi_miso //master in
     );
+	localparam MAX_BYTE_SEND = 3'd4;
 	localparam IDLE = 2'b00;
 	localparam INSE = 2'b01;
 	localparam TRAN = 2'b10;
 	localparam FINI = 2'b11;
 	reg d_start;
 	wire rasing_edge_start;
-	reg [8*BYTE_SEND-1:0] reg_data_in;
+	reg [8*MAX_BYTE_SEND-1:0] reg_data_in;
 	reg [1:0] state;
 	reg [1:0] next_state;
 	reg [$clog2(CLK_DIV)-1:0] cnt_clk;
-	reg [$clog2(8*BYTE_SEND):0] cnt_bit;
-	reg [8*BYTE_SEND-1:0] data_shift;
+	reg [$clog2(8*MAX_BYTE_SEND):0] cnt_bit;
+	reg [8*MAX_BYTE_SEND-1:0] data_shift;
 	
 	//state transition
 	always @(posedge clk) begin
@@ -69,7 +71,7 @@ module spi_master_mode0
 				next_state =  TRAN;
 			end
 			TRAN: begin
-				next_state =  ((cnt_bit==8*BYTE_SEND)&(cnt_clk==0)) ? FINI: TRAN;
+				next_state =  ((cnt_bit==8*byte_transfer)&(cnt_clk==0)) ? FINI: TRAN;
 			end
 			FINI: begin
 				next_state =  IDLE ;
@@ -105,19 +107,19 @@ module spi_master_mode0
 				data_out <= 0;
 				spi_cs_n <= 0;
 				data_shift <= reg_data_in;
-				spi_mosi <= reg_data_in[8*BYTE_SEND-1];
+				spi_mosi <= reg_data_in[8*MAX_BYTE_SEND-1];
 			end
 			else if (state==TRAN) begin
 				cnt_clk <= (cnt_clk==CLK_DIV-1) ?  0 : cnt_clk+1;
 				if (cnt_clk==CLK_DIV-1) begin
 					if (!spi_clk) begin//sample at spi_clk 0->1
 						spi_clk <= 1;
-						data_out <= {data_out[8*BYTE_SEND-2:0], spi_miso};
+						data_out <= {data_out[8*MAX_BYTE_SEND-2:0], spi_miso};
 					end
 					else if (spi_clk) begin//update at spi_clk 1->0
 						spi_clk <= 0;
-						spi_mosi <= data_shift[8*BYTE_SEND-2];
-						data_shift <= {data_shift[8*BYTE_SEND-2:0], 1'b0};
+						spi_mosi <= data_shift[8*MAX_BYTE_SEND-2];
+						data_shift <= {data_shift[8*MAX_BYTE_SEND-2:0], 1'b0};
 						cnt_bit <=  cnt_bit +1;
 					end
 				end	
