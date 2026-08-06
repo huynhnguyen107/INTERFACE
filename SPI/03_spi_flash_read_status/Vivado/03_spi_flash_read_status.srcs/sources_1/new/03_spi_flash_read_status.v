@@ -26,7 +26,7 @@ module spi_master_mode0
 		input rst_n,
 		//data_in flow 
 		input start,
-		input [2:0] byte_transfer,
+		input [3:0] byte_transfer,
 		input [8*MAX_BYTE_SEND-1:0] data_in,
 		//data_out flow
 		output done,
@@ -38,7 +38,7 @@ module spi_master_mode0
 		output reg spi_cs_n, //chip select
 		input  spi_miso //master in
     );
-	localparam MAX_BYTE_SEND = 3'd4;
+	localparam MAX_BYTE_SEND = 4'd10;
 	localparam IDLE = 2'b00;
 	localparam INSE = 2'b01;
 	localparam TRAN = 2'b10;

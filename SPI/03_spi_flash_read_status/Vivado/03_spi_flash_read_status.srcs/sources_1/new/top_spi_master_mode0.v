@@ -37,9 +37,9 @@ module top_spi_master_mode0(
 	wire clk_100mhz;
 	wire done;
 	wire busy;
-	wire [2: 0] byte_transfer;
-	wire [4*8-1: 0] data_in;
-	wire [4*8-1: 0] data_out;
+	wire [3: 0] byte_transfer;
+	wire [10*8-1: 0] data_in;
+	wire [10*8-1: 0] data_out;
 	
 	//clock100mhz
     clk_wiz_0 clk_wiz_0

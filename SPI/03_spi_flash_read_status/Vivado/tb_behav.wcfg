@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="999,995 ps"></ZoomStartTime>
+      <ZoomEndTime time="1,000,008 ps"></ZoomEndTime>
+      <Cursor1Time time="1,000,000 ps"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="187"></NameColumnWidth>
+      <ValueColumnWidth column_width="72"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="26" />
+   <wvobject fp_name="/tb/spi_master_mode0/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/spi_master_mode0/rst_n" type="logic">
+      <obj_property name="ElementShortName">rst_n</obj_property>
+      <obj_property name="ObjectShortName">rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/spi_master_mode0/start" type="logic">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/spi_master_mode0/byte_transfer" type="array">
+      <obj_property name="ElementShortName">byte_transfer[3:0]</obj_property>
+      <obj_property name="ObjectShortName">byte_transfer[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/spi_master_mode0/data_in" type="array">
+      <obj_property name="ElementShortName">data_in[15:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/spi_master_mode0/done" type="logic">
+      <obj_property name="ElementShortName">done</obj_property>
+      <obj_property name="ObjectShortName">done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/spi_master_mode0/busy" type="logic">
+      <obj_property name="ElementShortName">busy</obj_property>
+      <obj_property name="ObjectShortName">busy</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/spi_master_mode0/data_out" type="array">
+      <obj_property name="ElementShortName">data_out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/spi_master_mode0/spi_clk" type="logic">
+      <obj_property name="ElementShortName">spi_clk</obj_property>
+      <obj_property name="ObjectShortName">spi_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/spi_master_mode0/spi_mosi" type="logic">
+      <obj_property name="ElementShortName">spi_mosi</obj_property>
+      <obj_property name="ObjectShortName">spi_mosi</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/spi_master_mode0/spi_cs_n" type="logic">
+      <obj_property name="ElementShortName">spi_cs_n</obj_property>
+      <obj_property name="ObjectShortName">spi_cs_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/spi_master_mode0/spi_miso" type="logic">
+      <obj_property name="ElementShortName">spi_miso</obj_property>
+      <obj_property name="ObjectShortName">spi_miso</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/spi_master_mode0/d_start" type="logic">
+      <obj_property name="ElementShortName">d_start</obj_property>
+      <obj_property name="ObjectShortName">d_start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/spi_master_mode0/rasing_edge_start" type="logic">
+      <obj_property name="ElementShortName">rasing_edge_start</obj_property>
+      <obj_property name="ObjectShortName">rasing_edge_start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/spi_master_mode0/reg_data_in" type="array">
+      <obj_property name="ElementShortName">reg_data_in[15:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_data_in[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/spi_master_mode0/state" type="array">
+      <obj_property name="ElementShortName">state[1:0]</obj_property>
+      <obj_property name="ObjectShortName">state[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/spi_master_mode0/next_state" type="array">
+      <obj_property name="ElementShortName">next_state[1:0]</obj_property>
+      <obj_property name="ObjectShortName">next_state[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/spi_master_mode0/cnt_clk" type="array">
+      <obj_property name="ElementShortName">cnt_clk[25:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_clk[25:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/spi_master_mode0/cnt_bit" type="array">
+      <obj_property name="ElementShortName">cnt_bit[4:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_bit[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/spi_master_mode0/data_shift" type="array">
+      <obj_property name="ElementShortName">data_shift[15:0]</obj_property>
+      <obj_property name="ObjectShortName">data_shift[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/spi_master_mode0/CLK_DIV" type="array">
+      <obj_property name="ElementShortName">CLK_DIV[31:0]</obj_property>
+      <obj_property name="ObjectShortName">CLK_DIV[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/spi_master_mode0/MAX_BYTE_SEND" type="array">
+      <obj_property name="ElementShortName">MAX_BYTE_SEND[2:0]</obj_property>
+      <obj_property name="ObjectShortName">MAX_BYTE_SEND[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/spi_master_mode0/IDLE" type="array">
+      <obj_property name="ElementShortName">IDLE[1:0]</obj_property>
+      <obj_property name="ObjectShortName">IDLE[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/spi_master_mode0/INSE" type="array">
+      <obj_property name="ElementShortName">INSE[1:0]</obj_property>
+      <obj_property name="ObjectShortName">INSE[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/spi_master_mode0/TRAN" type="array">
+      <obj_property name="ElementShortName">TRAN[1:0]</obj_property>
+      <obj_property name="ObjectShortName">TRAN[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/spi_master_mode0/FINI" type="array">
+      <obj_property name="ElementShortName">FINI[1:0]</obj_property>
+      <obj_property name="ObjectShortName">FINI[1:0]</obj_property>
+   </wvobject>
+</wave_config>

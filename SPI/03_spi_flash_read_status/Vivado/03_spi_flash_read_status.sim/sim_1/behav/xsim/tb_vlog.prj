@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../03_spi_flash_read_status.gen/sources_1/ip/clk_wiz_0" \
+"../../../../03_spi_flash_read_status.srcs/sources_1/new/03_spi_flash_read_status.v" \
+"../../../../03_spi_flash_read_status.srcs/sim_1/new/tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

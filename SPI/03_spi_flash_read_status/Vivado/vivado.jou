@@ -16,3 +16,94 @@ update_compile_order -fileset sources_1
 reset_run impl_1
 launch_runs impl_1 -to_step write_bitstream -jobs 8
 wait_on_run impl_1
+set_property -dict [list \
+  CONFIG.C_NUM_PROBE_OUT {2} \
+  CONFIG.C_PROBE_OUT0_WIDTH {32} \
+  CONFIG.C_PROBE_OUT1_WIDTH {3} \
+] [get_ips vio_0]
+generate_target all [get_files  {{D:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status.srcs/sources_1/ip/vio_0/vio_0.xci}}]
+export_ip_user_files -of_objects [get_files {{D:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status.srcs/sources_1/ip/vio_0/vio_0.xci}}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{D:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status.srcs/sources_1/ip/vio_0/vio_0.xci}}] -directory {D:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status.ip_user_files/sim_scripts} -ip_user_files_dir {D:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status.ip_user_files} -ipstatic_source_dir {D:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status.cache/compile_simlib/modelsim} {questa=D:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status.cache/compile_simlib/questa} {riviera=D:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status.cache/compile_simlib/riviera} {activehdl=D:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list \
+  CONFIG.C_NUM_OF_PROBES {11} \
+  CONFIG.C_PROBE10_WIDTH {32} \
+  CONFIG.C_PROBE8_WIDTH {3} \
+  CONFIG.C_PROBE9_WIDTH {32} \
+] [get_ips ila_0]
+generate_target all [get_files  {{D:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status.srcs/sources_1/ip/ila_0/ila_0.xci}}]
+export_ip_user_files -of_objects [get_files {{D:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status.srcs/sources_1/ip/ila_0/ila_0.xci}}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{D:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status.srcs/sources_1/ip/ila_0/ila_0.xci}}] -directory {D:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status.ip_user_files/sim_scripts} -ip_user_files_dir {D:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status.ip_user_files} -ipstatic_source_dir {D:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status.cache/compile_simlib/modelsim} {questa=D:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status.cache/compile_simlib/questa} {riviera=D:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status.cache/compile_simlib/riviera} {activehdl=D:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property -dict [list \
+  CONFIG.C_PROBE_OUT0_WIDTH {80} \
+  CONFIG.C_PROBE_OUT1_WIDTH {4} \
+] [get_ips vio_0]
+generate_target all [get_files  {{D:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status.srcs/sources_1/ip/vio_0/vio_0.xci}}]
+export_ip_user_files -of_objects [get_files {{D:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status.srcs/sources_1/ip/vio_0/vio_0.xci}}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{D:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status.srcs/sources_1/ip/vio_0/vio_0.xci}}] -directory {D:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status.ip_user_files/sim_scripts} -ip_user_files_dir {D:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status.ip_user_files} -ipstatic_source_dir {D:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status.cache/compile_simlib/modelsim} {questa=D:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status.cache/compile_simlib/questa} {riviera=D:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status.cache/compile_simlib/riviera} {activehdl=D:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list \
+  CONFIG.C_PROBE10_WIDTH {80} \
+  CONFIG.C_PROBE8_WIDTH {4} \
+  CONFIG.C_PROBE9_WIDTH {80} \
+] [get_ips ila_0]
+generate_target all [get_files  {{D:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status.srcs/sources_1/ip/ila_0/ila_0.xci}}]
+export_ip_user_files -of_objects [get_files {{D:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status.srcs/sources_1/ip/ila_0/ila_0.xci}}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{D:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status.srcs/sources_1/ip/ila_0/ila_0.xci}}] -directory {D:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status.ip_user_files/sim_scripts} -ip_user_files_dir {D:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status.ip_user_files} -ipstatic_source_dir {D:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status.cache/compile_simlib/modelsim} {questa=D:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status.cache/compile_simlib/questa} {riviera=D:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status.cache/compile_simlib/riviera} {activehdl=D:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+launch_simulation
+source top_spi_master_mode0.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top spi_master_mode0 [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+relaunch_sim
+launch_simulation
+reset_simulation -simset sim_1 -mode behavioral
+launch_simulation
+close_sim
+launch_simulation
+source spi_master_mode0.tcl
+file mkdir D:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status.srcs/sim_1/new
+file mkdir D:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status.srcs/sim_1/new
+file mkdir D:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status.srcs/sim_1/new
+file mkdir D:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status.srcs/sim_1/new
+file mkdir D:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+file mkdir D:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status.srcs/sim_1/new
+file mkdir {D:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status.srcs/sim_1/new}
+close [ open {D:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status.srcs/sim_1/new/tb.v} w ]
+add_files -fileset sim_1 {{D:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/03_spi_flash_read_status.srcs/sim_1/new/tb.v}}
+update_compile_order -fileset sim_1
+close_sim
+launch_simulation
+source spi_master_mode0.tcl
+current_wave_config {Untitled 3}
+add_wave {{/spi_master_mode0/clk}} {{/spi_master_mode0/rst_n}} {{/spi_master_mode0/start}} {{/spi_master_mode0/byte_transfer}} {{/spi_master_mode0/data_in}} {{/spi_master_mode0/done}} {{/spi_master_mode0/busy}} {{/spi_master_mode0/data_out}} {{/spi_master_mode0/spi_clk}} {{/spi_master_mode0/spi_mosi}} {{/spi_master_mode0/spi_cs_n}} {{/spi_master_mode0/spi_miso}} {{/spi_master_mode0/d_start}} {{/spi_master_mode0/rasing_edge_start}} {{/spi_master_mode0/reg_data_in}} {{/spi_master_mode0/state}} {{/spi_master_mode0/next_state}} {{/spi_master_mode0/cnt_clk}} {{/spi_master_mode0/cnt_bit}} {{/spi_master_mode0/data_shift}} {{/spi_master_mode0/CLK_DIV}} {{/spi_master_mode0/MAX_BYTE_SEND}} {{/spi_master_mode0/IDLE}} {{/spi_master_mode0/INSE}} {{/spi_master_mode0/TRAN}} {{/spi_master_mode0/FINI}} 
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+close_sim
+launch_simulation
+source tb.tcl
+current_wave_config {Untitled 4}
+add_wave {{/tb/spi_master_mode0/clk}} {{/tb/spi_master_mode0/rst_n}} {{/tb/spi_master_mode0/start}} {{/tb/spi_master_mode0/byte_transfer}} {{/tb/spi_master_mode0/data_in}} {{/tb/spi_master_mode0/done}} {{/tb/spi_master_mode0/busy}} {{/tb/spi_master_mode0/data_out}} {{/tb/spi_master_mode0/spi_clk}} {{/tb/spi_master_mode0/spi_mosi}} {{/tb/spi_master_mode0/spi_cs_n}} {{/tb/spi_master_mode0/spi_miso}} {{/tb/spi_master_mode0/d_start}} {{/tb/spi_master_mode0/rasing_edge_start}} {{/tb/spi_master_mode0/reg_data_in}} {{/tb/spi_master_mode0/state}} {{/tb/spi_master_mode0/next_state}} {{/tb/spi_master_mode0/cnt_clk}} {{/tb/spi_master_mode0/cnt_bit}} {{/tb/spi_master_mode0/data_shift}} {{/tb/spi_master_mode0/CLK_DIV}} {{/tb/spi_master_mode0/MAX_BYTE_SEND}} {{/tb/spi_master_mode0/IDLE}} {{/tb/spi_master_mode0/INSE}} {{/tb/spi_master_mode0/TRAN}} {{/tb/spi_master_mode0/FINI}} 
+relaunch_sim
+save_wave_config {D:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/tb_behav.wcfg}
+add_files -fileset sim_1 -norecurse {{D:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/tb_behav.wcfg}}
+set_property xsim.view {{D:/FPGA/Vivaldo Project/INTERFACE/SPI/03_spi_flash_read_status/Vivado/tb_behav.wcfg}} [get_filesets sim_1]
+relaunch_sim
+relaunch_sim
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+close_sim
