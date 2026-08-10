@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../05_w25q64_controller.srcs/sources_1/new/spi_master_mode0.v" \
+"../../../../05_w25q64_controller.srcs/sources_1/new/w25q64_controller.v" \
+"../../../../05_w25q64_controller.srcs/sim_1/new/tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

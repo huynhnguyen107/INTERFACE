@@ -10,13 +10,13 @@ The project currently supports the following commands:
 
 | Opcode | Command | Result |
 |---|---|---|
-| `0x9F` | Read JEDEC ID | `EF 40 17` |
-| `0x05` | Read Status Register-1 | Successful |
-| `0x06` | Write Enable | WEL changes to `1` |
+| `0x9F` | Read JEDEC ID | `EF 40 17` | (4bytes)
+| `0x05` | Read Status Register-1 | Successful | (2bytes)
+| `0x06` | Write Enable | WEL changes to `1` | (1byte)
 | `0x04` | Write Disable | WEL changes to `0` |
-| `0x03` | Read Data | Successful |
-| `0x02` | Page Program | Successful |
-| `0x20` | Erase sector | Successful |
+| `0x03` | Read Data | Successful | (6bytes)
+| `0x02` | Page Program | Successful | (6bytes)
+| `0x20` | Erase sector | Successful | (3bytes)
 W25Q64 SPI NOR Flash feedback 
 Bit7 Bit6 Bit5 Bit4 Bit3 Bit2 Bit1 Bit0 
 SRP  SEC  TB  BP2   BP1  BP0  WEL  BUSY
@@ -54,4 +54,4 @@ READ AND Erase sector
 5. Send 0x20 (1 byte) +address (3 byte) → Erases the 4-KB sector from `0x001000` to `0x001FFF`
 6. Read 0x0500 (2 byte)       → Poll BUSY
 7. Wait until BUSY = 0 erase is complete
-8. Send 0x03 + address +dumpfile ((1+3+2) 2 byte to read data )  → Read and verify
+8. Send 0x03 + address +dumpfile ((1+3+2) 2 byte 0.2to read data )  → Read and verify
