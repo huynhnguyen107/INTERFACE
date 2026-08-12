@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<Checkpoint Version="19" Minor="0">
+	<BUILD_NUMBER Name="3671981"/>
+	<FULL_BUILD Name="SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022"/>
+	<PRODUCT Name="Vivado v2022.2 (64-bit)"/>
+	<Part Name="xck26-sfvc784-2LV-c"/>
+	<BoardPart Name="xilinx.com:kr260_som:part0:1.1"/>
+	<Top Name="top_w25q64_controller"/>
+	<DisableAutoIOBuffers Name="0"/>
+	<OutOfContext Name="0"/>
+	<RunGenerated Name="1"/>
+	<HDPlatform Name="0"/>
+	<XPMLIBRARY Name="XPM_CDC"/>
+	<XPMLIBRARY Name="XPM_MEMORY"/>
+	<File Type="VERILOG_STUB" Name="top_w25q64_controller_stub.v" ModTime="1786551234"/>
+	<File Type="VHDL_STUB" Name="top_w25q64_controller_stub.vhdl" ModTime="1786551234"/>
+	<File Type="SHAPE" Name="top_w25q64_controller.shape" ModTime="1786551234"/>
+	<File Type="XN" Name="top_w25q64_controller.xn" ModTime="1786551234"/>
+	<File Type="EDIF" Name="top_w25q64_controller.edf" ModTime="1786551234"/>
+	<File Type="INCR" Name="top_w25q64_controller.incr" ModTime="1786551234"/>
+	<File Type="RDA" Name="top_w25q64_controller.rda" ModTime="1786551234"/>
+	<File Type="JSON_RDA" Name="top_w25q64_controller_rda.json" ModTime="1786551234"/>
+	<File Type="WDF" Name="top_w25q64_controller.wdf" ModTime="1786551234"/>
+	<File Type="SYNTH" Name="top_w25q64_controller.synth" ModTime="1786551234"/>
+</Checkpoint>
+

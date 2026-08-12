@@ -38,6 +38,7 @@ module spi_master_mode0
 		output reg spi_cs_n, //chip select
 		input  spi_miso //master in
     );
+//	localparam MAX_BYTE_SEND = 4'd10;
 	localparam IDLE = 2'b00;
 	localparam INSE = 2'b01;
 	localparam TRAN = 2'b10;
@@ -71,7 +72,7 @@ module spi_master_mode0
 				next_state =  TRAN;
 			end
 			TRAN: begin
-				next_state =  ((cnt_bit==8*reg_byte_transfer)&(cnt_clk==0)) ? FINI: TRAN;
+				next_state =  ((cnt_bit==(reg_byte_transfer<<3))&(cnt_clk==0)) ? FINI: TRAN;
 			end
 			FINI: begin
 				next_state =  IDLE ;

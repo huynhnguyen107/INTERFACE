@@ -30,9 +30,9 @@ module w25q64_controller #(parameter CLK_DIV=50000000, MAX_BYTE=10)
 	input [23:0] address,
 	input [15:0] data_in,
 	//read data
-	output [15:0] read_data,
-	output [23:0] jedec_id,
-	output [7:0] status_reg,
+	output reg [15:0] o_read_data,
+	output reg [23:0] o_jedec_id,
+	output reg [7:0] o_status_reg,
 	output reg verify_led,
 	//out interface
 	output spi_clk, //1s
@@ -96,9 +96,9 @@ module w25q64_controller #(parameter CLK_DIV=50000000, MAX_BYTE=10)
 	always @(*) begin
 		case (state)
 			IDLE: next_state = (!start)&(!spi_busy) ?  IDLE : command;
-			JEDEC_ID: next_state = FINISH;
-			STATUS_READ: next_state = FINISH;
-			DATA_READ: next_state = FINISH;
+			JEDEC_ID: next_state = spi_done ? FINISH: JEDEC_ID;
+			STATUS_READ: next_state = spi_done ? FINISH: STATUS_READ;
+			DATA_READ: next_state = spi_done ? FINISH: DATA_READ;
 			PAGE_PRO: next_state = done_page_pro ?  FINISH : PAGE_PRO;
 			SEC_ERASE: next_state = done_sec_erase ?  FINISH : SEC_ERASE;
 			FINISH: next_state = IDLE;
@@ -118,25 +118,37 @@ module w25q64_controller #(parameter CLK_DIV=50000000, MAX_BYTE=10)
 			r_spi_data_out <=0;
 			//out
 			verify_ok <=0;
+			o_read_data <=0;
+			o_jedec_id <=0;
+			o_status_reg <=0;
 		end
 		else begin
 			//JEDEC_ID
 			if (state==JEDEC_ID) begin
+				o_read_data <=0;
+				o_jedec_id <=0;
+				o_status_reg <=0;
 				spi_start <=1;
 				spi_byte_transfer <=4;
 				spi_data_in <={8'h9F, {{MAX_BYTE*8-8}{1'b0}}};
+				if (spi_done)
+					r_spi_data_out <= spi_data_out;
 			end
 			//STATUS_READ
 			else if (state==STATUS_READ) begin
 				spi_start <=1;
 				spi_byte_transfer <=2;
 				spi_data_in <={8'h05, {{MAX_BYTE*8-8}{1'b0}}};
+				if (spi_done)
+					r_spi_data_out <= spi_data_out;
 			end
 			//DATA_READ
 			else if (state==DATA_READ) begin
 					spi_start <=1;
 					spi_byte_transfer <=6;
 					spi_data_in <={8'h03,r_address, 16'd0, {{MAX_BYTE*8-8*6}{1'b0}}};
+					if (spi_done)
+						r_spi_data_out <= spi_data_out;
 				end
 			//PAGE_PRO
 			else if (state==PAGE_PRO) begin
@@ -243,6 +255,10 @@ module w25q64_controller #(parameter CLK_DIV=50000000, MAX_BYTE=10)
 				done_sec_erase <= 0;
 				counter <=0;
 				verify_ok <=0;
+				//capture
+				o_read_data <= r_command==DATA_READ ? r_spi_data_out[15:0] : 0;
+				o_jedec_id <= r_command==JEDEC_ID ? r_spi_data_out[23:0]: 0;
+				o_status_reg <=r_command==STATUS_READ ? r_spi_data_out[7:0] : 0;
 			end
 		end
 	end
@@ -268,4 +284,6 @@ module w25q64_controller #(parameter CLK_DIV=50000000, MAX_BYTE=10)
 				
 		end
 	end
+
+
 endmodule

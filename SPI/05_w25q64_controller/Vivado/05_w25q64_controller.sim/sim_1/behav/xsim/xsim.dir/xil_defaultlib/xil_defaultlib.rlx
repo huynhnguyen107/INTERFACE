@@ -2,7 +2,8 @@
 2020.2
 Oct 14 2022
 05:20:55
+D:/FPGA/Vivaldo Project/INTERFACE/SPI/05_w25q64_controller/Vivado/05_w25q64_controller.gen/sources_1/ip/ila_1/sim/ila_1.v,1786547953,verilog,,D:/FPGA/Vivaldo Project/INTERFACE/SPI/05_w25q64_controller/Vivado/05_w25q64_controller.srcs/sources_1/new/spi_master_mode0.v,,ila_1,,,../../../../05_w25q64_controller.gen/sources_1/ip/clk_wiz_0,,,,,
 D:/FPGA/Vivaldo Project/INTERFACE/SPI/05_w25q64_controller/Vivado/05_w25q64_controller.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,,,,,,,
-D:/FPGA/Vivaldo Project/INTERFACE/SPI/05_w25q64_controller/Vivado/05_w25q64_controller.srcs/sim_1/new/tb.v,1786377988,verilog,,,,tb,,,,,,,,
-D:/FPGA/Vivaldo Project/INTERFACE/SPI/05_w25q64_controller/Vivado/05_w25q64_controller.srcs/sources_1/new/spi_master_mode0.v,1786377305,verilog,,D:/FPGA/Vivaldo Project/INTERFACE/SPI/05_w25q64_controller/Vivado/05_w25q64_controller.srcs/sources_1/new/w25q64_controller.v,,spi_master_mode0,,,,,,,,
-D:/FPGA/Vivaldo Project/INTERFACE/SPI/05_w25q64_controller/Vivado/05_w25q64_controller.srcs/sources_1/new/w25q64_controller.v,1786379310,verilog,,D:/FPGA/Vivaldo Project/INTERFACE/SPI/05_w25q64_controller/Vivado/05_w25q64_controller.srcs/sim_1/new/tb.v,,w25q64_controller,,,,,,,,
+D:/FPGA/Vivaldo Project/INTERFACE/SPI/05_w25q64_controller/Vivado/05_w25q64_controller.srcs/sim_1/new/tb.v,1786550900,verilog,,,,tb,,,../../../../05_w25q64_controller.gen/sources_1/ip/clk_wiz_0,,,,,
+D:/FPGA/Vivaldo Project/INTERFACE/SPI/05_w25q64_controller/Vivado/05_w25q64_controller.srcs/sources_1/new/spi_master_mode0.v,1786540700,verilog,,D:/FPGA/Vivaldo Project/INTERFACE/SPI/05_w25q64_controller/Vivado/05_w25q64_controller.srcs/sources_1/new/w25q64_controller.v,,spi_master_mode0,,,../../../../05_w25q64_controller.gen/sources_1/ip/clk_wiz_0,,,,,
+D:/FPGA/Vivaldo Project/INTERFACE/SPI/05_w25q64_controller/Vivado/05_w25q64_controller.srcs/sources_1/new/w25q64_controller.v,1786548014,verilog,,D:/FPGA/Vivaldo Project/INTERFACE/SPI/05_w25q64_controller/Vivado/05_w25q64_controller.srcs/sim_1/new/tb.v,,w25q64_controller,,,../../../../05_w25q64_controller.gen/sources_1/ip/clk_wiz_0,,,,,

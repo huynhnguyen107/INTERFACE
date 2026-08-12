@@ -41,12 +41,12 @@ module tb(
 	wire spi_cs_n; //chip selec n
 	reg spi_miso; //master in
 	//status
-	wire  done; //done_led
-	wire  busy; //busy_led
-	
+	wire  done_led; //done_led
+	wire  busy_led; //busy_led
+	integer i=0;
 	//call instance
 	w25q64_controller #(50, 10) w25q64_controller (clk, rst_n, start, command, address, data_in,
-						read_data, jedec_id, status_reg, verify_ok, spi_clk, spi_mosi, spi_cs_n, spi_miso, done, busy);
+						read_data, jedec_id, status_reg, verify_ok, spi_clk, spi_mosi, spi_cs_n, spi_miso, done_led, busy_led);
 	//create reset_n and initial others
 	initial begin
 		rst_n =0;
@@ -72,18 +72,22 @@ module tb(
 		end
 		@(posedge clk) begin
 			start <=1;
-			command <=3'd5;
+			command <=3'd1;
 			address <=24'h001000;
 			data_in <=16'h1070;
-			spi_miso <=spi_mosi;
+			spi_miso <=1;
 		end
 		@(posedge clk) begin
 			start <=0;
 			command <=3'd0;
 			address <=24'h001000;
 			data_in <=16'h1070;
-			spi_miso <=0;
+			spi_miso <=1;
 		end
-	
+		for (i=0;i<1000000000;i=i+1) begin
+			@(posedge clk) begin
+				spi_miso <=1;
+			end
+		end
 	end
 endmodule
