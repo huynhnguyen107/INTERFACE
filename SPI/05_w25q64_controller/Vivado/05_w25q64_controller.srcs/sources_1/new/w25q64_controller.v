@@ -215,8 +215,8 @@ module w25q64_controller #(parameter CLK_DIV=50000000, MAX_BYTE=10)
 					//sector erase
 					else if (counter==1) begin
 						spi_start <=1;
-						spi_byte_transfer <=3;
-						spi_data_in <={8'h20,r_address,{{MAX_BYTE*8-8*3}{1'b0}}};
+						spi_byte_transfer <=4;
+						spi_data_in <={8'h20,r_address,{{MAX_BYTE*8-8*4}{1'b0}}};
 					end
 					// status read
 					else if (counter==2) begin
@@ -233,12 +233,12 @@ module w25q64_controller #(parameter CLK_DIV=50000000, MAX_BYTE=10)
 						//read-data
 							spi_start <=1;
 							spi_byte_transfer <=6;
-							spi_data_in <={8'h03,r_address, 16'd0};
+							spi_data_in <={8'h03,r_address, 16'd0, {{MAX_BYTE*8-8*6}{1'b0}}};
 						end
 					end
 					//VERIFICATION
 					else if (counter==4) begin
-						if (r_spi_data_out[15:0]==16'hFF) begin
+						if (r_spi_data_out[15:0]==16'hFFFF) begin
 							verify_ok <=1;
 						end
 						done_sec_erase <=1;
@@ -256,7 +256,7 @@ module w25q64_controller #(parameter CLK_DIV=50000000, MAX_BYTE=10)
 				counter <=0;
 				verify_ok <=0;
 				//capture
-				o_read_data <= r_command==DATA_READ ? r_spi_data_out[15:0] : 0;
+				o_read_data <= (r_command==DATA_READ)|(r_command==PAGE_PRO)|(r_command==SEC_ERASE) ? r_spi_data_out[15:0] : 0;
 				o_jedec_id <= r_command==JEDEC_ID ? r_spi_data_out[23:0]: 0;
 				o_status_reg <=r_command==STATUS_READ ? r_spi_data_out[7:0] : 0;
 			end
@@ -285,5 +285,30 @@ module w25q64_controller #(parameter CLK_DIV=50000000, MAX_BYTE=10)
 		end
 	end
 
+	//debug
+	wire cnt0,cnt1,cnt2,cnt3,cnt4;
+	assign cnt0 = spi_done&counter==0;
+	assign cnt1 = spi_done&counter==1;
+	assign cnt2 = spi_done&counter==2;
+	assign cnt3 = spi_done&counter==3;
+	assign cnt4 = spi_done&counter==4;
+	ila_1 ila_1 (
+		.clk(clk), // input wire clk
+
+
+		.probe0(counter), // input wire [3:0]  probe0  
+		.probe1(state), // input wire [2:0]  probe1 
+		.probe2(spi_done), // input wire [0:0]  probe2 
+		.probe3(r_spi_data_out), // input wire [79:0]  probe3
+		.probe4(cnt0), // input wire [0:0]  probe4
+		.probe5(cnt1), // input wire [0:0]  probe5
+		.probe6(cnt2), // input wire [0:0]  probe6
+		.probe7(cnt3), // input wire [0:0]  probe7
+		.probe8(cnt4), // input wire [0:0]  probe8
+		.probe9(spi_start), // input wire [0:0]  probe9
+		.probe10(spi_byte_transfer), // input wire [3:0]  probe10
+		.probe11(spi_data_in), // input wire [79:0]  probe11
+		.probe12(spi_data_out) // input wire [79:0]  probe12
+	);
 
 endmodule

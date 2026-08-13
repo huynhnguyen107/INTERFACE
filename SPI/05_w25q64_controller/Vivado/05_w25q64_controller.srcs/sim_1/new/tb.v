@@ -72,21 +72,21 @@ module tb(
 		end
 		@(posedge clk) begin
 			start <=1;
-			command <=3'd1;
+			command <=3'd4;
 			address <=24'h001000;
-			data_in <=16'h1070;
+			data_in <=16'h5555;
 			spi_miso <=1;
 		end
 		@(posedge clk) begin
 			start <=0;
 			command <=3'd0;
 			address <=24'h001000;
-			data_in <=16'h1070;
+			data_in <=16'h5555;
 			spi_miso <=1;
 		end
 		for (i=0;i<1000000000;i=i+1) begin
 			@(posedge clk) begin
-				spi_miso <=1;
+				spi_miso <=i[2];
 			end
 		end
 	end

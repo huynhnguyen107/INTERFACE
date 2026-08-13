@@ -94,19 +94,25 @@ read_verilog -library xil_defaultlib {
   {D:/FPGA/Vivaldo Project/INTERFACE/SPI/05_w25q64_controller/Vivado/05_w25q64_controller.srcs/sources_1/new/w25q64_controller.v}
   {D:/FPGA/Vivaldo Project/INTERFACE/SPI/05_w25q64_controller/Vivado/05_w25q64_controller.srcs/sources_1/new/top_w25q64_controller.v}
 }
-read_ip -quiet {{d:/FPGA/Vivaldo Project/INTERFACE/SPI/05_w25q64_controller/Vivado/05_w25q64_controller.srcs/sources_1/ip/ila_0/ila_0.xci}}
+read_ip -quiet {{D:/FPGA/Vivaldo Project/INTERFACE/SPI/05_w25q64_controller/Vivado/05_w25q64_controller.srcs/sources_1/ip/ila_0/ila_0.xci}}
 set_property used_in_synthesis false [get_files -all {{d:/FPGA/Vivaldo Project/INTERFACE/SPI/05_w25q64_controller/Vivado/05_w25q64_controller.gen/sources_1/ip/ila_0/ila_v6_2/constraints/ila_impl.xdc}}]
 set_property used_in_implementation false [get_files -all {{d:/FPGA/Vivaldo Project/INTERFACE/SPI/05_w25q64_controller/Vivado/05_w25q64_controller.gen/sources_1/ip/ila_0/ila_v6_2/constraints/ila_impl.xdc}}]
 set_property used_in_implementation false [get_files -all {{d:/FPGA/Vivaldo Project/INTERFACE/SPI/05_w25q64_controller/Vivado/05_w25q64_controller.gen/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc}}]
 set_property used_in_implementation false [get_files -all {{d:/FPGA/Vivaldo Project/INTERFACE/SPI/05_w25q64_controller/Vivado/05_w25q64_controller.gen/sources_1/ip/ila_0/ila_0_ooc.xdc}}]
 
-read_ip -quiet {{d:/FPGA/Vivaldo Project/INTERFACE/SPI/05_w25q64_controller/Vivado/05_w25q64_controller.srcs/sources_1/ip/vio_0/vio_0.xci}}
+read_ip -quiet {{D:/FPGA/Vivaldo Project/INTERFACE/SPI/05_w25q64_controller/Vivado/05_w25q64_controller.srcs/sources_1/ip/vio_0/vio_0.xci}}
 set_property used_in_implementation false [get_files -all {{d:/FPGA/Vivaldo Project/INTERFACE/SPI/05_w25q64_controller/Vivado/05_w25q64_controller.gen/sources_1/ip/vio_0/vio_0.xdc}}]
 
-read_ip -quiet {{d:/FPGA/Vivaldo Project/INTERFACE/SPI/05_w25q64_controller/Vivado/05_w25q64_controller.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci}}
+read_ip -quiet {{D:/FPGA/Vivaldo Project/INTERFACE/SPI/05_w25q64_controller/Vivado/05_w25q64_controller.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci}}
 set_property used_in_implementation false [get_files -all {{d:/FPGA/Vivaldo Project/INTERFACE/SPI/05_w25q64_controller/Vivado/05_w25q64_controller.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc}}]
 set_property used_in_implementation false [get_files -all {{d:/FPGA/Vivaldo Project/INTERFACE/SPI/05_w25q64_controller/Vivado/05_w25q64_controller.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc}}]
 set_property used_in_implementation false [get_files -all {{d:/FPGA/Vivaldo Project/INTERFACE/SPI/05_w25q64_controller/Vivado/05_w25q64_controller.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc}}]
+
+read_ip -quiet {{d:/FPGA/Vivaldo Project/INTERFACE/SPI/05_w25q64_controller/Vivado/05_w25q64_controller.srcs/sources_1/ip/ila_1/ila_1.xci}}
+set_property used_in_synthesis false [get_files -all {{d:/FPGA/Vivaldo Project/INTERFACE/SPI/05_w25q64_controller/Vivado/05_w25q64_controller.gen/sources_1/ip/ila_1/ila_v6_2/constraints/ila_impl.xdc}}]
+set_property used_in_implementation false [get_files -all {{d:/FPGA/Vivaldo Project/INTERFACE/SPI/05_w25q64_controller/Vivado/05_w25q64_controller.gen/sources_1/ip/ila_1/ila_v6_2/constraints/ila_impl.xdc}}]
+set_property used_in_implementation false [get_files -all {{d:/FPGA/Vivaldo Project/INTERFACE/SPI/05_w25q64_controller/Vivado/05_w25q64_controller.gen/sources_1/ip/ila_1/ila_v6_2/constraints/ila.xdc}}]
+set_property used_in_implementation false [get_files -all {{d:/FPGA/Vivaldo Project/INTERFACE/SPI/05_w25q64_controller/Vivado/05_w25q64_controller.gen/sources_1/ip/ila_1/ila_1_ooc.xdc}}]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being

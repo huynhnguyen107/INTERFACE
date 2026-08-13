@@ -4,6 +4,10 @@ Running: D:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 1 for port 'probe0' [D:/FPGA/Vivaldo Project/INTERFACE/SPI/05_w25q64_controller/Vivado/05_w25q64_controller.srcs/sources_1/new/w25q64_controller.v:293]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'probe1' [D:/FPGA/Vivaldo Project/INTERFACE/SPI/05_w25q64_controller/Vivado/05_w25q64_controller.srcs/sources_1/new/w25q64_controller.v:294]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 80 for port 'probe2' [D:/FPGA/Vivaldo Project/INTERFACE/SPI/05_w25q64_controller/Vivado/05_w25q64_controller.srcs/sources_1/new/w25q64_controller.v:295]
+WARNING: [VRFC 10-5021] port 'probe4' is not connected on this instance [D:/FPGA/Vivaldo Project/INTERFACE/SPI/05_w25q64_controller/Vivado/05_w25q64_controller.srcs/sources_1/new/w25q64_controller.v:289]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis

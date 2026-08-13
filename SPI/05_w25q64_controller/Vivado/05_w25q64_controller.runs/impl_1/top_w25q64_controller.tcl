@@ -139,9 +139,10 @@ OPTRACE "set parameters" START { }
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
   add_files -quiet {{D:/FPGA/Vivaldo Project/INTERFACE/SPI/05_w25q64_controller/Vivado/05_w25q64_controller.runs/synth_1/top_w25q64_controller.dcp}}
-  read_ip -quiet {{d:/FPGA/Vivaldo Project/INTERFACE/SPI/05_w25q64_controller/Vivado/05_w25q64_controller.srcs/sources_1/ip/ila_0/ila_0.xci}}
-  read_ip -quiet {{d:/FPGA/Vivaldo Project/INTERFACE/SPI/05_w25q64_controller/Vivado/05_w25q64_controller.srcs/sources_1/ip/vio_0/vio_0.xci}}
-  read_ip -quiet {{d:/FPGA/Vivaldo Project/INTERFACE/SPI/05_w25q64_controller/Vivado/05_w25q64_controller.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci}}
+  read_ip -quiet {{D:/FPGA/Vivaldo Project/INTERFACE/SPI/05_w25q64_controller/Vivado/05_w25q64_controller.srcs/sources_1/ip/ila_0/ila_0.xci}}
+  read_ip -quiet {{D:/FPGA/Vivaldo Project/INTERFACE/SPI/05_w25q64_controller/Vivado/05_w25q64_controller.srcs/sources_1/ip/vio_0/vio_0.xci}}
+  read_ip -quiet {{D:/FPGA/Vivaldo Project/INTERFACE/SPI/05_w25q64_controller/Vivado/05_w25q64_controller.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci}}
+  read_ip -quiet {{d:/FPGA/Vivaldo Project/INTERFACE/SPI/05_w25q64_controller/Vivado/05_w25q64_controller.srcs/sources_1/ip/ila_1/ila_1.xci}}
 OPTRACE "read constraints: implementation" START { }
   read_xdc {{D:/FPGA/Vivaldo Project/INTERFACE/SPI/05_w25q64_controller/Vivado/05_w25q64_controller.srcs/constrs_1/new/w25q64_controller.xdc}}
 OPTRACE "read constraints: implementation" END { }
