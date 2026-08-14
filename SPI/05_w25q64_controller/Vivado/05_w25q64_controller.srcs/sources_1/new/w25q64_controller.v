@@ -285,30 +285,6 @@ module w25q64_controller #(parameter CLK_DIV=50000000, MAX_BYTE=10)
 		end
 	end
 
-	//debug
-	wire cnt0,cnt1,cnt2,cnt3,cnt4;
-	assign cnt0 = spi_done&counter==0;
-	assign cnt1 = spi_done&counter==1;
-	assign cnt2 = spi_done&counter==2;
-	assign cnt3 = spi_done&counter==3;
-	assign cnt4 = spi_done&counter==4;
-	ila_1 ila_1 (
-		.clk(clk), // input wire clk
 
-
-		.probe0(counter), // input wire [3:0]  probe0  
-		.probe1(state), // input wire [2:0]  probe1 
-		.probe2(spi_done), // input wire [0:0]  probe2 
-		.probe3(r_spi_data_out), // input wire [79:0]  probe3
-		.probe4(cnt0), // input wire [0:0]  probe4
-		.probe5(cnt1), // input wire [0:0]  probe5
-		.probe6(cnt2), // input wire [0:0]  probe6
-		.probe7(cnt3), // input wire [0:0]  probe7
-		.probe8(cnt4), // input wire [0:0]  probe8
-		.probe9(spi_start), // input wire [0:0]  probe9
-		.probe10(spi_byte_transfer), // input wire [3:0]  probe10
-		.probe11(spi_data_in), // input wire [79:0]  probe11
-		.probe12(spi_data_out) // input wire [79:0]  probe12
-	);
 
 endmodule

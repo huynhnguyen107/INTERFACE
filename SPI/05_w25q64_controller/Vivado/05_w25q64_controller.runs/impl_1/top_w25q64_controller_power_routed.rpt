@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-| Date             : Thu Aug 13 12:22:40 2026
+| Date             : Thu Aug 13 12:40:03 2026
 | Host             : LAPTOP-CHCSI1R5 running 64-bit major release  (build 9200)
 | Command          : report_power -file top_w25q64_controller_power_routed.rpt -pb top_w25q64_controller_power_summary_routed.pb -rpx top_w25q64_controller_power_routed.rpx
 | Design           : top_w25q64_controller
@@ -30,11 +30,11 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.434        |
+| Total On-Chip Power (W)  | 0.422        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.122        |
-| Device Static (W)        | 0.312        |
+| Dynamic (W)              | 0.110        |
+| Device Static (W)        | 0.311        |
 | Effective TJA (C/W)      | 2.3          |
 | Max Ambient (C)          | 84.0         |
 | Junction Temperature (C) | 26.0         |
@@ -52,21 +52,21 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.012 |        5 |       --- |             --- |
-| CLB Logic                |     0.003 |    12181 |       --- |             --- |
-|   LUT as Logic           |     0.002 |     3256 |    117120 |            2.78 |
-|   LUT as Shift Register  |     0.001 |      572 |     57600 |            0.99 |
-|   Register               |    <0.001 |     6377 |    234240 |            2.72 |
+| Clocks                   |     0.008 |        5 |       --- |             --- |
+| CLB Logic                |     0.002 |     6593 |       --- |             --- |
+|   LUT as Logic           |    <0.001 |     1815 |    117120 |            1.55 |
+|   LUT as Shift Register  |    <0.001 |      210 |     57600 |            0.36 |
 |   LUT as Distributed RAM |    <0.001 |       20 |     57600 |            0.03 |
-|   CARRY8                 |    <0.001 |       74 |     14640 |            0.51 |
-|   Others                 |     0.000 |      644 |       --- |             --- |
-|   F7/F8 Muxes            |     0.000 |       26 |    117120 |            0.02 |
-| Signals                  |     0.002 |     8904 |       --- |             --- |
-| Block RAM                |     0.005 |     10.5 |       144 |            7.29 |
+|   Register               |    <0.001 |     3530 |    234240 |            1.51 |
+|   CARRY8                 |    <0.001 |       38 |     14640 |            0.26 |
+|   Others                 |     0.000 |      368 |       --- |             --- |
+|   F7/F8 Muxes            |     0.000 |        3 |    117120 |           <0.01 |
+| Signals                  |     0.001 |     4931 |       --- |             --- |
+| Block RAM                |     0.002 |        3 |       144 |            2.08 |
 | MMCM                     |     0.097 |        0 |       --- |             --- |
-| I/O                      |     0.002 |        9 |       189 |            4.76 |
-| Static Power             |     0.312 |          |           |                 |
-| Total                    |     0.434 |          |           |                 |
+| I/O                      |     0.001 |        9 |       189 |            4.76 |
+| Static Power             |     0.311 |          |           |                 |
+| Total                    |     0.422 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -76,9 +76,9 @@ Table of Contents
 +-----------------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source          | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint          |       0.720 |     0.099 |       0.031 |      0.068 |       NA    | Unspecified | NA         |
+| Vccint          |       0.720 |     0.084 |       0.016 |      0.068 |       NA    | Unspecified | NA         |
 | Vccint_io       |       0.850 |     0.035 |       0.000 |      0.035 |       NA    | Unspecified | NA         |
-| Vccbram         |       0.850 |     0.002 |       0.001 |      0.001 |       NA    | Unspecified | NA         |
+| Vccbram         |       0.850 |     0.001 |       0.000 |      0.001 |       NA    | Unspecified | NA         |
 | Vccaux          |       1.800 |     0.131 |       0.054 |      0.077 |       NA    | Unspecified | NA         |
 | Vccaux_io       |       1.800 |     0.031 |       0.000 |      0.031 |       NA    | Unspecified | NA         |
 | Vcco33          |       3.300 |     0.007 |       0.000 |      0.007 |       NA    | Unspecified | NA         |
@@ -165,18 +165,16 @@ Table of Contents
 +--------------------------+-----------+
 | Name                     | Power (W) |
 +--------------------------+-----------+
-| top_w25q64_controller    |     0.122 |
+| top_w25q64_controller    |     0.110 |
 |   clk_wiz_0              |     0.097 |
 |     inst                 |     0.097 |
 |   dbg_hub                |     0.002 |
 |     inst                 |     0.002 |
 |       BSCANID.u_xsdbm_id |     0.002 |
-|   ila_0                  |     0.007 |
-|     inst                 |     0.007 |
-|       ila_core_inst      |     0.007 |
-|   w25q64_controller      |     0.013 |
-|     ila_1                |     0.011 |
-|       inst               |     0.011 |
+|   ila_0                  |     0.008 |
+|     inst                 |     0.008 |
+|       ila_core_inst      |     0.008 |
+|   w25q64_controller      |     0.001 |
 +--------------------------+-----------+
 
 
