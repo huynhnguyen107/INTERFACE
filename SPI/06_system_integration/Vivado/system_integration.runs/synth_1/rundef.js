@@ -23,7 +23,7 @@ eval( EAInclude(ISEJScriptLib) );
 
 
 ISEStep( "vivado",
-         "-log w25q64_controller.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source w25q64_controller.tcl" );
+         "-log system_integration_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_integration_wrapper.tcl" );
 
 
 

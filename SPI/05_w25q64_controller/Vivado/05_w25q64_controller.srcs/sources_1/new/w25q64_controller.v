@@ -54,6 +54,8 @@ module w25q64_controller #(parameter CLK_DIV=50000000, MAX_BYTE=10)
 	localparam SEC_ERASE=3'd5;
 	localparam FINISH=3'd6;
 	//register input
+	reg  d_start;
+	wire  rasing_start;
 	reg [2:0] r_command;
 	reg [23:0] r_address;
 	reg [15:0] r_data_in;
@@ -79,12 +81,14 @@ module w25q64_controller #(parameter CLK_DIV=50000000, MAX_BYTE=10)
 	always @(posedge clk) begin
 		if(!rst_n) begin
 			state <= 0;
+			d_start <= 0;
 			r_command <= 0;
 			r_address <= 0;
 			r_data_in <= 0;
 		end
 		else begin
 			state <= next_state;
+			d_start <= start;
 			if (start) begin
 				r_command <= command;
 				r_address <= address;
@@ -92,10 +96,11 @@ module w25q64_controller #(parameter CLK_DIV=50000000, MAX_BYTE=10)
 			end
 		end
 	end
+	assign rasing_start =  start&(!d_start);
 	//state machine
 	always @(*) begin
 		case (state)
-			IDLE: next_state = (start)&(!spi_busy) ?  command: IDLE;
+			IDLE: next_state = (rasing_start)&(!spi_busy) ?  command: IDLE;
 			JEDEC_ID: next_state = spi_done ? FINISH: JEDEC_ID;
 			STATUS_READ: next_state = spi_done ? FINISH: STATUS_READ;
 			DATA_READ: next_state = spi_done ? FINISH: DATA_READ;

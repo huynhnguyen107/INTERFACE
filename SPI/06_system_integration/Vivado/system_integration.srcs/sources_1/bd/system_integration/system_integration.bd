@@ -14,9 +14,9 @@
       "zynq_ultra_ps_e_0": "",
       "proc_sys_reset_0": "",
       "smartconnect_0": "",
-      "w25q64_controller_0": "",
       "axi_w25q64_0": "",
-      "ila_0": ""
+      "ila_0": "",
+      "w25q64_controller_0": ""
     },
     "ports": {
       "spi_clk": {
@@ -235,6 +235,44 @@
           }
         }
       },
+      "axi_w25q64_0": {
+        "vlnv": "xilinx.com:user:axi_w25q64:1.0",
+        "xci_name": "system_integration_axi_w25q64_0_0",
+        "xci_path": "ip\\system_integration_axi_w25q64_0_0\\system_integration_axi_w25q64_0_0.xci",
+        "inst_hier_path": "axi_w25q64_0"
+      },
+      "ila_0": {
+        "vlnv": "xilinx.com:ip:ila:6.2",
+        "xci_name": "system_integration_ila_0_0",
+        "xci_path": "ip\\system_integration_ila_0_0\\system_integration_ila_0_0.xci",
+        "inst_hier_path": "ila_0",
+        "parameters": {
+          "C_MONITOR_TYPE": {
+            "value": "Native"
+          },
+          "C_NUM_OF_PROBES": {
+            "value": "14"
+          },
+          "C_PROBE1_WIDTH": {
+            "value": "3"
+          },
+          "C_PROBE2_WIDTH": {
+            "value": "24"
+          },
+          "C_PROBE3_WIDTH": {
+            "value": "16"
+          },
+          "C_PROBE4_WIDTH": {
+            "value": "16"
+          },
+          "C_PROBE5_WIDTH": {
+            "value": "24"
+          },
+          "C_PROBE6_WIDTH": {
+            "value": "8"
+          }
+        }
+      },
       "w25q64_controller_0": {
         "vlnv": "xilinx.com:module_ref:w25q64_controller:1.0",
         "xci_name": "system_integration_w25q64_controller_0_0",
@@ -326,44 +364,6 @@
             "direction": "O"
           }
         }
-      },
-      "axi_w25q64_0": {
-        "vlnv": "xilinx.com:user:axi_w25q64:1.0",
-        "xci_name": "system_integration_axi_w25q64_0_0",
-        "xci_path": "ip\\system_integration_axi_w25q64_0_0\\system_integration_axi_w25q64_0_0.xci",
-        "inst_hier_path": "axi_w25q64_0"
-      },
-      "ila_0": {
-        "vlnv": "xilinx.com:ip:ila:6.2",
-        "xci_name": "system_integration_ila_0_0",
-        "xci_path": "ip\\system_integration_ila_0_0\\system_integration_ila_0_0.xci",
-        "inst_hier_path": "ila_0",
-        "parameters": {
-          "C_MONITOR_TYPE": {
-            "value": "Native"
-          },
-          "C_NUM_OF_PROBES": {
-            "value": "14"
-          },
-          "C_PROBE1_WIDTH": {
-            "value": "3"
-          },
-          "C_PROBE2_WIDTH": {
-            "value": "24"
-          },
-          "C_PROBE3_WIDTH": {
-            "value": "16"
-          },
-          "C_PROBE4_WIDTH": {
-            "value": "16"
-          },
-          "C_PROBE5_WIDTH": {
-            "value": "24"
-          },
-          "C_PROBE6_WIDTH": {
-            "value": "8"
-          }
-        }
       }
     },
     "interface_nets": {
@@ -384,15 +384,15 @@
       "axi_w25q64_0_ctrl_address": {
         "ports": [
           "axi_w25q64_0/ctrl_address",
-          "w25q64_controller_0/address",
-          "ila_0/probe2"
+          "ila_0/probe2",
+          "w25q64_controller_0/address"
         ]
       },
       "axi_w25q64_0_ctrl_command": {
         "ports": [
           "axi_w25q64_0/ctrl_command",
-          "w25q64_controller_0/command",
-          "ila_0/probe1"
+          "ila_0/probe1",
+          "w25q64_controller_0/command"
         ]
       },
       "axi_w25q64_0_ctrl_reset_n": {
@@ -404,15 +404,15 @@
       "axi_w25q64_0_ctrl_start": {
         "ports": [
           "axi_w25q64_0/ctrl_start",
-          "w25q64_controller_0/start",
-          "ila_0/probe0"
+          "ila_0/probe0",
+          "w25q64_controller_0/start"
         ]
       },
       "axi_w25q64_0_ctrl_write_data": {
         "ports": [
           "axi_w25q64_0/ctrl_write_data",
-          "w25q64_controller_0/data_in",
-          "ila_0/probe3"
+          "ila_0/probe3",
+          "w25q64_controller_0/data_in"
         ]
       },
       "proc_sys_reset_0_peripheral_aresetn": {
@@ -425,8 +425,8 @@
       "spi_miso_1": {
         "ports": [
           "spi_miso",
-          "w25q64_controller_0/spi_miso",
-          "ila_0/probe13"
+          "ila_0/probe13",
+          "w25q64_controller_0/spi_miso"
         ]
       },
       "w25q64_controller_0_busy_led": {
@@ -500,9 +500,9 @@
           "zynq_ultra_ps_e_0/maxihpm0_fpd_aclk",
           "proc_sys_reset_0/slowest_sync_clk",
           "smartconnect_0/aclk",
-          "w25q64_controller_0/clk",
           "axi_w25q64_0/s00_axi_aclk",
-          "ila_0/clk"
+          "ila_0/clk",
+          "w25q64_controller_0/clk"
         ]
       },
       "zynq_ultra_ps_e_0_pl_resetn0": {
