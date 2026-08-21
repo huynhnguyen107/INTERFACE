@@ -40,8 +40,8 @@ module i2c_bmp280_read_id
 	inout sda
 );
 	//constants
-	localparam [7:0] BMP280_ADD_W= {CLK_DIV,1'b0};
-	localparam [7:0] BMP280_ADD_R= {CLK_DIV,1'b1};
+	localparam [7:0] BMP280_ADD_W= {BMP280_ADD,1'b0};
+	localparam [7:0] BMP280_ADD_R= {BMP280_ADD,1'b1};
 	localparam [7:0] BMP280_REG_ID= 8'hD0;
 	//finite state machine
 	localparam [3:0] 
@@ -85,16 +85,16 @@ module i2c_bmp280_read_id
 		case(state)
 			IDLE: next_state = rasing_start ? START : IDLE;
 			START: next_state = IC_ADD_W;
-			IC_ADD_W: next_state = cnt_bit==7 ? ACK_IC_ADD_W: IC_ADD_W;
-			ACK_IC_ADD_W: next_state = ack_err ? STOP: REG_ADD;
-			REG_ADD: next_state = cnt_bit==7 ? ACK_REG_ADD: REG_ADD;
-			ACK_REG_ADD: next_state = ack_err ? STOP: RE_START;
+			IC_ADD_W: next_state = (cnt_bit==7)&phase ? ACK_IC_ADD_W: IC_ADD_W;
+			ACK_IC_ADD_W: next_state = phase? (sda ? STOP: REG_ADD): ACK_IC_ADD_W;
+			REG_ADD: next_state = (cnt_bit==7)&phase ? ACK_REG_ADD: REG_ADD;
+			ACK_REG_ADD: next_state =  phase? (sda ? STOP: RE_START): ACK_REG_ADD;
 			RE_START: next_state = cnt_re_start==1 ? IC_ADD_R : RE_START;
-			IC_ADD_R: next_state = cnt_bit==7 ? ACK_IC_ADD_R: IC_ADD_R;
-			ACK_IC_ADD_R: next_state = ack_err ? STOP: READ_ID;
-			READ_ID: next_state = cnt_bit==7 ? NACK_READ_ID: READ_ID;
-			NACK_READ_ID: next_state = STOP;
-			STOP: next_state = IDLE;
+			IC_ADD_R: next_state = (cnt_bit==7)&phase ? ACK_IC_ADD_R: IC_ADD_R;
+			ACK_IC_ADD_R: next_state = phase? (sda ? STOP: READ_ID): ACK_IC_ADD_R;
+			READ_ID: next_state = (cnt_bit==7)&phase ? NACK_READ_ID: READ_ID;
+			NACK_READ_ID: next_state = phase ? STOP: NACK_READ_ID;
+			STOP: next_state = phase ? IDLE: STOP;
 			default: next_state = IDLE;
 		endcase
 	end
@@ -124,12 +124,12 @@ module i2c_bmp280_read_id
 				//sample
 				if (phase) begin
 					r_scl <=1 ;
+					cnt_bit <= (cnt_bit==7) ? 0 : cnt_bit +1 ;
 				end
 				//update
 				else begin
 					r_scl <=0;
-					r_sda <=BMP280_ADD_W[7-cnt_bit];
-					cnt_bit <= (cnt_bit==7) ? 0 : cnt_bit +1 ;
+					r_sda <=BMP280_ADD_W[7-cnt_bit];	
 				end
 			end
 			else if (state== ACK_IC_ADD_W) begin
@@ -152,12 +152,12 @@ module i2c_bmp280_read_id
 				//sample
 				if (phase) begin
 					r_scl <=1 ;
+					cnt_bit <= (cnt_bit==7) ? 0 : cnt_bit +1 ;
 				end
 				//update
 				else begin
 					r_scl <=0;
-					r_sda <=BMP280_ADD_R[7-cnt_bit];
-					cnt_bit <= (cnt_bit==7) ? 0 : cnt_bit +1 ;
+					r_sda <=BMP280_REG_ID[7-cnt_bit];
 				end
 			end
 			else if (state== ACK_REG_ADD) begin
@@ -191,12 +191,12 @@ module i2c_bmp280_read_id
 				//sample
 				if (phase) begin
 					r_scl <=1 ;
+					cnt_bit <= (cnt_bit==7) ? 0 : cnt_bit +1 ;
 				end
 				//update
 				else begin
 					r_scl <=0;
 					r_sda <=BMP280_ADD_R[7-cnt_bit];
-					cnt_bit <= (cnt_bit==7) ? 0 : cnt_bit +1 ;
 				end
 			end
 			else if (state== ACK_IC_ADD_R) begin
@@ -219,12 +219,12 @@ module i2c_bmp280_read_id
 				//sample
 				if (phase) begin
 					r_scl <=1 ;
+					cnt_bit <= (cnt_bit==7) ? 0 : cnt_bit +1 ;
+					chip_id[7-cnt_bit] <=sda;
 				end
 				//update
 				else begin
 					r_scl <=0;
-					chip_id[7-cnt_bit] <=sda;
-					cnt_bit <= (cnt_bit==7) ? 0 : cnt_bit +1 ;
 				end
 			end
 			else if (state== NACK_READ_ID) begin
@@ -244,12 +244,11 @@ module i2c_bmp280_read_id
 				//sample(r_scl=1, sda from 0 to 1)
 				if (phase) begin
 					r_scl <=1 ;
-					r_sda <=1;
 				end
 				//update
 				else begin
 					r_scl <=1;
-					r_sda <=0;
+					r_sda <=1;
 				end
 			end
 		end
