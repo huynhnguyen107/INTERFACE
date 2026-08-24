@@ -1,0 +1,65 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Mon Aug 24 12:26:14 2026
+| Host         : LAPTOP-CHCSI1R5 running 64-bit major release  (build 9200)
+| Command      : report_methodology -file top_i2c_bmp280_read_id_methodology_drc_routed.rpt -pb top_i2c_bmp280_read_id_methodology_drc_routed.pb -rpx top_i2c_bmp280_read_id_methodology_drc_routed.rpx
+| Design       : top_i2c_bmp280_read_id
+| Device       : xck26-sfvc784-2LV-c
+| Speed File   : -2LV
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 3
++---------+----------+--------------------------------------------------------+------------+
+| Rule    | Severity | Description                                            | Violations |
++---------+----------+--------------------------------------------------------+------------+
+| LUTAR-1 | Warning  | LUT drives async reset alert                           | 1          |
+| XDCC-1  | Warning  | Scoped Clock constraint overwritten with the same name | 1          |
+| XDCC-7  | Warning  | Scoped Clock constraint overwritten on the same source | 1          |
++---------+----------+--------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_sel[0]_INST_0, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[10]/CLR,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[11]/CLR,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[12]/CLR,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[13]/CLR,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[14]/CLR,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[15]/CLR,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[6]/CLR,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[7]/CLR,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[8]/CLR
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[9]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+XDCC-1#1 Warning
+Scoped Clock constraint overwritten with the same name  
+A new clock constraint create_clock overrides a previous scoped clock constraint with the same name. It is not recommended to override a scoped (typically an IP) clock constraint and could result in unexpected behaviors.
+New: create_clock -period 40.000 -name clk_25mhz [get_ports clk_25mhz] (Source: D:/FPGA/Vivaldo Project/INTERFACE/I2C/01_i2c_bmp280_read_id/Vivado/i2c_bmp280_read_id.srcs/constrs_1/new/top_i2c_bmp280_read_id.xdc (Line: 5))
+Previous: create_clock -period 40.000 [get_ports clk_25mhz] (Source: d:/FPGA/Vivaldo Project/INTERFACE/I2C/01_i2c_bmp280_read_id/Vivado/i2c_bmp280_read_id.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc (Line: 56))
+Related violations: <none>
+
+XDCC-7#1 Warning
+Scoped Clock constraint overwritten on the same source  
+A new clock constraint create_clock overrides a previous scoped clock constraint defined on the same source. It is not recommended to override a scoped (typically an IP) clock constraint and could result in unexpected behaviors.
+New: create_clock -period 40.000 -name clk_25mhz [get_ports clk_25mhz] (Source: D:/FPGA/Vivaldo Project/INTERFACE/I2C/01_i2c_bmp280_read_id/Vivado/i2c_bmp280_read_id.srcs/constrs_1/new/top_i2c_bmp280_read_id.xdc (Line: 5))
+Previous: create_clock -period 40.000 [get_ports clk_25mhz] (Source: d:/FPGA/Vivaldo Project/INTERFACE/I2C/01_i2c_bmp280_read_id/Vivado/i2c_bmp280_read_id.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc (Line: 56))
+Related violations: <none>
+
+
