@@ -148,20 +148,20 @@
                                 "portIndex": 2,
                                 "nets": [
                                     {
-                                        "name": "i2c_bmp280_read_id/state",
+                                        "name": "i2c_bmp280_read_id/d_state",
                                         "isBus": true,
                                         "subnets": [
                                             {
-                                                "name": "i2c_bmp280_read_id/state[3]"
+                                                "name": "i2c_bmp280_read_id/d_state[3]"
                                             },
                                             {
-                                                "name": "i2c_bmp280_read_id/state[2]"
+                                                "name": "i2c_bmp280_read_id/d_state[2]"
                                             },
                                             {
-                                                "name": "i2c_bmp280_read_id/state[1]"
+                                                "name": "i2c_bmp280_read_id/d_state[1]"
                                             },
                                             {
-                                                "name": "i2c_bmp280_read_id/state[0]"
+                                                "name": "i2c_bmp280_read_id/d_state[0]"
                                             }
                                         ]
                                     }
@@ -299,7 +299,8 @@
                                 "nets": [
                                     {
                                         "name": "i2c_bmp280_read_id/done",
-                                        "isBus": false
+                                        "isBus": false,
+                                        "parentNetId": 46
                                     }
                                 ]
                             },
@@ -342,6 +343,38 @@
                                         ]
                                     }
                                 ]
+                            },
+                            {
+                                "name": "probe11",
+                                "id": 11,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 11,
+                                "nets": [
+                                    {
+                                        "name": "i2c_bmp280_read_id/sda_in",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe12",
+                                "id": 12,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 12,
+                                "nets": [
+                                    {
+                                        "name": "i2c_bmp280_read_id/scl_in",
+                                        "isBus": false
+                                    }
+                                ]
                             }
                         ]
                     },
@@ -359,7 +392,7 @@
                         "pins": [
                             {
                                 "name": "probe0",
-                                "id": 11,
+                                "id": 13,
                                 "type": "DATA_TRIGGER",
                                 "direction": "IN",
                                 "isVector": false,
@@ -369,13 +402,14 @@
                                 "nets": [
                                     {
                                         "name": "p_0_in",
-                                        "isBus": false
+                                        "isBus": false,
+                                        "parentNetId": 52
                                     }
                                 ]
                             },
                             {
                                 "name": "probe1",
-                                "id": 12,
+                                "id": 14,
                                 "type": "DATA_TRIGGER",
                                 "direction": "IN",
                                 "isVector": false,
@@ -391,7 +425,7 @@
                             },
                             {
                                 "name": "probe2",
-                                "id": 13,
+                                "id": 15,
                                 "type": "DATA_TRIGGER",
                                 "direction": "IN",
                                 "isVector": false,
@@ -401,13 +435,14 @@
                                 "nets": [
                                     {
                                         "name": "done",
-                                        "isBus": false
+                                        "isBus": false,
+                                        "parentNetId": 54
                                     }
                                 ]
                             },
                             {
                                 "name": "probe3",
-                                "id": 14,
+                                "id": 16,
                                 "type": "DATA_TRIGGER",
                                 "direction": "IN",
                                 "isVector": false,
@@ -416,14 +451,14 @@
                                 "portIndex": 3,
                                 "nets": [
                                     {
-                                        "name": "busy",
+                                        "name": "busy_1",
                                         "isBus": false
                                     }
                                 ]
                             },
                             {
                                 "name": "probe4",
-                                "id": 15,
+                                "id": 17,
                                 "type": "DATA_TRIGGER",
                                 "direction": "IN",
                                 "isVector": false,
@@ -432,14 +467,14 @@
                                 "portIndex": 4,
                                 "nets": [
                                     {
-                                        "name": "ila_scl",
+                                        "name": "busy_2",
                                         "isBus": false
                                     }
                                 ]
                             },
                             {
                                 "name": "probe5",
-                                "id": 16,
+                                "id": 18,
                                 "type": "DATA_TRIGGER",
                                 "direction": "IN",
                                 "isVector": false,
@@ -448,14 +483,14 @@
                                 "portIndex": 5,
                                 "nets": [
                                     {
-                                        "name": "ila_sda",
+                                        "name": "busy",
                                         "isBus": false
                                     }
                                 ]
                             },
                             {
                                 "name": "probe6",
-                                "id": 17,
+                                "id": 19,
                                 "type": "DATA_TRIGGER",
                                 "direction": "IN",
                                 "isVector": true,
@@ -497,7 +532,7 @@
                             },
                             {
                                 "name": "probe7",
-                                "id": 18,
+                                "id": 20,
                                 "type": "DATA_TRIGGER",
                                 "direction": "IN",
                                 "isVector": false,
@@ -508,6 +543,185 @@
                                     {
                                         "name": "ack_err",
                                         "isBus": false
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "parent_nets": [
+                    {
+                        "id": 46,
+                        "name": "i2c_bmp280_read_id/done",
+                        "state_reg": [
+                            {
+                                "name": "i2c_bmp280_read_id/FSM_onehot_state_reg[11]",
+                                "states": [
+                                    {
+                                        "name": "ACK_IC_ADD_W",
+                                        "val": "000000001000"
+                                    },
+                                    {
+                                        "name": "REG_ADD",
+                                        "val": "000000010000"
+                                    },
+                                    {
+                                        "name": "IC_ADD_W",
+                                        "val": "000000000100"
+                                    },
+                                    {
+                                        "name": "STOP",
+                                        "val": "100000000000"
+                                    },
+                                    {
+                                        "name": "NACK_READ_ID",
+                                        "val": "010000000000"
+                                    },
+                                    {
+                                        "name": "START",
+                                        "val": "000000000010"
+                                    },
+                                    {
+                                        "name": "IDLE",
+                                        "val": "000000000001"
+                                    },
+                                    {
+                                        "name": "READ_ID",
+                                        "val": "001000000000"
+                                    },
+                                    {
+                                        "name": "IC_ADD_R",
+                                        "val": "000010000000"
+                                    },
+                                    {
+                                        "name": "ACK_IC_ADD_R",
+                                        "val": "000100000000"
+                                    },
+                                    {
+                                        "name": "RE_START",
+                                        "val": "000001000000"
+                                    },
+                                    {
+                                        "name": "ACK_REG_ADD",
+                                        "val": "000000100000"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": 52,
+                        "name": "rst_n_IBUF_inst/O",
+                        "state_reg": [
+                            {
+                                "name": "i2c_bmp280_read_id/FSM_onehot_state_reg[10]",
+                                "states": [
+                                    {
+                                        "name": "ACK_IC_ADD_W",
+                                        "val": "000000001000"
+                                    },
+                                    {
+                                        "name": "REG_ADD",
+                                        "val": "000000010000"
+                                    },
+                                    {
+                                        "name": "IC_ADD_W",
+                                        "val": "000000000100"
+                                    },
+                                    {
+                                        "name": "STOP",
+                                        "val": "100000000000"
+                                    },
+                                    {
+                                        "name": "NACK_READ_ID",
+                                        "val": "010000000000"
+                                    },
+                                    {
+                                        "name": "START",
+                                        "val": "000000000010"
+                                    },
+                                    {
+                                        "name": "IDLE",
+                                        "val": "000000000001"
+                                    },
+                                    {
+                                        "name": "READ_ID",
+                                        "val": "001000000000"
+                                    },
+                                    {
+                                        "name": "IC_ADD_R",
+                                        "val": "000010000000"
+                                    },
+                                    {
+                                        "name": "ACK_IC_ADD_R",
+                                        "val": "000100000000"
+                                    },
+                                    {
+                                        "name": "RE_START",
+                                        "val": "000001000000"
+                                    },
+                                    {
+                                        "name": "ACK_REG_ADD",
+                                        "val": "000000100000"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": 54,
+                        "name": "i2c_bmp280_read_id/done",
+                        "state_reg": [
+                            {
+                                "name": "i2c_bmp280_read_id/FSM_onehot_state_reg[11]",
+                                "states": [
+                                    {
+                                        "name": "ACK_IC_ADD_W",
+                                        "val": "000000001000"
+                                    },
+                                    {
+                                        "name": "REG_ADD",
+                                        "val": "000000010000"
+                                    },
+                                    {
+                                        "name": "IC_ADD_W",
+                                        "val": "000000000100"
+                                    },
+                                    {
+                                        "name": "STOP",
+                                        "val": "100000000000"
+                                    },
+                                    {
+                                        "name": "NACK_READ_ID",
+                                        "val": "010000000000"
+                                    },
+                                    {
+                                        "name": "START",
+                                        "val": "000000000010"
+                                    },
+                                    {
+                                        "name": "IDLE",
+                                        "val": "000000000001"
+                                    },
+                                    {
+                                        "name": "READ_ID",
+                                        "val": "001000000000"
+                                    },
+                                    {
+                                        "name": "IC_ADD_R",
+                                        "val": "000010000000"
+                                    },
+                                    {
+                                        "name": "ACK_IC_ADD_R",
+                                        "val": "000100000000"
+                                    },
+                                    {
+                                        "name": "RE_START",
+                                        "val": "000001000000"
+                                    },
+                                    {
+                                        "name": "ACK_REG_ADD",
+                                        "val": "000000100000"
                                     }
                                 ]
                             }

@@ -57,15 +57,15 @@ module top_i2c_bmp280_read_id
 		);
 	//ila
 	assign ila_scl = !scl ? 0: 1;
-	assign ila_sda = !scl ? 0: 1;
+	assign ila_sda = !sda ? 0: 1;
 	ila_0 ila_0 (
 	.clk(clk_100mhz), // input wire clk
 	.probe0(rst_n), // input wire [0:0]  probe0  
 	.probe1(start), // input wire [0:0]  probe1 
 	.probe2(done), // input wire [0:0]  probe2 
 	.probe3(busy), // input wire [0:0]  probe3 
-	.probe4(ila_scl), // input wire [0:0]  probe4 
-	.probe5(ila_sda), // input wire [0:0]  probe5 
+	.probe4(busy), // input wire [0:0]  probe4 
+	.probe5(busy), // input wire [0:0]  probe5 
 	.probe6(chip_id), // input wire [7:0]  probe6 
 	.probe7(ack_err) // input wire [0:0]  probe7
 	);

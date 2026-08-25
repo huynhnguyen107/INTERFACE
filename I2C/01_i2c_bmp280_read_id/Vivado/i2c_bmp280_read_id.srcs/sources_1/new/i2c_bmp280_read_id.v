@@ -59,6 +59,7 @@ module i2c_bmp280_read_id
 		STOP= 4'd11;//START: SDA ↑ when  SCL already = 1
 	//reg and wire
 	reg [3:0] state;
+	reg [3:0] d_state;
 	reg [3:0] next_state;
 	reg d_start;
 	reg phase;
@@ -106,7 +107,7 @@ module i2c_bmp280_read_id
 			ACK_IC_ADD_W: next_state = phase? (sda ? STOP: REG_ADD): ACK_IC_ADD_W;
 			REG_ADD: next_state = (cnt_bit==7)&phase ? ACK_REG_ADD: REG_ADD;
 			ACK_REG_ADD: next_state =  phase? (sda ? STOP: RE_START): ACK_REG_ADD;
-			RE_START: next_state = cnt_re_start==1 ? IC_ADD_R : RE_START;
+			RE_START: next_state = cnt_re_start==2 ? IC_ADD_R : RE_START;
 			IC_ADD_R: next_state = (cnt_bit==7)&phase ? ACK_IC_ADD_R: IC_ADD_R;
 			ACK_IC_ADD_R: next_state = phase? (sda ? STOP: READ_ID): ACK_IC_ADD_R;
 			READ_ID: next_state = (cnt_bit==7)&phase ? NACK_READ_ID: READ_ID;
@@ -126,8 +127,10 @@ module i2c_bmp280_read_id
 			cnt_stop <=0 ;
 			cnt_bit <=0 ;
 			chip_id <=0 ;
+			d_state <=0 ;
 		end
 		else if (tick1s) begin
+			d_state <= state;//for check timming scl, sda with d_state
 			if (state == IDLE) begin
 				cnt_stop <=0 ;
 				cnt_bit <=0 ;
@@ -199,12 +202,16 @@ module i2c_bmp280_read_id
 				end
 			end
 			else if (state== RE_START) begin
-				cnt_re_start <= (cnt_re_start==1) ? 0 : cnt_re_start +1;
+				cnt_re_start <= cnt_re_start +1;
 				if (cnt_re_start ==0) begin
-					r_scl <=1;
+					r_scl <=0;
 					r_sda <=1;
 				end
 				else if (cnt_re_start ==1) begin
+					r_scl <=1;
+					r_sda <=1;
+				end
+				else if (cnt_re_start ==2) begin
 					r_scl <=1;
 					r_sda <=0;
 				end
@@ -287,6 +294,8 @@ module i2c_bmp280_read_id
 	assign sda = r_sda ? 1'bz: 1'b0; 
 	assign done = state == STOP; 
 	assign busy =state !=IDLE ;
+	assign sda_in  =sda;
+	assign scl_in  =scl;
 	//debug
 	ila_1 ila_1 (
 		.clk(clk), // input wire clk
@@ -294,7 +303,7 @@ module i2c_bmp280_read_id
 
 		.probe0(cnt_1s), // input wire [24:0]  probe0  
 		.probe1(tick1s), // input wire [0:0]  probe1 
-		.probe2(state), // input wire [3:0]  probe2 
+		.probe2(d_state), // input wire [3:0]  probe2 
 		.probe3(phase), // input wire [0:0]  probe3 
 		.probe4(r_scl), // input wire [0:0]  probe4 
 		.probe5(r_sda), // input wire [0:0]  probe5 
@@ -302,7 +311,9 @@ module i2c_bmp280_read_id
 		.probe7(chip_id), // input wire [7:0]  probe7 
 		.probe8(done), // input wire [0:0]  probe8 
 		.probe9(busy), // input wire [0:0]  probe9
-		.probe10(cnt_re_start) // input wire [1:0]  probe10
+		.probe10(cnt_re_start), // input wire [1:0]  probe10
+		.probe11(sda_in), // input wire [0:0]  probe11
+		.probe12(scl_in) // input wire [0:0]  probe12
 	);
 
 	
