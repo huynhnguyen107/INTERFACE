@@ -4,6 +4,13 @@ Running: D:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
-WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 26 for port 'probe0' [D:/FPGA/Vivaldo Project/INTERFACE/I2C/01_i2c_bmp280_read_id/Vivado/i2c_bmp280_read_id.srcs/sources_1/new/i2c_bmp280_read_id.v:304]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 26 for port 'probe0' [D:/FPGA/Vivaldo Project/INTERFACE/I2C/01_i2c_bmp280_read_id/Vivado/i2c_bmp280_read_id.srcs/sources_1/new/i2c_bmp280_read_id.v:320]
 Completed static elaboration
-INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ila_1
+Compiling module xil_defaultlib.i2c_bmp280_read_id(CLK_DIV=32'b0...
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav

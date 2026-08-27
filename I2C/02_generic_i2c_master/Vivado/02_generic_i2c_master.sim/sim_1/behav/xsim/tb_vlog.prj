@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../02_generic_i2c_master.gen/sources_1/ip/clk_wiz_0" \
+"../../../../02_generic_i2c_master.gen/sources_1/ip/ila_0/sim/ila_0.v" \
+"../../../../02_generic_i2c_master.srcs/sources_1/new/generic_i2c_master.v" \
+"../../../../02_generic_i2c_master.srcs/sim_1/new/tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

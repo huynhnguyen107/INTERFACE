@@ -122,7 +122,6 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param tcl.statsThreshold 360
   set_param chipscope.maxJobs 4
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xck26-sfvc784-2LV-c
@@ -141,7 +140,7 @@ OPTRACE "add files" START { }
   add_files -quiet {{D:/FPGA/Vivaldo Project/INTERFACE/I2C/01_i2c_bmp280_read_id/Vivado/i2c_bmp280_read_id.runs/synth_1/top_i2c_bmp280_read_id.dcp}}
   read_ip -quiet {{D:/FPGA/Vivaldo Project/INTERFACE/I2C/01_i2c_bmp280_read_id/Vivado/i2c_bmp280_read_id.srcs/sources_1/ip/ila_0/ila_0.xci}}
   read_ip -quiet {{D:/FPGA/Vivaldo Project/INTERFACE/I2C/01_i2c_bmp280_read_id/Vivado/i2c_bmp280_read_id.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci}}
-  read_ip -quiet {{d:/FPGA/Vivaldo Project/INTERFACE/I2C/01_i2c_bmp280_read_id/Vivado/i2c_bmp280_read_id.srcs/sources_1/ip/ila_1/ila_1.xci}}
+  read_ip -quiet {{D:/FPGA/Vivaldo Project/INTERFACE/I2C/01_i2c_bmp280_read_id/Vivado/i2c_bmp280_read_id.srcs/sources_1/ip/ila_1/ila_1.xci}}
 OPTRACE "read constraints: implementation" START { }
   read_xdc {{D:/FPGA/Vivaldo Project/INTERFACE/I2C/01_i2c_bmp280_read_id/Vivado/i2c_bmp280_read_id.srcs/constrs_1/new/top_i2c_bmp280_read_id.xdc}}
 OPTRACE "read constraints: implementation" END { }

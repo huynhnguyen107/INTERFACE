@@ -57,6 +57,8 @@ module tb ();
 			in_sda <=0;
 		end
 		//ACK0
+		@(posedge clk);
+		@(posedge clk);
 		for (i=0;i<20;i=i+1) begin
 			@(posedge clk) begin
 				in_sda <=0;

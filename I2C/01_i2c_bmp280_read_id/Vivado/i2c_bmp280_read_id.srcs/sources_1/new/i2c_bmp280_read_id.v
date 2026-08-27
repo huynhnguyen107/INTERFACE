@@ -46,17 +46,18 @@ module i2c_bmp280_read_id
 	//finite state machine
 	localparam [3:0] 
 		IDLE= 4'd0, 
-		START= 4'd1, //START: SDA ↓ when  SCL already = 1
+		START= 4'd1, //START: SDA ? when  SCL already = 1
 		IC_ADD_W= 4'd2, 
 		ACK_IC_ADD_W= 4'd3, 
 		REG_ADD= 4'd4, 
 		ACK_REG_ADD= 4'd5, 
-		RE_START= 4'd6, //START: SDA ↓ when  SCL already = 1
+		RE_START= 4'd6, //START: SDA ? when  SCL already = 1
 		IC_ADD_R= 4'd7, 
 		ACK_IC_ADD_R= 4'd8, 
 		READ_ID= 4'd9, 
 		NACK_READ_ID= 4'd10, 
-		STOP= 4'd11;//START: SDA ↑ when  SCL already = 1
+		STOP= 4'd11,//START: SDA ? when  SCL already = 1
+		FINISH= 4'd12;//START: SDA ? when  SCL already = 1
 	//reg and wire
 	reg [3:0] state;
 	reg [3:0] d_state;
@@ -64,6 +65,7 @@ module i2c_bmp280_read_id
 	reg d_start;
 	reg phase;
 	wire rasing_start;
+	reg [1:0] cnt_start;
 	reg [1:0] cnt_re_start;
 	reg [1:0] cnt_stop;
 	reg [3:0] cnt_bit;
@@ -102,7 +104,7 @@ module i2c_bmp280_read_id
 	always @(*) begin
 		case(state)
 			IDLE: next_state = rasing_start ? START : IDLE;
-			START: next_state = IC_ADD_W;
+			START: next_state = cnt_start==2 ? IC_ADD_W: START;
 			IC_ADD_W: next_state = (cnt_bit==7)&phase ? ACK_IC_ADD_W: IC_ADD_W;
 			ACK_IC_ADD_W: next_state = phase? (sda ? STOP: REG_ADD): ACK_IC_ADD_W;
 			REG_ADD: next_state = (cnt_bit==7)&phase ? ACK_REG_ADD: REG_ADD;
@@ -112,7 +114,8 @@ module i2c_bmp280_read_id
 			ACK_IC_ADD_R: next_state = phase? (sda ? STOP: READ_ID): ACK_IC_ADD_R;
 			READ_ID: next_state = (cnt_bit==7)&phase ? NACK_READ_ID: READ_ID;
 			NACK_READ_ID: next_state = phase ? STOP: NACK_READ_ID;
-			STOP: next_state = !phase&cnt_stop==2 ? IDLE: STOP;
+			STOP: next_state = !phase&cnt_stop==2 ? FINISH: STOP;
+			FINISH: next_state = IDLE;
 			default: next_state = IDLE;
 		endcase
 	end
@@ -124,6 +127,7 @@ module i2c_bmp280_read_id
 			r_scl <=1 ;
 			r_sda <=1 ;
 			cnt_re_start <=0 ;
+			cnt_start <=0 ;
 			cnt_stop <=0 ;
 			cnt_bit <=0 ;
 			chip_id <=0 ;
@@ -131,17 +135,21 @@ module i2c_bmp280_read_id
 		end
 		else if (tick1s) begin
 			d_state <= state;//for check timming scl, sda with d_state
-			if (state == IDLE) begin
-				cnt_stop <=0 ;
-				cnt_bit <=0 ;
-				cnt_re_start <=0 ;
-				r_scl <=1 ;
-				r_sda <=1 ;
-			end
-			else if (state== START) begin
-				//r_scl=1 & r_sda from 1 to 0
-				r_scl <=1 ;
-				r_sda <=0 ;
+			if (state== START) begin
+				cnt_start <= cnt_start +1;
+				if (cnt_start==0) begin
+					r_scl <=0 ;
+					r_sda <=1 ;
+				end
+				else if (cnt_start==1) begin
+					r_scl <=1 ;
+					r_sda <=1 ;
+				end
+				// start r_scl already=1 and r_sda from 1 to 0
+				else if (cnt_start==2) begin
+					r_scl <=1 ;
+					r_sda <=0 ;
+				end
 			end
 			else if (state== IC_ADD_W) begin
 				phase <= !phase ;
@@ -287,15 +295,23 @@ module i2c_bmp280_read_id
 					r_sda <=1;
 				end
 			end
+			else if (state== FINISH) begin
+				cnt_stop <=0 ;
+				cnt_bit <=0 ;
+				cnt_start <=0 ;
+				cnt_re_start <=0 ;
+				r_scl <=1 ;
+				r_sda <=1 ;
+			end
 		end
 	end
 	//output 
 	assign scl = r_scl ? 1'bz: 1'b0; 
 	assign sda = r_sda ? 1'bz: 1'b0; 
-	assign done = state == STOP; 
+	assign done = state == FINISH; 
 	assign busy =state !=IDLE ;
 	assign sda_in  =sda;
-	assign scl_in  =scl;
+	assign scl_in  =scl;	
 	//debug
 	ila_1 ila_1 (
 		.clk(clk), // input wire clk
@@ -314,7 +330,5 @@ module i2c_bmp280_read_id
 		.probe10(cnt_re_start), // input wire [1:0]  probe10
 		.probe11(sda_in), // input wire [0:0]  probe11
 		.probe12(scl_in) // input wire [0:0]  probe12
-	);
-
-	
+	);	
 endmodule

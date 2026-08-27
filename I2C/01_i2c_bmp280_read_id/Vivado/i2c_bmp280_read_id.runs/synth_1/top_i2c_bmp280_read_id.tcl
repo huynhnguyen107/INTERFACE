@@ -70,8 +70,6 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param tcl.statsThreshold 360
-set_param chipscope.maxJobs 4
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xck26-sfvc784-2LV-c
 
@@ -104,7 +102,7 @@ set_property used_in_implementation false [get_files -all {{d:/FPGA/Vivaldo Proj
 set_property used_in_implementation false [get_files -all {{d:/FPGA/Vivaldo Project/INTERFACE/I2C/01_i2c_bmp280_read_id/Vivado/i2c_bmp280_read_id.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc}}]
 set_property used_in_implementation false [get_files -all {{d:/FPGA/Vivaldo Project/INTERFACE/I2C/01_i2c_bmp280_read_id/Vivado/i2c_bmp280_read_id.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc}}]
 
-read_ip -quiet {{d:/FPGA/Vivaldo Project/INTERFACE/I2C/01_i2c_bmp280_read_id/Vivado/i2c_bmp280_read_id.srcs/sources_1/ip/ila_1/ila_1.xci}}
+read_ip -quiet {{D:/FPGA/Vivaldo Project/INTERFACE/I2C/01_i2c_bmp280_read_id/Vivado/i2c_bmp280_read_id.srcs/sources_1/ip/ila_1/ila_1.xci}}
 set_property used_in_synthesis false [get_files -all {{d:/FPGA/Vivaldo Project/INTERFACE/I2C/01_i2c_bmp280_read_id/Vivado/i2c_bmp280_read_id.gen/sources_1/ip/ila_1/ila_v6_2/constraints/ila_impl.xdc}}]
 set_property used_in_implementation false [get_files -all {{d:/FPGA/Vivaldo Project/INTERFACE/I2C/01_i2c_bmp280_read_id/Vivado/i2c_bmp280_read_id.gen/sources_1/ip/ila_1/ila_v6_2/constraints/ila_impl.xdc}}]
 set_property used_in_implementation false [get_files -all {{d:/FPGA/Vivaldo Project/INTERFACE/I2C/01_i2c_bmp280_read_id/Vivado/i2c_bmp280_read_id.gen/sources_1/ip/ila_1/ila_v6_2/constraints/ila.xdc}}]
