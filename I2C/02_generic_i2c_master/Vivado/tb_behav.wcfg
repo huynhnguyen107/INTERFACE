@@ -11,9 +11,9 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="11.100 ns"></ZoomStartTime>
-      <ZoomEndTime time="117.901 ns"></ZoomEndTime>
-      <Cursor1Time time="52.500 ns"></Cursor1Time>
+      <ZoomStartTime time="77.750 ns"></ZoomStartTime>
+      <ZoomEndTime time="139.851 ns"></ZoomEndTime>
+      <Cursor1Time time="129.500 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="212"></NameColumnWidth>
@@ -168,10 +168,6 @@
       <obj_property name="ElementShortName">state[3:0]</obj_property>
       <obj_property name="ObjectShortName">state[3:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb/generic_i2c_master/d_state" type="array">
-      <obj_property name="ElementShortName">d_state[3:0]</obj_property>
-      <obj_property name="ObjectShortName">d_state[3:0]</obj_property>
-   </wvobject>
    <wvobject fp_name="/tb/generic_i2c_master/next_state" type="array">
       <obj_property name="ElementShortName">next_state[3:0]</obj_property>
       <obj_property name="ObjectShortName">next_state[3:0]</obj_property>
@@ -203,6 +199,10 @@
    <wvobject fp_name="/tb/generic_i2c_master/cnt_bit" type="array">
       <obj_property name="ElementShortName">cnt_bit[3:0]</obj_property>
       <obj_property name="ObjectShortName">cnt_bit[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/generic_i2c_master/d_state" type="array">
+      <obj_property name="ElementShortName">d_state[3:0]</obj_property>
+      <obj_property name="ObjectShortName">d_state[3:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/tb/generic_i2c_master/r_scl" type="logic">
       <obj_property name="ElementShortName">r_scl</obj_property>
