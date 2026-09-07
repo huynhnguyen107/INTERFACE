@@ -35,6 +35,7 @@ module bmp280_controller
 	input ack_err,
 	input [7:0] in_read_data,
 	//output to generic_i2c_master
+	output start_i2c,
 	output [6:0] slave_addr,
 	output [7:0] reg_addr,
 	output [7:0] write_data,
@@ -95,7 +96,7 @@ module bmp280_controller
 				cnt_1s <= cnt_1s +1;
 			//state	
 			if (rasing_edge)
-				state <= IDLE;
+				state <= CALIB_LOAD;
 			else if (tick_1s)
 				state <= next_state;
 		end
@@ -205,4 +206,10 @@ module bmp280_controller
 			end
 		end
 	end
+	//assign output
+	assign start_i2c = r_start;
+	assign slave_addr = r_slave_addr;
+	assign reg_addr = r_reg_addr;
+	assign write_data = r_write_data;
+	assign rw = r_rw;
 endmodule

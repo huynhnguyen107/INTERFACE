@@ -1,0 +1,9 @@
+0.7
+2020.2
+Oct 14 2022
+05:20:55
+D:/FPGA/Vivaldo Project/INTERFACE/I2C/02_generic_i2c_master/Vivado/02_generic_i2c_master.srcs/sources_1/new/generic_i2c_master.v,1788796751,verilog,,D:/FPGA/Vivaldo Project/INTERFACE/I2C/03_bmp280_temperature/Vivado/bmp280_temperature/bmp280_temperature.srcs/sources_1/new/top_bmp280_controller.v,,generic_i2c_master,,,,,,,,
+D:/FPGA/Vivaldo Project/INTERFACE/I2C/03_bmp280_temperature/Vivado/bmp280_temperature/bmp280_temperature.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,,,,,,,
+D:/FPGA/Vivaldo Project/INTERFACE/I2C/03_bmp280_temperature/Vivado/bmp280_temperature/bmp280_temperature.srcs/sim_1/new/tb.v,1788796650,verilog,,,,tb,,,,,,,,
+D:/FPGA/Vivaldo Project/INTERFACE/I2C/03_bmp280_temperature/Vivado/bmp280_temperature/bmp280_temperature.srcs/sources_1/new/bmp280_controller.v,1788795853,verilog,,D:/FPGA/Vivaldo Project/INTERFACE/I2C/02_generic_i2c_master/Vivado/02_generic_i2c_master.srcs/sources_1/new/generic_i2c_master.v,,bmp280_controller,,,,,,,,
+D:/FPGA/Vivaldo Project/INTERFACE/I2C/03_bmp280_temperature/Vivado/bmp280_temperature/bmp280_temperature.srcs/sources_1/new/top_bmp280_controller.v,1788796471,verilog,,D:/FPGA/Vivaldo Project/INTERFACE/I2C/03_bmp280_temperature/Vivado/bmp280_temperature/bmp280_temperature.srcs/sim_1/new/tb.v,,top_bmp280_controller,,,,,,,,

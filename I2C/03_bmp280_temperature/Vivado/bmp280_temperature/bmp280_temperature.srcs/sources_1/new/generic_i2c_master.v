@@ -377,22 +377,22 @@ module generic_i2c_master
 	assign sda_in  =sda;
 	assign scl_in  =scl;	
 	//debug
-//	ila_0 ila_0 (
-//		.clk(clk), // input wire clk
+	ila_0 ila_0 (
+		.clk(clk), // input wire clk
 
 
-//		.probe0(cnt_1s), // input wire [24:0]  probe0  
-//		.probe1(tick1s), // input wire [0:0]  probe1 
-//		.probe2(d_state), // input wire [3:0]  probe2 
-//		.probe3(phase), // input wire [0:0]  probe3 
-//		.probe4(r_scl), // input wire [0:0]  probe4 
-//		.probe5(r_sda), // input wire [0:0]  probe5 
-//		.probe6(cnt_bit), // input wire [3:0]  probe6 
-//		.probe7(read_data), // input wire [7:0]  probe7 
-//		.probe8(done), // input wire [0:0]  probe8 
-//		.probe9(busy), // input wire [0:0]  probe9
-//		.probe10(cnt_re_start), // input wire [1:0]  probe10
-//		.probe11(sda_in), // input wire [0:0]  probe11
-//		.probe12(scl_in) // input wire [0:0]  probe12
-//	);	
+		.probe0(cnt_1s), // input wire [24:0]  probe0  
+		.probe1(tick1s), // input wire [0:0]  probe1 
+		.probe2(d_state), // input wire [3:0]  probe2 
+		.probe3(phase), // input wire [0:0]  probe3 
+		.probe4(r_scl), // input wire [0:0]  probe4 
+		.probe5(r_sda), // input wire [0:0]  probe5 
+		.probe6(cnt_bit), // input wire [3:0]  probe6 
+		.probe7(read_data), // input wire [7:0]  probe7 
+		.probe8(done), // input wire [0:0]  probe8 
+		.probe9(busy), // input wire [0:0]  probe9
+		.probe10(cnt_re_start), // input wire [1:0]  probe10
+		.probe11(sda_in), // input wire [0:0]  probe11
+		.probe12(scl_in) // input wire [0:0]  probe12
+	);	
 endmodule
