@@ -51,14 +51,14 @@ module bmp280_controller
 		CALIB_LOAD=		4'd1,
 		CALIB_START=	4'd2,
 		CALIB_WAIT=		4'd3,
-		CONFIG_LOAD=	4'd5,
-		CONFIG_START=	4'd6,
-		CONFIG_WAIT=	4'd7,
-		WAIT_MEASURE=	4'd8,
-		RAW_LOAD=		4'd9,
-		RAW_START=		4'd10,
-		RAW_WAIT=		4'd11,
-		FINISH=			4'd12;
+		CONFIG_LOAD=	4'd4,
+		CONFIG_START=	4'd5,
+		CONFIG_WAIT=	4'd6,
+		WAIT_MEASURE=	4'd7,
+		RAW_LOAD=		4'd8,
+		RAW_START=		4'd9,
+		RAW_WAIT=		4'd10,
+		FINISH=			4'd11;
 	localparam [6:0] SLAVE_ADDR= 7'h76;
 	localparam [7:0] INI_CALIB_REG= 8'h88;
 	localparam [7:0] CONFIG_REG= 8'hF4;
@@ -109,14 +109,14 @@ module bmp280_controller
 			IDLE: next_state = rasing_edge ? CALIB_LOAD: IDLE;
 			CALIB_LOAD: next_state = CALIB_START;
 			CALIB_START: next_state = CALIB_WAIT;
-			CALIB_WAIT: next_state = done ? (ack_err ? FINISH : (cnt_wait==5 ? CONFIG_LOAD: CALIB_START)) : CALIB_WAIT;
+			CALIB_WAIT: next_state = done ? (ack_err ? FINISH : (cnt_wait==6 ? CONFIG_LOAD: CALIB_START)) : CALIB_WAIT;
 			CONFIG_LOAD: next_state = CONFIG_START;
 			CONFIG_START: next_state = CONFIG_WAIT;
 			CONFIG_WAIT: next_state = done ? (ack_err ? FINISH : WAIT_MEASURE) : CONFIG_WAIT;
 			WAIT_MEASURE: next_state = cnt_wtm==3 ? RAW_LOAD: WAIT_MEASURE;
 			RAW_LOAD: next_state = RAW_START;
 			RAW_START: next_state = RAW_WAIT;
-			RAW_WAIT: next_state = done ? (ack_err ? FINISH : (cnt_raw==2 ? FINISH: RAW_START)) : RAW_WAIT;
+			RAW_WAIT: next_state = done ? (ack_err ? FINISH : (cnt_raw==3 ? FINISH: RAW_START)) : RAW_WAIT;
 			FINISH: next_state = IDLE;
 			default: next_state =  IDLE;
 		endcase
@@ -149,6 +149,7 @@ module bmp280_controller
 				r_start <= 0;
 				cnt_wait <= 0;
 			end
+			// Read calibration: from reg 0x88  to 0x8D 
 			else if (state==CALIB_START) begin
 				r_reg_addr <= INI_CALIB_REG+ cnt_wait;
 				r_start <= 1;
@@ -166,12 +167,13 @@ module bmp280_controller
 				r_rw <= 0;
 				r_start <= 0;
 			end
-			else if (state==CONFIG_WAIT) begin
+			else if (state==CONFIG_START) begin
 				r_start <= 1;
 			end
 			else if (state==CONFIG_WAIT) begin
 				r_start <= 0;
 			end
+			//Wait 3s for sensor processing
 			else if (state==WAIT_MEASURE) begin
 				cnt_wtm <= cnt_wtm +1;
 			end
@@ -182,8 +184,9 @@ module bmp280_controller
 				r_rw <= 0;
 				r_start <= 0;
 			end
+			//Read raw temperature: from 0xFA  to 0xFC
 			else if (state==RAW_START) begin
-				r_reg_addr <= RAW_REG+ cnt_wait;
+				r_reg_addr <= RAW_REG+ cnt_raw;
 				r_start <= 1;
 				cnt_raw <= cnt_raw+1;
 			end
