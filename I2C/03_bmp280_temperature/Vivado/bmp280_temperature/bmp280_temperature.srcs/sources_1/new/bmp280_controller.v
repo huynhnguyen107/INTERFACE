@@ -42,7 +42,7 @@ module bmp280_controller
 	output 		 rw,
 	//output to temperature calculation
 	output reg		     valid_o,
-	output reg [8*5-1:0] calib_o,
+	output reg [8*6-1:0] calib_o,
 	output reg [8*3-1:0] raw_o
     );
 	//state

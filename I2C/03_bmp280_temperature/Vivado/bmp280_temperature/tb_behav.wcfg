@@ -11,9 +11,9 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
-      <ZoomEndTime time="205.401 ns"></ZoomEndTime>
-      <Cursor1Time time="0.000 ns"></Cursor1Time>
+      <ZoomStartTime time="999,997 ps"></ZoomStartTime>
+      <ZoomEndTime time="1,000,008 ps"></ZoomEndTime>
+      <Cursor1Time time="1,000,000 ps"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="342"></NameColumnWidth>
@@ -324,17 +324,13 @@
       <obj_property name="ElementShortName">state[3:0]</obj_property>
       <obj_property name="ObjectShortName">state[3:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb/top_bmp280_controller/generic_i2c_master/rasing_start" type="logic">
-      <obj_property name="ElementShortName">rasing_start</obj_property>
-      <obj_property name="ObjectShortName">rasing_start</obj_property>
+   <wvobject fp_name="/tb/top_bmp280_controller/generic_i2c_master/d_state" type="array">
+      <obj_property name="ElementShortName">d_state[3:0]</obj_property>
+      <obj_property name="ObjectShortName">d_state[3:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/tb/top_bmp280_controller/generic_i2c_master/next_state" type="array">
       <obj_property name="ElementShortName">next_state[3:0]</obj_property>
       <obj_property name="ObjectShortName">next_state[3:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb/top_bmp280_controller/generic_i2c_master/d_state" type="array">
-      <obj_property name="ElementShortName">d_state[3:0]</obj_property>
-      <obj_property name="ObjectShortName">d_state[3:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/tb/top_bmp280_controller/generic_i2c_master/d_start" type="logic">
       <obj_property name="ElementShortName">d_start</obj_property>
@@ -343,6 +339,10 @@
    <wvobject fp_name="/tb/top_bmp280_controller/generic_i2c_master/phase" type="logic">
       <obj_property name="ElementShortName">phase</obj_property>
       <obj_property name="ObjectShortName">phase</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/top_bmp280_controller/generic_i2c_master/rasing_start" type="logic">
+      <obj_property name="ElementShortName">rasing_start</obj_property>
+      <obj_property name="ObjectShortName">rasing_start</obj_property>
    </wvobject>
    <wvobject fp_name="/tb/top_bmp280_controller/generic_i2c_master/cnt_start" type="array">
       <obj_property name="ElementShortName">cnt_start[1:0]</obj_property>

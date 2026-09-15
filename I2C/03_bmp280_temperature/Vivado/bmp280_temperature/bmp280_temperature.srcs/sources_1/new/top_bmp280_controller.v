@@ -46,7 +46,7 @@ module top_bmp280_controller
 	wire [7:0] in_read_data;
 	//output to temperature calculation
 	wire 		     valid_o;
-	wire  [8*5-1:0] calib_o;
+	wire  [8*6-1:0] calib_o;
 	wire  [8*3-1:0] raw_o;
 
 	//output to bmp280_controller
