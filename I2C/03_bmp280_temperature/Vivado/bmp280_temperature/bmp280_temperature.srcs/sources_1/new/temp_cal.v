@@ -52,6 +52,13 @@ module temp_cal(
     // 0xFC = temp_xlsb
     //
     // adc_T = {FA, FB, FC[7:4]}
+	//register
+	reg  [8*6-1:0] r_calib_in;
+	reg  [8*3-1:0] r_raw_in;
+	reg  valid_in_d1;
+	reg  valid_in_d2;
+	reg  valid_in_d3;
+	//wire
 	wire [15:0] dig_T1;//unsigned
 	wire [15:0] dig_T2;//signed
 	wire [15:0] dig_T3;//signed
@@ -74,12 +81,31 @@ module temp_cal(
 	//find temperature
 	wire [27:0] t_fine_x5;
 	wire [28:0] t_fine_x5_128;
+	//latch input
+	always @(posedge clk) begin
+		if (!rst_n) begin
+			r_calib_in <= 0;
+			r_raw_in <= 0;
+			valid_in_d1 <= 0;
+			valid_in_d2 <= 0;
+			valid_in_d3 <= 0;
+		end
+		else begin
+			if (valid_in) begin
+				r_calib_in <= calib_in;
+				r_raw_in <= raw_in;
+			end
+			valid_in_d1 <= valid_in;
+			valid_in_d2 <= valid_in_d1;
+			valid_in_d3 <= valid_in_d2;
+		end
+	end
 	//assign
-	assign dig_T1 = calib_in[15:0];
-	assign dig_T2 = calib_in[31:16];
-	assign dig_T3 = calib_in[47:32];
+	assign dig_T1 = r_calib_in[15:0];
+	assign dig_T2 = r_calib_in[31:16];
+	assign dig_T3 = r_calib_in[47:32];
 	
-	assign adc_T = {raw_in[7:0], raw_in[15:8], raw_in[23:20]};
+	assign adc_T = {r_raw_in[23:8], r_raw_in[7:4]};
 	
 	// Temperature compensation
     //
@@ -119,11 +145,13 @@ module temp_cal(
 	  .B(dig_T3),      // input wire [15 : 0] B
 	  .P(var2_5)      // output wire [37 : 0] P
 	);
-	assign var2 = var2_3[37:14];
+	assign var2 = var2_5[37:14];
 	//t_fine
 	assign t_fine = {var1[21],var1[21],var1[21], var1} + {var2[23], var2};
-	assign t_fine_x5 = {{5{t_fine[24]}}, t_fine[24:2]} + {{3{t_fine[24]}}, t_fine} ;
+	assign t_fine_x5 = {t_fine[24], t_fine[24:0], 2'b00} + {{3{t_fine[24]}}, t_fine} ;
 	assign t_fine_x5_128 = {t_fine_x5[27], t_fine_x5} + 128;
+	//output
 	assign temp_100 = t_fine_x5_128[27:8];
+	assign valid_out = valid_in_d3;
 	
 endmodule

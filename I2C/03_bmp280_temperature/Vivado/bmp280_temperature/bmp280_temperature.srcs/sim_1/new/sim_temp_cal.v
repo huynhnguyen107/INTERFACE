@@ -46,8 +46,8 @@ module sim_temp_cal(
 			valid_in  <= 1;
 			//dig_T1 = 27504, dig_T2 = 2643, dig_T3 = -1000
 			calib_in  <= {16'hFC18,16'h6743,16'h6B70};
-			//adc_T  = 519888=0x07EED0
-			raw_in  <= {16'h07, 16'hEE, 16'D0 };
+			//adc_T  = 519888=0x7EED0X
+			raw_in  <= {8'h7E, 8'hED, 8'h00 };
 		end
 		@(posedge clk) begin
 			valid_in  <= 0;
