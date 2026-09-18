@@ -1,70 +1,49 @@
-# KR260 I2C Master – BMP280 Read/Write Register
+# KR260 BMP280 Temperature Measurement
 
 ## Project Description
 
-This project implements a generic I2C Master in Verilog on the AMD Kria KR260.
+This project reads and calculates temperature from a BMP280 sensor using the previously implemented generic I2C Master.
 
-The FPGA communicates with a BMP280 sensor using I2C and supports reading and writing registers.
+The temperature measurement consists of three main steps:
 
-BMP280 I2C address:
+1. Read the temperature calibration coefficients.
+2. Read the raw temperature data.
+3. Apply the BMP280 temperature compensation formula.
 
-`0x76`
-
-### ctrl_meas Register
-
-Register address:
-
-`0xF4`
+The calibration coefficients are combined in little-endian format:
 
 ```text
-bit 7 6 5 | bit 4 3 2 | bit 1 0
-----------+-----------+--------
-  osrs_t  |   osrs_p  |  mode
-osrs_t: temperature oversampling
-	001 = x1
-osrs_p: pressure oversampling
-	001 = x1
-mode:
-	11 = Normal mode
-	
-Write 0x27 to register 0xF4.
-START
-0xEC + ACK          // BMP280 Address + Write
-0xF4 + ACK          // ctrl_meas Register
-0x27 + ACK          // Write value 0x27
-STOP
+dig_T1 = {0x89, 0x88} = 0x6F96
+dig_T2 = {0x8B, 0x8A} = 0x6579
+dig_T3 = {0x8D, 0x8C} = 0x0032
+```
 
+The 20-bit raw temperature value is:
 
-Read register 0xF4 to verify the written value.
-START
-0xEC + ACK          // BMP280 Address + Write
-0xF4 + ACK          // ctrl_meas Register
-REPEATED START
-0xED + ACK          // BMP280 Address + Read
-0x27 + NACK         // Expected read value
-STOP
+```text
+adc_T = {temp_msb, temp_lsb, temp_xlsb[7:4]}
+```
+The integer compensation equations are:
 
+```text
+var1 =
+((((adc_T >> 3) - (dig_T1 << 1))
+  * dig_T2) >> 11)
 
+var2 =
+(((((adc_T >> 4) - dig_T1)
+   * ((adc_T >> 4) - dig_T1)) >> 12)
+   * dig_T3) >> 14)
 
--------------------------------
-START:
-SDA: 1 → 0 while SCL is already HIGH.
+t_fine = var1 + var2
 
-STOP:
-SDA: 0 → 1 while SCL is already HIGH.
+temperature_x100 =
+(t_fine * 5 + 128) >> 8
+```
 
-END OF EACH BIT / ACK:
-SCL must return from HIGH → LOW before starting the next operation.
+Hardware result:
 
-RECEIVE ACK/NACK:
-Master releases SDA.
-SDA = 0 → ACK
-SDA = 1 → NACK
-
-OPEN-DRAIN:
-FPGA only drives LOW or releases the line (Z).
-The pull-up resistor creates the HIGH level.
-
-PHASE:
-Phase 0/1 is used to control the LOW and HIGH periods of SCL
-and determine when SDA is updated or sampled.
+```text
+temperature_x100 = 2765
+Temperature = 27.65 °C
+```

@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="2,054.001 ns"></ZoomEndTime>
+      <Cursor1Time time="54.500 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="342"></NameColumnWidth>
+      <ValueColumnWidth column_width="167"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="56" />
+   <wvobject fp_name="/tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/rst_n" type="logic">
+      <obj_property name="ElementShortName">rst_n</obj_property>
+      <obj_property name="ObjectShortName">rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/start" type="logic">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/write_en" type="logic">
+      <obj_property name="ElementShortName">write_en</obj_property>
+      <obj_property name="ObjectShortName">write_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/in_scl" type="logic">
+      <obj_property name="ElementShortName">in_scl</obj_property>
+      <obj_property name="ObjectShortName">in_scl</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/in_sda" type="logic">
+      <obj_property name="ElementShortName">in_sda</obj_property>
+      <obj_property name="ObjectShortName">in_sda</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/scl" type="logic">
+      <obj_property name="ElementShortName">scl</obj_property>
+      <obj_property name="ObjectShortName">scl</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/sda" type="logic">
+      <obj_property name="ElementShortName">sda</obj_property>
+      <obj_property name="ObjectShortName">sda</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/i" type="array">
+      <obj_property name="ElementShortName">i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/top_bmp280_controller_sim/bmp280_controller_0/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/top_bmp280_controller_sim/bmp280_controller_0/rst_n" type="logic">
+      <obj_property name="ElementShortName">rst_n</obj_property>
+      <obj_property name="ObjectShortName">rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/top_bmp280_controller_sim/bmp280_controller_0/start" type="logic">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/top_bmp280_controller_sim/bmp280_controller_0/done" type="logic">
+      <obj_property name="ElementShortName">done</obj_property>
+      <obj_property name="ObjectShortName">done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/top_bmp280_controller_sim/bmp280_controller_0/busy" type="logic">
+      <obj_property name="ElementShortName">busy</obj_property>
+      <obj_property name="ObjectShortName">busy</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/top_bmp280_controller_sim/bmp280_controller_0/ack_err" type="logic">
+      <obj_property name="ElementShortName">ack_err</obj_property>
+      <obj_property name="ObjectShortName">ack_err</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/top_bmp280_controller_sim/bmp280_controller_0/in_read_data" type="array">
+      <obj_property name="ElementShortName">in_read_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">in_read_data[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/top_bmp280_controller_sim/bmp280_controller_0/start_i2c" type="logic">
+      <obj_property name="ElementShortName">start_i2c</obj_property>
+      <obj_property name="ObjectShortName">start_i2c</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/top_bmp280_controller_sim/bmp280_controller_0/slave_addr" type="array">
+      <obj_property name="ElementShortName">slave_addr[6:0]</obj_property>
+      <obj_property name="ObjectShortName">slave_addr[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/top_bmp280_controller_sim/bmp280_controller_0/reg_addr" type="array">
+      <obj_property name="ElementShortName">reg_addr[7:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_addr[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/top_bmp280_controller_sim/bmp280_controller_0/write_data" type="array">
+      <obj_property name="ElementShortName">write_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">write_data[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/top_bmp280_controller_sim/bmp280_controller_0/rw" type="logic">
+      <obj_property name="ElementShortName">rw</obj_property>
+      <obj_property name="ObjectShortName">rw</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/top_bmp280_controller_sim/bmp280_controller_0/valid_o" type="logic">
+      <obj_property name="ElementShortName">valid_o</obj_property>
+      <obj_property name="ObjectShortName">valid_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/top_bmp280_controller_sim/bmp280_controller_0/cnt_wait" type="array">
+      <obj_property name="ElementShortName">cnt_wait[2:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_wait[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/top_bmp280_controller_sim/bmp280_controller_0/calib_o" type="array">
+      <obj_property name="ElementShortName">calib_o[47:0]</obj_property>
+      <obj_property name="ObjectShortName">calib_o[47:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/top_bmp280_controller_sim/bmp280_controller_0/raw_o" type="array">
+      <obj_property name="ElementShortName">raw_o[23:0]</obj_property>
+      <obj_property name="ObjectShortName">raw_o[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/top_bmp280_controller_sim/bmp280_controller_0/state" type="array">
+      <obj_property name="ElementShortName">state[3:0]</obj_property>
+      <obj_property name="ObjectShortName">state[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/top_bmp280_controller_sim/bmp280_controller_0/next_state" type="array">
+      <obj_property name="ElementShortName">next_state[3:0]</obj_property>
+      <obj_property name="ObjectShortName">next_state[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/top_bmp280_controller_sim/bmp280_controller_0/d_start" type="logic">
+      <obj_property name="ElementShortName">d_start</obj_property>
+      <obj_property name="ObjectShortName">d_start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/top_bmp280_controller_sim/bmp280_controller_0/rasing_edge" type="logic">
+      <obj_property name="ElementShortName">rasing_edge</obj_property>
+      <obj_property name="ObjectShortName">rasing_edge</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/top_bmp280_controller_sim/bmp280_controller_0/cnt_1s" type="array">
+      <obj_property name="ElementShortName">cnt_1s[0:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_1s[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/top_bmp280_controller_sim/bmp280_controller_0/tick_1s" type="logic">
+      <obj_property name="ElementShortName">tick_1s</obj_property>
+      <obj_property name="ObjectShortName">tick_1s</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/top_bmp280_controller_sim/bmp280_controller_0/cnt_raw" type="array">
+      <obj_property name="ElementShortName">cnt_raw[1:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_raw[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/top_bmp280_controller_sim/bmp280_controller_0/r_slave_addr" type="array">
+      <obj_property name="ElementShortName">r_slave_addr[6:0]</obj_property>
+      <obj_property name="ObjectShortName">r_slave_addr[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/top_bmp280_controller_sim/bmp280_controller_0/r_reg_addr" type="array">
+      <obj_property name="ElementShortName">r_reg_addr[7:0]</obj_property>
+      <obj_property name="ObjectShortName">r_reg_addr[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/top_bmp280_controller_sim/bmp280_controller_0/r_write_data" type="array">
+      <obj_property name="ElementShortName">r_write_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">r_write_data[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/top_bmp280_controller_sim/bmp280_controller_0/r_rw" type="logic">
+      <obj_property name="ElementShortName">r_rw</obj_property>
+      <obj_property name="ObjectShortName">r_rw</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/top_bmp280_controller_sim/bmp280_controller_0/r_start" type="logic">
+      <obj_property name="ElementShortName">r_start</obj_property>
+      <obj_property name="ObjectShortName">r_start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/top_bmp280_controller_sim/bmp280_controller_0/cnt_wtm" type="array">
+      <obj_property name="ElementShortName">cnt_wtm[3:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_wtm[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/top_bmp280_controller_sim/bmp280_controller_0/CLK_DIV" type="array">
+      <obj_property name="ElementShortName">CLK_DIV[31:0]</obj_property>
+      <obj_property name="ObjectShortName">CLK_DIV[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/top_bmp280_controller_sim/bmp280_controller_0/IDLE" type="array">
+      <obj_property name="ElementShortName">IDLE[3:0]</obj_property>
+      <obj_property name="ObjectShortName">IDLE[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/top_bmp280_controller_sim/bmp280_controller_0/CALIB_LOAD" type="array">
+      <obj_property name="ElementShortName">CALIB_LOAD[3:0]</obj_property>
+      <obj_property name="ObjectShortName">CALIB_LOAD[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/top_bmp280_controller_sim/bmp280_controller_0/CALIB_START" type="array">
+      <obj_property name="ElementShortName">CALIB_START[3:0]</obj_property>
+      <obj_property name="ObjectShortName">CALIB_START[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/top_bmp280_controller_sim/bmp280_controller_0/CALIB_WAIT" type="array">
+      <obj_property name="ElementShortName">CALIB_WAIT[3:0]</obj_property>
+      <obj_property name="ObjectShortName">CALIB_WAIT[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/top_bmp280_controller_sim/bmp280_controller_0/CONFIG_LOAD" type="array">
+      <obj_property name="ElementShortName">CONFIG_LOAD[3:0]</obj_property>
+      <obj_property name="ObjectShortName">CONFIG_LOAD[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/top_bmp280_controller_sim/bmp280_controller_0/CONFIG_START" type="array">
+      <obj_property name="ElementShortName">CONFIG_START[3:0]</obj_property>
+      <obj_property name="ObjectShortName">CONFIG_START[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/top_bmp280_controller_sim/bmp280_controller_0/CONFIG_WAIT" type="array">
+      <obj_property name="ElementShortName">CONFIG_WAIT[3:0]</obj_property>
+      <obj_property name="ObjectShortName">CONFIG_WAIT[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/top_bmp280_controller_sim/bmp280_controller_0/WAIT_MEASURE" type="array">
+      <obj_property name="ElementShortName">WAIT_MEASURE[3:0]</obj_property>
+      <obj_property name="ObjectShortName">WAIT_MEASURE[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/top_bmp280_controller_sim/bmp280_controller_0/RAW_LOAD" type="array">
+      <obj_property name="ElementShortName">RAW_LOAD[3:0]</obj_property>
+      <obj_property name="ObjectShortName">RAW_LOAD[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/top_bmp280_controller_sim/bmp280_controller_0/RAW_START" type="array">
+      <obj_property name="ElementShortName">RAW_START[3:0]</obj_property>
+      <obj_property name="ObjectShortName">RAW_START[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/top_bmp280_controller_sim/bmp280_controller_0/RAW_WAIT" type="array">
+      <obj_property name="ElementShortName">RAW_WAIT[3:0]</obj_property>
+      <obj_property name="ObjectShortName">RAW_WAIT[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/top_bmp280_controller_sim/bmp280_controller_0/FINISH" type="array">
+      <obj_property name="ElementShortName">FINISH[3:0]</obj_property>
+      <obj_property name="ObjectShortName">FINISH[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/top_bmp280_controller_sim/bmp280_controller_0/SLAVE_ADDR" type="array">
+      <obj_property name="ElementShortName">SLAVE_ADDR[6:0]</obj_property>
+      <obj_property name="ObjectShortName">SLAVE_ADDR[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/top_bmp280_controller_sim/bmp280_controller_0/INI_CALIB_REG" type="array">
+      <obj_property name="ElementShortName">INI_CALIB_REG[7:0]</obj_property>
+      <obj_property name="ObjectShortName">INI_CALIB_REG[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/top_bmp280_controller_sim/bmp280_controller_0/CONFIG_REG" type="array">
+      <obj_property name="ElementShortName">CONFIG_REG[7:0]</obj_property>
+      <obj_property name="ObjectShortName">CONFIG_REG[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/top_bmp280_controller_sim/bmp280_controller_0/CONFIG_DATA_WRITE" type="array">
+      <obj_property name="ElementShortName">CONFIG_DATA_WRITE[7:0]</obj_property>
+      <obj_property name="ObjectShortName">CONFIG_DATA_WRITE[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/top_bmp280_controller_sim/bmp280_controller_0/RAW_REG" type="array">
+      <obj_property name="ElementShortName">RAW_REG[7:0]</obj_property>
+      <obj_property name="ObjectShortName">RAW_REG[7:0]</obj_property>
+   </wvobject>
+</wave_config>

@@ -11,10 +11,9 @@ set_property IOSTANDARD LVCMOS33 [get_ports rst_n]
 set_property PACKAGE_PIN E12 [get_ports start] 
 set_property IOSTANDARD LVCMOS33 [get_ports start]
 #LEDs for done and busy
-#User defined LED1-#PMOD1-PIN6
  set_property PACKAGE_PIN D11 [get_ports done_led] 
  set_property IOSTANDARD LVCMOS33 [get_ports done_led]
-#User defined LED2-#PMOD1-PIN8
+
  set_property PACKAGE_PIN B11 [get_ports busy_led] 
  set_property IOSTANDARD LVCMOS33 [get_ports busy_led]
 #PMOD
