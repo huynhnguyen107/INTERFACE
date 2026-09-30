@@ -1,0 +1,254 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Wed Sep 30 16:27:39 2026
+# Process ID: 36548
+# Current directory: D:/FPGA/Vivaldo Project/INTERFACE/DDR/ddr_axi_dma_stream_processor/ddr_axi_dma_stream_processor.runs/synth_1
+# Command line: vivado.exe -log ddr_block_design_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ddr_block_design_wrapper.tcl
+# Log file: D:/FPGA/Vivaldo Project/INTERFACE/DDR/ddr_axi_dma_stream_processor/ddr_axi_dma_stream_processor.runs/synth_1/ddr_block_design_wrapper.vds
+# Journal file: D:/FPGA/Vivaldo Project/INTERFACE/DDR/ddr_axi_dma_stream_processor/ddr_axi_dma_stream_processor.runs/synth_1\vivado.jou
+# Running On: LAPTOP-CHCSI1R5, OS: Windows, CPU Frequency: 3194 MHz, CPU Physical cores: 16, Host memory: 21319 MB
+#-----------------------------------------------------------
+source ddr_block_design_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 378.277 ; gain = 63.633
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2022.2/data/ip'.
+add_files: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 457.387 ; gain = 79.109
+Command: synth_design -top ddr_block_design_wrapper -part xck26-sfvc784-2LV-c
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 32268
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1798.219 ; gain = 330.090
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'ddr_block_design_wrapper' [d:/FPGA/Vivaldo Project/INTERFACE/DDR/ddr_axi_dma_stream_processor/ddr_axi_dma_stream_processor.gen/sources_1/bd/ddr_block_design/hdl/ddr_block_design_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'ddr_block_design' [d:/FPGA/Vivaldo Project/INTERFACE/DDR/ddr_axi_dma_stream_processor/ddr_axi_dma_stream_processor.gen/sources_1/bd/ddr_block_design/synth/ddr_block_design.v:12]
+INFO: [Synth 8-6157] synthesizing module 'ddr_block_design_axi_dma_0_0' [D:/FPGA/Vivaldo Project/INTERFACE/DDR/ddr_axi_dma_stream_processor/ddr_axi_dma_stream_processor.runs/synth_1/.Xil/Vivado-36548-LAPTOP-CHCSI1R5/realtime/ddr_block_design_axi_dma_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'ddr_block_design_axi_dma_0_0' (0#1) [D:/FPGA/Vivaldo Project/INTERFACE/DDR/ddr_axi_dma_stream_processor/ddr_axi_dma_stream_processor.runs/synth_1/.Xil/Vivado-36548-LAPTOP-CHCSI1R5/realtime/ddr_block_design_axi_dma_0_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'mm2s_prmry_reset_out_n' of module 'ddr_block_design_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [d:/FPGA/Vivaldo Project/INTERFACE/DDR/ddr_axi_dma_stream_processor/ddr_axi_dma_stream_processor.gen/sources_1/bd/ddr_block_design/synth/ddr_block_design.v:144]
+WARNING: [Synth 8-7071] port 's2mm_prmry_reset_out_n' of module 'ddr_block_design_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [d:/FPGA/Vivaldo Project/INTERFACE/DDR/ddr_axi_dma_stream_processor/ddr_axi_dma_stream_processor.gen/sources_1/bd/ddr_block_design/synth/ddr_block_design.v:144]
+WARNING: [Synth 8-7071] port 'mm2s_introut' of module 'ddr_block_design_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [d:/FPGA/Vivaldo Project/INTERFACE/DDR/ddr_axi_dma_stream_processor/ddr_axi_dma_stream_processor.gen/sources_1/bd/ddr_block_design/synth/ddr_block_design.v:144]
+WARNING: [Synth 8-7071] port 's2mm_introut' of module 'ddr_block_design_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [d:/FPGA/Vivaldo Project/INTERFACE/DDR/ddr_axi_dma_stream_processor/ddr_axi_dma_stream_processor.gen/sources_1/bd/ddr_block_design/synth/ddr_block_design.v:144]
+WARNING: [Synth 8-7071] port 'axi_dma_tstvec' of module 'ddr_block_design_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [d:/FPGA/Vivaldo Project/INTERFACE/DDR/ddr_axi_dma_stream_processor/ddr_axi_dma_stream_processor.gen/sources_1/bd/ddr_block_design/synth/ddr_block_design.v:144]
+WARNING: [Synth 8-7023] instance 'axi_dma_0' of module 'ddr_block_design_axi_dma_0_0' has 64 connections declared, but only 59 given [d:/FPGA/Vivaldo Project/INTERFACE/DDR/ddr_axi_dma_stream_processor/ddr_axi_dma_stream_processor.gen/sources_1/bd/ddr_block_design/synth/ddr_block_design.v:144]
+INFO: [Synth 8-6157] synthesizing module 'ddr_block_design_proc_sys_reset_0_0' [D:/FPGA/Vivaldo Project/INTERFACE/DDR/ddr_axi_dma_stream_processor/ddr_axi_dma_stream_processor.runs/synth_1/.Xil/Vivado-36548-LAPTOP-CHCSI1R5/realtime/ddr_block_design_proc_sys_reset_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'ddr_block_design_proc_sys_reset_0_0' (0#1) [D:/FPGA/Vivaldo Project/INTERFACE/DDR/ddr_axi_dma_stream_processor/ddr_axi_dma_stream_processor.runs/synth_1/.Xil/Vivado-36548-LAPTOP-CHCSI1R5/realtime/ddr_block_design_proc_sys_reset_0_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'ddr_block_design_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [d:/FPGA/Vivaldo Project/INTERFACE/DDR/ddr_axi_dma_stream_processor/ddr_axi_dma_stream_processor.gen/sources_1/bd/ddr_block_design/synth/ddr_block_design.v:204]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'ddr_block_design_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [d:/FPGA/Vivaldo Project/INTERFACE/DDR/ddr_axi_dma_stream_processor/ddr_axi_dma_stream_processor.gen/sources_1/bd/ddr_block_design/synth/ddr_block_design.v:204]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'ddr_block_design_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [d:/FPGA/Vivaldo Project/INTERFACE/DDR/ddr_axi_dma_stream_processor/ddr_axi_dma_stream_processor.gen/sources_1/bd/ddr_block_design/synth/ddr_block_design.v:204]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'ddr_block_design_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [d:/FPGA/Vivaldo Project/INTERFACE/DDR/ddr_axi_dma_stream_processor/ddr_axi_dma_stream_processor.gen/sources_1/bd/ddr_block_design/synth/ddr_block_design.v:204]
+WARNING: [Synth 8-7023] instance 'proc_sys_reset_0' of module 'ddr_block_design_proc_sys_reset_0_0' has 10 connections declared, but only 6 given [d:/FPGA/Vivaldo Project/INTERFACE/DDR/ddr_axi_dma_stream_processor/ddr_axi_dma_stream_processor.gen/sources_1/bd/ddr_block_design/synth/ddr_block_design.v:204]
+INFO: [Synth 8-6157] synthesizing module 'ddr_block_design_smartconnect_0_0' [D:/FPGA/Vivaldo Project/INTERFACE/DDR/ddr_axi_dma_stream_processor/ddr_axi_dma_stream_processor.runs/synth_1/.Xil/Vivado-36548-LAPTOP-CHCSI1R5/realtime/ddr_block_design_smartconnect_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'ddr_block_design_smartconnect_0_0' (0#1) [D:/FPGA/Vivaldo Project/INTERFACE/DDR/ddr_axi_dma_stream_processor/ddr_axi_dma_stream_processor.runs/synth_1/.Xil/Vivado-36548-LAPTOP-CHCSI1R5/realtime/ddr_block_design_smartconnect_0_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'M00_AXI_awprot' of module 'ddr_block_design_smartconnect_0_0' is unconnected for instance 'smartconnect_0' [d:/FPGA/Vivaldo Project/INTERFACE/DDR/ddr_axi_dma_stream_processor/ddr_axi_dma_stream_processor.gen/sources_1/bd/ddr_block_design/synth/ddr_block_design.v:211]
+WARNING: [Synth 8-7071] port 'M00_AXI_wstrb' of module 'ddr_block_design_smartconnect_0_0' is unconnected for instance 'smartconnect_0' [d:/FPGA/Vivaldo Project/INTERFACE/DDR/ddr_axi_dma_stream_processor/ddr_axi_dma_stream_processor.gen/sources_1/bd/ddr_block_design/synth/ddr_block_design.v:211]
+WARNING: [Synth 8-7071] port 'M00_AXI_arprot' of module 'ddr_block_design_smartconnect_0_0' is unconnected for instance 'smartconnect_0' [d:/FPGA/Vivaldo Project/INTERFACE/DDR/ddr_axi_dma_stream_processor/ddr_axi_dma_stream_processor.gen/sources_1/bd/ddr_block_design/synth/ddr_block_design.v:211]
+WARNING: [Synth 8-7023] instance 'smartconnect_0' of module 'ddr_block_design_smartconnect_0_0' has 128 connections declared, but only 125 given [d:/FPGA/Vivaldo Project/INTERFACE/DDR/ddr_axi_dma_stream_processor/ddr_axi_dma_stream_processor.gen/sources_1/bd/ddr_block_design/synth/ddr_block_design.v:211]
+INFO: [Synth 8-6157] synthesizing module 'ddr_block_design_zynq_ultra_ps_e_0_0' [D:/FPGA/Vivaldo Project/INTERFACE/DDR/ddr_axi_dma_stream_processor/ddr_axi_dma_stream_processor.runs/synth_1/.Xil/Vivado-36548-LAPTOP-CHCSI1R5/realtime/ddr_block_design_zynq_ultra_ps_e_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'ddr_block_design_zynq_ultra_ps_e_0_0' (0#1) [D:/FPGA/Vivaldo Project/INTERFACE/DDR/ddr_axi_dma_stream_processor/ddr_axi_dma_stream_processor.runs/synth_1/.Xil/Vivado-36548-LAPTOP-CHCSI1R5/realtime/ddr_block_design_zynq_ultra_ps_e_0_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'saxigp2_bid' of module 'ddr_block_design_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [d:/FPGA/Vivaldo Project/INTERFACE/DDR/ddr_axi_dma_stream_processor/ddr_axi_dma_stream_processor.gen/sources_1/bd/ddr_block_design/synth/ddr_block_design.v:337]
+WARNING: [Synth 8-7071] port 'saxigp2_rid' of module 'ddr_block_design_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [d:/FPGA/Vivaldo Project/INTERFACE/DDR/ddr_axi_dma_stream_processor/ddr_axi_dma_stream_processor.gen/sources_1/bd/ddr_block_design/synth/ddr_block_design.v:337]
+WARNING: [Synth 8-7023] instance 'zynq_ultra_ps_e_0' of module 'ddr_block_design_zynq_ultra_ps_e_0_0' has 82 connections declared, but only 80 given [d:/FPGA/Vivaldo Project/INTERFACE/DDR/ddr_axi_dma_stream_processor/ddr_axi_dma_stream_processor.gen/sources_1/bd/ddr_block_design/synth/ddr_block_design.v:337]
+INFO: [Synth 8-6155] done synthesizing module 'ddr_block_design' (0#1) [d:/FPGA/Vivaldo Project/INTERFACE/DDR/ddr_axi_dma_stream_processor/ddr_axi_dma_stream_processor.gen/sources_1/bd/ddr_block_design/synth/ddr_block_design.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'ddr_block_design_wrapper' (0#1) [d:/FPGA/Vivaldo Project/INTERFACE/DDR/ddr_axi_dma_stream_processor/ddr_axi_dma_stream_processor.gen/sources_1/bd/ddr_block_design/hdl/ddr_block_design_wrapper.v:12]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1894.227 ; gain = 426.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1894.227 ; gain = 426.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1894.227 ; gain = 426.098
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1894.227 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/FPGA/Vivaldo Project/INTERFACE/DDR/ddr_axi_dma_stream_processor/ddr_axi_dma_stream_processor.gen/sources_1/bd/ddr_block_design/ip/ddr_block_design_zynq_ultra_ps_e_0_0/ddr_block_design_zynq_ultra_ps_e_0_0/ddr_block_design_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'ddr_block_design_i/zynq_ultra_ps_e_0'
+Finished Parsing XDC File [d:/FPGA/Vivaldo Project/INTERFACE/DDR/ddr_axi_dma_stream_processor/ddr_axi_dma_stream_processor.gen/sources_1/bd/ddr_block_design/ip/ddr_block_design_zynq_ultra_ps_e_0_0/ddr_block_design_zynq_ultra_ps_e_0_0/ddr_block_design_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'ddr_block_design_i/zynq_ultra_ps_e_0'
+Parsing XDC File [d:/FPGA/Vivaldo Project/INTERFACE/DDR/ddr_axi_dma_stream_processor/ddr_axi_dma_stream_processor.gen/sources_1/bd/ddr_block_design/ip/ddr_block_design_proc_sys_reset_0_0/ddr_block_design_proc_sys_reset_0_0/ddr_block_design_proc_sys_reset_0_0_in_context.xdc] for cell 'ddr_block_design_i/proc_sys_reset_0'
+Finished Parsing XDC File [d:/FPGA/Vivaldo Project/INTERFACE/DDR/ddr_axi_dma_stream_processor/ddr_axi_dma_stream_processor.gen/sources_1/bd/ddr_block_design/ip/ddr_block_design_proc_sys_reset_0_0/ddr_block_design_proc_sys_reset_0_0/ddr_block_design_proc_sys_reset_0_0_in_context.xdc] for cell 'ddr_block_design_i/proc_sys_reset_0'
+Parsing XDC File [d:/FPGA/Vivaldo Project/INTERFACE/DDR/ddr_axi_dma_stream_processor/ddr_axi_dma_stream_processor.gen/sources_1/bd/ddr_block_design/ip/ddr_block_design_smartconnect_0_0/ddr_block_design_smartconnect_0_0/ddr_block_design_smartconnect_0_0_in_context.xdc] for cell 'ddr_block_design_i/smartconnect_0'
+Finished Parsing XDC File [d:/FPGA/Vivaldo Project/INTERFACE/DDR/ddr_axi_dma_stream_processor/ddr_axi_dma_stream_processor.gen/sources_1/bd/ddr_block_design/ip/ddr_block_design_smartconnect_0_0/ddr_block_design_smartconnect_0_0/ddr_block_design_smartconnect_0_0_in_context.xdc] for cell 'ddr_block_design_i/smartconnect_0'
+Parsing XDC File [d:/FPGA/Vivaldo Project/INTERFACE/DDR/ddr_axi_dma_stream_processor/ddr_axi_dma_stream_processor.gen/sources_1/bd/ddr_block_design/ip/ddr_block_design_axi_dma_0_0/ddr_block_design_axi_dma_0_0/ddr_block_design_axi_dma_0_0_in_context.xdc] for cell 'ddr_block_design_i/axi_dma_0'
+Finished Parsing XDC File [d:/FPGA/Vivaldo Project/INTERFACE/DDR/ddr_axi_dma_stream_processor/ddr_axi_dma_stream_processor.gen/sources_1/bd/ddr_block_design/ip/ddr_block_design_axi_dma_0_0/ddr_block_design_axi_dma_0_0/ddr_block_design_axi_dma_0_0_in_context.xdc] for cell 'ddr_block_design_i/axi_dma_0'
+Parsing XDC File [D:/FPGA/Vivaldo Project/INTERFACE/DDR/ddr_axi_dma_stream_processor/ddr_axi_dma_stream_processor.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/FPGA/Vivaldo Project/INTERFACE/DDR/ddr_axi_dma_stream_processor/ddr_axi_dma_stream_processor.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1894.227 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1894.227 ; gain = 0.000
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1898.762 ; gain = 430.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xck26-sfvc784-2LV-c
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1898.770 ; gain = 430.641
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for ddr_block_design_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for ddr_block_design_i/zynq_ultra_ps_e_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for ddr_block_design_i/proc_sys_reset_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for ddr_block_design_i/smartconnect_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for ddr_block_design_i/axi_dma_0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1899.734 ; gain = 431.605
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1899.734 ; gain = 431.605
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1248 (col length:96)
+BRAMs: 288 (col length: RAMB18 96 RAMB36 48)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1899.734 ; gain = 431.605
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 2448.691 ; gain = 980.562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 2448.691 ; gain = 980.562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 2468.227 ; gain = 1000.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 2474.984 ; gain = 1006.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 2474.984 ; gain = 1006.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 2474.984 ; gain = 1006.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 2474.984 ; gain = 1006.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 2474.984 ; gain = 1006.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 2474.984 ; gain = 1006.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-------------------------------------+----------+
+|      |BlackBox name                        |Instances |
++------+-------------------------------------+----------+
+|1     |ddr_block_design_axi_dma_0_0         |         1|
+|2     |ddr_block_design_proc_sys_reset_0_0  |         1|
+|3     |ddr_block_design_smartconnect_0_0    |         1|
+|4     |ddr_block_design_zynq_ultra_ps_e_0_0 |         1|
++------+-------------------------------------+----------+
+
+Report Cell Usage: 
++------+-----------------------------------+------+
+|      |Cell                               |Count |
++------+-----------------------------------+------+
+|1     |ddr_block_design_axi_dma_0         |     1|
+|2     |ddr_block_design_proc_sys_reset_0  |     1|
+|3     |ddr_block_design_smartconnect_0    |     1|
+|4     |ddr_block_design_zynq_ultra_ps_e_0 |     1|
++------+-----------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 2474.984 ; gain = 1006.855
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:38 . Memory (MB): peak = 2474.984 ; gain = 1006.855
+Synthesis Optimization Complete : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 2474.984 ; gain = 1006.855
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 2474.984 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2519.531 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: da2f1839
+INFO: [Common 17-83] Releasing license: Synthesis
+30 Infos, 19 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:52 ; elapsed = 00:00:55 . Memory (MB): peak = 2524.590 ; gain = 2067.203
+INFO: [Common 17-1381] The checkpoint 'D:/FPGA/Vivaldo Project/INTERFACE/DDR/ddr_axi_dma_stream_processor/ddr_axi_dma_stream_processor.runs/synth_1/ddr_block_design_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file ddr_block_design_wrapper_utilization_synth.rpt -pb ddr_block_design_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Sep 30 16:28:50 2026...
