@@ -1,0 +1,253 @@
+# ----- REMOVE LINES ABOVE HERE --------------------------
+#
+# This license is valid from Thu Oct 01 19:56:24 UTC 2026.
+#
+# This is license NODELOCKED to HOSTID=84A938DE6EBC;
+# there is no need to run lmgrd for this license.
+#
+#
+#  This license is valid for evaluation ( 120 days ) from Thu Oct 01 19:56:24 UTC 2026
+INCREMENT plb_temac xilinxd 2027.10 30-jan-2027 uncounted \
+4E66EFED554F \
+VENDOR_STRING=License_Type:Hardware_Evaluation;van-huynh.nguyen.1@ens.etsmtl.ca,plb_temac,ip,evaluation,_213548606_0_0_208 \
+HOSTID=84a938de6ebc ISSUER="Xilinx Inc" NOTICE="The license \
+for this core was generated for \
+van-huynh.nguyen.1@ens.etsmtl.ca on 10/02/2026It is the \
+responsibility of the Licensee of this core to adhere to all \
+terms and conditions of the applicable license agreement when \
+using this core." START=01-Oct-2026 TS_OK
+#
+# Licenses for plb_temac_v1
+FEATURE plb_temac_v1 xilinxd 1.0 30-jan-2027 uncounted D53DED4D4FEA \
+VENDOR_STRING=License_Type:Hardware_Evaluation \
+HOSTID=84a938de6ebc ISSUER=Xilinx NOTICE="The license for this \
+core was generated for van-huynh.nguyen.1@ens.etsmtl.ca on \
+10/02/2026It is the responsibility of the Licensee of this \
+core to adhere to all terms and conditions of the applicable \
+license agreement when using this core." TS_OK
+#
+#  This license is valid for evaluation ( 120 days ) from Thu Oct 01 19:56:24 UTC 2026
+INCREMENT xps_ll_temac xilinxd 2027.10 30-jan-2027 uncounted \
+F15E43CC62CF \
+VENDOR_STRING="License_Type:Hardware_Evaluation;van-huynh.nguyen.1@ens.etsmtl.ca, \
+xps_ll_temac,ip,evaluation,_213548606_0_0_863" \
+HOSTID=84a938de6ebc ISSUER="Xilinx Inc" NOTICE="The license \
+for this core was generated for \
+van-huynh.nguyen.1@ens.etsmtl.ca on 10/02/2026It is the \
+responsibility of the Licensee of this core to adhere to all \
+terms and conditions of the applicable license agreement when \
+using this core." START=01-Oct-2026 TS_OK
+#
+# Licenses for xps_ll_temac_v2
+FEATURE xps_ll_temac_v2 xilinxd 1.0 30-jan-2027 uncounted \
+AF9812529476 VENDOR_STRING=License_Type:Hardware_Evaluation \
+HOSTID=84a938de6ebc ISSUER=Xilinx NOTICE="The license for this \
+core was generated for van-huynh.nguyen.1@ens.etsmtl.ca on \
+10/02/2026It is the responsibility of the Licensee of this \
+core to adhere to all terms and conditions of the applicable \
+license agreement when using this core." TS_OK
+#
+# Licenses for xps_ll_temac_v1
+FEATURE xps_ll_temac_v1 xilinxd 1.0 30-jan-2027 uncounted \
+79A4054FCCF0 VENDOR_STRING=License_Type:Hardware_Evaluation \
+HOSTID=84a938de6ebc ISSUER=Xilinx NOTICE="The license for this \
+core was generated for van-huynh.nguyen.1@ens.etsmtl.ca on \
+10/02/2026It is the responsibility of the Licensee of this \
+core to adhere to all terms and conditions of the applicable \
+license agreement when using this core." TS_OK
+#
+#  This license is valid for evaluation ( 120 days ) from Thu Oct 01 19:56:24 UTC 2026
+INCREMENT soft_temac_wrap xilinxd 2027.10 30-jan-2027 uncounted \
+B8246B39202D \
+VENDOR_STRING=License_Type:Hardware_Evaluation;van-huynh.nguyen.1@ens.etsmtl.ca,soft_temac_wrap,ip,evaluation,_213548606_0_0_927 \
+HOSTID=84a938de6ebc ISSUER="Xilinx Inc" NOTICE="The license \
+for this core was generated for \
+van-huynh.nguyen.1@ens.etsmtl.ca on 10/02/2026It is the \
+responsibility of the Licensee of this core to adhere to all \
+terms and conditions of the applicable license agreement when \
+using this core." START=01-Oct-2026 TS_OK
+#
+# Licenses for soft_temac_wrap_v2
+FEATURE soft_temac_wrap_v2 xilinxd 1.0 30-jan-2027 uncounted \
+9CAC8CBC71B4 VENDOR_STRING=License_Type:Hardware_Evaluation \
+HOSTID=84a938de6ebc ISSUER=Xilinx NOTICE="The license for this \
+core was generated for van-huynh.nguyen.1@ens.etsmtl.ca on \
+10/02/2026It is the responsibility of the Licensee of this \
+core to adhere to all terms and conditions of the applicable \
+license agreement when using this core." TS_OK
+#
+#  This license is valid for evaluation ( 120 days ) from Thu Oct 01 19:56:24 UTC 2026
+INCREMENT 10_100_mb_eth_mac xilinxd 2027.10 30-jan-2027 uncounted \
+53C1AF8012D1 \
+VENDOR_STRING=License_Type:Hardware_Evaluation;van-huynh.nguyen.1@ens.etsmtl.ca,10_100_mb_eth_mac,ip,evaluation,_213548606_0_0_703 \
+HOSTID=84a938de6ebc ISSUER="Xilinx Inc" NOTICE="The license \
+for this core was generated for \
+van-huynh.nguyen.1@ens.etsmtl.ca on 10/02/2026It is the \
+responsibility of the Licensee of this core to adhere to all \
+terms and conditions of the applicable license agreement when \
+using this core." START=01-Oct-2026 TS_OK
+#
+#  This license is valid for evaluation ( 120 days ) from Thu Oct 01 19:56:24 UTC 2026
+INCREMENT opb_ethernet xilinxd 2027.10 30-jan-2027 uncounted \
+B574779F044B \
+VENDOR_STRING=License_Type:Hardware_Evaluation;van-huynh.nguyen.1@ens.etsmtl.ca,opb_ethernet,ip,evaluation,_213548606_0_0_045 \
+HOSTID=84a938de6ebc ISSUER="Xilinx Inc" NOTICE="The license \
+for this core was generated for \
+van-huynh.nguyen.1@ens.etsmtl.ca on 10/02/2026It is the \
+responsibility of the Licensee of this core to adhere to all \
+terms and conditions of the applicable license agreement when \
+using this core." START=01-Oct-2026 TS_OK
+#
+# Licenses for opb_ethernet_v1
+FEATURE opb_ethernet_v1 xilinxd 1.0 30-jan-2027 uncounted \
+DBDFD10EC485 VENDOR_STRING=License_Type:Hardware_Evaluation \
+HOSTID=84a938de6ebc ISSUER=Xilinx NOTICE="The license for this \
+core was generated for van-huynh.nguyen.1@ens.etsmtl.ca on \
+10/02/2026It is the responsibility of the Licensee of this \
+core to adhere to all terms and conditions of the applicable \
+license agreement when using this core." TS_OK
+#
+# Licenses for opb_ethernet_v1_00_j
+FEATURE opb_ethernet_v1_00_j xilinxd 1.0 30-jan-2027 uncounted \
+976FC43DE3D8 VENDOR_STRING=License_Type:Hardware_Evaluation \
+HOSTID=84a938de6ebc ISSUER=Xilinx NOTICE="The license for this \
+core was generated for van-huynh.nguyen.1@ens.etsmtl.ca on \
+10/02/2026It is the responsibility of the Licensee of this \
+core to adhere to all terms and conditions of the applicable \
+license agreement when using this core." TS_OK
+#
+# Licenses for opb_ethernet_v1_00_k
+FEATURE opb_ethernet_v1_00_k xilinxd 1.0 30-jan-2027 uncounted \
+D5BDB6161D6A VENDOR_STRING=License_Type:Hardware_Evaluation \
+HOSTID=84a938de6ebc ISSUER=Xilinx NOTICE="The license for this \
+core was generated for van-huynh.nguyen.1@ens.etsmtl.ca on \
+10/02/2026It is the responsibility of the Licensee of this \
+core to adhere to all terms and conditions of the applicable \
+license agreement when using this core." TS_OK
+#
+# Licenses for opb_ethernet_v1_00_l
+FEATURE opb_ethernet_v1_00_l xilinxd 1.0 30-jan-2027 uncounted \
+478F7C2B6F5C VENDOR_STRING=License_Type:Hardware_Evaluation \
+HOSTID=84a938de6ebc ISSUER=Xilinx NOTICE="The license for this \
+core was generated for van-huynh.nguyen.1@ens.etsmtl.ca on \
+10/02/2026It is the responsibility of the Licensee of this \
+core to adhere to all terms and conditions of the applicable \
+license agreement when using this core." TS_OK
+#
+# Licenses for opb_ethernet_v1_00_m
+FEATURE opb_ethernet_v1_00_m xilinxd 1.0 30-jan-2027 uncounted \
+78E4FE946936 VENDOR_STRING=License_Type:Hardware_Evaluation \
+HOSTID=84a938de6ebc ISSUER=Xilinx NOTICE="The license for this \
+core was generated for van-huynh.nguyen.1@ens.etsmtl.ca on \
+10/02/2026It is the responsibility of the Licensee of this \
+core to adhere to all terms and conditions of the applicable \
+license agreement when using this core." TS_OK
+#
+# Licenses for opb_ethernet_v1_01_a
+FEATURE opb_ethernet_v1_01_a xilinxd 1.0 30-jan-2027 uncounted \
+4D9C11E26E6D VENDOR_STRING=License_Type:Hardware_Evaluation \
+HOSTID=84a938de6ebc ISSUER=Xilinx NOTICE="The license for this \
+core was generated for van-huynh.nguyen.1@ens.etsmtl.ca on \
+10/02/2026It is the responsibility of the Licensee of this \
+core to adhere to all terms and conditions of the applicable \
+license agreement when using this core." TS_OK
+#
+#  This license is valid for evaluation ( 120 days ) from Thu Oct 01 19:56:24 UTC 2026
+INCREMENT plb_ethernet xilinxd 2027.10 30-jan-2027 uncounted \
+9824847851E8 \
+VENDOR_STRING=License_Type:Hardware_Evaluation;van-huynh.nguyen.1@ens.etsmtl.ca,plb_ethernet,ip,evaluation,_213548606_0_0_002 \
+HOSTID=84a938de6ebc ISSUER="Xilinx Inc" NOTICE="The license \
+for this core was generated for \
+van-huynh.nguyen.1@ens.etsmtl.ca on 10/02/2026It is the \
+responsibility of the Licensee of this core to adhere to all \
+terms and conditions of the applicable license agreement when \
+using this core." START=01-Oct-2026 TS_OK
+#
+# Licenses for plb_ethernet_v1_00_a
+FEATURE plb_ethernet_v1_00_a xilinxd 1.0 30-jan-2027 uncounted \
+22E2E11599F1 VENDOR_STRING=License_Type:Hardware_Evaluation \
+HOSTID=84a938de6ebc ISSUER=Xilinx NOTICE="The license for this \
+core was generated for van-huynh.nguyen.1@ens.etsmtl.ca on \
+10/02/2026It is the responsibility of the Licensee of this \
+core to adhere to all terms and conditions of the applicable \
+license agreement when using this core." TS_OK
+#
+# Licenses for plb_ethernet_v1
+FEATURE plb_ethernet_v1 xilinxd 1.0 30-jan-2027 uncounted \
+6D9AE2D78E9E VENDOR_STRING=License_Type:Hardware_Evaluation \
+HOSTID=84a938de6ebc ISSUER=Xilinx NOTICE="The license for this \
+core was generated for van-huynh.nguyen.1@ens.etsmtl.ca on \
+10/02/2026It is the responsibility of the Licensee of this \
+core to adhere to all terms and conditions of the applicable \
+license agreement when using this core." TS_OK
+#
+#  This license is valid for evaluation ( 120 days ) from Thu Oct 01 19:56:24 UTC 2026
+INCREMENT tri_mode_eth_mac xilinxd 2027.10 30-jan-2027 uncounted \
+A4EE85906A6F \
+VENDOR_STRING=License_Type:Hardware_Evaluation;van-huynh.nguyen.1@ens.etsmtl.ca,tri_mode_eth_mac,ip,evaluation,_213548606_0_0_142 \
+HOSTID=84a938de6ebc ISSUER="Xilinx Inc" NOTICE="The license \
+for this core was generated for \
+van-huynh.nguyen.1@ens.etsmtl.ca on 10/02/2026It is the \
+responsibility of the Licensee of this core to adhere to all \
+terms and conditions of the applicable license agreement when \
+using this core." START=01-Oct-2026 TS_OK
+#
+# Licenses for tri_mode_eth_mac_v3
+FEATURE tri_mode_eth_mac_v3 xilinxd 1.0 30-jan-2027 uncounted \
+33C6BB89F16E VENDOR_STRING=License_Type:Hardware_Evaluation \
+HOSTID=84a938de6ebc ISSUER=Xilinx NOTICE="The license for this \
+core was generated for van-huynh.nguyen.1@ens.etsmtl.ca on \
+10/02/2026It is the responsibility of the Licensee of this \
+core to adhere to all terms and conditions of the applicable \
+license agreement when using this core." TS_OK
+#
+# Licenses for tri_mode_eth_mac_v1_1
+FEATURE tri_mode_eth_mac_v1_1 xilinxd 1.0 30-jan-2027 uncounted \
+1FDFB439A033 VENDOR_STRING=License_Type:Hardware_Evaluation \
+HOSTID=84a938de6ebc ISSUER=Xilinx NOTICE="The license for this \
+core was generated for van-huynh.nguyen.1@ens.etsmtl.ca on \
+10/02/2026It is the responsibility of the Licensee of this \
+core to adhere to all terms and conditions of the applicable \
+license agreement when using this core." TS_OK
+#
+# Licenses for tri_mode_eth_mac_v4
+FEATURE tri_mode_eth_mac_v4 xilinxd 1.0 30-jan-2027 uncounted \
+E8CC39771AB5 VENDOR_STRING=License_Type:Hardware_Evaluation \
+HOSTID=84a938de6ebc ISSUER=Xilinx NOTICE="The license for this \
+core was generated for van-huynh.nguyen.1@ens.etsmtl.ca on \
+10/02/2026It is the responsibility of the Licensee of this \
+core to adhere to all terms and conditions of the applicable \
+license agreement when using this core." TS_OK
+#
+# Licenses for tri_mode_eth_mac_v2
+FEATURE tri_mode_eth_mac_v2 xilinxd 1.0 30-jan-2027 uncounted \
+D321B97334C7 VENDOR_STRING=License_Type:Hardware_Evaluation \
+HOSTID=84a938de6ebc ISSUER=Xilinx NOTICE="The license for this \
+core was generated for van-huynh.nguyen.1@ens.etsmtl.ca on \
+10/02/2026It is the responsibility of the Licensee of this \
+core to adhere to all terms and conditions of the applicable \
+license agreement when using this core." TS_OK
+#
+#  This license is valid for evaluation ( 120 days ) from Thu Oct 01 19:56:24 UTC 2026
+INCREMENT axi_ethernet_soft_10_100 xilinxd 2027.10 30-jan-2027 \
+uncounted F71897B71345 \
+VENDOR_STRING=License_Type:Hardware_Evaluation;van-huynh.nguyen.1@ens.etsmtl.ca,axi_ethernet_soft_10_100,ip,evaluation,_213548606_0_0_000 \
+HOSTID=84a938de6ebc ISSUER="Xilinx Inc" NOTICE="The license \
+for this core was generated for \
+van-huynh.nguyen.1@ens.etsmtl.ca on 10/02/2026It is the \
+responsibility of the Licensee of this core to adhere to all \
+terms and conditions of the applicable license agreement when \
+using this core." START=01-Oct-2026 TS_OK
+#
+#  This license is valid for evaluation ( 120 days ) from Thu Oct 01 19:56:24 UTC 2026
+INCREMENT axi_ethernet_soft_tri_mode xilinxd 2027.10 30-jan-2027 \
+uncounted 937A4A3359B4 \
+VENDOR_STRING=License_Type:Hardware_Evaluation;van-huynh.nguyen.1@ens.etsmtl.ca,axi_ethernet_soft_tri_mode,ip,evaluation,_213548606_0_0_023 \
+HOSTID=84a938de6ebc ISSUER="Xilinx Inc" NOTICE="The license \
+for this core was generated for \
+van-huynh.nguyen.1@ens.etsmtl.ca on 10/02/2026It is the \
+responsibility of the Licensee of this core to adhere to all \
+terms and conditions of the applicable license agreement when \
+using this core." START=01-Oct-2026 TS_OK
+#
+# ----- REMOVE LINES BELOW HERE --------------------------
