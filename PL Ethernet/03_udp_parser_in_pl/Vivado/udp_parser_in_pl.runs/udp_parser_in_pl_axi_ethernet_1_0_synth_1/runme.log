@@ -1,0 +1,300 @@
+
+*** Running vivado
+    with args -log udp_parser_in_pl_axi_ethernet_1_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source udp_parser_in_pl_axi_ethernet_1_0.tcl
+
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source udp_parser_in_pl_axi_ethernet_1_0.tcl -notrace
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: udp_parser_in_pl_axi_ethernet_1_0
+Command: synth_design -top udp_parser_in_pl_axi_ethernet_1_0 -part xck26-sfvc784-2LV-c -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 44428
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1770.277 ; gain = 333.215
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'udp_parser_in_pl_axi_ethernet_1_0' [d:/FPGA/Vivaldo Project/INTERFACE/PL Ethernet/03_udp_parser_in_pl/Vivado/udp_parser_in_pl.gen/sources_1/bd/udp_parser_in_pl/ip/udp_parser_in_pl_axi_ethernet_1_0/synth/udp_parser_in_pl_axi_ethernet_1_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_8679' [d:/FPGA/Vivaldo Project/INTERFACE/PL Ethernet/03_udp_parser_in_pl/Vivado/udp_parser_in_pl.gen/sources_1/bd/udp_parser_in_pl/ip/udp_parser_in_pl_axi_ethernet_1_0/bd_0/synth/bd_8679.v:9]
+INFO: [Synth 8-6157] synthesizing module 'bd_8679_c_counter_binary_0_0' [D:/FPGA/Vivaldo Project/INTERFACE/PL Ethernet/03_udp_parser_in_pl/Vivado/udp_parser_in_pl.runs/udp_parser_in_pl_axi_ethernet_1_0_synth_1/.Xil/Vivado-42312-LAPTOP-CHCSI1R5/realtime/bd_8679_c_counter_binary_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'bd_8679_c_counter_binary_0_0' (0#1) [D:/FPGA/Vivaldo Project/INTERFACE/PL Ethernet/03_udp_parser_in_pl/Vivado/udp_parser_in_pl.runs/udp_parser_in_pl_axi_ethernet_1_0_synth_1/.Xil/Vivado-42312-LAPTOP-CHCSI1R5/realtime/bd_8679_c_counter_binary_0_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'Q' of module 'bd_8679_c_counter_binary_0_0' is unconnected for instance 'c_counter_binary_0' [d:/FPGA/Vivaldo Project/INTERFACE/PL Ethernet/03_udp_parser_in_pl/Vivado/udp_parser_in_pl.gen/sources_1/bd/udp_parser_in_pl/ip/udp_parser_in_pl_axi_ethernet_1_0/bd_0/synth/bd_8679.v:289]
+WARNING: [Synth 8-7023] instance 'c_counter_binary_0' of module 'bd_8679_c_counter_binary_0_0' has 4 connections declared, but only 3 given [d:/FPGA/Vivaldo Project/INTERFACE/PL Ethernet/03_udp_parser_in_pl/Vivado/udp_parser_in_pl.gen/sources_1/bd/udp_parser_in_pl/ip/udp_parser_in_pl_axi_ethernet_1_0/bd_0/synth/bd_8679.v:289]
+INFO: [Synth 8-6157] synthesizing module 'bd_8679_c_shift_ram_0_0' [D:/FPGA/Vivaldo Project/INTERFACE/PL Ethernet/03_udp_parser_in_pl/Vivado/udp_parser_in_pl.runs/udp_parser_in_pl_axi_ethernet_1_0_synth_1/.Xil/Vivado-42312-LAPTOP-CHCSI1R5/realtime/bd_8679_c_shift_ram_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'bd_8679_c_shift_ram_0_0' (0#1) [D:/FPGA/Vivaldo Project/INTERFACE/PL Ethernet/03_udp_parser_in_pl/Vivado/udp_parser_in_pl.runs/udp_parser_in_pl_axi_ethernet_1_0_synth_1/.Xil/Vivado-42312-LAPTOP-CHCSI1R5/realtime/bd_8679_c_shift_ram_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'bd_8679_eth_buf_0' [D:/FPGA/Vivaldo Project/INTERFACE/PL Ethernet/03_udp_parser_in_pl/Vivado/udp_parser_in_pl.runs/udp_parser_in_pl_axi_ethernet_1_0_synth_1/.Xil/Vivado-42312-LAPTOP-CHCSI1R5/realtime/bd_8679_eth_buf_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'bd_8679_eth_buf_0' (0#1) [D:/FPGA/Vivaldo Project/INTERFACE/PL Ethernet/03_udp_parser_in_pl/Vivado/udp_parser_in_pl.runs/udp_parser_in_pl_axi_ethernet_1_0_synth_1/.Xil/Vivado-42312-LAPTOP-CHCSI1R5/realtime/bd_8679_eth_buf_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'RESET2PCSPMA' of module 'bd_8679_eth_buf_0' is unconnected for instance 'eth_buf' [d:/FPGA/Vivaldo Project/INTERFACE/PL Ethernet/03_udp_parser_in_pl/Vivado/udp_parser_in_pl.gen/sources_1/bd/udp_parser_in_pl/ip/udp_parser_in_pl_axi_ethernet_1_0/bd_0/synth/bd_8679.v:299]
+WARNING: [Synth 8-7071] port 'PHY_RST_N' of module 'bd_8679_eth_buf_0' is unconnected for instance 'eth_buf' [d:/FPGA/Vivaldo Project/INTERFACE/PL Ethernet/03_udp_parser_in_pl/Vivado/udp_parser_in_pl.gen/sources_1/bd/udp_parser_in_pl/ip/udp_parser_in_pl_axi_ethernet_1_0/bd_0/synth/bd_8679.v:299]
+WARNING: [Synth 8-7071] port 'mdio_o_top' of module 'bd_8679_eth_buf_0' is unconnected for instance 'eth_buf' [d:/FPGA/Vivaldo Project/INTERFACE/PL Ethernet/03_udp_parser_in_pl/Vivado/udp_parser_in_pl.gen/sources_1/bd/udp_parser_in_pl/ip/udp_parser_in_pl_axi_ethernet_1_0/bd_0/synth/bd_8679.v:299]
+WARNING: [Synth 8-7071] port 'mdio_t_top' of module 'bd_8679_eth_buf_0' is unconnected for instance 'eth_buf' [d:/FPGA/Vivaldo Project/INTERFACE/PL Ethernet/03_udp_parser_in_pl/Vivado/udp_parser_in_pl.gen/sources_1/bd/udp_parser_in_pl/ip/udp_parser_in_pl_axi_ethernet_1_0/bd_0/synth/bd_8679.v:299]
+WARNING: [Synth 8-7071] port 'mdc_top' of module 'bd_8679_eth_buf_0' is unconnected for instance 'eth_buf' [d:/FPGA/Vivaldo Project/INTERFACE/PL Ethernet/03_udp_parser_in_pl/Vivado/udp_parser_in_pl.gen/sources_1/bd/udp_parser_in_pl/ip/udp_parser_in_pl_axi_ethernet_1_0/bd_0/synth/bd_8679.v:299]
+WARNING: [Synth 8-7071] port 'mdio_i_temac' of module 'bd_8679_eth_buf_0' is unconnected for instance 'eth_buf' [d:/FPGA/Vivaldo Project/INTERFACE/PL Ethernet/03_udp_parser_in_pl/Vivado/udp_parser_in_pl.gen/sources_1/bd/udp_parser_in_pl/ip/udp_parser_in_pl_axi_ethernet_1_0/bd_0/synth/bd_8679.v:299]
+WARNING: [Synth 8-7023] instance 'eth_buf' of module 'bd_8679_eth_buf_0' has 102 connections declared, but only 96 given [d:/FPGA/Vivaldo Project/INTERFACE/PL Ethernet/03_udp_parser_in_pl/Vivado/udp_parser_in_pl.gen/sources_1/bd/udp_parser_in_pl/ip/udp_parser_in_pl_axi_ethernet_1_0/bd_0/synth/bd_8679.v:299]
+INFO: [Synth 8-6157] synthesizing module 'bd_8679_mac_0' [D:/FPGA/Vivaldo Project/INTERFACE/PL Ethernet/03_udp_parser_in_pl/Vivado/udp_parser_in_pl.runs/udp_parser_in_pl_axi_ethernet_1_0_synth_1/.Xil/Vivado-42312-LAPTOP-CHCSI1R5/realtime/bd_8679_mac_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'bd_8679_mac_0' (0#1) [D:/FPGA/Vivaldo Project/INTERFACE/PL Ethernet/03_udp_parser_in_pl/Vivado/udp_parser_in_pl.runs/udp_parser_in_pl_axi_ethernet_1_0_synth_1/.Xil/Vivado-42312-LAPTOP-CHCSI1R5/realtime/bd_8679_mac_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'rx_axis_filter_tuser' of module 'bd_8679_mac_0' is unconnected for instance 'mac' [d:/FPGA/Vivaldo Project/INTERFACE/PL Ethernet/03_udp_parser_in_pl/Vivado/udp_parser_in_pl.gen/sources_1/bd/udp_parser_in_pl/ip/udp_parser_in_pl_axi_ethernet_1_0/bd_0/synth/bd_8679.v:396]
+WARNING: [Synth 8-7071] port 'tx_enable' of module 'bd_8679_mac_0' is unconnected for instance 'mac' [d:/FPGA/Vivaldo Project/INTERFACE/PL Ethernet/03_udp_parser_in_pl/Vivado/udp_parser_in_pl.gen/sources_1/bd/udp_parser_in_pl/ip/udp_parser_in_pl_axi_ethernet_1_0/bd_0/synth/bd_8679.v:396]
+WARNING: [Synth 8-7071] port 'tx_statistics_vector' of module 'bd_8679_mac_0' is unconnected for instance 'mac' [d:/FPGA/Vivaldo Project/INTERFACE/PL Ethernet/03_udp_parser_in_pl/Vivado/udp_parser_in_pl.gen/sources_1/bd/udp_parser_in_pl/ip/udp_parser_in_pl_axi_ethernet_1_0/bd_0/synth/bd_8679.v:396]
+WARNING: [Synth 8-7071] port 'tx_statistics_valid' of module 'bd_8679_mac_0' is unconnected for instance 'mac' [d:/FPGA/Vivaldo Project/INTERFACE/PL Ethernet/03_udp_parser_in_pl/Vivado/udp_parser_in_pl.gen/sources_1/bd/udp_parser_in_pl/ip/udp_parser_in_pl_axi_ethernet_1_0/bd_0/synth/bd_8679.v:396]
+WARNING: [Synth 8-7071] port 'speedis100' of module 'bd_8679_mac_0' is unconnected for instance 'mac' [d:/FPGA/Vivaldo Project/INTERFACE/PL Ethernet/03_udp_parser_in_pl/Vivado/udp_parser_in_pl.gen/sources_1/bd/udp_parser_in_pl/ip/udp_parser_in_pl_axi_ethernet_1_0/bd_0/synth/bd_8679.v:396]
+WARNING: [Synth 8-7071] port 'inband_link_status' of module 'bd_8679_mac_0' is unconnected for instance 'mac' [d:/FPGA/Vivaldo Project/INTERFACE/PL Ethernet/03_udp_parser_in_pl/Vivado/udp_parser_in_pl.gen/sources_1/bd/udp_parser_in_pl/ip/udp_parser_in_pl_axi_ethernet_1_0/bd_0/synth/bd_8679.v:396]
+WARNING: [Synth 8-7071] port 'inband_clock_speed' of module 'bd_8679_mac_0' is unconnected for instance 'mac' [d:/FPGA/Vivaldo Project/INTERFACE/PL Ethernet/03_udp_parser_in_pl/Vivado/udp_parser_in_pl.gen/sources_1/bd/udp_parser_in_pl/ip/udp_parser_in_pl_axi_ethernet_1_0/bd_0/synth/bd_8679.v:396]
+WARNING: [Synth 8-7071] port 'inband_duplex_status' of module 'bd_8679_mac_0' is unconnected for instance 'mac' [d:/FPGA/Vivaldo Project/INTERFACE/PL Ethernet/03_udp_parser_in_pl/Vivado/udp_parser_in_pl.gen/sources_1/bd/udp_parser_in_pl/ip/udp_parser_in_pl_axi_ethernet_1_0/bd_0/synth/bd_8679.v:396]
+WARNING: [Synth 8-7023] instance 'mac' of module 'bd_8679_mac_0' has 62 connections declared, but only 54 given [d:/FPGA/Vivaldo Project/INTERFACE/PL Ethernet/03_udp_parser_in_pl/Vivado/udp_parser_in_pl.gen/sources_1/bd/udp_parser_in_pl/ip/udp_parser_in_pl_axi_ethernet_1_0/bd_0/synth/bd_8679.v:396]
+INFO: [Synth 8-6157] synthesizing module 'bd_8679_util_vector_logic_0_0' [D:/FPGA/Vivaldo Project/INTERFACE/PL Ethernet/03_udp_parser_in_pl/Vivado/udp_parser_in_pl.runs/udp_parser_in_pl_axi_ethernet_1_0_synth_1/.Xil/Vivado-42312-LAPTOP-CHCSI1R5/realtime/bd_8679_util_vector_logic_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'bd_8679_util_vector_logic_0_0' (0#1) [D:/FPGA/Vivaldo Project/INTERFACE/PL Ethernet/03_udp_parser_in_pl/Vivado/udp_parser_in_pl.runs/udp_parser_in_pl_axi_ethernet_1_0_synth_1/.Xil/Vivado-42312-LAPTOP-CHCSI1R5/realtime/bd_8679_util_vector_logic_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'bd_8679_xlconstant_0_0' [d:/FPGA/Vivaldo Project/INTERFACE/PL Ethernet/03_udp_parser_in_pl/Vivado/udp_parser_in_pl.gen/sources_1/bd/udp_parser_in_pl/ip/udp_parser_in_pl_axi_ethernet_1_0/bd_0/ip/ip_4/synth/bd_8679_xlconstant_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant' [d:/FPGA/Vivaldo Project/INTERFACE/PL Ethernet/03_udp_parser_in_pl/Vivado/udp_parser_in_pl.gen/sources_1/bd/udp_parser_in_pl/ipshared/badb/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant' (0#1) [d:/FPGA/Vivaldo Project/INTERFACE/PL Ethernet/03_udp_parser_in_pl/Vivado/udp_parser_in_pl.gen/sources_1/bd/udp_parser_in_pl/ipshared/badb/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'bd_8679_xlconstant_0_0' (0#1) [d:/FPGA/Vivaldo Project/INTERFACE/PL Ethernet/03_udp_parser_in_pl/Vivado/udp_parser_in_pl.gen/sources_1/bd/udp_parser_in_pl/ip/udp_parser_in_pl_axi_ethernet_1_0/bd_0/ip/ip_4/synth/bd_8679_xlconstant_0_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_8679' (0#1) [d:/FPGA/Vivaldo Project/INTERFACE/PL Ethernet/03_udp_parser_in_pl/Vivado/udp_parser_in_pl.gen/sources_1/bd/udp_parser_in_pl/ip/udp_parser_in_pl_axi_ethernet_1_0/bd_0/synth/bd_8679.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'udp_parser_in_pl_axi_ethernet_1_0' (0#1) [d:/FPGA/Vivaldo Project/INTERFACE/PL Ethernet/03_udp_parser_in_pl/Vivado/udp_parser_in_pl.gen/sources_1/bd/udp_parser_in_pl/ip/udp_parser_in_pl_axi_ethernet_1_0/synth/udp_parser_in_pl_axi_ethernet_1_0.v:53]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1865.590 ; gain = 428.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1865.590 ; gain = 428.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1865.590 ; gain = 428.527
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1865.590 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/FPGA/Vivaldo Project/INTERFACE/PL Ethernet/03_udp_parser_in_pl/Vivado/udp_parser_in_pl.gen/sources_1/bd/udp_parser_in_pl/ip/udp_parser_in_pl_axi_ethernet_1_0/bd_0/ip/ip_0/bd_8679_eth_buf_0/bd_8679_eth_buf_0_in_context.xdc] for cell 'inst/eth_buf'
+Finished Parsing XDC File [d:/FPGA/Vivaldo Project/INTERFACE/PL Ethernet/03_udp_parser_in_pl/Vivado/udp_parser_in_pl.gen/sources_1/bd/udp_parser_in_pl/ip/udp_parser_in_pl_axi_ethernet_1_0/bd_0/ip/ip_0/bd_8679_eth_buf_0/bd_8679_eth_buf_0_in_context.xdc] for cell 'inst/eth_buf'
+Parsing XDC File [d:/FPGA/Vivaldo Project/INTERFACE/PL Ethernet/03_udp_parser_in_pl/Vivado/udp_parser_in_pl.gen/sources_1/bd/udp_parser_in_pl/ip/udp_parser_in_pl_axi_ethernet_1_0/bd_0/ip/ip_1/bd_8679_mac_0/bd_8679_mac_0_in_context.xdc] for cell 'inst/mac'
+Finished Parsing XDC File [d:/FPGA/Vivaldo Project/INTERFACE/PL Ethernet/03_udp_parser_in_pl/Vivado/udp_parser_in_pl.gen/sources_1/bd/udp_parser_in_pl/ip/udp_parser_in_pl_axi_ethernet_1_0/bd_0/ip/ip_1/bd_8679_mac_0/bd_8679_mac_0_in_context.xdc] for cell 'inst/mac'
+Parsing XDC File [d:/FPGA/Vivaldo Project/INTERFACE/PL Ethernet/03_udp_parser_in_pl/Vivado/udp_parser_in_pl.gen/sources_1/bd/udp_parser_in_pl/ip/udp_parser_in_pl_axi_ethernet_1_0/bd_0/ip/ip_2/bd_8679_c_shift_ram_0_0/bd_8679_c_shift_ram_0_0_in_context.xdc] for cell 'inst/c_shift_ram_0'
+Finished Parsing XDC File [d:/FPGA/Vivaldo Project/INTERFACE/PL Ethernet/03_udp_parser_in_pl/Vivado/udp_parser_in_pl.gen/sources_1/bd/udp_parser_in_pl/ip/udp_parser_in_pl_axi_ethernet_1_0/bd_0/ip/ip_2/bd_8679_c_shift_ram_0_0/bd_8679_c_shift_ram_0_0_in_context.xdc] for cell 'inst/c_shift_ram_0'
+Parsing XDC File [d:/FPGA/Vivaldo Project/INTERFACE/PL Ethernet/03_udp_parser_in_pl/Vivado/udp_parser_in_pl.gen/sources_1/bd/udp_parser_in_pl/ip/udp_parser_in_pl_axi_ethernet_1_0/bd_0/ip/ip_3/bd_8679_c_counter_binary_0_0/bd_8679_c_counter_binary_0_0_in_context.xdc] for cell 'inst/c_counter_binary_0'
+Finished Parsing XDC File [d:/FPGA/Vivaldo Project/INTERFACE/PL Ethernet/03_udp_parser_in_pl/Vivado/udp_parser_in_pl.gen/sources_1/bd/udp_parser_in_pl/ip/udp_parser_in_pl_axi_ethernet_1_0/bd_0/ip/ip_3/bd_8679_c_counter_binary_0_0/bd_8679_c_counter_binary_0_0_in_context.xdc] for cell 'inst/c_counter_binary_0'
+Parsing XDC File [d:/FPGA/Vivaldo Project/INTERFACE/PL Ethernet/03_udp_parser_in_pl/Vivado/udp_parser_in_pl.gen/sources_1/bd/udp_parser_in_pl/ip/udp_parser_in_pl_axi_ethernet_1_0/bd_0/ip/ip_5/bd_8679_util_vector_logic_0_0/bd_8679_util_vector_logic_0_0_in_context.xdc] for cell 'inst/util_vector_logic_0'
+Finished Parsing XDC File [d:/FPGA/Vivaldo Project/INTERFACE/PL Ethernet/03_udp_parser_in_pl/Vivado/udp_parser_in_pl.gen/sources_1/bd/udp_parser_in_pl/ip/udp_parser_in_pl_axi_ethernet_1_0/bd_0/ip/ip_5/bd_8679_util_vector_logic_0_0/bd_8679_util_vector_logic_0_0_in_context.xdc] for cell 'inst/util_vector_logic_0'
+Parsing XDC File [d:/FPGA/Vivaldo Project/INTERFACE/PL Ethernet/03_udp_parser_in_pl/Vivado/udp_parser_in_pl.gen/sources_1/bd/udp_parser_in_pl/ip/udp_parser_in_pl_axi_ethernet_1_0/synth/udp_parser_in_pl_axi_ethernet_1_0_ooc.xdc] for cell 'inst'
+WARNING: [Constraints 18-619] A clock with name 'rgmii_rxc' already exists, overwriting the previous clock with the same name. [d:/FPGA/Vivaldo Project/INTERFACE/PL Ethernet/03_udp_parser_in_pl/Vivado/udp_parser_in_pl.gen/sources_1/bd/udp_parser_in_pl/ip/udp_parser_in_pl_axi_ethernet_1_0/synth/udp_parser_in_pl_axi_ethernet_1_0_ooc.xdc:39]
+Finished Parsing XDC File [d:/FPGA/Vivaldo Project/INTERFACE/PL Ethernet/03_udp_parser_in_pl/Vivado/udp_parser_in_pl.gen/sources_1/bd/udp_parser_in_pl/ip/udp_parser_in_pl_axi_ethernet_1_0/synth/udp_parser_in_pl_axi_ethernet_1_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [d:/FPGA/Vivaldo Project/INTERFACE/PL Ethernet/03_udp_parser_in_pl/Vivado/udp_parser_in_pl.gen/sources_1/bd/udp_parser_in_pl/ip/udp_parser_in_pl_axi_ethernet_1_0/udp_parser_in_pl_axi_ethernet_1_0_board.xdc] for cell 'inst'
+Finished Parsing XDC File [d:/FPGA/Vivaldo Project/INTERFACE/PL Ethernet/03_udp_parser_in_pl/Vivado/udp_parser_in_pl.gen/sources_1/bd/udp_parser_in_pl/ip/udp_parser_in_pl_axi_ethernet_1_0/udp_parser_in_pl_axi_ethernet_1_0_board.xdc] for cell 'inst'
+Parsing XDC File [d:/FPGA/Vivaldo Project/INTERFACE/PL Ethernet/03_udp_parser_in_pl/Vivado/udp_parser_in_pl.gen/sources_1/bd/udp_parser_in_pl/ip/udp_parser_in_pl_axi_ethernet_1_0/synth/udp_parser_in_pl_axi_ethernet_1_0.xdc] for cell 'inst'
+Finished Parsing XDC File [d:/FPGA/Vivaldo Project/INTERFACE/PL Ethernet/03_udp_parser_in_pl/Vivado/udp_parser_in_pl.gen/sources_1/bd/udp_parser_in_pl/ip/udp_parser_in_pl_axi_ethernet_1_0/synth/udp_parser_in_pl_axi_ethernet_1_0.xdc] for cell 'inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/FPGA/Vivaldo Project/INTERFACE/PL Ethernet/03_udp_parser_in_pl/Vivado/udp_parser_in_pl.gen/sources_1/bd/udp_parser_in_pl/ip/udp_parser_in_pl_axi_ethernet_1_0/synth/udp_parser_in_pl_axi_ethernet_1_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/udp_parser_in_pl_axi_ethernet_1_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/udp_parser_in_pl_axi_ethernet_1_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/FPGA/Vivaldo Project/INTERFACE/PL Ethernet/03_udp_parser_in_pl/Vivado/udp_parser_in_pl.runs/udp_parser_in_pl_axi_ethernet_1_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/FPGA/Vivaldo Project/INTERFACE/PL Ethernet/03_udp_parser_in_pl/Vivado/udp_parser_in_pl.runs/udp_parser_in_pl_axi_ethernet_1_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1872.758 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 1874.562 ; gain = 1.805
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1874.562 ; gain = 437.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xck26-sfvc784-2LV-c
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1874.562 ; gain = 437.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for rgmii_rx_ctl. (constraint file  {d:/FPGA/Vivaldo Project/INTERFACE/PL Ethernet/03_udp_parser_in_pl/Vivado/udp_parser_in_pl.gen/sources_1/bd/udp_parser_in_pl/ip/udp_parser_in_pl_axi_ethernet_1_0/bd_0/ip/ip_1/bd_8679_mac_0/bd_8679_mac_0_in_context.xdc}, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for rgmii_rx_ctl. (constraint file  {d:/FPGA/Vivaldo Project/INTERFACE/PL Ethernet/03_udp_parser_in_pl/Vivado/udp_parser_in_pl.gen/sources_1/bd/udp_parser_in_pl/ip/udp_parser_in_pl_axi_ethernet_1_0/bd_0/ip/ip_1/bd_8679_mac_0/bd_8679_mac_0_in_context.xdc}, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for rgmii_rxc. (constraint file  {d:/FPGA/Vivaldo Project/INTERFACE/PL Ethernet/03_udp_parser_in_pl/Vivado/udp_parser_in_pl.gen/sources_1/bd/udp_parser_in_pl/ip/udp_parser_in_pl_axi_ethernet_1_0/bd_0/ip/ip_1/bd_8679_mac_0/bd_8679_mac_0_in_context.xdc}, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for rgmii_rxc. (constraint file  {d:/FPGA/Vivaldo Project/INTERFACE/PL Ethernet/03_udp_parser_in_pl/Vivado/udp_parser_in_pl.gen/sources_1/bd/udp_parser_in_pl/ip/udp_parser_in_pl_axi_ethernet_1_0/bd_0/ip/ip_1/bd_8679_mac_0/bd_8679_mac_0_in_context.xdc}, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for rgmii_rd[0]. (constraint file  {d:/FPGA/Vivaldo Project/INTERFACE/PL Ethernet/03_udp_parser_in_pl/Vivado/udp_parser_in_pl.gen/sources_1/bd/udp_parser_in_pl/ip/udp_parser_in_pl_axi_ethernet_1_0/bd_0/ip/ip_1/bd_8679_mac_0/bd_8679_mac_0_in_context.xdc}, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for rgmii_rd[0]. (constraint file  {d:/FPGA/Vivaldo Project/INTERFACE/PL Ethernet/03_udp_parser_in_pl/Vivado/udp_parser_in_pl.gen/sources_1/bd/udp_parser_in_pl/ip/udp_parser_in_pl_axi_ethernet_1_0/bd_0/ip/ip_1/bd_8679_mac_0/bd_8679_mac_0_in_context.xdc}, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for rgmii_rd[1]. (constraint file  {d:/FPGA/Vivaldo Project/INTERFACE/PL Ethernet/03_udp_parser_in_pl/Vivado/udp_parser_in_pl.gen/sources_1/bd/udp_parser_in_pl/ip/udp_parser_in_pl_axi_ethernet_1_0/bd_0/ip/ip_1/bd_8679_mac_0/bd_8679_mac_0_in_context.xdc}, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for rgmii_rd[1]. (constraint file  {d:/FPGA/Vivaldo Project/INTERFACE/PL Ethernet/03_udp_parser_in_pl/Vivado/udp_parser_in_pl.gen/sources_1/bd/udp_parser_in_pl/ip/udp_parser_in_pl_axi_ethernet_1_0/bd_0/ip/ip_1/bd_8679_mac_0/bd_8679_mac_0_in_context.xdc}, line 12).
+Applied set_property IO_BUFFER_TYPE = NONE for rgmii_rd[2]. (constraint file  {d:/FPGA/Vivaldo Project/INTERFACE/PL Ethernet/03_udp_parser_in_pl/Vivado/udp_parser_in_pl.gen/sources_1/bd/udp_parser_in_pl/ip/udp_parser_in_pl_axi_ethernet_1_0/bd_0/ip/ip_1/bd_8679_mac_0/bd_8679_mac_0_in_context.xdc}, line 13).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for rgmii_rd[2]. (constraint file  {d:/FPGA/Vivaldo Project/INTERFACE/PL Ethernet/03_udp_parser_in_pl/Vivado/udp_parser_in_pl.gen/sources_1/bd/udp_parser_in_pl/ip/udp_parser_in_pl_axi_ethernet_1_0/bd_0/ip/ip_1/bd_8679_mac_0/bd_8679_mac_0_in_context.xdc}, line 14).
+Applied set_property IO_BUFFER_TYPE = NONE for rgmii_rd[3]. (constraint file  {d:/FPGA/Vivaldo Project/INTERFACE/PL Ethernet/03_udp_parser_in_pl/Vivado/udp_parser_in_pl.gen/sources_1/bd/udp_parser_in_pl/ip/udp_parser_in_pl_axi_ethernet_1_0/bd_0/ip/ip_1/bd_8679_mac_0/bd_8679_mac_0_in_context.xdc}, line 15).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for rgmii_rd[3]. (constraint file  {d:/FPGA/Vivaldo Project/INTERFACE/PL Ethernet/03_udp_parser_in_pl/Vivado/udp_parser_in_pl.gen/sources_1/bd/udp_parser_in_pl/ip/udp_parser_in_pl_axi_ethernet_1_0/bd_0/ip/ip_1/bd_8679_mac_0/bd_8679_mac_0_in_context.xdc}, line 16).
+Applied set_property IO_BUFFER_TYPE = NONE for rgmii_tx_ctl. (constraint file  {d:/FPGA/Vivaldo Project/INTERFACE/PL Ethernet/03_udp_parser_in_pl/Vivado/udp_parser_in_pl.gen/sources_1/bd/udp_parser_in_pl/ip/udp_parser_in_pl_axi_ethernet_1_0/bd_0/ip/ip_1/bd_8679_mac_0/bd_8679_mac_0_in_context.xdc}, line 17).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for rgmii_tx_ctl. (constraint file  {d:/FPGA/Vivaldo Project/INTERFACE/PL Ethernet/03_udp_parser_in_pl/Vivado/udp_parser_in_pl.gen/sources_1/bd/udp_parser_in_pl/ip/udp_parser_in_pl_axi_ethernet_1_0/bd_0/ip/ip_1/bd_8679_mac_0/bd_8679_mac_0_in_context.xdc}, line 18).
+Applied set_property IO_BUFFER_TYPE = NONE for rgmii_txc. (constraint file  {d:/FPGA/Vivaldo Project/INTERFACE/PL Ethernet/03_udp_parser_in_pl/Vivado/udp_parser_in_pl.gen/sources_1/bd/udp_parser_in_pl/ip/udp_parser_in_pl_axi_ethernet_1_0/bd_0/ip/ip_1/bd_8679_mac_0/bd_8679_mac_0_in_context.xdc}, line 19).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for rgmii_txc. (constraint file  {d:/FPGA/Vivaldo Project/INTERFACE/PL Ethernet/03_udp_parser_in_pl/Vivado/udp_parser_in_pl.gen/sources_1/bd/udp_parser_in_pl/ip/udp_parser_in_pl_axi_ethernet_1_0/bd_0/ip/ip_1/bd_8679_mac_0/bd_8679_mac_0_in_context.xdc}, line 20).
+Applied set_property IO_BUFFER_TYPE = NONE for rgmii_td[0]. (constraint file  {d:/FPGA/Vivaldo Project/INTERFACE/PL Ethernet/03_udp_parser_in_pl/Vivado/udp_parser_in_pl.gen/sources_1/bd/udp_parser_in_pl/ip/udp_parser_in_pl_axi_ethernet_1_0/bd_0/ip/ip_1/bd_8679_mac_0/bd_8679_mac_0_in_context.xdc}, line 21).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for rgmii_td[0]. (constraint file  {d:/FPGA/Vivaldo Project/INTERFACE/PL Ethernet/03_udp_parser_in_pl/Vivado/udp_parser_in_pl.gen/sources_1/bd/udp_parser_in_pl/ip/udp_parser_in_pl_axi_ethernet_1_0/bd_0/ip/ip_1/bd_8679_mac_0/bd_8679_mac_0_in_context.xdc}, line 22).
+Applied set_property IO_BUFFER_TYPE = NONE for rgmii_td[1]. (constraint file  {d:/FPGA/Vivaldo Project/INTERFACE/PL Ethernet/03_udp_parser_in_pl/Vivado/udp_parser_in_pl.gen/sources_1/bd/udp_parser_in_pl/ip/udp_parser_in_pl_axi_ethernet_1_0/bd_0/ip/ip_1/bd_8679_mac_0/bd_8679_mac_0_in_context.xdc}, line 23).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for rgmii_td[1]. (constraint file  {d:/FPGA/Vivaldo Project/INTERFACE/PL Ethernet/03_udp_parser_in_pl/Vivado/udp_parser_in_pl.gen/sources_1/bd/udp_parser_in_pl/ip/udp_parser_in_pl_axi_ethernet_1_0/bd_0/ip/ip_1/bd_8679_mac_0/bd_8679_mac_0_in_context.xdc}, line 24).
+Applied set_property IO_BUFFER_TYPE = NONE for rgmii_td[2]. (constraint file  {d:/FPGA/Vivaldo Project/INTERFACE/PL Ethernet/03_udp_parser_in_pl/Vivado/udp_parser_in_pl.gen/sources_1/bd/udp_parser_in_pl/ip/udp_parser_in_pl_axi_ethernet_1_0/bd_0/ip/ip_1/bd_8679_mac_0/bd_8679_mac_0_in_context.xdc}, line 25).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for rgmii_td[2]. (constraint file  {d:/FPGA/Vivaldo Project/INTERFACE/PL Ethernet/03_udp_parser_in_pl/Vivado/udp_parser_in_pl.gen/sources_1/bd/udp_parser_in_pl/ip/udp_parser_in_pl_axi_ethernet_1_0/bd_0/ip/ip_1/bd_8679_mac_0/bd_8679_mac_0_in_context.xdc}, line 26).
+Applied set_property IO_BUFFER_TYPE = NONE for rgmii_td[3]. (constraint file  {d:/FPGA/Vivaldo Project/INTERFACE/PL Ethernet/03_udp_parser_in_pl/Vivado/udp_parser_in_pl.gen/sources_1/bd/udp_parser_in_pl/ip/udp_parser_in_pl_axi_ethernet_1_0/bd_0/ip/ip_1/bd_8679_mac_0/bd_8679_mac_0_in_context.xdc}, line 27).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for rgmii_td[3]. (constraint file  {d:/FPGA/Vivaldo Project/INTERFACE/PL Ethernet/03_udp_parser_in_pl/Vivado/udp_parser_in_pl.gen/sources_1/bd/udp_parser_in_pl/ip/udp_parser_in_pl_axi_ethernet_1_0/bd_0/ip/ip_1/bd_8679_mac_0/bd_8679_mac_0_in_context.xdc}, line 28).
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/eth_buf. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/mac. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/c_shift_ram_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/c_counter_binary_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xlconstant_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/util_vector_logic_0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1874.562 ; gain = 437.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1874.562 ; gain = 437.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1248 (col length:96)
+BRAMs: 288 (col length: RAMB18 96 RAMB36 48)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1874.562 ; gain = 437.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-565] redefining clock 'rgmii_rxc'
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 2417.113 ; gain = 980.051
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 2417.371 ; gain = 980.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 2436.480 ; gain = 999.418
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 2441.238 ; gain = 1004.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 2441.238 ; gain = 1004.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 2441.238 ; gain = 1004.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 2441.238 ; gain = 1004.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 2441.238 ; gain = 1004.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 2441.238 ; gain = 1004.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+------------------------------+----------+
+|      |BlackBox name                 |Instances |
++------+------------------------------+----------+
+|1     |bd_8679_c_counter_binary_0_0  |         1|
+|2     |bd_8679_c_shift_ram_0_0       |         1|
+|3     |bd_8679_eth_buf_0             |         1|
+|4     |bd_8679_mac_0                 |         1|
+|5     |bd_8679_util_vector_logic_0_0 |         1|
++------+------------------------------+----------+
+
+Report Cell Usage: 
++------+----------------------------+------+
+|      |Cell                        |Count |
++------+----------------------------+------+
+|1     |bd_8679_c_counter_binary_0  |     1|
+|2     |bd_8679_c_shift_ram_0       |     1|
+|3     |bd_8679_eth_buf             |     1|
+|4     |bd_8679_mac                 |     1|
+|5     |bd_8679_util_vector_logic_0 |     1|
++------+----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 2441.238 ; gain = 1004.176
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:37 . Memory (MB): peak = 2441.238 ; gain = 995.203
+Synthesis Optimization Complete : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 2441.238 ; gain = 1004.176
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 2441.238 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2486.156 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: baa31f7a
+INFO: [Common 17-83] Releasing license: Synthesis
+36 Infos, 21 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.statsThreshold
+INFO: [Common 17-1381] The checkpoint 'D:/FPGA/Vivaldo Project/INTERFACE/PL Ethernet/03_udp_parser_in_pl/Vivado/udp_parser_in_pl.runs/udp_parser_in_pl_axi_ethernet_1_0_synth_1/udp_parser_in_pl_axi_ethernet_1_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP udp_parser_in_pl_axi_ethernet_1_0, cache-ID = a273ac45cfdc30e7
+INFO: [Coretcl 2-1174] Renamed 6 cell refs.
+INFO: [Common 17-1381] The checkpoint 'D:/FPGA/Vivaldo Project/INTERFACE/PL Ethernet/03_udp_parser_in_pl/Vivado/udp_parser_in_pl.runs/udp_parser_in_pl_axi_ethernet_1_0_synth_1/udp_parser_in_pl_axi_ethernet_1_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file udp_parser_in_pl_axi_ethernet_1_0_utilization_synth.rpt -pb udp_parser_in_pl_axi_ethernet_1_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Oct  4 12:15:08 2026...

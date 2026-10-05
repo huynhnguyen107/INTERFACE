@@ -1,0 +1,47 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"2.22063",
+   "Default View_TopLeft":"1423,243",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port mdio_rtl -pg 1 -lvl 6 -x 2060 -y 180 -defaultsOSRD
+preplace port rgmii_rtl -pg 1 -lvl 6 -x 2060 -y 520 -defaultsOSRD
+preplace port port-id_clk25 -pg 1 -lvl 0 -x -60 -y -100 -defaultsOSRD
+preplace portBus reset_rtl -pg 1 -lvl 6 -x 2060 -y 270 -defaultsOSRD
+preplace inst zynq_ultra_ps_e_0 -pg 1 -lvl 1 -x 490 -y -30 -defaultsOSRD
+preplace inst proc_sys_reset_0 -pg 1 -lvl 1 -x 490 -y 290 -defaultsOSRD
+preplace inst smartconnect_0 -pg 1 -lvl 2 -x 950 -y 50 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 2 -x 950 -y 350 -defaultsOSRD
+preplace inst axi_ethernet_1 -pg 1 -lvl 3 -x 1290 -y 500 -defaultsOSRD
+preplace inst system_ila_0 -pg 1 -lvl 5 -x 1940 -y 370 -defaultsOSRD
+preplace inst ethernet_frame_parser_0 -pg 1 -lvl 4 -x 1630 -y 350 -defaultsOSRD
+preplace netloc axi_ethernet_1_phy_rst_n 1 3 3 1480 240 N 240 2040
+preplace netloc clk25_1 1 0 2 -40 -130 790J
+preplace netloc clk_wiz_0_clk_out1 1 0 5 -20 60 810J 140 1110 300 1460 480 1820
+preplace netloc clk_wiz_0_clk_out2 1 2 1 1100 340n
+preplace netloc clk_wiz_0_clk_out3 1 2 1 1090 360n
+preplace netloc clk_wiz_0_locked 1 0 3 -20 440 NJ 440 1080
+preplace netloc ethernet_frame_parser_0_dst_mac 1 4 1 1810 320n
+preplace netloc ethernet_frame_parser_0_ethertype 1 4 1 1790 360n
+preplace netloc ethernet_frame_parser_0_frame_done 1 4 1 1760 400n
+preplace netloc ethernet_frame_parser_0_header_valid 1 4 1 1770 380n
+preplace netloc ethernet_frame_parser_0_src_mac 1 4 1 1800 340n
+preplace netloc proc_sys_reset_0_peripheral_aresetn 1 1 4 800 450 1120 310 1450 470 1830
+preplace netloc zynq_ultra_ps_e_0_pl_resetn0 1 0 2 -30 -120 780
+preplace netloc axi_ethernet_1_m_axis_rxd 1 3 1 1470 330n
+preplace netloc axi_ethernet_1_m_axis_rxs 1 2 2 1150 330 1420
+preplace netloc axi_ethernet_1_mdio 1 3 3 1430 180 N 180 N
+preplace netloc axi_ethernet_1_rgmii 1 3 3 N 500 N 500 2040
+preplace netloc ethernet_frame_parser_0_m_axis 1 2 3 1140 320 1440 460 1780
+preplace netloc smartconnect_0_M00_AXI 1 2 1 1130 50n
+preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM0_FPD 1 1 1 810 -50n
+levelinfo -pg 1 -60 490 950 1290 1630 1940 2060
+pagesize -pg 1 -db -bbox -sgen -150 -420 2190 1430
+"
+}
+{
+   "da_axi4_cnt":"1",
+   "da_board_cnt":"3",
+   "da_clkrst_cnt":"2"
+}

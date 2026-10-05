@@ -1,0 +1,16 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Sat Oct  3 11:38:49 2026
+| Host         : LAPTOP-CHCSI1R5 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'eth_mac_loopback_ethernet_frame_parser_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of eth_mac_loopback_ethernet_frame_parser_0_0 (xilinx.com:module_ref:ethernet_frame_parser:1.0 (Rev. 1)) to Vivado generation flows.
+
