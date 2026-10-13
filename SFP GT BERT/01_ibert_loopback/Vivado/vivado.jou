@@ -15,3 +15,8 @@ open_project {D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/01_ibert_loopback/Vi
 update_compile_order -fileset sources_1
 launch_runs impl_1 -to_step write_bitstream -jobs 8
 wait_on_run impl_1
+close_project
+open_project {D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/02_sfp_external_loopback/Vivado/sfp_external_loopback.xpr}
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1

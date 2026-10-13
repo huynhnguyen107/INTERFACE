@@ -1,0 +1,198 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Mon Oct 12 12:27:22 2026
+# Process ID: 55652
+# Current directory: D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent66376 D:\FPGA\Vivaldo Project\INTERFACE\SFP GT BERT\03_sfp_10g_data_path\Vivado\03_sfp10g.xpr
+# Log file: D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/vivado.log
+# Journal file: D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado\vivado.jou
+# Running On: LAPTOP-CHCSI1R5, OS: Windows, CPU Frequency: 3194 MHz, CPU Physical cores: 16, Host memory: 21319 MB
+#-----------------------------------------------------------
+start_gui
+open_project {D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.xpr}
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_bd_design {D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/sources_1/bd/sfp_10g_data_path/sfp_10g_data_path.bd}
+create_bd_design "sfp10g_bd"
+open_bd_design {D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/sources_1/bd/sfp_10g_data_path/sfp_10g_data_path.bd}
+update_compile_order -fileset sources_1
+open_bd_design {D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/sources_1/bd/sfp10g_bd/sfp10g_bd.bd}
+current_bd_design sfp_10g_data_path
+set tmpCopyObjs [concat  [get_bd_cells {reset_gen_0 xxv_ethernet_0 xlconstant_0 xlconstant_1 xlconstant_2 xlconstant_3 xxv_ctrl_0 clk_wiz_0}] [get_bd_ports {gt_rxp_in gt_refclk_p clk_25mhz gt_refclk_n gt_rxn_in gt_txp_out gt_txn_out}] [get_bd_nets {xxv_ctrl_0_ctl_tx_test_pattern_seed_b_0 xxv_ctrl_0_ctl_tx_send_lfi_0 xxv_ctrl_0_ctl_rx_test_pattern_enable_0 xxv_ctrl_0_ctl_rx_check_preamble_0 xxv_ethernet_0_rx_clk_out_0 xxv_ctrl_0_ctl_rx_max_packet_len_0 gt_rnx_in_1 xxv_ctrl_0_ctl_tx_test_pattern_seed_a_0 xxv_ctrl_0_ctl_tx_send_rfi_0 xlconstant_0_dout xxv_ctrl_0_ctl_tx_fcs_ins_enable_0 xxv_ctrl_0_ctl_rx_enable_0 xxv_ctrl_0_ctl_rx_data_pattern_select_0 gt_refclk_p_1 clk_wiz_0_clk_out1 reset_gen_0_sys_reset xxv_ctrl_0_ctl_tx_test_pattern_0 gt_rxp_in_1 clk_wiz_0_locked clk_25mhz_1 xxv_ctrl_0_ctl_tx_test_pattern_enable_0 xxv_ctrl_0_ctl_tx_send_idle_0 xxv_ctrl_0_ctl_rx_min_packet_len_0 xxv_ctrl_0_ctl_rx_custom_preamble_enable_0 xlconstant_3_dout xxv_ethernet_0_gt_txn_out xxv_ctrl_0_ctl_tx_test_pattern_select_0 xxv_ctrl_0_ctl_tx_test_pattern_enable xlconstant_1_dout reset_gen_0_tx_reset reset_gen_0_rx_reset xxv_ctrl_0_ctl_tx_ipg_value_0 xlconstant_2_dout xxv_ethernet_0_gt_txp_out xxv_ctrl_0_ctl_rx_test_pattern_0 xxv_ctrl_0_ctl_rx_force_resync_0 xxv_ctrl_0_ctl_tx_test_pattern_select xxv_ctrl_0_ctl_tx_enable_0 xxv_ctrl_0_ctl_rx_delete_fcs_0 gt_refclk_n_1 xxv_ctrl_0_ctl_tx_ignore_fcs_0 xxv_ctrl_0_ctl_rx_process_lfi_0 xxv_ctrl_0_ctl_rx_ignore_fcs_0 xxv_ctrl_0_ctl_rx_check_sfd_0}]]
+current_bd_design sfp10g_bd
+copy_bd_objs -from_design sfp_10g_data_path / $tmpCopyObjs
+export_ip_user_files -of_objects  [get_files {{D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/sources_1/bd/sfp_10g_data_path/sfp_10g_data_path.bd}}] -no_script -reset -force -quiet
+remove_files  {{D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/sources_1/bd/sfp_10g_data_path/sfp_10g_data_path.bd}}
+file delete -force {D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/sources_1/bd/sfp_10g_data_path}
+file delete -force {d:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp_10g_data_path.gen/sources_1/bd/sfp_10g_data_path}
+update_compile_order -fileset sources_1
+make_wrapper -files [get_files {{D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/sources_1/bd/sfp10g_bd/sfp10g_bd.bd}}] -top
+add_files -norecurse {{d:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.gen/sources_1/bd/sfp10g_bd/hdl/sfp10g_bd_wrapper.v}}
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/sources_1/new/top_sfp_10g_data_path.v}}] -no_script -reset -force -quiet
+remove_files  {{D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/sources_1/new/top_sfp_10g_data_path.v}}
+file delete -force {D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/sources_1/new/top_sfp_10g_data_path.v}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{d:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.gen/sources_1/bd/sfp10g_bd/hdl/sfp10g_bd_wrapper.v}}] -no_script -reset -force -quiet
+remove_files  {{d:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.gen/sources_1/bd/sfp10g_bd/hdl/sfp10g_bd_wrapper.v}}
+file delete -force {d:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.gen/sources_1/bd/sfp10g_bd/hdl/sfp10g_bd_wrapper.v}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+make_wrapper -files [get_files {{D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/sources_1/bd/sfp10g_bd/sfp10g_bd.bd}}] -top
+add_files -norecurse {{d:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.gen/sources_1/bd/sfp10g_bd/hdl/sfp10g_bd_wrapper.v}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_target all [get_files  {{D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/sources_1/bd/sfp10g_bd/sfp10g_bd.bd}}]
+export_ip_user_files -of_objects  [get_files  {{D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/sources_1/bd/sfp10g_bd/sfp10g_bd.bd}}] -sync -no_script -force -quiet
+set_property synth_checkpoint_mode None [get_files  {{D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/sources_1/bd/sfp10g_bd/sfp10g_bd.bd}}]
+generate_target all [get_files  {{D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/sources_1/bd/sfp10g_bd/sfp10g_bd.bd}}]
+export_ip_user_files -of_objects [get_files {{D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/sources_1/bd/sfp10g_bd/sfp10g_bd.bd}}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/sources_1/bd/sfp10g_bd/sfp10g_bd.bd}}] -directory {D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.ip_user_files/sim_scripts} -ip_user_files_dir {D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.ip_user_files} -ipstatic_source_dir {D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.cache/compile_simlib/modelsim} {questa=D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.cache/compile_simlib/questa} {riviera=D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.cache/compile_simlib/riviera} {activehdl=D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+make_wrapper -files [get_files {{D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/sources_1/bd/sfp10g_bd/sfp10g_bd.bd}}] -top
+close [ open {D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/sources_1/new/top_sfp.v} w ]
+add_files {{D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/sources_1/new/top_sfp.v}}
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{d:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.gen/sources_1/bd/sfp10g_bd/hdl/sfp10g_bd_wrapper.v}}] -no_script -reset -force -quiet
+remove_files  {{d:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.gen/sources_1/bd/sfp10g_bd/hdl/sfp10g_bd_wrapper.v}}
+file delete -force {d:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.gen/sources_1/bd/sfp10g_bd/hdl/sfp10g_bd_wrapper.v}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top top_sfp [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+make_wrapper -files [get_files {{D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/sources_1/bd/sfp10g_bd/sfp10g_bd.bd}}] -top
+add_files -norecurse {{d:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.gen/sources_1/bd/sfp10g_bd/hdl/sfp10g_bd_wrapper.v}}
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/sources_1/new/top_sfp.v}}] -no_script -reset -force -quiet
+remove_files  {{D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/sources_1/new/top_sfp.v}}
+file delete -force {D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/sources_1/new/top_sfp.v}
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top sfp10g_bd_wrapper [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+report_ip_status -name ip_status 
+close_project
+open_project {D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.xpr}
+open_bd_design {D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/sources_1/bd/sfp10g_bd/sfp10g_bd.bd}
+update_compile_order -fileset sources_1
+reset_target all [get_files  {{D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/sources_1/bd/sfp10g_bd/sfp10g_bd.bd}}]
+export_ip_user_files -of_objects  [get_files  {{D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/sources_1/bd/sfp10g_bd/sfp10g_bd.bd}}] -sync -no_script -force -quiet
+generate_target all [get_files  {{D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/sources_1/bd/sfp10g_bd/sfp10g_bd.bd}}]
+export_ip_user_files -of_objects [get_files {{D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/sources_1/bd/sfp10g_bd/sfp10g_bd.bd}}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/sources_1/bd/sfp10g_bd/sfp10g_bd.bd}}] -directory {D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.ip_user_files/sim_scripts} -ip_user_files_dir {D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.ip_user_files} -ipstatic_source_dir {D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.cache/compile_simlib/modelsim} {questa=D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.cache/compile_simlib/questa} {riviera=D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.cache/compile_simlib/riviera} {activehdl=D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+open_bd_design {D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/sources_1/bd/sfp10g_bd/sfp10g_bd.bd}
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:ethernet_1_10_25g:2.7 ethernet_1_10_25g_0
+endgroup
+delete_bd_objs [get_bd_cells ethernet_1_10_25g_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xxv_ethernet:4.1 xxv_ethernet_1
+endgroup
+set_property location {3.5 1644 225} [get_bd_cells xxv_ethernet_1]
+set_property -dict [list \
+  CONFIG.BASE_R_KR {BASE-R} \
+  CONFIG.INCLUDE_AXI4_INTERFACE {0} \
+  CONFIG.LANE1_GT_LOC {X0Y6} \
+] [get_bd_cells xxv_ethernet_1]
+connect_bd_net [get_bd_ports gt_refclk_n] [get_bd_pins xxv_ethernet_1/gt_refclk_n]
+connect_bd_net [get_bd_ports gt_refclk_p] [get_bd_pins xxv_ethernet_1/gt_refclk_p]
+connect_bd_net [get_bd_pins xxv_ethernet_1/ctl_tx_custom_preamble_enable_0] [get_bd_pins xxv_ctrl_0/ctl_tx_custom_preamble_enable_0]
+connect_bd_net [get_bd_pins xxv_ethernet_1/ctl_tx_data_pattern_select_0] [get_bd_pins xxv_ctrl_0/ctl_tx_data_pattern_select_0]
+connect_bd_net [get_bd_pins xxv_ethernet_1/ctl_tx_enable_0] [get_bd_pins xxv_ctrl_0/ctl_tx_enable_0]
+connect_bd_net [get_bd_pins xxv_ethernet_1/ctl_tx_fcs_ins_enable_0] [get_bd_pins xxv_ctrl_0/ctl_tx_fcs_ins_enable_0]
+connect_bd_net [get_bd_pins xxv_ethernet_1/ctl_tx_ignore_fcs_0] [get_bd_pins xxv_ctrl_0/ctl_tx_ignore_fcs_0]
+connect_bd_net [get_bd_pins xxv_ethernet_1/ctl_tx_ipg_value_0] [get_bd_pins xxv_ctrl_0/ctl_tx_ipg_value_0]
+connect_bd_net [get_bd_pins xxv_ethernet_1/ctl_tx_send_idle_0] [get_bd_pins xxv_ctrl_0/ctl_tx_send_idle_0]
+connect_bd_net [get_bd_pins xxv_ethernet_1/ctl_tx_send_lfi_0] [get_bd_pins xxv_ctrl_0/ctl_tx_send_lfi_0]
+connect_bd_net [get_bd_pins xxv_ethernet_1/ctl_tx_send_rfi_0] [get_bd_pins xxv_ctrl_0/ctl_tx_send_rfi_0]
+connect_bd_net [get_bd_pins xxv_ethernet_1/ctl_tx_test_pattern_0] [get_bd_pins xxv_ctrl_0/ctl_tx_test_pattern_0]
+connect_bd_net [get_bd_pins xxv_ethernet_1/ctl_tx_test_pattern_enable_0] [get_bd_pins xxv_ctrl_0/ctl_tx_test_pattern_enable_0]
+connect_bd_net [get_bd_pins xxv_ethernet_1/ctl_tx_test_pattern_seed_a_0] [get_bd_pins xxv_ctrl_0/ctl_tx_test_pattern_seed_a_0]
+connect_bd_net [get_bd_pins xxv_ethernet_1/ctl_tx_test_pattern_seed_b_0] [get_bd_pins xxv_ctrl_0/ctl_tx_test_pattern_seed_b_0]
+connect_bd_net [get_bd_pins xxv_ethernet_1/ctl_tx_test_pattern_select_0] [get_bd_pins xxv_ctrl_0/ctl_tx_test_pattern_select_0]
+connect_bd_net [get_bd_pins xxv_ethernet_1/ctl_rx_check_preamble_0] [get_bd_pins xxv_ctrl_0/ctl_rx_check_preamble_0]
+connect_bd_net [get_bd_pins xxv_ethernet_1/ctl_rx_check_sfd_0] [get_bd_pins xxv_ctrl_0/ctl_rx_check_sfd_0]
+connect_bd_net [get_bd_pins xxv_ethernet_1/ctl_rx_custom_preamble_enable_0] [get_bd_pins xxv_ctrl_0/ctl_rx_custom_preamble_enable_0]
+connect_bd_net [get_bd_pins xxv_ethernet_1/ctl_rx_data_pattern_select_0] [get_bd_pins xxv_ctrl_0/ctl_rx_data_pattern_select_0]
+connect_bd_net [get_bd_pins xxv_ethernet_1/ctl_rx_delete_fcs_0] [get_bd_pins xxv_ctrl_0/ctl_rx_delete_fcs_0]
+connect_bd_net [get_bd_pins xxv_ethernet_1/ctl_rx_enable_0] [get_bd_pins xxv_ctrl_0/ctl_rx_enable_0]
+connect_bd_net [get_bd_pins xxv_ethernet_1/ctl_rx_force_resync_0] [get_bd_pins xxv_ctrl_0/ctl_rx_force_resync_0]
+connect_bd_net [get_bd_pins xxv_ethernet_1/ctl_rx_ignore_fcs_0] [get_bd_pins xxv_ctrl_0/ctl_rx_ignore_fcs_0]
+connect_bd_net [get_bd_pins xxv_ethernet_1/ctl_rx_max_packet_len_0] [get_bd_pins xxv_ctrl_0/ctl_rx_max_packet_len_0]
+connect_bd_net [get_bd_pins xxv_ethernet_1/ctl_rx_min_packet_len_0] [get_bd_pins xxv_ctrl_0/ctl_rx_min_packet_len_0]
+connect_bd_net [get_bd_pins xxv_ethernet_1/ctl_rx_process_lfi_0] [get_bd_pins xxv_ctrl_0/ctl_rx_process_lfi_0]
+connect_bd_net [get_bd_pins xxv_ethernet_1/ctl_rx_test_pattern_0] [get_bd_pins xxv_ctrl_0/ctl_rx_test_pattern_0]
+connect_bd_net [get_bd_pins xxv_ethernet_1/ctl_rx_test_pattern_enable_0] [get_bd_pins xxv_ctrl_0/ctl_rx_test_pattern_enable_0]
+connect_bd_net [get_bd_pins xxv_ethernet_1/rx_core_clk_0] [get_bd_pins xxv_ethernet_0/rx_clk_out_0]
+undo
+connect_bd_net [get_bd_pins xxv_ethernet_1/rx_clk_out_0] [get_bd_pins xxv_ethernet_1/rx_core_clk_0]
+connect_bd_net [get_bd_pins xxv_ethernet_1/txoutclksel_in_0] [get_bd_pins xlconstant_2/dout]
+connect_bd_net [get_bd_pins xxv_ethernet_1/rxoutclksel_in_0] [get_bd_pins xlconstant_2/dout]
+connect_bd_net [get_bd_pins xxv_ethernet_1/gtwiz_reset_tx_datapath_0] [get_bd_pins xlconstant_0/dout]
+connect_bd_net [get_bd_pins xxv_ethernet_1/gtwiz_reset_rx_datapath_0] [get_bd_pins xlconstant_0/dout]
+connect_bd_net [get_bd_pins xxv_ethernet_1/sys_reset] [get_bd_pins reset_gen_0/sys_reset]
+connect_bd_net [get_bd_pins xxv_ethernet_1/dclk] [get_bd_pins clk_wiz_0/clk_out1]
+connect_bd_net [get_bd_pins xxv_ethernet_1/rx_reset_0] [get_bd_pins reset_gen_0/rx_reset]
+connect_bd_net [get_bd_pins xxv_ethernet_1/tx_reset_0] [get_bd_pins reset_gen_0/tx_reset]
+connect_bd_net [get_bd_pins xxv_ethernet_1/tx_preamblein_0] [get_bd_pins xlconstant_3/dout]
+connect_bd_net [get_bd_pins xxv_ethernet_1/gt_loopback_in_0] [get_bd_pins xlconstant_1/dout]
+connect_bd_net [get_bd_pins xxv_ethernet_1/qpllreset_in_0] [get_bd_pins xlconstant_0/dout]
+connect_bd_net [get_bd_ports gt_rxn_in] [get_bd_pins xxv_ethernet_1/gt_rxn_in]
+connect_bd_net [get_bd_ports gt_rxp_in] [get_bd_pins xxv_ethernet_1/gt_rxp_in]
+delete_bd_objs [get_bd_nets xxv_ethernet_0_gt_txn_out]
+connect_bd_net [get_bd_ports gt_txn_out] [get_bd_pins xxv_ethernet_1/gt_txn_out]
+delete_bd_objs [get_bd_nets xxv_ethernet_0_gt_txp_out]
+connect_bd_net [get_bd_ports gt_txp_out] [get_bd_pins xxv_ethernet_1/gt_txp_out]
+delete_bd_objs [get_bd_nets xxv_ethernet_0_rx_clk_out_0] [get_bd_cells xxv_ethernet_0]
+save_bd_design
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:ila:6.2 ila_0
+endgroup
+set_property location {4.5 2348 638} [get_bd_cells ila_0]
+set_property -dict [list \
+  CONFIG.C_DATA_DEPTH {8192} \
+  CONFIG.C_MONITOR_TYPE {Native} \
+  CONFIG.C_NUM_OF_PROBES {5} \
+] [get_bd_cells ila_0]
+connect_bd_net [get_bd_pins ila_0/clk] [get_bd_pins xxv_ethernet_1/rx_clk_out_0]
+connect_bd_net [get_bd_pins xxv_ethernet_1/stat_rx_block_lock_0] [get_bd_pins ila_0/probe0]
+connect_bd_net [get_bd_pins xxv_ethernet_1/stat_rx_status_0] [get_bd_pins ila_0/probe1]
+connect_bd_net [get_bd_pins ila_0/probe2] [get_bd_pins xxv_ethernet_1/stat_rx_hi_ber_0]
+connect_bd_net [get_bd_pins ila_0/probe3] [get_bd_pins xxv_ethernet_1/user_rx_reset_0]
+startgroup
+set_property CONFIG.C_NUM_OF_PROBES {4} [get_bd_cells ila_0]
+endgroup
+copy_bd_objs /  [get_bd_cells {ila_0}]
+connect_bd_net [get_bd_pins ila_1/clk] [get_bd_pins xxv_ethernet_1/tx_clk_out_0]
+connect_bd_net [get_bd_pins xxv_ethernet_1/user_tx_reset_0] [get_bd_pins ila_1/probe0]
+connect_bd_net [get_bd_pins xxv_ethernet_1/gtpowergood_out_0] [get_bd_pins ila_1/probe1]
+startgroup
+set_property CONFIG.C_NUM_OF_PROBES {2} [get_bd_cells ila_1]
+endgroup
+save_bd_design
+reset_target all [get_files  {{D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/sources_1/bd/sfp10g_bd/sfp10g_bd.bd}}]
+export_ip_user_files -of_objects  [get_files  {{D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/sources_1/bd/sfp10g_bd/sfp10g_bd.bd}}] -sync -no_script -force -quiet
+generate_target all [get_files  {{D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/sources_1/bd/sfp10g_bd/sfp10g_bd.bd}}]
+export_ip_user_files -of_objects [get_files {{D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/sources_1/bd/sfp10g_bd/sfp10g_bd.bd}}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/sources_1/bd/sfp10g_bd/sfp10g_bd.bd}}] -directory {D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.ip_user_files/sim_scripts} -ip_user_files_dir {D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.ip_user_files} -ipstatic_source_dir {D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.cache/compile_simlib/modelsim} {questa=D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.cache/compile_simlib/questa} {riviera=D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.cache/compile_simlib/riviera} {activehdl=D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 

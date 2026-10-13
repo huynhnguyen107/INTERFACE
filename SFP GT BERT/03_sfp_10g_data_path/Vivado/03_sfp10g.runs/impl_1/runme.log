@@ -1,0 +1,728 @@
+
+*** Running vivado
+    with args -log sfp10g_bd_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source sfp10g_bd_wrapper.tcl -notrace
+
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source sfp10g_bd_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2022.2/data/ip'.
+Command: link_design -top sfp10g_bd_wrapper -part xck26-sfvc784-2LV-c
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.211 . Memory (MB): peak = 1525.305 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 351 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [d:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.gen/sources_1/bd/sfp10g_bd/ip/sfp10g_bd_clk_wiz_0_0/sfp10g_bd_clk_wiz_0_0_board.xdc] for cell 'sfp10g_bd_i/clk_wiz_0/inst'
+Finished Parsing XDC File [d:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.gen/sources_1/bd/sfp10g_bd/ip/sfp10g_bd_clk_wiz_0_0/sfp10g_bd_clk_wiz_0_0_board.xdc] for cell 'sfp10g_bd_i/clk_wiz_0/inst'
+Parsing XDC File [d:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.gen/sources_1/bd/sfp10g_bd/ip/sfp10g_bd_clk_wiz_0_0/sfp10g_bd_clk_wiz_0_0.xdc] for cell 'sfp10g_bd_i/clk_wiz_0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [d:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.gen/sources_1/bd/sfp10g_bd/ip/sfp10g_bd_clk_wiz_0_0/sfp10g_bd_clk_wiz_0_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [d:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.gen/sources_1/bd/sfp10g_bd/ip/sfp10g_bd_clk_wiz_0_0/sfp10g_bd_clk_wiz_0_0.xdc:57]
+Finished Parsing XDC File [d:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.gen/sources_1/bd/sfp10g_bd/ip/sfp10g_bd_clk_wiz_0_0/sfp10g_bd_clk_wiz_0_0.xdc] for cell 'sfp10g_bd_i/clk_wiz_0/inst'
+Parsing XDC File [d:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.gen/sources_1/bd/sfp10g_bd/ip/sfp10g_bd_xxv_ethernet_1_0/ip_0/synth/sfp10g_bd_xxv_ethernet_1_0_gt.xdc] for cell 'sfp10g_bd_i/xxv_ethernet_1/inst/i_sfp10g_bd_xxv_ethernet_1_0_gt/inst'
+Finished Parsing XDC File [d:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.gen/sources_1/bd/sfp10g_bd/ip/sfp10g_bd_xxv_ethernet_1_0/ip_0/synth/sfp10g_bd_xxv_ethernet_1_0_gt.xdc] for cell 'sfp10g_bd_i/xxv_ethernet_1/inst/i_sfp10g_bd_xxv_ethernet_1_0_gt/inst'
+Parsing XDC File [d:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.gen/sources_1/bd/sfp10g_bd/ip/sfp10g_bd_xxv_ethernet_1_0/synth/sfp10g_bd_xxv_ethernet_1_0_board.xdc] for cell 'sfp10g_bd_i/xxv_ethernet_1/inst'
+Finished Parsing XDC File [d:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.gen/sources_1/bd/sfp10g_bd/ip/sfp10g_bd_xxv_ethernet_1_0/synth/sfp10g_bd_xxv_ethernet_1_0_board.xdc] for cell 'sfp10g_bd_i/xxv_ethernet_1/inst'
+Parsing XDC File [d:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.gen/sources_1/bd/sfp10g_bd/ip/sfp10g_bd_xxv_ethernet_1_0/synth/sfp10g_bd_xxv_ethernet_1_0.xdc] for cell 'sfp10g_bd_i/xxv_ethernet_1/inst'
+Finished Parsing XDC File [d:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.gen/sources_1/bd/sfp10g_bd/ip/sfp10g_bd_xxv_ethernet_1_0/synth/sfp10g_bd_xxv_ethernet_1_0.xdc] for cell 'sfp10g_bd_i/xxv_ethernet_1/inst'
+Parsing XDC File [d:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.gen/sources_1/bd/sfp10g_bd/ip/sfp10g_bd_vio_0_0/sfp10g_bd_vio_0_0.xdc] for cell 'sfp10g_bd_i/vio_0'
+Finished Parsing XDC File [d:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.gen/sources_1/bd/sfp10g_bd/ip/sfp10g_bd_vio_0_0/sfp10g_bd_vio_0_0.xdc] for cell 'sfp10g_bd_i/vio_0'
+Parsing XDC File [d:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.gen/sources_1/bd/sfp10g_bd/ip/sfp10g_bd_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'sfp10g_bd_i/system_ila_0/inst/ila_lib/inst'
+Finished Parsing XDC File [d:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.gen/sources_1/bd/sfp10g_bd/ip/sfp10g_bd_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'sfp10g_bd_i/system_ila_0/inst/ila_lib/inst'
+Parsing XDC File [d:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.gen/sources_1/bd/sfp10g_bd/ip/sfp10g_bd_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc] for cell 'sfp10g_bd_i/system_ila_0/inst/ila_lib/inst'
+Finished Parsing XDC File [d:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.gen/sources_1/bd/sfp10g_bd/ip/sfp10g_bd_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc] for cell 'sfp10g_bd_i/system_ila_0/inst/ila_lib/inst'
+Parsing XDC File [d:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.gen/sources_1/bd/sfp10g_bd/ip/sfp10g_bd_system_ila_0_1/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'sfp10g_bd_i/system_ila_1/inst/ila_lib/inst'
+Finished Parsing XDC File [d:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.gen/sources_1/bd/sfp10g_bd/ip/sfp10g_bd_system_ila_0_1/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'sfp10g_bd_i/system_ila_1/inst/ila_lib/inst'
+Parsing XDC File [d:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.gen/sources_1/bd/sfp10g_bd/ip/sfp10g_bd_system_ila_0_1/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc] for cell 'sfp10g_bd_i/system_ila_1/inst/ila_lib/inst'
+Finished Parsing XDC File [d:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.gen/sources_1/bd/sfp10g_bd/ip/sfp10g_bd_system_ila_0_1/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc] for cell 'sfp10g_bd_i/system_ila_1/inst/ila_lib/inst'
+Parsing XDC File [D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/imports/example_ibert_ultrascale_gth_0.xdc]
+WARNING: [Constraints 18-619] A clock with name 'clk_25mhz' already exists, overwriting the previous clock with the same name. [D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/imports/example_ibert_ultrascale_gth_0.xdc:26]
+WARNING: [Vivado 12-584] No ports matched 'gth_refclk0p_i[0]'. [D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/imports/example_ibert_ultrascale_gth_0.xdc:42]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports {gth_refclk0p_i[0]}]'. [D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/imports/example_ibert_ultrascale_gth_0.xdc:42]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+INFO: [Timing 38-2] Deriving generated clocks [D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/imports/example_ibert_ultrascale_gth_0.xdc:43]
+WARNING: [Vivado 12-627] No clocks matched 'gth_refclk0_1'. [D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/imports/example_ibert_ultrascale_gth_0.xdc:43]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/imports/example_ibert_ultrascale_gth_0.xdc:43]
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks gth_refclk0_1 -include_generated_clocks]'. [D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/imports/example_ibert_ultrascale_gth_0.xdc:43]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group '. [D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/imports/example_ibert_ultrascale_gth_0.xdc:43]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Constraints 18-4644] set_clock_groups: All clock groups specified are empty. Please specify atleast one clock group which is not empty. [D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/imports/example_ibert_ultrascale_gth_0.xdc:43]
+WARNING: [Vivado 12-584] No ports matched 'sfp_tx_disable_o'. [D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/imports/example_ibert_ultrascale_gth_0.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/imports/example_ibert_ultrascale_gth_0.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sfp_tx_disable_o'. [D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/imports/example_ibert_ultrascale_gth_0.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/imports/example_ibert_ultrascale_gth_0.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/imports/example_ibert_ultrascale_gth_0.xdc]
+Parsing XDC File [D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/imports/ibert_ultrascale_gth_ip_example.xdc]
+WARNING: [Vivado 12-508] No pins matched 'u_ibert_gth_core/inst/QUAD[0].u_q/CH[0].u_ch/u_gthe4_channel/RXOUTCLK'. [D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/imports/ibert_ultrascale_gth_ip_example.xdc:22]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins {u_ibert_gth_core/inst/QUAD[0].u_q/CH[0].u_ch/u_gthe4_channel/RXOUTCLK}] -include_generated_clocks'. [D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/imports/ibert_ultrascale_gth_ip_example.xdc:22]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/imports/ibert_ultrascale_gth_ip_example.xdc:22]
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks -of_objects [get_pins {u_ibert_gth_core/inst/QUAD[0].u_q/CH[0].u_ch/u_gthe4_channel/RXOUTCLK}] -include_generated_clocks]'. [D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/imports/ibert_ultrascale_gth_ip_example.xdc:22]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group '. [D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/imports/ibert_ultrascale_gth_ip_example.xdc:22]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Constraints 18-4644] set_clock_groups: All clock groups specified are empty. Please specify atleast one clock group which is not empty. [D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/imports/ibert_ultrascale_gth_ip_example.xdc:22]
+WARNING: [Vivado 12-508] No pins matched 'u_ibert_gth_core/inst/QUAD[0].u_q/CH[0].u_ch/u_gthe4_channel/TXOUTCLK'. [D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/imports/ibert_ultrascale_gth_ip_example.xdc:23]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins {u_ibert_gth_core/inst/QUAD[0].u_q/CH[0].u_ch/u_gthe4_channel/TXOUTCLK}] -include_generated_clocks'. [D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/imports/ibert_ultrascale_gth_ip_example.xdc:23]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/imports/ibert_ultrascale_gth_ip_example.xdc:23]
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks -of_objects [get_pins {u_ibert_gth_core/inst/QUAD[0].u_q/CH[0].u_ch/u_gthe4_channel/TXOUTCLK}] -include_generated_clocks]'. [D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/imports/ibert_ultrascale_gth_ip_example.xdc:23]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group '. [D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/imports/ibert_ultrascale_gth_ip_example.xdc:23]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Constraints 18-4644] set_clock_groups: All clock groups specified are empty. Please specify atleast one clock group which is not empty. [D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/imports/ibert_ultrascale_gth_ip_example.xdc:23]
+WARNING: [Vivado 12-508] No pins matched 'u_ibert_gth_core/inst/QUAD[0].u_q/CH[1].u_ch/u_gthe4_channel/RXOUTCLK'. [D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/imports/ibert_ultrascale_gth_ip_example.xdc:25]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins {u_ibert_gth_core/inst/QUAD[0].u_q/CH[1].u_ch/u_gthe4_channel/RXOUTCLK}] -include_generated_clocks'. [D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/imports/ibert_ultrascale_gth_ip_example.xdc:25]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/imports/ibert_ultrascale_gth_ip_example.xdc:25]
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks -of_objects [get_pins {u_ibert_gth_core/inst/QUAD[0].u_q/CH[1].u_ch/u_gthe4_channel/RXOUTCLK}] -include_generated_clocks]'. [D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/imports/ibert_ultrascale_gth_ip_example.xdc:25]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group '. [D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/imports/ibert_ultrascale_gth_ip_example.xdc:25]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Constraints 18-4644] set_clock_groups: All clock groups specified are empty. Please specify atleast one clock group which is not empty. [D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/imports/ibert_ultrascale_gth_ip_example.xdc:25]
+WARNING: [Vivado 12-508] No pins matched 'u_ibert_gth_core/inst/QUAD[0].u_q/CH[1].u_ch/u_gthe4_channel/TXOUTCLK'. [D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/imports/ibert_ultrascale_gth_ip_example.xdc:26]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins {u_ibert_gth_core/inst/QUAD[0].u_q/CH[1].u_ch/u_gthe4_channel/TXOUTCLK}] -include_generated_clocks'. [D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/imports/ibert_ultrascale_gth_ip_example.xdc:26]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/imports/ibert_ultrascale_gth_ip_example.xdc:26]
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks -of_objects [get_pins {u_ibert_gth_core/inst/QUAD[0].u_q/CH[1].u_ch/u_gthe4_channel/TXOUTCLK}] -include_generated_clocks]'. [D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/imports/ibert_ultrascale_gth_ip_example.xdc:26]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group '. [D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/imports/ibert_ultrascale_gth_ip_example.xdc:26]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Constraints 18-4644] set_clock_groups: All clock groups specified are empty. Please specify atleast one clock group which is not empty. [D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/imports/ibert_ultrascale_gth_ip_example.xdc:26]
+WARNING: [Vivado 12-508] No pins matched 'u_ibert_gth_core/inst/QUAD[0].u_q/CH[2].u_ch/u_gthe4_channel/RXOUTCLK'. [D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/imports/ibert_ultrascale_gth_ip_example.xdc:28]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins {u_ibert_gth_core/inst/QUAD[0].u_q/CH[2].u_ch/u_gthe4_channel/RXOUTCLK}] -include_generated_clocks'. [D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/imports/ibert_ultrascale_gth_ip_example.xdc:28]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/imports/ibert_ultrascale_gth_ip_example.xdc:28]
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks -of_objects [get_pins {u_ibert_gth_core/inst/QUAD[0].u_q/CH[2].u_ch/u_gthe4_channel/RXOUTCLK}] -include_generated_clocks]'. [D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/imports/ibert_ultrascale_gth_ip_example.xdc:28]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group '. [D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/imports/ibert_ultrascale_gth_ip_example.xdc:28]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Constraints 18-4644] set_clock_groups: All clock groups specified are empty. Please specify atleast one clock group which is not empty. [D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/imports/ibert_ultrascale_gth_ip_example.xdc:28]
+WARNING: [Vivado 12-508] No pins matched 'u_ibert_gth_core/inst/QUAD[0].u_q/CH[2].u_ch/u_gthe4_channel/TXOUTCLK'. [D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/imports/ibert_ultrascale_gth_ip_example.xdc:29]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins {u_ibert_gth_core/inst/QUAD[0].u_q/CH[2].u_ch/u_gthe4_channel/TXOUTCLK}] -include_generated_clocks'. [D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/imports/ibert_ultrascale_gth_ip_example.xdc:29]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/imports/ibert_ultrascale_gth_ip_example.xdc:29]
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks -of_objects [get_pins {u_ibert_gth_core/inst/QUAD[0].u_q/CH[2].u_ch/u_gthe4_channel/TXOUTCLK}] -include_generated_clocks]'. [D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/imports/ibert_ultrascale_gth_ip_example.xdc:29]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group '. [D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/imports/ibert_ultrascale_gth_ip_example.xdc:29]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Constraints 18-4644] set_clock_groups: All clock groups specified are empty. Please specify atleast one clock group which is not empty. [D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/imports/ibert_ultrascale_gth_ip_example.xdc:29]
+WARNING: [Vivado 12-508] No pins matched 'u_ibert_gth_core/inst/QUAD[0].u_q/CH[3].u_ch/u_gthe4_channel/RXOUTCLK'. [D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/imports/ibert_ultrascale_gth_ip_example.xdc:31]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins {u_ibert_gth_core/inst/QUAD[0].u_q/CH[3].u_ch/u_gthe4_channel/RXOUTCLK}] -include_generated_clocks'. [D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/imports/ibert_ultrascale_gth_ip_example.xdc:31]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/imports/ibert_ultrascale_gth_ip_example.xdc:31]
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks -of_objects [get_pins {u_ibert_gth_core/inst/QUAD[0].u_q/CH[3].u_ch/u_gthe4_channel/RXOUTCLK}] -include_generated_clocks]'. [D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/imports/ibert_ultrascale_gth_ip_example.xdc:31]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group '. [D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/imports/ibert_ultrascale_gth_ip_example.xdc:31]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Constraints 18-4644] set_clock_groups: All clock groups specified are empty. Please specify atleast one clock group which is not empty. [D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/imports/ibert_ultrascale_gth_ip_example.xdc:31]
+WARNING: [Vivado 12-508] No pins matched 'u_ibert_gth_core/inst/QUAD[0].u_q/CH[3].u_ch/u_gthe4_channel/TXOUTCLK'. [D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/imports/ibert_ultrascale_gth_ip_example.xdc:32]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins {u_ibert_gth_core/inst/QUAD[0].u_q/CH[3].u_ch/u_gthe4_channel/TXOUTCLK}] -include_generated_clocks'. [D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/imports/ibert_ultrascale_gth_ip_example.xdc:32]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/imports/ibert_ultrascale_gth_ip_example.xdc:32]
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks -of_objects [get_pins {u_ibert_gth_core/inst/QUAD[0].u_q/CH[3].u_ch/u_gthe4_channel/TXOUTCLK}] -include_generated_clocks]'. [D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/imports/ibert_ultrascale_gth_ip_example.xdc:32]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group '. [D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/imports/ibert_ultrascale_gth_ip_example.xdc:32]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Constraints 18-4644] set_clock_groups: All clock groups specified are empty. Please specify atleast one clock group which is not empty. [D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/imports/ibert_ultrascale_gth_ip_example.xdc:32]
+Finished Parsing XDC File [D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/imports/ibert_ultrascale_gth_ip_example.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-1687] 56 scoped IP constraints or related sub-commands were skipped due to synthesis logic optimizations usually triggered by constant connectivity or unconnected output pins. To review the skipped constraints and messages, run the command 'set_param netlist.IPMsgFiltering false' before opening the design.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1989.828 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 213 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 196 instances
+  IBUF => IBUF (IBUFCTRL, INBUF): 1 instance 
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 13 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 1 instance 
+  RAM64X1S => RAM64X1S (RAMS64E): 2 instances
+
+23 Infos, 21 Warnings, 30 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.statsThreshold
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xck26'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1989.828 ; gain = 0.000
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 135393907
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.748 . Memory (MB): peak = 1989.828 ; gain = 0.000
+
+Starting Logic Optimization Task
+
+Phase 1 Generate And Synthesize Debug Cores
+INFO: [Chipscope 16-329] Generating Script for core instance : dbg_hub 
+INFO: [IP_Flow 19-3806] Processing IP xilinx.com:ip:xsdbm:3.0 for cell dbg_hub_CV.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.042 . Memory (MB): peak = 2372.367 ; gain = 0.000
+Phase 1 Generate And Synthesize Debug Cores | Checksum: d8838413
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:02:19 . Memory (MB): peak = 2372.367 ; gain = 30.207
+
+Phase 2 Retarget
+INFO: [Opt 31-1287] Pulled Inverter sfp10g_bd_i/system_ila_0/inst/ila_lib/inst/ila_core_inst/xsdb_memory_read_inst/current_state[0]_i_1 into driver instance sfp10g_bd_i/system_ila_0/inst/ila_lib/inst/ila_core_inst/xsdb_memory_read_inst/read_addr[11]_i_4, which resulted in an inversion of 15 pins
+INFO: [Opt 31-1287] Pulled Inverter sfp10g_bd_i/xxv_ethernet_1/inst/i_sfp10g_bd_xxv_ethernet_1_0_top_0/i_sfp10g_bd_xxv_ethernet_1_0_CORE/i_RX_TOP/i_RX_CORE/i_RX_CORE_LANE/i_RX_WD_ALIGN/bitslip_counter[7]_i_2 into driver instance sfp10g_bd_i/xxv_ethernet_1/inst/i_sfp10g_bd_xxv_ethernet_1_0_top_0/i_sfp10g_bd_xxv_ethernet_1_0_CORE/i_RX_TOP/i_RX_CORE/i_RX_CORE_LANE/i_RX_WD_ALIGN/bitslip_i_2, which resulted in an inversion of 9 pins
+INFO: [Opt 31-138] Pushed 12 inverter(s) to 77 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 2 Retarget | Checksum: 18ca392fa
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:02:20 . Memory (MB): peak = 2372.367 ; gain = 30.207
+INFO: [Opt 31-389] Phase Retarget created 25 cells and removed 62 cells
+INFO: [Opt 31-1021] In phase Retarget, 94 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 3 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 3 Constant propagation | Checksum: 163cb91e9
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:02:20 . Memory (MB): peak = 2372.367 ; gain = 30.207
+INFO: [Opt 31-389] Phase Constant propagation created 40 cells and removed 179 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 62 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 Sweep
+Phase 4 Sweep | Checksum: 1cc2f09e3
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:02:20 . Memory (MB): peak = 2372.367 ; gain = 30.207
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 167 cells
+INFO: [Opt 31-1021] In phase Sweep, 1850 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 5 BUFG optimization
+INFO: [Opt 31-1077] Phase BUFG optimization inserted 0 global clock buffer(s) for CLOCK_LOW_FANOUT.
+Phase 5 BUFG optimization | Checksum: 1cc2f09e3
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:02:21 . Memory (MB): peak = 2372.367 ; gain = 30.207
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 6 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 6 Shift Register Optimization | Checksum: 1cc2f09e3
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:02:21 . Memory (MB): peak = 2372.367 ; gain = 30.207
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 7 Post Processing Netlist
+Phase 7 Post Processing Netlist | Checksum: 1cc2f09e3
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:02:21 . Memory (MB): peak = 2372.367 ; gain = 30.207
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 70 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |              25  |              62  |                                             94  |
+|  Constant propagation         |              40  |             179  |                                             62  |
+|  Sweep                        |               0  |             167  |                                           1850  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                             70  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.045 . Memory (MB): peak = 2372.367 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 218d540a9
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:02:21 . Memory (MB): peak = 2372.367 ; gain = 30.207
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 18 BRAM(s) out of a total of 18 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 18 newly gated: 0 Total Ports: 36
+Ending PowerOpt Patch Enables Task | Checksum: 1c8e83c49
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.273 . Memory (MB): peak = 4175.008 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 1c8e83c49
+
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:46 . Memory (MB): peak = 4175.008 ; gain = 1802.641
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 1c8e83c49
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 4175.008 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 4175.008 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 1eaf886d7
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 4175.008 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+59 Infos, 21 Warnings, 30 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.statsThreshold
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.155 . Memory (MB): peak = 4175.008 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.runs/impl_1/sfp10g_bd_wrapper_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file sfp10g_bd_wrapper_drc_opted.rpt -pb sfp10g_bd_wrapper_drc_opted.pb -rpx sfp10g_bd_wrapper_drc_opted.rpx
+Command: report_drc -file sfp10g_bd_wrapper_drc_opted.rpt -pb sfp10g_bd_wrapper_drc_opted.pb -rpx sfp10g_bd_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.runs/impl_1/sfp10g_bd_wrapper_drc_opted.rpt.
+report_drc completed successfully
+INFO: [Chipscope 16-240] Debug cores have already been implemented
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xck26'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 4175.008 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 173c0a1e3
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 4175.008 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 4175.008 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 1149d678f
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 4175.008 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 16ab9d2bd
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 4175.008 ; gain = 0.000
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 16ab9d2bd
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 4175.008 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 16ab9d2bd
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 4175.008 ; gain = 0.000
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+
+Phase 2.1.1 Partition Driven Placement
+
+Phase 2.1.1.1 PBP: Partition Driven Placement
+Phase 2.1.1.1 PBP: Partition Driven Placement | Checksum: 1ca956927
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:12 . Memory (MB): peak = 4175.008 ; gain = 0.000
+
+Phase 2.1.1.2 PBP: Clock Region Placement
+Phase 2.1.1.2 PBP: Clock Region Placement | Checksum: 11c8908cf
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:12 . Memory (MB): peak = 4175.008 ; gain = 0.000
+
+Phase 2.1.1.3 PBP: Compute Congestion
+Phase 2.1.1.3 PBP: Compute Congestion | Checksum: 11c8908cf
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:13 . Memory (MB): peak = 4175.008 ; gain = 0.000
+
+Phase 2.1.1.4 PBP: UpdateTiming
+Phase 2.1.1.4 PBP: UpdateTiming | Checksum: 18ac1fb2b
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:13 . Memory (MB): peak = 4175.008 ; gain = 0.000
+
+Phase 2.1.1.5 PBP: Add part constraints
+Phase 2.1.1.5 PBP: Add part constraints | Checksum: 18ac1fb2b
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:13 . Memory (MB): peak = 4175.008 ; gain = 0.000
+Phase 2.1.1 Partition Driven Placement | Checksum: 18ac1fb2b
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:13 . Memory (MB): peak = 4175.008 ; gain = 0.000
+Phase 2.1 Floorplanning | Checksum: 18ac1fb2b
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:13 . Memory (MB): peak = 4175.008 ; gain = 0.000
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 18ac1fb2b
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:13 . Memory (MB): peak = 4175.008 ; gain = 0.000
+
+Phase 2.3 Post-Processing in Floorplanning
+Phase 2.3 Post-Processing in Floorplanning | Checksum: 14511d31c
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:13 . Memory (MB): peak = 4175.008 ; gain = 0.000
+
+Phase 2.4 Global Placement Core
+
+Phase 2.4.1 UpdateTiming Before Physical Synthesis
+Phase 2.4.1 UpdateTiming Before Physical Synthesis | Checksum: 17f16cac2
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:29 . Memory (MB): peak = 4175.008 ; gain = 0.000
+
+Phase 2.4.2 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 0 LUTNM shape to break, 219 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 0, two critical 0, total 0, new lutff created 0
+INFO: [Physopt 32-1138] End 1 Pass. Optimized 97 nets or LUTs. Breaked 0 LUT, combined 97 existing LUTs and moved 0 existing LUT
+INFO: [Physopt 32-1030] Pass 1. Identified 3 candidate driver sets for equivalent driver rewiring.
+INFO: [Physopt 32-661] Optimized 0 net.  Re-placed 0 instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-1123] No candidate cells found for Shift Register to Pipeline optimization
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-775] End 1 Pass. Optimized 1 net or cell. Created 2 new cells, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 4175.008 ; gain = 0.000
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.013 . Memory (MB): peak = 4175.008 ; gain = 0.000
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |            0  |             97  |                    97  |           0  |           1  |  00:00:00  |
+|  Retime                                           |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Equivalent Driver Rewiring                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register                                   |            2  |              0  |                     1  |           0  |           1  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |            2  |             97  |                    98  |           0  |          10  |  00:00:01  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.4.2 Physical Synthesis In Placer | Checksum: 1e0f1e8a8
+
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:31 . Memory (MB): peak = 4175.008 ; gain = 0.000
+Phase 2.4 Global Placement Core | Checksum: 1a98d2299
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:32 . Memory (MB): peak = 4175.008 ; gain = 0.000
+Phase 2 Global Placement | Checksum: 1a98d2299
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:32 . Memory (MB): peak = 4175.008 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 14ff0d761
+
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:33 . Memory (MB): peak = 4175.008 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1d7dabc5f
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:34 . Memory (MB): peak = 4175.008 ; gain = 0.000
+
+Phase 3.3 Small Shape DP
+
+Phase 3.3.1 Small Shape Clustering
+Phase 3.3.1 Small Shape Clustering | Checksum: 25b788f8d
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:37 . Memory (MB): peak = 4175.008 ; gain = 0.000
+
+Phase 3.3.2 Flow Legalize Slice Clusters
+Phase 3.3.2 Flow Legalize Slice Clusters | Checksum: 2002c9cec
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:38 . Memory (MB): peak = 4175.008 ; gain = 0.000
+
+Phase 3.3.3 Slice Area Swap
+
+Phase 3.3.3.1 Slice Area Swap Initial
+Phase 3.3.3.1 Slice Area Swap Initial | Checksum: 187d52ebf
+
+Time (s): cpu = 00:00:55 ; elapsed = 00:00:39 . Memory (MB): peak = 4175.008 ; gain = 0.000
+Phase 3.3.3 Slice Area Swap | Checksum: 187d52ebf
+
+Time (s): cpu = 00:00:55 ; elapsed = 00:00:39 . Memory (MB): peak = 4175.008 ; gain = 0.000
+Phase 3.3 Small Shape DP | Checksum: 200855b22
+
+Time (s): cpu = 00:01:01 ; elapsed = 00:00:42 . Memory (MB): peak = 4175.008 ; gain = 0.000
+
+Phase 3.4 Re-assign LUT pins
+Phase 3.4 Re-assign LUT pins | Checksum: 23d642853
+
+Time (s): cpu = 00:01:02 ; elapsed = 00:00:43 . Memory (MB): peak = 4175.008 ; gain = 0.000
+
+Phase 3.5 Pipeline Register Optimization
+Phase 3.5 Pipeline Register Optimization | Checksum: 275ba65a7
+
+Time (s): cpu = 00:01:02 ; elapsed = 00:00:43 . Memory (MB): peak = 4175.008 ; gain = 0.000
+
+Phase 3.6 Fast Optimization
+Phase 3.6 Fast Optimization | Checksum: 22920551b
+
+Time (s): cpu = 00:01:10 ; elapsed = 00:00:49 . Memory (MB): peak = 4175.008 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 22920551b
+
+Time (s): cpu = 00:01:10 ; elapsed = 00:00:49 . Memory (MB): peak = 4175.008 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 127f5fd33
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.012 | TNS=-34.051 |
+Phase 1 Physical Synthesis Initialization | Checksum: 110195ba0
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.471 . Memory (MB): peak = 4175.008 ; gain = 0.000
+INFO: [Place 46-35] Processed net sfp10g_bd_i/xxv_ethernet_1/inst/i_sfp10g_bd_xxv_ethernet_1_0_top_0/i_sfp10g_bd_xxv_ethernet_1_0_CORE/i_TX_TOP/i_TX_CORE/i_TX_CORE_STRIPER/i_RESET_FLOP_TX_LBA/reset_flop_out, inserted BUFG to drive 1065 loads.
+INFO: [Place 46-45] Replicated bufg driver sfp10g_bd_i/xxv_ethernet_1/inst/i_sfp10g_bd_xxv_ethernet_1_0_top_0/i_sfp10g_bd_xxv_ethernet_1_0_CORE/i_TX_TOP/i_TX_CORE/i_TX_CORE_STRIPER/i_RESET_FLOP_TX_LBA/reset_flop_out_reg_replica
+INFO: [Place 46-56] BUFG insertion identified 1 candidate nets. Inserted BUFG: 1, Replicated BUFG Driver: 1, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
+Ending Physical Synthesis Task | Checksum: 10650477c
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 4175.008 ; gain = 0.000
+Phase 4.1.1.1 BUFG Insertion | Checksum: f415e4e0
+
+Time (s): cpu = 00:01:21 ; elapsed = 00:00:56 . Memory (MB): peak = 4175.008 ; gain = 0.000
+
+Phase 4.1.1.2 Post Placement Timing Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-2.881. For the most accurate timing information please run report_timing.
+Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: fdf21649
+
+Time (s): cpu = 00:01:33 ; elapsed = 00:01:10 . Memory (MB): peak = 4175.008 ; gain = 0.000
+
+Time (s): cpu = 00:01:33 ; elapsed = 00:01:10 . Memory (MB): peak = 4175.008 ; gain = 0.000
+Phase 4.1 Post Commit Optimization | Checksum: fdf21649
+
+Time (s): cpu = 00:01:33 ; elapsed = 00:01:10 . Memory (MB): peak = 4175.008 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 4175.008 ; gain = 0.000
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 19ea8f0b8
+
+Time (s): cpu = 00:01:37 ; elapsed = 00:01:14 . Memory (MB): peak = 4175.008 ; gain = 0.000
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ________________________________________________________________________
+|           | Global Congestion | Long Congestion   | Short Congestion  |
+| Direction | Region Size       | Region Size       | Region Size       |
+|___________|___________________|___________________|___________________|
+|      North|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+|      South|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+|       East|                1x1|                1x1|                2x2|
+|___________|___________________|___________________|___________________|
+|       West|                1x1|                1x1|                2x2|
+|___________|___________________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: 19ea8f0b8
+
+Time (s): cpu = 00:01:37 ; elapsed = 00:01:14 . Memory (MB): peak = 4175.008 ; gain = 0.000
+Phase 4.3 Placer Reporting | Checksum: 19ea8f0b8
+
+Time (s): cpu = 00:01:37 ; elapsed = 00:01:14 . Memory (MB): peak = 4175.008 ; gain = 0.000
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 4175.008 ; gain = 0.000
+
+Time (s): cpu = 00:01:37 ; elapsed = 00:01:14 . Memory (MB): peak = 4175.008 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1c3af6c4c
+
+Time (s): cpu = 00:01:38 ; elapsed = 00:01:14 . Memory (MB): peak = 4175.008 ; gain = 0.000
+Ending Placer Task | Checksum: 185965229
+
+Time (s): cpu = 00:01:38 ; elapsed = 00:01:14 . Memory (MB): peak = 4175.008 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+105 Infos, 21 Warnings, 30 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.statsThreshold
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 4175.008 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.runs/impl_1/sfp10g_bd_wrapper_placed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_io -file sfp10g_bd_wrapper_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.086 . Memory (MB): peak = 4175.008 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file sfp10g_bd_wrapper_utilization_placed.rpt -pb sfp10g_bd_wrapper_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file sfp10g_bd_wrapper_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.041 . Memory (MB): peak = 4175.008 ; gain = 0.000
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xck26'
+
+Starting Initial Update Timing Task
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 4175.008 ; gain = 0.000
+INFO: [Vivado_Tcl 4-1435] PhysOpt_Tcl_Interface Runtime Before Starting Physical Synthesis Task | CPU: 6.00s |  WALL: 2.42s
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 4175.008 ; gain = 0.000
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.044 | TNS=-35.303 |
+Phase 1 Physical Synthesis Initialization | Checksum: 12ce05006
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 4175.008 ; gain = 0.000
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.044 | TNS=-35.303 |
+
+Phase 2 DSP Register Optimization
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Phase 2 DSP Register Optimization | Checksum: 12ce05006
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 4175.008 ; gain = 0.000
+
+Phase 3 Critical Path Optimization
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.044 | TNS=-35.303 |
+INFO: [Physopt 32-702] Processed net sfp10g_bd_i/frame_generator_0/inst/beat_cnt_reg_n_0_[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-81] Processed net sfp10g_bd_i/reset_gen_0/inst/rx_reset. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net sfp10g_bd_i/reset_gen_0/inst/rx_reset. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.022 | TNS=-35.039 |
+INFO: [Physopt 32-702] Processed net sfp10g_bd_i/reset_gen_0/inst/rx_reset_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net sfp10g_bd_i/frame_generator_0/inst/beat_cnt[3]_i_1_n_0. Critical path length was reduced through logic transformation on cell sfp10g_bd_i/frame_generator_0/inst/beat_cnt[3]_i_1_comp.
+INFO: [Physopt 32-735] Processed net sfp10g_bd_i/xxv_ethernet_1/inst/i_sfp10g_bd_xxv_ethernet_1_0_core_cdc_sync_gt_tx_resetdone_0/user_tx_reset_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.951 | TNS=-34.405 |
+INFO: [Physopt 32-702] Processed net sfp10g_bd_i/frame_generator_0/inst/done. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-782] Net sfp10g_bd_i/xxv_ethernet_1/inst/i_sfp10g_bd_xxv_ethernet_1_0_core_cdc_sync_gt_tx_resetdone_0/user_tx_reset_0 was not replicated
+INFO: [Physopt 32-780] Instance sfp10g_bd_i/system_ila_0/inst/ila_lib has DONT_TOUCH and is preventing optimization
+Resolution: Removing DONT_TOUCH attributes may enable additional optimization
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 16 pins.
+INFO: [Physopt 32-735] Processed net sfp10g_bd_i/xxv_ethernet_1/inst/i_sfp10g_bd_xxv_ethernet_1_0_core_cdc_sync_gt_tx_resetdone_0/user_tx_reset_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.925 | TNS=-34.197 |
+INFO: [Physopt 32-782] Net sfp10g_bd_i/xxv_ethernet_1/inst/i_sfp10g_bd_xxv_ethernet_1_0_core_cdc_sync_gt_tx_resetdone_0/user_tx_reset_0 was not replicated
+INFO: [Physopt 32-780] Instance sfp10g_bd_i/system_ila_0/inst/ila_lib has DONT_TOUCH and is preventing optimization
+Resolution: Removing DONT_TOUCH attributes may enable additional optimization
+INFO: [Physopt 32-702] Processed net sfp10g_bd_i/xxv_ethernet_1/inst/i_sfp10g_bd_xxv_ethernet_1_0_core_cdc_sync_gt_tx_resetdone_0/user_tx_reset_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net sfp10g_bd_i/xxv_ethernet_1/inst/i_sfp10g_bd_xxv_ethernet_1_0_top_0/i_sfp10g_bd_xxv_ethernet_1_0_CORE/i_TX_TOP/i_TX_CORE/i_TX_CORE_RESET_SYNC/reset_pipe_stretch[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net sfp10g_bd_i/frame_generator_0/inst/done. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net sfp10g_bd_i/reset_gen_0/inst/rx_reset_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net sfp10g_bd_i/xxv_ethernet_1/inst/i_sfp10g_bd_xxv_ethernet_1_0_core_cdc_sync_gt_tx_resetdone_0/user_tx_reset_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net sfp10g_bd_i/xxv_ethernet_1/inst/i_sfp10g_bd_xxv_ethernet_1_0_top_0/i_sfp10g_bd_xxv_ethernet_1_0_CORE/i_TX_TOP/i_TX_CORE/i_TX_CORE_RESET_SYNC/reset_pipe_stretch[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.925 | TNS=-34.197 |
+Phase 3 Critical Path Optimization | Checksum: 12ce05006
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 4175.008 ; gain = 0.000
+
+Phase 4 Critical Path Optimization
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.925 | TNS=-34.197 |
+INFO: [Physopt 32-702] Processed net sfp10g_bd_i/frame_generator_0/inst/done. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net sfp10g_bd_i/reset_gen_0/inst/rx_reset_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-782] Net sfp10g_bd_i/xxv_ethernet_1/inst/i_sfp10g_bd_xxv_ethernet_1_0_core_cdc_sync_gt_tx_resetdone_0/user_tx_reset_0 was not replicated
+INFO: [Physopt 32-780] Instance sfp10g_bd_i/system_ila_0/inst/ila_lib has DONT_TOUCH and is preventing optimization
+Resolution: Removing DONT_TOUCH attributes may enable additional optimization
+INFO: [Physopt 32-702] Processed net sfp10g_bd_i/xxv_ethernet_1/inst/i_sfp10g_bd_xxv_ethernet_1_0_core_cdc_sync_gt_tx_resetdone_0/user_tx_reset_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net sfp10g_bd_i/xxv_ethernet_1/inst/i_sfp10g_bd_xxv_ethernet_1_0_top_0/i_sfp10g_bd_xxv_ethernet_1_0_CORE/i_TX_TOP/i_TX_CORE/i_TX_CORE_RESET_SYNC/reset_pipe_stretch[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net sfp10g_bd_i/frame_generator_0/inst/done. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net sfp10g_bd_i/reset_gen_0/inst/rx_reset_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net sfp10g_bd_i/xxv_ethernet_1/inst/i_sfp10g_bd_xxv_ethernet_1_0_core_cdc_sync_gt_tx_resetdone_0/user_tx_reset_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net sfp10g_bd_i/xxv_ethernet_1/inst/i_sfp10g_bd_xxv_ethernet_1_0_top_0/i_sfp10g_bd_xxv_ethernet_1_0_CORE/i_TX_TOP/i_TX_CORE/i_TX_CORE_RESET_SYNC/reset_pipe_stretch[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.925 | TNS=-34.197 |
+Phase 4 Critical Path Optimization | Checksum: 12ce05006
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 4175.008 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 4175.008 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 4175.008 ; gain = 0.000
+INFO: [Physopt 32-603] Post Physical Optimization Timing Summary | WNS=-2.925 | TNS=-34.197 |
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization   |  WNS Gain (ns)  |  TNS Gain (ns)  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  DSP Register   |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Critical Path  |          0.119  |          1.106  |            1  |              0  |                     3  |           0  |           2  |  00:00:06  |
+|  Total          |          0.119  |          1.106  |            1  |              0  |                     3  |           0  |           3  |  00:00:06  |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 4175.008 ; gain = 0.000
+Ending Physical Synthesis Task | Checksum: 269d568ca
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 4175.008 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+156 Infos, 21 Warnings, 30 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.statsThreshold
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 4175.008 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.runs/impl_1/sfp10g_bd_wrapper_physopt.dcp' has been generated.
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xck26'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+
+Phase 1 Build RT Design
+Checksum: PlaceDB: b736e7d7 ConstDB: 0 ShapeSum: 602dfbae RouteDB: ef867ea7
+Nodegraph reading from file.  Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 4175.008 ; gain = 0.000

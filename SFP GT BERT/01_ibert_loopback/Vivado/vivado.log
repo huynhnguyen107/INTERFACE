@@ -73,3 +73,29 @@ launch_runs impl_1 -to_step write_bitstream -jobs 8
 Run output will be captured here: D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/01_ibert_loopback/Vivado/ibert_ultrascale_gth_0_ex.runs/synth_1/runme.log
 [Tue Oct  6 14:21:06 2026] Launched impl_1...
 Run output will be captured here: D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/01_ibert_loopback/Vivado/ibert_ultrascale_gth_0_ex.runs/impl_1/runme.log
+close_project
+open_project {D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/02_sfp_external_loopback/Vivado/sfp_external_loopback.xpr}
+INFO: [Project 1-313] Project file moved from 'D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/01_ibert_loopback/Vivado' since last save.
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/02_sfp_external_loopback/Vivado/sfp_external_loopback.gen/sources_1'.
+WARNING: [filemgmt 56-3] IPUserFilesDir: Could not find the directory 'D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/02_sfp_external_loopback/Vivado/sfp_external_loopback.ip_user_files'.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-509] GeneratedRun file for 'synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'impl_1' not found
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2022.2/data/ip'.
+INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
+xit::source_ipfile: Time (s): cpu = 00:00:09 ; elapsed = 00:00:22 . Memory (MB): peak = 2170.352 ; gain = 978.402
+open_project: Time (s): cpu = 00:00:25 ; elapsed = 00:00:37 . Memory (MB): peak = 2170.352 ; gain = 988.383
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ibert_ultrascale_gth_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'ibert_ultrascale_gth_0'...
+[Wed Oct  7 11:03:19 2026] Launched synth_1...
+Run output will be captured here: D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/02_sfp_external_loopback/Vivado/sfp_external_loopback.runs/synth_1/runme.log
+[Wed Oct  7 11:03:19 2026] Launched impl_1...
+Run output will be captured here: D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/02_sfp_external_loopback/Vivado/sfp_external_loopback.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 2201.262 ; gain = 8.066
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Oct 12 11:58:53 2026...

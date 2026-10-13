@@ -1,0 +1,776 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Mon Oct 12 12:27:22 2026
+# Process ID: 55652
+# Current directory: D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent66376 D:\FPGA\Vivaldo Project\INTERFACE\SFP GT BERT\03_sfp_10g_data_path\Vivado\03_sfp10g.xpr
+# Log file: D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/vivado.log
+# Journal file: D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado\vivado.jou
+# Running On: LAPTOP-CHCSI1R5, OS: Windows, CPU Frequency: 3194 MHz, CPU Physical cores: 16, Host memory: 21319 MB
+#-----------------------------------------------------------
+start_gui
+open_project {D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.xpr}
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:ac701:part0:1.4 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/ac701/1.4/board.xml as part xc7a200tfbg676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.4 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.4/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.5 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.5/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu1500/1.2/board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:sp701:part0:1.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/sp701/1.0/board.xml as part xc7s100fgga676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:sp701:part0:1.1 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/sp701/1.1/board.xml as part xc7s100fgga676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.4 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc707/1.4/board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc709:part0:1.8 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc709/1.8/board.xml as part xc7vx690tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/2.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.6/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.7/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu110/1.4/board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.0/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.3 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.3/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.4 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.4/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128:part0:1.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu128/production/1.0/board.xml as part xcvu37p-fsvh2892-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu129/production/1.0/board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu1525:part0:1.3 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu1525/1.3/board.xml as part xcvu9p-fsgd2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_rfsoc:part0:1.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_rfsoc/1.0/board.xml as part xczu21dr-ffvd1156-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/2.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc702:part0:1.4 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zc702/1.4/board.xml as part xc7z020clg484-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.4 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zc706/1.4/board.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.2 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.2/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.3 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.3/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.4 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.4/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1275:part0:1.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1275/1.0/board.xml as part xczu29dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1285/1.0/board.xml as part xczu39dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208:part0:2.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/production/2.0/board.xml as part xczu48dr-fsvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/production/2.0/board.xml as part xczu49dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.gen/sources_1'.
+WARNING: [filemgmt 56-3] IPUserFilesDir: Could not find the directory 'D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.ip_user_files'.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-509] GeneratedRun file for 'synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'impl_1' not found
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2022.2/data/ip'.
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
+open_project: Time (s): cpu = 00:00:47 ; elapsed = 00:00:34 . Memory (MB): peak = 2620.703 ; gain = 1641.734
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rx_reset' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'sys_reset' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'tx_reset' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rx_reset' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'sys_reset' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'tx_reset' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-3420] Updated sfp_10g_data_path_reset_gen_0_0 to use current project options
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-3420] Updated sfp_10g_data_path_xxv_ctrl_0_0 to use current project options
+CRITICAL WARNING: [BD 41-1348] Reset pin /xxv_ethernet_0/sys_reset (associated clock /xxv_ethernet_0/dclk) is connected to asynchronous reset source /reset_gen_0/sys_reset.
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /clk_wiz_0/clk_out1.
+INFO: [xilinx.com:ip:xxv_ethernet:4.1-5910] /xxv_ethernet_0 NOTE : INIT CLK of /xxv_ethernet_0 has input port frequency configured as 100000000 Hz (100.0 MHz).
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+Wrote  : <D:\FPGA\Vivaldo Project\INTERFACE\SFP GT BERT\03_sfp_10g_data_path\Vivado\03_sfp10g.srcs\sources_1\bd\sfp_10g_data_path\sfp_10g_data_path.bd> 
+Verilog Output written to : d:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp_10g_data_path.gen/sources_1/bd/sfp_10g_data_path/synth/sfp_10g_data_path.v
+Verilog Output written to : d:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp_10g_data_path.gen/sources_1/bd/sfp_10g_data_path/sim/sfp_10g_data_path.v
+Verilog Output written to : d:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp_10g_data_path.gen/sources_1/bd/sfp_10g_data_path/hdl/sfp_10g_data_path_wrapper.v
+WARNING: [IP_Flow 19-650] IP license key 'x_eth_mac@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'x_eth_mac@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'x_eth_mac@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_tsn_802d1cm@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_tsn_802d1cm@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_tsn_802d1cm@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_tsn_802d1cm@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xxv_ethernet_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block reset_gen_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xxv_ctrl_0 .
+Exporting to file d:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp_10g_data_path.gen/sources_1/bd/sfp_10g_data_path/hw_handoff/sfp_10g_data_path.hwh
+Generated Hardware Definition File d:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp_10g_data_path.gen/sources_1/bd/sfp_10g_data_path/synth/sfp_10g_data_path.hwdef
+[Mon Oct 12 12:29:29 2026] Launched synth_1...
+Run output will be captured here: D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.runs/synth_1/runme.log
+[Mon Oct 12 12:29:29 2026] Launched impl_1...
+Run output will be captured here: D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:41 ; elapsed = 00:00:41 . Memory (MB): peak = 2700.852 ; gain = 57.672
+open_bd_design {D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/sources_1/bd/sfp_10g_data_path/sfp_10g_data_path.bd}
+Reading block design file <D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/sources_1/bd/sfp_10g_data_path/sfp_10g_data_path.bd>...
+Adding component instance block -- xilinx.com:ip:xxv_ethernet:4.1 - xxv_ethernet_0
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_1
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_2
+Adding component instance block -- xilinx.com:module_ref:reset_gen:1.0 - reset_gen_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_3
+Adding component instance block -- xilinx.com:module_ref:xxv_ctrl:1.0 - xxv_ctrl_0
+Successfully read diagram <sfp_10g_data_path> from block design file <D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/sources_1/bd/sfp_10g_data_path/sfp_10g_data_path.bd>
+create_bd_design "sfp10g_bd"
+Wrote  : <D:\FPGA\Vivaldo Project\INTERFACE\SFP GT BERT\03_sfp_10g_data_path\Vivado\03_sfp10g.srcs\sources_1\bd\sfp10g_bd\sfp10g_bd.bd> 
+open_bd_design {D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/sources_1/bd/sfp_10g_data_path/sfp_10g_data_path.bd}
+update_compile_order -fileset sources_1
+open_bd_design {D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/sources_1/bd/sfp10g_bd/sfp10g_bd.bd}
+current_bd_design sfp_10g_data_path
+set tmpCopyObjs [concat  [get_bd_cells {reset_gen_0 xxv_ethernet_0 xlconstant_0 xlconstant_1 xlconstant_2 xlconstant_3 xxv_ctrl_0 clk_wiz_0}] [get_bd_ports {gt_rxp_in gt_refclk_p clk_25mhz gt_refclk_n gt_rxn_in gt_txp_out gt_txn_out}] [get_bd_nets {xxv_ctrl_0_ctl_tx_test_pattern_seed_b_0 xxv_ctrl_0_ctl_tx_send_lfi_0 xxv_ctrl_0_ctl_rx_test_pattern_enable_0 xxv_ctrl_0_ctl_rx_check_preamble_0 xxv_ethernet_0_rx_clk_out_0 xxv_ctrl_0_ctl_rx_max_packet_len_0 gt_rnx_in_1 xxv_ctrl_0_ctl_tx_test_pattern_seed_a_0 xxv_ctrl_0_ctl_tx_send_rfi_0 xlconstant_0_dout xxv_ctrl_0_ctl_tx_fcs_ins_enable_0 xxv_ctrl_0_ctl_rx_enable_0 xxv_ctrl_0_ctl_rx_data_pattern_select_0 gt_refclk_p_1 clk_wiz_0_clk_out1 reset_gen_0_sys_reset xxv_ctrl_0_ctl_tx_test_pattern_0 gt_rxp_in_1 clk_wiz_0_locked clk_25mhz_1 xxv_ctrl_0_ctl_tx_test_pattern_enable_0 xxv_ctrl_0_ctl_tx_send_idle_0 xxv_ctrl_0_ctl_rx_min_packet_len_0 xxv_ctrl_0_ctl_rx_custom_preamble_enable_0 xlconstant_3_dout xxv_ethernet_0_gt_txn_out xxv_ctrl_0_ctl_tx_test_pattern_select_0 xxv_ctrl_0_ctl_tx_test_pattern_enable xlconstant_1_dout reset_gen_0_tx_reset reset_gen_0_rx_reset xxv_ctrl_0_ctl_tx_ipg_value_0 xlconstant_2_dout xxv_ethernet_0_gt_txp_out xxv_ctrl_0_ctl_rx_test_pattern_0 xxv_ctrl_0_ctl_rx_force_resync_0 xxv_ctrl_0_ctl_tx_test_pattern_select xxv_ctrl_0_ctl_tx_enable_0 xxv_ctrl_0_ctl_rx_delete_fcs_0 gt_refclk_n_1 xxv_ctrl_0_ctl_tx_ignore_fcs_0 xxv_ctrl_0_ctl_rx_process_lfi_0 xxv_ctrl_0_ctl_rx_ignore_fcs_0 xxv_ctrl_0_ctl_rx_check_sfd_0}]]
+current_bd_design sfp10g_bd
+copy_bd_objs -from_design sfp_10g_data_path / $tmpCopyObjs
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+WARNING: [BD 41-1306] The connection to interface pin </xxv_ethernet_0/gt_refclk_n> is being overridden by the user with net <gt_refclk_n_1>. This pin will not be connected as a part of interface connection <gt_ref_clk>.
+WARNING: [BD 41-1306] The connection to interface pin </xxv_ethernet_0/gt_refclk_p> is being overridden by the user with net <gt_refclk_p_1>. This pin will not be connected as a part of interface connection <gt_ref_clk>.
+WARNING: [BD 41-1306] The connection to interface pin </xxv_ethernet_0/gt_rxn_in> is being overridden by the user with net <gt_rnx_in_1>. This pin will not be connected as a part of interface connection <gt_serial_port>.
+WARNING: [BD 41-1306] The connection to interface pin </xxv_ethernet_0/gt_rxp_in> is being overridden by the user with net <gt_rxp_in_1>. This pin will not be connected as a part of interface connection <gt_serial_port>.
+WARNING: [BD 41-1306] The connection to interface pin </xxv_ethernet_0/ctl_rx_check_preamble_0> is being overridden by the user with net <xxv_ctrl_0_ctl_rx_check_preamble_0>. This pin will not be connected as a part of interface connection <ctl_rx_0>.
+WARNING: [BD 41-1306] The connection to interface pin </xxv_ethernet_0/ctl_rx_check_sfd_0> is being overridden by the user with net <xxv_ctrl_0_ctl_rx_check_sfd_0>. This pin will not be connected as a part of interface connection <ctl_rx_0>.
+WARNING: [BD 41-1306] The connection to interface pin </xxv_ethernet_0/ctl_rx_custom_preamble_enable_0> is being overridden by the user with net <xxv_ctrl_0_ctl_rx_custom_preamble_enable_0>. This pin will not be connected as a part of interface connection <ctl_rx_0>.
+WARNING: [BD 41-1306] The connection to interface pin </xxv_ethernet_0/ctl_rx_data_pattern_select_0> is being overridden by the user with net <xxv_ctrl_0_ctl_rx_data_pattern_select_0>. This pin will not be connected as a part of interface connection <ctl_rx_0>.
+WARNING: [BD 41-1306] The connection to interface pin </xxv_ethernet_0/ctl_rx_delete_fcs_0> is being overridden by the user with net <xxv_ctrl_0_ctl_rx_delete_fcs_0>. This pin will not be connected as a part of interface connection <ctl_rx_0>.
+WARNING: [BD 41-1306] The connection to interface pin </xxv_ethernet_0/ctl_rx_enable_0> is being overridden by the user with net <xxv_ctrl_0_ctl_rx_enable_0>. This pin will not be connected as a part of interface connection <ctl_rx_0>.
+WARNING: [BD 41-1306] The connection to interface pin </xxv_ethernet_0/ctl_rx_force_resync_0> is being overridden by the user with net <xxv_ctrl_0_ctl_rx_force_resync_0>. This pin will not be connected as a part of interface connection <ctl_rx_0>.
+WARNING: [BD 41-1306] The connection to interface pin </xxv_ethernet_0/ctl_rx_ignore_fcs_0> is being overridden by the user with net <xxv_ctrl_0_ctl_rx_ignore_fcs_0>. This pin will not be connected as a part of interface connection <ctl_rx_0>.
+WARNING: [BD 41-1306] The connection to interface pin </xxv_ethernet_0/ctl_rx_max_packet_len_0> is being overridden by the user with net <xxv_ctrl_0_ctl_rx_max_packet_len_0>. This pin will not be connected as a part of interface connection <ctl_rx_0>.
+WARNING: [BD 41-1306] The connection to interface pin </xxv_ethernet_0/ctl_rx_min_packet_len_0> is being overridden by the user with net <xxv_ctrl_0_ctl_rx_min_packet_len_0>. This pin will not be connected as a part of interface connection <ctl_rx_0>.
+WARNING: [BD 41-1306] The connection to interface pin </xxv_ethernet_0/ctl_rx_process_lfi_0> is being overridden by the user with net <xxv_ctrl_0_ctl_rx_process_lfi_0>. This pin will not be connected as a part of interface connection <ctl_rx_0>.
+WARNING: [BD 41-1306] The connection to interface pin </xxv_ethernet_0/ctl_rx_test_pattern_0> is being overridden by the user with net <xxv_ctrl_0_ctl_rx_test_pattern_0>. This pin will not be connected as a part of interface connection <ctl_rx_0>.
+WARNING: [BD 41-1306] The connection to interface pin </xxv_ethernet_0/ctl_rx_test_pattern_enable_0> is being overridden by the user with net <xxv_ctrl_0_ctl_rx_test_pattern_enable_0>. This pin will not be connected as a part of interface connection <ctl_rx_0>.
+WARNING: [BD 41-1306] The connection to interface pin </xxv_ethernet_0/ctl_tx_enable_0> is being overridden by the user with net <xxv_ctrl_0_ctl_tx_enable_0>. This pin will not be connected as a part of interface connection <ctl_tx_0>.
+WARNING: [BD 41-1306] The connection to interface pin </xxv_ethernet_0/ctl_tx_fcs_ins_enable_0> is being overridden by the user with net <xxv_ctrl_0_ctl_tx_fcs_ins_enable_0>. This pin will not be connected as a part of interface connection <ctl_tx_0>.
+WARNING: [BD 41-1306] The connection to interface pin </xxv_ethernet_0/ctl_tx_ignore_fcs_0> is being overridden by the user with net <xxv_ctrl_0_ctl_tx_ignore_fcs_0>. This pin will not be connected as a part of interface connection <ctl_tx_0>.
+WARNING: [BD 41-1306] The connection to interface pin </xxv_ethernet_0/ctl_tx_ipg_value_0> is being overridden by the user with net <xxv_ctrl_0_ctl_tx_ipg_value_0>. This pin will not be connected as a part of interface connection <ctl_tx_0>.
+WARNING: [BD 41-1306] The connection to interface pin </xxv_ethernet_0/ctl_tx_send_idle_0> is being overridden by the user with net <xxv_ctrl_0_ctl_tx_send_idle_0>. This pin will not be connected as a part of interface connection <ctl_tx_0>.
+WARNING: [BD 41-1306] The connection to interface pin </xxv_ethernet_0/ctl_tx_send_lfi_0> is being overridden by the user with net <xxv_ctrl_0_ctl_tx_send_lfi_0>. This pin will not be connected as a part of interface connection <ctl_tx_0>.
+WARNING: [BD 41-1306] The connection to interface pin </xxv_ethernet_0/ctl_tx_send_rfi_0> is being overridden by the user with net <xxv_ctrl_0_ctl_tx_send_rfi_0>. This pin will not be connected as a part of interface connection <ctl_tx_0>.
+WARNING: [BD 41-1306] The connection to interface pin </xxv_ethernet_0/ctl_tx_test_pattern_0> is being overridden by the user with net <xxv_ctrl_0_ctl_tx_test_pattern_0>. This pin will not be connected as a part of interface connection <ctl_tx_0>.
+WARNING: [BD 41-1306] The connection to interface pin </xxv_ethernet_0/ctl_tx_custom_preamble_enable_0> is being overridden by the user with net <xxv_ctrl_0_ctl_tx_test_pattern_enable>. This pin will not be connected as a part of interface connection <ctl_tx_0>.
+WARNING: [BD 41-1306] The connection to interface pin </xxv_ethernet_0/ctl_tx_test_pattern_enable_0> is being overridden by the user with net <xxv_ctrl_0_ctl_tx_test_pattern_enable_0>. This pin will not be connected as a part of interface connection <ctl_tx_0>.
+WARNING: [BD 41-1306] The connection to interface pin </xxv_ethernet_0/ctl_tx_test_pattern_seed_a_0> is being overridden by the user with net <xxv_ctrl_0_ctl_tx_test_pattern_seed_a_0>. This pin will not be connected as a part of interface connection <ctl_tx_0>.
+WARNING: [BD 41-1306] The connection to interface pin </xxv_ethernet_0/ctl_tx_test_pattern_seed_b_0> is being overridden by the user with net <xxv_ctrl_0_ctl_tx_test_pattern_seed_b_0>. This pin will not be connected as a part of interface connection <ctl_tx_0>.
+WARNING: [BD 41-1306] The connection to interface pin </xxv_ethernet_0/ctl_tx_data_pattern_select_0> is being overridden by the user with net <xxv_ctrl_0_ctl_tx_test_pattern_select>. This pin will not be connected as a part of interface connection <ctl_tx_0>.
+WARNING: [BD 41-1306] The connection to interface pin </xxv_ethernet_0/ctl_tx_test_pattern_select_0> is being overridden by the user with net <xxv_ctrl_0_ctl_tx_test_pattern_select_0>. This pin will not be connected as a part of interface connection <ctl_tx_0>.
+WARNING: [BD 41-1306] The connection to interface pin </xxv_ethernet_0/gt_txn_out> is being overridden by the user with net <xxv_ethernet_0_gt_txn_out>. This pin will not be connected as a part of interface connection <gt_serial_port>.
+WARNING: [BD 41-1306] The connection to interface pin </xxv_ethernet_0/gt_txp_out> is being overridden by the user with net <xxv_ethernet_0_gt_txp_out>. This pin will not be connected as a part of interface connection <gt_serial_port>.
+copy_bd_objs: Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 2794.492 ; gain = 4.531
+export_ip_user_files -of_objects  [get_files {{D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/sources_1/bd/sfp_10g_data_path/sfp_10g_data_path.bd}}] -no_script -reset -force -quiet
+remove_files  {{D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/sources_1/bd/sfp_10g_data_path/sfp_10g_data_path.bd}}
+Wrote  : <D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/sources_1/bd/sfp_10g_data_path/ui/bd_52769ec1.ui> 
+file delete -force {D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/sources_1/bd/sfp_10g_data_path}
+file delete -force {d:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp_10g_data_path.gen/sources_1/bd/sfp_10g_data_path}
+update_compile_order -fileset sources_1
+make_wrapper -files [get_files {{D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/sources_1/bd/sfp10g_bd/sfp10g_bd.bd}}] -top
+CRITICAL WARNING: [BD 41-1348] Reset pin /xxv_ethernet_0/sys_reset (associated clock /xxv_ethernet_0/dclk) is connected to asynchronous reset source /reset_gen_0/sys_reset.
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /clk_wiz_0/clk_out1.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+INFO: [xilinx.com:ip:xxv_ethernet:4.1-5910] /xxv_ethernet_0 NOTE : INIT CLK of /xxv_ethernet_0 has input port frequency configured as 100000000 Hz (100.0 MHz).
+Wrote  : <D:\FPGA\Vivaldo Project\INTERFACE\SFP GT BERT\03_sfp_10g_data_path\Vivado\03_sfp10g.srcs\sources_1\bd\sfp10g_bd\sfp10g_bd.bd> 
+Wrote  : <D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/sources_1/bd/sfp10g_bd/ui/bd_9a83f936.ui> 
+Verilog Output written to : D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.gen/sources_1/bd/sfp10g_bd/synth/sfp10g_bd.v
+Verilog Output written to : D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.gen/sources_1/bd/sfp10g_bd/sim/sfp10g_bd.v
+Verilog Output written to : D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.gen/sources_1/bd/sfp10g_bd/hdl/sfp10g_bd_wrapper.v
+add_files -norecurse {{d:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.gen/sources_1/bd/sfp10g_bd/hdl/sfp10g_bd_wrapper.v}}
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/sources_1/new/top_sfp_10g_data_path.v}}] -no_script -reset -force -quiet
+remove_files  {{D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/sources_1/new/top_sfp_10g_data_path.v}}
+file delete -force {D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/sources_1/new/top_sfp_10g_data_path.v}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{d:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.gen/sources_1/bd/sfp10g_bd/hdl/sfp10g_bd_wrapper.v}}] -no_script -reset -force -quiet
+remove_files  {{d:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.gen/sources_1/bd/sfp10g_bd/hdl/sfp10g_bd_wrapper.v}}
+file delete -force {d:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.gen/sources_1/bd/sfp10g_bd/hdl/sfp10g_bd_wrapper.v}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+make_wrapper -files [get_files {{D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/sources_1/bd/sfp10g_bd/sfp10g_bd.bd}}] -top
+INFO: [BD 41-1662] The design 'sfp10g_bd.bd' is already validated. Therefore parameter propagation will not be re-run.
+Verilog Output written to : D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.gen/sources_1/bd/sfp10g_bd/synth/sfp10g_bd.v
+Verilog Output written to : D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.gen/sources_1/bd/sfp10g_bd/sim/sfp10g_bd.v
+Verilog Output written to : D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.gen/sources_1/bd/sfp10g_bd/hdl/sfp10g_bd_wrapper.v
+add_files -norecurse {{d:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.gen/sources_1/bd/sfp10g_bd/hdl/sfp10g_bd_wrapper.v}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_target all [get_files  {{D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/sources_1/bd/sfp10g_bd/sfp10g_bd.bd}}]
+export_ip_user_files -of_objects  [get_files  {{D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/sources_1/bd/sfp10g_bd/sfp10g_bd.bd}}] -sync -no_script -force -quiet
+set_property synth_checkpoint_mode None [get_files  {{D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/sources_1/bd/sfp10g_bd/sfp10g_bd.bd}}]
+generate_target all [get_files  {{D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/sources_1/bd/sfp10g_bd/sfp10g_bd.bd}}]
+INFO: [BD 41-1662] The design 'sfp10g_bd.bd' is already validated. Therefore parameter propagation will not be re-run.
+Verilog Output written to : D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.gen/sources_1/bd/sfp10g_bd/synth/sfp10g_bd.v
+Verilog Output written to : D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.gen/sources_1/bd/sfp10g_bd/sim/sfp10g_bd.v
+Verilog Output written to : D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.gen/sources_1/bd/sfp10g_bd/hdl/sfp10g_bd_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block reset_gen_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xxv_ctrl_0 .
+WARNING: [IP_Flow 19-650] IP license key 'x_eth_mac@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'x_eth_mac@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'x_eth_mac@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_tsn_802d1cm@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_tsn_802d1cm@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_tsn_802d1cm@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_tsn_802d1cm@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xxv_ethernet_0 .
+Exporting to file D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.gen/sources_1/bd/sfp10g_bd/hw_handoff/sfp10g_bd.hwh
+Generated Hardware Definition File D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.gen/sources_1/bd/sfp10g_bd/synth/sfp10g_bd.hwdef
+export_ip_user_files -of_objects [get_files {{D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/sources_1/bd/sfp10g_bd/sfp10g_bd.bd}}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/sources_1/bd/sfp10g_bd/sfp10g_bd.bd}}] -directory {D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.ip_user_files/sim_scripts} -ip_user_files_dir {D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.ip_user_files} -ipstatic_source_dir {D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.cache/compile_simlib/modelsim} {questa=D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.cache/compile_simlib/questa} {riviera=D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.cache/compile_simlib/riviera} {activehdl=D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [d:\FPGA\Vivaldo Project\INTERFACE\SFP GT BERT\03_sfp_10g_data_path\Vivado\03_sfp10g.gen\sources_1\bd\sfp10g_bd\hdl\sfp10g_bd_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\Vivaldo Project\INTERFACE\SFP GT BERT\03_sfp_10g_data_path\Vivado\03_sfp10g.srcs\sources_1\new\top_sfp_10g_data_path.v:]
+ERROR: [Common 17-180] Spawn failed: No such file or directory
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [d:\FPGA\Vivaldo Project\INTERFACE\SFP GT BERT\03_sfp_10g_data_path\Vivado\03_sfp10g.gen\sources_1\bd\sfp10g_bd\hdl\sfp10g_bd_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\Vivaldo Project\INTERFACE\SFP GT BERT\03_sfp_10g_data_path\Vivado\03_sfp10g.srcs\sources_1\new\top_sfp_10g_data_path.v:]
+ERROR: [Common 17-180] Spawn failed: No such file or directory
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [d:\FPGA\Vivaldo Project\INTERFACE\SFP GT BERT\03_sfp_10g_data_path\Vivado\03_sfp10g.gen\sources_1\bd\sfp10g_bd\hdl\sfp10g_bd_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\Vivaldo Project\INTERFACE\SFP GT BERT\03_sfp_10g_data_path\Vivado\03_sfp10g.srcs\sources_1\new\top_sfp_10g_data_path.v:]
+ERROR: [Common 17-180] Spawn failed: No such file or directory
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [d:\FPGA\Vivaldo Project\INTERFACE\SFP GT BERT\03_sfp_10g_data_path\Vivado\03_sfp10g.gen\sources_1\bd\sfp10g_bd\hdl\sfp10g_bd_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\Vivaldo Project\INTERFACE\SFP GT BERT\03_sfp_10g_data_path\Vivado\03_sfp10g.srcs\sources_1\new\top_sfp_10g_data_path.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [d:\FPGA\Vivaldo Project\INTERFACE\SFP GT BERT\03_sfp_10g_data_path\Vivado\03_sfp10g.gen\sources_1\bd\sfp10g_bd\hdl\sfp10g_bd_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\Vivaldo Project\INTERFACE\SFP GT BERT\03_sfp_10g_data_path\Vivado\03_sfp10g.srcs\sources_1\new\top_sfp_10g_data_path.v:]
+ERROR: [Common 17-180] Spawn failed: No such file or directory
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [d:\FPGA\Vivaldo Project\INTERFACE\SFP GT BERT\03_sfp_10g_data_path\Vivado\03_sfp10g.gen\sources_1\bd\sfp10g_bd\hdl\sfp10g_bd_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\Vivaldo Project\INTERFACE\SFP GT BERT\03_sfp_10g_data_path\Vivado\03_sfp10g.srcs\sources_1\new\top_sfp_10g_data_path.v:]
+ERROR: [Common 17-180] Spawn failed: No such file or directory
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+make_wrapper -files [get_files {{D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/sources_1/bd/sfp10g_bd/sfp10g_bd.bd}}] -top
+close [ open {D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/sources_1/new/top_sfp.v} w ]
+add_files {{D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/sources_1/new/top_sfp.v}}
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [d:\FPGA\Vivaldo Project\INTERFACE\SFP GT BERT\03_sfp_10g_data_path\Vivado\03_sfp10g.gen\sources_1\bd\sfp10g_bd\hdl\sfp10g_bd_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\Vivaldo Project\INTERFACE\SFP GT BERT\03_sfp_10g_data_path\Vivado\03_sfp10g.srcs\sources_1\new\top_sfp_10g_data_path.v:]
+ERROR: [Common 17-180] Spawn failed: No such file or directory
+export_ip_user_files -of_objects  [get_files {{d:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.gen/sources_1/bd/sfp10g_bd/hdl/sfp10g_bd_wrapper.v}}] -no_script -reset -force -quiet
+remove_files  {{d:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.gen/sources_1/bd/sfp10g_bd/hdl/sfp10g_bd_wrapper.v}}
+file delete -force {d:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.gen/sources_1/bd/sfp10g_bd/hdl/sfp10g_bd_wrapper.v}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+set_property top top_sfp [current_fileset]
+update_compile_order -fileset sources_1
+make_wrapper -files [get_files {{D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/sources_1/bd/sfp10g_bd/sfp10g_bd.bd}}] -top
+INFO: [BD 41-1662] The design 'sfp10g_bd.bd' is already validated. Therefore parameter propagation will not be re-run.
+Verilog Output written to : D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.gen/sources_1/bd/sfp10g_bd/synth/sfp10g_bd.v
+Verilog Output written to : D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.gen/sources_1/bd/sfp10g_bd/sim/sfp10g_bd.v
+Verilog Output written to : D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.gen/sources_1/bd/sfp10g_bd/hdl/sfp10g_bd_wrapper.v
+add_files -norecurse {{d:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.gen/sources_1/bd/sfp10g_bd/hdl/sfp10g_bd_wrapper.v}}
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [d:\FPGA\Vivaldo Project\INTERFACE\SFP GT BERT\03_sfp_10g_data_path\Vivado\03_sfp10g.gen\sources_1\bd\sfp10g_bd\hdl\sfp10g_bd_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\Vivaldo Project\INTERFACE\SFP GT BERT\03_sfp_10g_data_path\Vivado\03_sfp10g.srcs\sources_1\new\top_sfp_10g_data_path.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\Vivaldo Project\INTERFACE\SFP GT BERT\03_sfp_10g_data_path\Vivado\03_sfp10g.srcs\sources_1\new\top_sfp.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [d:\FPGA\Vivaldo Project\INTERFACE\SFP GT BERT\03_sfp_10g_data_path\Vivado\03_sfp10g.gen\sources_1\bd\sfp10g_bd\hdl\sfp10g_bd_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\Vivaldo Project\INTERFACE\SFP GT BERT\03_sfp_10g_data_path\Vivado\03_sfp10g.srcs\sources_1\new\top_sfp_10g_data_path.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\Vivaldo Project\INTERFACE\SFP GT BERT\03_sfp_10g_data_path\Vivado\03_sfp10g.srcs\sources_1\new\top_sfp.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [d:\FPGA\Vivaldo Project\INTERFACE\SFP GT BERT\03_sfp_10g_data_path\Vivado\03_sfp10g.gen\sources_1\bd\sfp10g_bd\hdl\sfp10g_bd_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\Vivaldo Project\INTERFACE\SFP GT BERT\03_sfp_10g_data_path\Vivado\03_sfp10g.srcs\sources_1\new\top_sfp_10g_data_path.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\Vivaldo Project\INTERFACE\SFP GT BERT\03_sfp_10g_data_path\Vivado\03_sfp10g.srcs\sources_1\new\top_sfp.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [d:\FPGA\Vivaldo Project\INTERFACE\SFP GT BERT\03_sfp_10g_data_path\Vivado\03_sfp10g.gen\sources_1\bd\sfp10g_bd\hdl\sfp10g_bd_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\Vivaldo Project\INTERFACE\SFP GT BERT\03_sfp_10g_data_path\Vivado\03_sfp10g.srcs\sources_1\new\top_sfp_10g_data_path.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\Vivaldo Project\INTERFACE\SFP GT BERT\03_sfp_10g_data_path\Vivado\03_sfp10g.srcs\sources_1\new\top_sfp.v:]
+ERROR: [Common 17-180] Spawn failed: No such file or directory
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [d:\FPGA\Vivaldo Project\INTERFACE\SFP GT BERT\03_sfp_10g_data_path\Vivado\03_sfp10g.gen\sources_1\bd\sfp10g_bd\hdl\sfp10g_bd_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\Vivaldo Project\INTERFACE\SFP GT BERT\03_sfp_10g_data_path\Vivado\03_sfp10g.srcs\sources_1\new\top_sfp_10g_data_path.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\Vivaldo Project\INTERFACE\SFP GT BERT\03_sfp_10g_data_path\Vivado\03_sfp10g.srcs\sources_1\new\top_sfp.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [d:\FPGA\Vivaldo Project\INTERFACE\SFP GT BERT\03_sfp_10g_data_path\Vivado\03_sfp10g.gen\sources_1\bd\sfp10g_bd\hdl\sfp10g_bd_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\Vivaldo Project\INTERFACE\SFP GT BERT\03_sfp_10g_data_path\Vivado\03_sfp10g.srcs\sources_1\new\top_sfp_10g_data_path.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\Vivaldo Project\INTERFACE\SFP GT BERT\03_sfp_10g_data_path\Vivado\03_sfp10g.srcs\sources_1\new\top_sfp.v:]
+ERROR: [Common 17-180] Spawn failed: No such file or directory
+WARNING: [filemgmt 56-315] Source scanning failed during design analysis. To get more details run synthesis or simulation and check the log.
+WARNING: [filemgmt 56-315] Source scanning failed during design analysis. To get more details run synthesis or simulation and check the log.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [d:\FPGA\Vivaldo Project\INTERFACE\SFP GT BERT\03_sfp_10g_data_path\Vivado\03_sfp10g.gen\sources_1\bd\sfp10g_bd\hdl\sfp10g_bd_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\Vivaldo Project\INTERFACE\SFP GT BERT\03_sfp_10g_data_path\Vivado\03_sfp10g.srcs\sources_1\new\top_sfp_10g_data_path.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\Vivaldo Project\INTERFACE\SFP GT BERT\03_sfp_10g_data_path\Vivado\03_sfp10g.srcs\sources_1\new\top_sfp.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [d:\FPGA\Vivaldo Project\INTERFACE\SFP GT BERT\03_sfp_10g_data_path\Vivado\03_sfp10g.gen\sources_1\bd\sfp10g_bd\hdl\sfp10g_bd_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\Vivaldo Project\INTERFACE\SFP GT BERT\03_sfp_10g_data_path\Vivado\03_sfp10g.srcs\sources_1\new\top_sfp_10g_data_path.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\Vivaldo Project\INTERFACE\SFP GT BERT\03_sfp_10g_data_path\Vivado\03_sfp10g.srcs\sources_1\new\top_sfp.v:]
+ERROR: [Common 17-180] Spawn failed: No such file or directory
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [d:\FPGA\Vivaldo Project\INTERFACE\SFP GT BERT\03_sfp_10g_data_path\Vivado\03_sfp10g.gen\sources_1\bd\sfp10g_bd\hdl\sfp10g_bd_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\Vivaldo Project\INTERFACE\SFP GT BERT\03_sfp_10g_data_path\Vivado\03_sfp10g.srcs\sources_1\new\top_sfp_10g_data_path.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\Vivaldo Project\INTERFACE\SFP GT BERT\03_sfp_10g_data_path\Vivado\03_sfp10g.srcs\sources_1\new\top_sfp.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [d:\FPGA\Vivaldo Project\INTERFACE\SFP GT BERT\03_sfp_10g_data_path\Vivado\03_sfp10g.gen\sources_1\bd\sfp10g_bd\hdl\sfp10g_bd_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\Vivaldo Project\INTERFACE\SFP GT BERT\03_sfp_10g_data_path\Vivado\03_sfp10g.srcs\sources_1\new\top_sfp_10g_data_path.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\Vivaldo Project\INTERFACE\SFP GT BERT\03_sfp_10g_data_path\Vivado\03_sfp10g.srcs\sources_1\new\top_sfp.v:]
+ERROR: [Common 17-180] Spawn failed: No such file or directory
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [d:\FPGA\Vivaldo Project\INTERFACE\SFP GT BERT\03_sfp_10g_data_path\Vivado\03_sfp10g.gen\sources_1\bd\sfp10g_bd\hdl\sfp10g_bd_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\Vivaldo Project\INTERFACE\SFP GT BERT\03_sfp_10g_data_path\Vivado\03_sfp10g.srcs\sources_1\new\top_sfp_10g_data_path.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\Vivaldo Project\INTERFACE\SFP GT BERT\03_sfp_10g_data_path\Vivado\03_sfp10g.srcs\sources_1\new\top_sfp.v:]
+ERROR: [Common 17-180] Spawn failed: No such file or directory
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [d:\FPGA\Vivaldo Project\INTERFACE\SFP GT BERT\03_sfp_10g_data_path\Vivado\03_sfp10g.gen\sources_1\bd\sfp10g_bd\hdl\sfp10g_bd_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\Vivaldo Project\INTERFACE\SFP GT BERT\03_sfp_10g_data_path\Vivado\03_sfp10g.srcs\sources_1\new\top_sfp_10g_data_path.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\Vivaldo Project\INTERFACE\SFP GT BERT\03_sfp_10g_data_path\Vivado\03_sfp10g.srcs\sources_1\new\top_sfp.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [d:\FPGA\Vivaldo Project\INTERFACE\SFP GT BERT\03_sfp_10g_data_path\Vivado\03_sfp10g.gen\sources_1\bd\sfp10g_bd\hdl\sfp10g_bd_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\Vivaldo Project\INTERFACE\SFP GT BERT\03_sfp_10g_data_path\Vivado\03_sfp10g.srcs\sources_1\new\top_sfp_10g_data_path.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\Vivaldo Project\INTERFACE\SFP GT BERT\03_sfp_10g_data_path\Vivado\03_sfp10g.srcs\sources_1\new\top_sfp.v:]
+ERROR: [Common 17-180] Spawn failed: No such file or directory
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [d:\FPGA\Vivaldo Project\INTERFACE\SFP GT BERT\03_sfp_10g_data_path\Vivado\03_sfp10g.gen\sources_1\bd\sfp10g_bd\hdl\sfp10g_bd_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\Vivaldo Project\INTERFACE\SFP GT BERT\03_sfp_10g_data_path\Vivado\03_sfp10g.srcs\sources_1\new\top_sfp_10g_data_path.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\Vivaldo Project\INTERFACE\SFP GT BERT\03_sfp_10g_data_path\Vivado\03_sfp10g.srcs\sources_1\new\top_sfp.v:]
+ERROR: [Common 17-180] Spawn failed: No such file or directory
+export_ip_user_files -of_objects  [get_files {{D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/sources_1/new/top_sfp.v}}] -no_script -reset -force -quiet
+remove_files  {{D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/sources_1/new/top_sfp.v}}
+file delete -force {D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/sources_1/new/top_sfp.v}
+update_compile_order -fileset sources_1
+set_property top sfp10g_bd_wrapper [current_fileset]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [BD 41-1662] The design 'sfp10g_bd.bd' is already validated. Therefore parameter propagation will not be re-run.
+Verilog Output written to : D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.gen/sources_1/bd/sfp10g_bd/synth/sfp10g_bd.v
+Verilog Output written to : D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.gen/sources_1/bd/sfp10g_bd/sim/sfp10g_bd.v
+Verilog Output written to : D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.gen/sources_1/bd/sfp10g_bd/hdl/sfp10g_bd_wrapper.v
+Exporting to file D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.gen/sources_1/bd/sfp10g_bd/hw_handoff/sfp10g_bd.hwh
+Generated Hardware Definition File D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.gen/sources_1/bd/sfp10g_bd/synth/sfp10g_bd.hwdef
+[Mon Oct 12 12:54:09 2026] Launched synth_1...
+Run output will be captured here: D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.runs/synth_1/runme.log
+[Mon Oct 12 12:54:10 2026] Launched impl_1...
+Run output will be captured here: D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.runs/impl_1/runme.log
+report_ip_status -name ip_status 
+close_project
+open_project {D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2022.2/data/ip'.
+open_bd_design {D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/sources_1/bd/sfp10g_bd/sfp10g_bd.bd}
+Reading block design file <D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/sources_1/bd/sfp10g_bd/sfp10g_bd.bd>...
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding component instance block -- xilinx.com:module_ref:reset_gen:1.0 - reset_gen_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_1
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_2
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_3
+Adding component instance block -- xilinx.com:module_ref:xxv_ctrl:1.0 - xxv_ctrl_0
+Adding component instance block -- xilinx.com:ip:xxv_ethernet:4.1 - xxv_ethernet_0
+Successfully read diagram <sfp10g_bd> from block design file <D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/sources_1/bd/sfp10g_bd/sfp10g_bd.bd>
+update_compile_order -fileset sources_1
+reset_target all [get_files  {{D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/sources_1/bd/sfp10g_bd/sfp10g_bd.bd}}]
+export_ip_user_files -of_objects  [get_files  {{D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/sources_1/bd/sfp10g_bd/sfp10g_bd.bd}}] -sync -no_script -force -quiet
+generate_target all [get_files  {{D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/sources_1/bd/sfp10g_bd/sfp10g_bd.bd}}]
+INFO: [BD 41-1662] The design 'sfp10g_bd.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/sources_1/bd/sfp10g_bd/ui/bd_9a83f936.ui> 
+Verilog Output written to : d:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.gen/sources_1/bd/sfp10g_bd/synth/sfp10g_bd.v
+Verilog Output written to : d:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.gen/sources_1/bd/sfp10g_bd/sim/sfp10g_bd.v
+Verilog Output written to : d:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.gen/sources_1/bd/sfp10g_bd/hdl/sfp10g_bd_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block reset_gen_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xxv_ctrl_0 .
+WARNING: [IP_Flow 19-650] IP license key 'x_eth_mac@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'x_eth_mac@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'x_eth_mac@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_tsn_802d1cm@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_tsn_802d1cm@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_tsn_802d1cm@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_tsn_802d1cm@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xxv_ethernet_0 .
+Exporting to file d:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.gen/sources_1/bd/sfp10g_bd/hw_handoff/sfp10g_bd.hwh
+Generated Hardware Definition File d:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.gen/sources_1/bd/sfp10g_bd/synth/sfp10g_bd.hwdef
+export_ip_user_files -of_objects [get_files {{D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/sources_1/bd/sfp10g_bd/sfp10g_bd.bd}}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/sources_1/bd/sfp10g_bd/sfp10g_bd.bd}}] -directory {D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.ip_user_files/sim_scripts} -ip_user_files_dir {D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.ip_user_files} -ipstatic_source_dir {D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.cache/compile_simlib/modelsim} {questa=D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.cache/compile_simlib/questa} {riviera=D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.cache/compile_simlib/riviera} {activehdl=D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+open_bd_design {D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/sources_1/bd/sfp10g_bd/sfp10g_bd.bd}
+report_ip_status -name ip_status 
+reset_run synth_1
+INFO: [Project 1-1160] Copying file D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.runs/synth_1/sfp10g_bd_wrapper.dcp to D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/utils_1/imports/synth_1 and adding it to utils fileset
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Oct 12 14:20:49 2026] Launched synth_1...
+Run output will be captured here: D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.runs/synth_1/runme.log
+[Mon Oct 12 14:20:50 2026] Launched impl_1...
+Run output will be captured here: D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.runs/impl_1/runme.log
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:ethernet_1_10_25g:2.7 ethernet_1_10_25g_0
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] sfp10g_bd_ethernet_1_10_25g_0_0_gpcs: ARCHITECTURE : zynquplus
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] sfp10g_bd_ethernet_1_10_25g_0_0_gpcs: PART : xck26-sfvc784-2LV-c
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] sfp10g_bd_ethernet_1_10_25g_0_0_gpcs: SPEEDGRADE : -2LV
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] sfp10g_bd_ethernet_1_10_25g_0_0_gpcs: Standard : 1000BASEX
+endgroup
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+delete_bd_objs [get_bd_cells ethernet_1_10_25g_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xxv_ethernet:4.1 xxv_ethernet_1
+endgroup
+set_property location {3.5 1644 225} [get_bd_cells xxv_ethernet_1]
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+set_property -dict [list \
+  CONFIG.BASE_R_KR {BASE-R} \
+  CONFIG.INCLUDE_AXI4_INTERFACE {0} \
+  CONFIG.LANE1_GT_LOC {X0Y6} \
+] [get_bd_cells xxv_ethernet_1]
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+connect_bd_net [get_bd_ports gt_refclk_n] [get_bd_pins xxv_ethernet_1/gt_refclk_n]
+WARNING: [BD 41-1306] The connection to interface pin </xxv_ethernet_1/gt_refclk_n> is being overridden by the user with net </gt_refclk_n_1>. This pin will not be connected as a part of interface connection <gt_ref_clk>.
+connect_bd_net [get_bd_ports gt_refclk_p] [get_bd_pins xxv_ethernet_1/gt_refclk_p]
+WARNING: [BD 41-1306] The connection to interface pin </xxv_ethernet_1/gt_refclk_p> is being overridden by the user with net </gt_refclk_p_1>. This pin will not be connected as a part of interface connection <gt_ref_clk>.
+connect_bd_net [get_bd_pins xxv_ethernet_1/ctl_tx_custom_preamble_enable_0] [get_bd_pins xxv_ctrl_0/ctl_tx_custom_preamble_enable_0]
+WARNING: [BD 41-1306] The connection to interface pin </xxv_ethernet_1/ctl_tx_custom_preamble_enable_0> is being overridden by the user with net </xxv_ctrl_0_ctl_tx_test_pattern_enable>. This pin will not be connected as a part of interface connection <ctl_tx_0>.
+connect_bd_net [get_bd_pins xxv_ethernet_1/ctl_tx_data_pattern_select_0] [get_bd_pins xxv_ctrl_0/ctl_tx_data_pattern_select_0]
+WARNING: [BD 41-1306] The connection to interface pin </xxv_ethernet_1/ctl_tx_data_pattern_select_0> is being overridden by the user with net </xxv_ctrl_0_ctl_tx_test_pattern_select>. This pin will not be connected as a part of interface connection <ctl_tx_0>.
+connect_bd_net [get_bd_pins xxv_ethernet_1/ctl_tx_enable_0] [get_bd_pins xxv_ctrl_0/ctl_tx_enable_0]
+WARNING: [BD 41-1306] The connection to interface pin </xxv_ethernet_1/ctl_tx_enable_0> is being overridden by the user with net </xxv_ctrl_0_ctl_tx_enable_0>. This pin will not be connected as a part of interface connection <ctl_tx_0>.
+connect_bd_net [get_bd_pins xxv_ethernet_1/ctl_tx_fcs_ins_enable_0] [get_bd_pins xxv_ctrl_0/ctl_tx_fcs_ins_enable_0]
+WARNING: [BD 41-1306] The connection to interface pin </xxv_ethernet_1/ctl_tx_fcs_ins_enable_0> is being overridden by the user with net </xxv_ctrl_0_ctl_tx_fcs_ins_enable_0>. This pin will not be connected as a part of interface connection <ctl_tx_0>.
+connect_bd_net [get_bd_pins xxv_ethernet_1/ctl_tx_ignore_fcs_0] [get_bd_pins xxv_ctrl_0/ctl_tx_ignore_fcs_0]
+WARNING: [BD 41-1306] The connection to interface pin </xxv_ethernet_1/ctl_tx_ignore_fcs_0> is being overridden by the user with net </xxv_ctrl_0_ctl_tx_ignore_fcs_0>. This pin will not be connected as a part of interface connection <ctl_tx_0>.
+connect_bd_net [get_bd_pins xxv_ethernet_1/ctl_tx_ipg_value_0] [get_bd_pins xxv_ctrl_0/ctl_tx_ipg_value_0]
+WARNING: [BD 41-1306] The connection to interface pin </xxv_ethernet_1/ctl_tx_ipg_value_0> is being overridden by the user with net </xxv_ctrl_0_ctl_tx_ipg_value_0>. This pin will not be connected as a part of interface connection <ctl_tx_0>.
+connect_bd_net [get_bd_pins xxv_ethernet_1/ctl_tx_send_idle_0] [get_bd_pins xxv_ctrl_0/ctl_tx_send_idle_0]
+WARNING: [BD 41-1306] The connection to interface pin </xxv_ethernet_1/ctl_tx_send_idle_0> is being overridden by the user with net </xxv_ctrl_0_ctl_tx_send_idle_0>. This pin will not be connected as a part of interface connection <ctl_tx_0>.
+connect_bd_net [get_bd_pins xxv_ethernet_1/ctl_tx_send_lfi_0] [get_bd_pins xxv_ctrl_0/ctl_tx_send_lfi_0]
+WARNING: [BD 41-1306] The connection to interface pin </xxv_ethernet_1/ctl_tx_send_lfi_0> is being overridden by the user with net </xxv_ctrl_0_ctl_tx_send_lfi_0>. This pin will not be connected as a part of interface connection <ctl_tx_0>.
+connect_bd_net [get_bd_pins xxv_ethernet_1/ctl_tx_send_rfi_0] [get_bd_pins xxv_ctrl_0/ctl_tx_send_rfi_0]
+WARNING: [BD 41-1306] The connection to interface pin </xxv_ethernet_1/ctl_tx_send_rfi_0> is being overridden by the user with net </xxv_ctrl_0_ctl_tx_send_rfi_0>. This pin will not be connected as a part of interface connection <ctl_tx_0>.
+connect_bd_net [get_bd_pins xxv_ethernet_1/ctl_tx_test_pattern_0] [get_bd_pins xxv_ctrl_0/ctl_tx_test_pattern_0]
+WARNING: [BD 41-1306] The connection to interface pin </xxv_ethernet_1/ctl_tx_test_pattern_0> is being overridden by the user with net </xxv_ctrl_0_ctl_tx_test_pattern_0>. This pin will not be connected as a part of interface connection <ctl_tx_0>.
+connect_bd_net [get_bd_pins xxv_ethernet_1/ctl_tx_test_pattern_enable_0] [get_bd_pins xxv_ctrl_0/ctl_tx_test_pattern_enable_0]
+WARNING: [BD 41-1306] The connection to interface pin </xxv_ethernet_1/ctl_tx_test_pattern_enable_0> is being overridden by the user with net </xxv_ctrl_0_ctl_tx_test_pattern_enable_0>. This pin will not be connected as a part of interface connection <ctl_tx_0>.
+connect_bd_net [get_bd_pins xxv_ethernet_1/ctl_tx_test_pattern_seed_a_0] [get_bd_pins xxv_ctrl_0/ctl_tx_test_pattern_seed_a_0]
+WARNING: [BD 41-1306] The connection to interface pin </xxv_ethernet_1/ctl_tx_test_pattern_seed_a_0> is being overridden by the user with net </xxv_ctrl_0_ctl_tx_test_pattern_seed_a_0>. This pin will not be connected as a part of interface connection <ctl_tx_0>.
+connect_bd_net [get_bd_pins xxv_ethernet_1/ctl_tx_test_pattern_seed_b_0] [get_bd_pins xxv_ctrl_0/ctl_tx_test_pattern_seed_b_0]
+WARNING: [BD 41-1306] The connection to interface pin </xxv_ethernet_1/ctl_tx_test_pattern_seed_b_0> is being overridden by the user with net </xxv_ctrl_0_ctl_tx_test_pattern_seed_b_0>. This pin will not be connected as a part of interface connection <ctl_tx_0>.
+connect_bd_net [get_bd_pins xxv_ethernet_1/ctl_tx_test_pattern_select_0] [get_bd_pins xxv_ctrl_0/ctl_tx_test_pattern_select_0]
+WARNING: [BD 41-1306] The connection to interface pin </xxv_ethernet_1/ctl_tx_test_pattern_select_0> is being overridden by the user with net </xxv_ctrl_0_ctl_tx_test_pattern_select_0>. This pin will not be connected as a part of interface connection <ctl_tx_0>.
+connect_bd_net [get_bd_pins xxv_ethernet_1/ctl_rx_check_preamble_0] [get_bd_pins xxv_ctrl_0/ctl_rx_check_preamble_0]
+WARNING: [BD 41-1306] The connection to interface pin </xxv_ethernet_1/ctl_rx_check_preamble_0> is being overridden by the user with net </xxv_ctrl_0_ctl_rx_check_preamble_0>. This pin will not be connected as a part of interface connection <ctl_rx_0>.
+connect_bd_net [get_bd_pins xxv_ethernet_1/ctl_rx_check_sfd_0] [get_bd_pins xxv_ctrl_0/ctl_rx_check_sfd_0]
+WARNING: [BD 41-1306] The connection to interface pin </xxv_ethernet_1/ctl_rx_check_sfd_0> is being overridden by the user with net </xxv_ctrl_0_ctl_rx_check_sfd_0>. This pin will not be connected as a part of interface connection <ctl_rx_0>.
+connect_bd_net [get_bd_pins xxv_ethernet_1/ctl_rx_custom_preamble_enable_0] [get_bd_pins xxv_ctrl_0/ctl_rx_custom_preamble_enable_0]
+WARNING: [BD 41-1306] The connection to interface pin </xxv_ethernet_1/ctl_rx_custom_preamble_enable_0> is being overridden by the user with net </xxv_ctrl_0_ctl_rx_custom_preamble_enable_0>. This pin will not be connected as a part of interface connection <ctl_rx_0>.
+connect_bd_net [get_bd_pins xxv_ethernet_1/ctl_rx_data_pattern_select_0] [get_bd_pins xxv_ctrl_0/ctl_rx_data_pattern_select_0]
+WARNING: [BD 41-1306] The connection to interface pin </xxv_ethernet_1/ctl_rx_data_pattern_select_0> is being overridden by the user with net </xxv_ctrl_0_ctl_rx_data_pattern_select_0>. This pin will not be connected as a part of interface connection <ctl_rx_0>.
+connect_bd_net [get_bd_pins xxv_ethernet_1/ctl_rx_delete_fcs_0] [get_bd_pins xxv_ctrl_0/ctl_rx_delete_fcs_0]
+WARNING: [BD 41-1306] The connection to interface pin </xxv_ethernet_1/ctl_rx_delete_fcs_0> is being overridden by the user with net </xxv_ctrl_0_ctl_rx_delete_fcs_0>. This pin will not be connected as a part of interface connection <ctl_rx_0>.
+connect_bd_net [get_bd_pins xxv_ethernet_1/ctl_rx_enable_0] [get_bd_pins xxv_ctrl_0/ctl_rx_enable_0]
+WARNING: [BD 41-1306] The connection to interface pin </xxv_ethernet_1/ctl_rx_enable_0> is being overridden by the user with net </xxv_ctrl_0_ctl_rx_enable_0>. This pin will not be connected as a part of interface connection <ctl_rx_0>.
+connect_bd_net [get_bd_pins xxv_ethernet_1/ctl_rx_force_resync_0] [get_bd_pins xxv_ctrl_0/ctl_rx_force_resync_0]
+WARNING: [BD 41-1306] The connection to interface pin </xxv_ethernet_1/ctl_rx_force_resync_0> is being overridden by the user with net </xxv_ctrl_0_ctl_rx_force_resync_0>. This pin will not be connected as a part of interface connection <ctl_rx_0>.
+connect_bd_net [get_bd_pins xxv_ethernet_1/ctl_rx_ignore_fcs_0] [get_bd_pins xxv_ctrl_0/ctl_rx_ignore_fcs_0]
+WARNING: [BD 41-1306] The connection to interface pin </xxv_ethernet_1/ctl_rx_ignore_fcs_0> is being overridden by the user with net </xxv_ctrl_0_ctl_rx_ignore_fcs_0>. This pin will not be connected as a part of interface connection <ctl_rx_0>.
+connect_bd_net [get_bd_pins xxv_ethernet_1/ctl_rx_max_packet_len_0] [get_bd_pins xxv_ctrl_0/ctl_rx_max_packet_len_0]
+WARNING: [BD 41-1306] The connection to interface pin </xxv_ethernet_1/ctl_rx_max_packet_len_0> is being overridden by the user with net </xxv_ctrl_0_ctl_rx_max_packet_len_0>. This pin will not be connected as a part of interface connection <ctl_rx_0>.
+connect_bd_net [get_bd_pins xxv_ethernet_1/ctl_rx_min_packet_len_0] [get_bd_pins xxv_ctrl_0/ctl_rx_min_packet_len_0]
+WARNING: [BD 41-1306] The connection to interface pin </xxv_ethernet_1/ctl_rx_min_packet_len_0> is being overridden by the user with net </xxv_ctrl_0_ctl_rx_min_packet_len_0>. This pin will not be connected as a part of interface connection <ctl_rx_0>.
+connect_bd_net [get_bd_pins xxv_ethernet_1/ctl_rx_process_lfi_0] [get_bd_pins xxv_ctrl_0/ctl_rx_process_lfi_0]
+WARNING: [BD 41-1306] The connection to interface pin </xxv_ethernet_1/ctl_rx_process_lfi_0> is being overridden by the user with net </xxv_ctrl_0_ctl_rx_process_lfi_0>. This pin will not be connected as a part of interface connection <ctl_rx_0>.
+connect_bd_net [get_bd_pins xxv_ethernet_1/ctl_rx_test_pattern_0] [get_bd_pins xxv_ctrl_0/ctl_rx_test_pattern_0]
+WARNING: [BD 41-1306] The connection to interface pin </xxv_ethernet_1/ctl_rx_test_pattern_0> is being overridden by the user with net </xxv_ctrl_0_ctl_rx_test_pattern_0>. This pin will not be connected as a part of interface connection <ctl_rx_0>.
+connect_bd_net [get_bd_pins xxv_ethernet_1/ctl_rx_test_pattern_enable_0] [get_bd_pins xxv_ctrl_0/ctl_rx_test_pattern_enable_0]
+WARNING: [BD 41-1306] The connection to interface pin </xxv_ethernet_1/ctl_rx_test_pattern_enable_0> is being overridden by the user with net </xxv_ctrl_0_ctl_rx_test_pattern_enable_0>. This pin will not be connected as a part of interface connection <ctl_rx_0>.
+connect_bd_net [get_bd_pins xxv_ethernet_1/rx_core_clk_0] [get_bd_pins xxv_ethernet_0/rx_clk_out_0]
+undo
+INFO: [Common 17-17] undo 'connect_bd_net [get_bd_pins xxv_ethernet_1/rx_core_clk_0] [get_bd_pins xxv_ethernet_0/rx_clk_out_0]'
+connect_bd_net [get_bd_pins xxv_ethernet_1/rx_clk_out_0] [get_bd_pins xxv_ethernet_1/rx_core_clk_0]
+connect_bd_net [get_bd_pins xxv_ethernet_1/txoutclksel_in_0] [get_bd_pins xlconstant_2/dout]
+connect_bd_net [get_bd_pins xxv_ethernet_1/rxoutclksel_in_0] [get_bd_pins xlconstant_2/dout]
+connect_bd_net [get_bd_pins xxv_ethernet_1/gtwiz_reset_tx_datapath_0] [get_bd_pins xlconstant_0/dout]
+connect_bd_net [get_bd_pins xxv_ethernet_1/gtwiz_reset_rx_datapath_0] [get_bd_pins xlconstant_0/dout]
+connect_bd_net [get_bd_pins xxv_ethernet_1/sys_reset] [get_bd_pins reset_gen_0/sys_reset]
+connect_bd_net [get_bd_pins xxv_ethernet_1/dclk] [get_bd_pins clk_wiz_0/clk_out1]
+connect_bd_net [get_bd_pins xxv_ethernet_1/rx_reset_0] [get_bd_pins reset_gen_0/rx_reset]
+connect_bd_net [get_bd_pins xxv_ethernet_1/tx_reset_0] [get_bd_pins reset_gen_0/tx_reset]
+connect_bd_net [get_bd_pins xxv_ethernet_1/tx_preamblein_0] [get_bd_pins xlconstant_3/dout]
+connect_bd_net [get_bd_pins xxv_ethernet_1/gt_loopback_in_0] [get_bd_pins xlconstant_1/dout]
+connect_bd_net [get_bd_pins xxv_ethernet_1/qpllreset_in_0] [get_bd_pins xlconstant_0/dout]
+connect_bd_net [get_bd_ports gt_rxn_in] [get_bd_pins xxv_ethernet_1/gt_rxn_in]
+WARNING: [BD 41-1306] The connection to interface pin </xxv_ethernet_1/gt_rxn_in> is being overridden by the user with net </gt_rnx_in_1>. This pin will not be connected as a part of interface connection <gt_serial_port>.
+connect_bd_net [get_bd_ports gt_rxp_in] [get_bd_pins xxv_ethernet_1/gt_rxp_in]
+WARNING: [BD 41-1306] The connection to interface pin </xxv_ethernet_1/gt_rxp_in> is being overridden by the user with net </gt_rxp_in_1>. This pin will not be connected as a part of interface connection <gt_serial_port>.
+delete_bd_objs [get_bd_nets xxv_ethernet_0_gt_txn_out]
+connect_bd_net [get_bd_ports gt_txn_out] [get_bd_pins xxv_ethernet_1/gt_txn_out]
+WARNING: [BD 41-1306] The connection to interface pin </xxv_ethernet_1/gt_txn_out> is being overridden by the user with net <xxv_ethernet_1_gt_txn_out>. This pin will not be connected as a part of interface connection <gt_serial_port>.
+delete_bd_objs [get_bd_nets xxv_ethernet_0_gt_txp_out]
+connect_bd_net [get_bd_ports gt_txp_out] [get_bd_pins xxv_ethernet_1/gt_txp_out]
+WARNING: [BD 41-1306] The connection to interface pin </xxv_ethernet_1/gt_txp_out> is being overridden by the user with net <xxv_ethernet_1_gt_txp_out>. This pin will not be connected as a part of interface connection <gt_serial_port>.
+delete_bd_objs [get_bd_nets xxv_ethernet_0_rx_clk_out_0] [get_bd_cells xxv_ethernet_0]
+save_bd_design
+Wrote  : <D:\FPGA\Vivaldo Project\INTERFACE\SFP GT BERT\03_sfp_10g_data_path\Vivado\03_sfp10g.srcs\sources_1\bd\sfp10g_bd\sfp10g_bd.bd> 
+Wrote  : <D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/sources_1/bd/sfp10g_bd/ui/bd_9a83f936.ui> 
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:ila:6.2 ila_0
+INFO: [xilinx.com:ip:ila:6.2-6] /ila_0: Xilinx recommends using the System ILA IP in IP Integrator. The System ILA IP is functionally equivalent to an ILA and offers additional benefits in debugging interfaces both within IP Integrator and the Hardware Manager. Consult the Programming and Debug User Guide UG908 for further details.
+endgroup
+set_property location {4.5 2348 638} [get_bd_cells ila_0]
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list \
+  CONFIG.C_DATA_DEPTH {8192} \
+  CONFIG.C_MONITOR_TYPE {Native} \
+  CONFIG.C_NUM_OF_PROBES {5} \
+] [get_bd_cells ila_0]
+connect_bd_net [get_bd_pins ila_0/clk] [get_bd_pins xxv_ethernet_1/rx_clk_out_0]
+connect_bd_net [get_bd_pins xxv_ethernet_1/stat_rx_block_lock_0] [get_bd_pins ila_0/probe0]
+WARNING: [BD 41-1306] The connection to interface pin </xxv_ethernet_1/stat_rx_block_lock_0> is being overridden by the user with net <xxv_ethernet_1_stat_rx_block_lock_0>. This pin will not be connected as a part of interface connection <stat_rx_0>.
+connect_bd_net [get_bd_pins xxv_ethernet_1/stat_rx_status_0] [get_bd_pins ila_0/probe1]
+connect_bd_net [get_bd_pins ila_0/probe2] [get_bd_pins xxv_ethernet_1/stat_rx_hi_ber_0]
+WARNING: [BD 41-1306] The connection to interface pin </xxv_ethernet_1/stat_rx_hi_ber_0> is being overridden by the user with net <xxv_ethernet_1_stat_rx_hi_ber_0>. This pin will not be connected as a part of interface connection <stat_rx_0>.
+connect_bd_net [get_bd_pins ila_0/probe3] [get_bd_pins xxv_ethernet_1/user_rx_reset_0]
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+startgroup
+set_property CONFIG.C_NUM_OF_PROBES {4} [get_bd_cells ila_0]
+endgroup
+copy_bd_objs /  [get_bd_cells {ila_0}]
+INFO: [xilinx.com:ip:ila:6.2-6] /ila_1: Xilinx recommends using the System ILA IP in IP Integrator. The System ILA IP is functionally equivalent to an ILA and offers additional benefits in debugging interfaces both within IP Integrator and the Hardware Manager. Consult the Programming and Debug User Guide UG908 for further details.
+connect_bd_net [get_bd_pins ila_1/clk] [get_bd_pins xxv_ethernet_1/tx_clk_out_0]
+connect_bd_net [get_bd_pins xxv_ethernet_1/user_tx_reset_0] [get_bd_pins ila_1/probe0]
+connect_bd_net [get_bd_pins xxv_ethernet_1/gtpowergood_out_0] [get_bd_pins ila_1/probe1]
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+startgroup
+set_property CONFIG.C_NUM_OF_PROBES {2} [get_bd_cells ila_1]
+endgroup
+save_bd_design
+Wrote  : <D:\FPGA\Vivaldo Project\INTERFACE\SFP GT BERT\03_sfp_10g_data_path\Vivado\03_sfp10g.srcs\sources_1\bd\sfp10g_bd\sfp10g_bd.bd> 
+Wrote  : <D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/sources_1/bd/sfp10g_bd/ui/bd_9a83f936.ui> 
+reset_target all [get_files  {{D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/sources_1/bd/sfp10g_bd/sfp10g_bd.bd}}]
+export_ip_user_files -of_objects  [get_files  {{D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/sources_1/bd/sfp10g_bd/sfp10g_bd.bd}}] -sync -no_script -force -quiet
+generate_target all [get_files  {{D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/sources_1/bd/sfp10g_bd/sfp10g_bd.bd}}]
+CRITICAL WARNING: [BD 41-1348] Reset pin /xxv_ethernet_1/sys_reset (associated clock /xxv_ethernet_1/dclk) is connected to asynchronous reset source /reset_gen_0/sys_reset.
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /clk_wiz_0/clk_out1.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+INFO: [xilinx.com:ip:xxv_ethernet:4.1-5910] /xxv_ethernet_1 NOTE : INIT CLK of /xxv_ethernet_1 has input port frequency configured as 100000000 Hz (100.0 MHz).
+Wrote  : <D:\FPGA\Vivaldo Project\INTERFACE\SFP GT BERT\03_sfp_10g_data_path\Vivado\03_sfp10g.srcs\sources_1\bd\sfp10g_bd\sfp10g_bd.bd> 
+Wrote  : <D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/sources_1/bd/sfp10g_bd/ui/bd_9a83f936.ui> 
+Verilog Output written to : d:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.gen/sources_1/bd/sfp10g_bd/synth/sfp10g_bd.v
+Verilog Output written to : d:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.gen/sources_1/bd/sfp10g_bd/sim/sfp10g_bd.v
+Verilog Output written to : d:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.gen/sources_1/bd/sfp10g_bd/hdl/sfp10g_bd_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block reset_gen_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xxv_ctrl_0 .
+WARNING: [IP_Flow 19-650] IP license key 'x_eth_mac@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'x_eth_mac@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'x_eth_mac@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_tsn_802d1cm@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_tsn_802d1cm@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_tsn_802d1cm@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_tsn_802d1cm@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xxv_ethernet_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ila_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ila_1 .
+Exporting to file d:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.gen/sources_1/bd/sfp10g_bd/hw_handoff/sfp10g_bd.hwh
+Generated Hardware Definition File d:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.gen/sources_1/bd/sfp10g_bd/synth/sfp10g_bd.hwdef
+export_ip_user_files -of_objects [get_files {{D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/sources_1/bd/sfp10g_bd/sfp10g_bd.bd}}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/sources_1/bd/sfp10g_bd/sfp10g_bd.bd}}] -directory {D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.ip_user_files/sim_scripts} -ip_user_files_dir {D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.ip_user_files} -ipstatic_source_dir {D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.cache/compile_simlib/modelsim} {questa=D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.cache/compile_simlib/questa} {riviera=D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.cache/compile_simlib/riviera} {activehdl=D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Oct 12 14:44:01 2026...
