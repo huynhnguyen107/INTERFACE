@@ -1,7 +1,7 @@
 //Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-//Date        : Tue Oct 13 11:50:56 2026
+//Date        : Wed Oct 14 10:55:25 2026
 //Host        : LAPTOP-CHCSI1R5 running 64-bit major release  (build 9200)
 //Command     : generate_target sfp10g_bd.bd
 //Design      : sfp10g_bd
@@ -29,6 +29,7 @@ module sfp10g_bd
   wire clk_25mhz_1;
   wire clk_wiz_0_clk_out1;
   wire clk_wiz_0_locked;
+  wire [3:0]frame_generator_0_debug_beat_cnt;
   wire frame_generator_0_done;
   (* CONN_BUS_INFO = "frame_generator_0_m_axis xilinx.com:interface:axis:1.0 None TDATA" *) (* DONT_TOUCH *) wire [63:0]frame_generator_0_m_axis_TDATA;
   (* CONN_BUS_INFO = "frame_generator_0_m_axis xilinx.com:interface:axis:1.0 None TKEEP" *) (* DONT_TOUCH *) wire [7:0]frame_generator_0_m_axis_TKEEP;
@@ -106,6 +107,7 @@ module sfp10g_bd
         .locked(clk_wiz_0_locked));
   sfp10g_bd_frame_generator_0_0 frame_generator_0
        (.clk(xxv_ethernet_1_tx_clk_out_0),
+        .debug_beat_cnt(frame_generator_0_debug_beat_cnt),
         .done(frame_generator_0_done),
         .m_axis_tdata(frame_generator_0_m_axis_TDATA),
         .m_axis_tkeep(frame_generator_0_m_axis_TKEEP),
@@ -133,6 +135,7 @@ module sfp10g_bd
         .probe1(xxv_ethernet_1_gtpowergood_out_0),
         .probe2(frame_generator_0_done),
         .probe3(vio_0_probe_out0),
+        .probe4(frame_generator_0_debug_beat_cnt),
         .resetn(util_vector_logic_0_Res));
   sfp10g_bd_system_ila_0_1 system_ila_1
        (.SLOT_0_AXIS_tdata(xxv_ethernet_1_axis_rx_0_TDATA),

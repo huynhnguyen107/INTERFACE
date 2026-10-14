@@ -66,5 +66,3 @@ set_property src_info {type:XDC file:4 line:43 export:INPUT save:INPUT read:READ
 set_clock_groups -group [get_clocks gth_refclk0_1 -include_generated_clocks] -asynchronous
 set_property src_info {type:XDC file:4 line:47 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN Y10 [get_ports sfp_tx_disable_o]
-set_property src_info {type:XDC file:4 line:48 export:INPUT save:INPUT read:READ} [current_design]
-set_property IOSTANDARD LVCMOS33 [get_ports sfp_tx_disable_o]

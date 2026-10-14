@@ -32,7 +32,8 @@ module frame_generator (
     output wire        m_axis_tuser,
     input  wire        m_axis_tready,
 
-    output reg         done
+    output reg         done,
+    output wire         [3:0] debug_beat_cnt
 );
 
     reg [3:0] beat_cnt;
@@ -69,6 +70,8 @@ module frame_generator (
                     sending_flag  <= 1'b1;
                     beat_cnt <= 4'd0;
                 end
+				else 
+					done     <= 1'b0;
 
             end
 
@@ -88,8 +91,6 @@ module frame_generator (
 
                 end
             end
-			else 
-				done     <= 1'b0;
         end
     end
 
@@ -109,9 +110,9 @@ module frame_generator (
 				// 28 29 2A 2B 2C 2D
     // ---------------------------------------------------------
 
-    reg [63:0] data_r = 64'd0;
-    reg [7:0]  keep_r = 8'hFF;
-    reg        last_r = 1'b0;
+    reg [63:0] data_r ;
+    reg [7:0]  keep_r ;
+    reg        last_r ;
 
     always @(*) begin
         case (beat_cnt)
@@ -122,6 +123,8 @@ module frame_generator (
             //
             4'd0: begin
                 data_r = 64'h0002_FFFF_FFFF_FFFF;
+				keep_r = 8'hFF;
+                last_r = 1'b0;
             end
             // Bytes 8..15
             //
@@ -129,6 +132,8 @@ module frame_generator (
             //
             4'd1: begin
                 data_r = 64'h0100_B588_0100_0000;
+				keep_r = 8'hFF;
+                last_r = 1'b0;
             end
             // Bytes 16..23
             //
@@ -136,6 +141,8 @@ module frame_generator (
             //
             4'd2: begin
                 data_r = 64'h0908_0706_0504_0302;
+				keep_r = 8'hFF;
+                last_r = 1'b0;
             end
             // Bytes 24..31
             //
@@ -143,6 +150,8 @@ module frame_generator (
             //
             4'd3: begin
                 data_r = 64'h1110_0F0E_0D0C_0B0A;
+				keep_r = 8'hFF;
+                last_r = 1'b0;
             end
             // Bytes 32..39
             //
@@ -150,6 +159,8 @@ module frame_generator (
             //
             4'd4: begin
                 data_r = 64'h1918_1716_1514_1312;
+				keep_r = 8'hFF;
+                last_r = 1'b0;
             end
             // Bytes 40..47
             //
@@ -157,6 +168,8 @@ module frame_generator (
             //
             4'd5: begin
                 data_r = 64'h2120_1F1E_1D1C_1B1A;
+				keep_r = 8'hFF;
+                last_r = 1'b0;
             end
             // Bytes 48..55
             //
@@ -164,6 +177,8 @@ module frame_generator (
             //
             4'd6: begin
                 data_r = 64'h2928_2726_2524_2322;
+				keep_r = 8'hFF;
+                last_r = 1'b0;
             end
             // Bytes 56..59
             //
@@ -187,6 +202,7 @@ module frame_generator (
     assign m_axis_tdata = data_r;
     assign m_axis_tkeep = keep_r;
     assign m_axis_tlast = last_r;
+    assign debug_beat_cnt = beat_cnt;
 
 
 

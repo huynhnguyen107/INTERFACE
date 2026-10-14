@@ -70,7 +70,6 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param tcl.statsThreshold 360
 set_param chipscope.maxJobs 4
 set_msg_config -id {HDL-1065} -limit 10000
 OPTRACE "Creating in-memory project" START { }
@@ -94,7 +93,7 @@ read_verilog -library xil_defaultlib {
   {D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/sources_1/new/reset_gen.v}
   {D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/sources_1/new/xxv_ctrl.v}
   {D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/sources_1/new/frame_gen.v}
-  {D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.gen/sources_1/bd/sfp10g_bd/hdl/sfp10g_bd_wrapper.v}
+  {D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/sources_1/imports/hdl/sfp10g_bd_wrapper.v}
 }
 add_files {{D:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.srcs/sources_1/bd/sfp10g_bd/sfp10g_bd.bd}}
 set_property used_in_implementation false [get_files -all {{d:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.gen/sources_1/bd/sfp10g_bd/ip/sfp10g_bd_clk_wiz_0_0/sfp10g_bd_clk_wiz_0_0_board.xdc}}]

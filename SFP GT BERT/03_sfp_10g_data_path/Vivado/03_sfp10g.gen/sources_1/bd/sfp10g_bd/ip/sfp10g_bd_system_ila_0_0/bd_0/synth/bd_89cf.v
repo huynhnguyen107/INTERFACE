@@ -6,7 +6,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "bd_89cf,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=bd_89cf,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=2,numReposBlks=2,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=SBD,synth_mode=Global}" *) (* HW_HANDOFF = "sfp10g_bd_system_ila_0_0.hwdef" *) 
+(* CORE_GENERATION_INFO = "bd_89cf,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=bd_89cf,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=2,numReposBlks=2,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=SBD,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "sfp10g_bd_system_ila_0_0.hwdef" *) 
 module bd_89cf
    (SLOT_0_AXIS_tdata,
     SLOT_0_AXIS_tkeep,
@@ -19,6 +19,7 @@ module bd_89cf
     probe1,
     probe2,
     probe3,
+    probe4,
     resetn);
   (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 SLOT_0_AXIS TDATA" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME SLOT_0_AXIS, CLK_DOMAIN sfp10g_bd_xxv_ethernet_1_0_tx_clk_out_0, FREQ_HZ 156250000, HAS_TKEEP 1, HAS_TLAST 1, HAS_TREADY 1, HAS_TSTRB 0, INSERT_VIP 0, LAYERED_METADATA undef, PHASE 0, TDATA_NUM_BYTES 8, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 1" *) input [63:0]SLOT_0_AXIS_tdata;
   (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 SLOT_0_AXIS TKEEP" *) input [7:0]SLOT_0_AXIS_tkeep;
@@ -31,6 +32,7 @@ module bd_89cf
   input [0:0]probe1;
   input [0:0]probe2;
   input [0:0]probe3;
+  input [3:0]probe4;
   (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 RST.RESETN RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.RESETN, INSERT_VIP 0, POLARITY ACTIVE_LOW" *) input resetn;
 
   wire [63:0]Conn_TDATA;
@@ -50,6 +52,7 @@ module bd_89cf
   wire [0:0]probe1_1;
   wire [0:0]probe2_1;
   wire [0:0]probe3_1;
+  wire [3:0]probe4_1;
   wire resetn_1;
 
   assign Conn_TDATA = SLOT_0_AXIS_tdata[63:0];
@@ -63,6 +66,7 @@ module bd_89cf
   assign probe1_1 = probe1[0];
   assign probe2_1 = probe2[0];
   assign probe3_1 = probe3[0];
+  assign probe4_1 = probe4[3:0];
   assign resetn_1 = resetn;
   bd_89cf_g_inst_0 g_inst
        (.aclk(clk_1),
@@ -83,12 +87,13 @@ module bd_89cf
        (.clk(clk_1),
         .probe0(probe0_1),
         .probe1(probe1_1),
+        .probe10(net_slot_0_axis_tlast),
         .probe2(probe2_1),
         .probe3(probe3_1),
-        .probe4(net_slot_0_axis_tdata),
-        .probe5(net_slot_0_axis_tkeep),
-        .probe6(net_slot_0_axis_tuser),
-        .probe7(net_slot_0_axis_tvalid),
-        .probe8(net_slot_0_axis_tready),
-        .probe9(net_slot_0_axis_tlast));
+        .probe4(probe4_1),
+        .probe5(net_slot_0_axis_tdata),
+        .probe6(net_slot_0_axis_tkeep),
+        .probe7(net_slot_0_axis_tuser),
+        .probe8(net_slot_0_axis_tvalid),
+        .probe9(net_slot_0_axis_tready));
 endmodule

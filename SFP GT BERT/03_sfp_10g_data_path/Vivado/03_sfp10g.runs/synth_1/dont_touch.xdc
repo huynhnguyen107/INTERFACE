@@ -35,9 +35,6 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==sfp10g_bd_x
 # IP: d:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.gen/sources_1/bd/sfp10g_bd/ip/sfp10g_bd_xxv_ethernet_1_0/ip_0/sfp10g_bd_xxv_ethernet_1_0_gt.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==sfp10g_bd_xxv_ethernet_1_0_gt || ORIG_REF_NAME==sfp10g_bd_xxv_ethernet_1_0_gt} -quiet] -quiet
 
-# IP: bd/sfp10g_bd/ip/sfp10g_bd_frame_generator_0_0/sfp10g_bd_frame_generator_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==sfp10g_bd_frame_generator_0_0 || ORIG_REF_NAME==sfp10g_bd_frame_generator_0_0} -quiet] -quiet
-
 # IP: bd/sfp10g_bd/ip/sfp10g_bd_vio_0_0/sfp10g_bd_vio_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==sfp10g_bd_vio_0_0 || ORIG_REF_NAME==sfp10g_bd_vio_0_0} -quiet] -quiet
 
@@ -70,6 +67,9 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==sfp10g_bd_u
 
 # IP: bd/sfp10g_bd/ip/sfp10g_bd_util_vector_logic_0_2/sfp10g_bd_util_vector_logic_0_2.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==sfp10g_bd_util_vector_logic_0_2 || ORIG_REF_NAME==sfp10g_bd_util_vector_logic_0_2} -quiet] -quiet
+
+# IP: bd/sfp10g_bd/ip/sfp10g_bd_frame_generator_0_0/sfp10g_bd_frame_generator_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==sfp10g_bd_frame_generator_0_0 || ORIG_REF_NAME==sfp10g_bd_frame_generator_0_0} -quiet] -quiet
 
 # XDC: d:/FPGA/Vivaldo Project/INTERFACE/SFP GT BERT/03_sfp_10g_data_path/Vivado/03_sfp10g.gen/sources_1/bd/sfp10g_bd/ip/sfp10g_bd_clk_wiz_0_0/sfp10g_bd_clk_wiz_0_0_board.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==sfp10g_bd_clk_wiz_0_0 || ORIG_REF_NAME==sfp10g_bd_clk_wiz_0_0} -quiet] {/inst } ]/inst ] -quiet] -quiet

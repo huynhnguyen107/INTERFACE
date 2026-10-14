@@ -414,7 +414,7 @@
             "value": "MIX"
           },
           "C_NUM_OF_PROBES": {
-            "value": "4"
+            "value": "5"
           },
           "C_SLOT_0_INTF_TYPE": {
             "value": "xilinx.com:interface:axis_rtl:1.0"
@@ -617,6 +617,11 @@
           },
           "done": {
             "direction": "O"
+          },
+          "debug_beat_cnt": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
           }
         }
       }
@@ -654,6 +659,12 @@
         "ports": [
           "clk_wiz_0/locked",
           "reset_gen_0/locked"
+        ]
+      },
+      "frame_generator_0_debug_beat_cnt": {
+        "ports": [
+          "frame_generator_0/debug_beat_cnt",
+          "system_ila_0/probe4"
         ]
       },
       "frame_generator_0_done": {

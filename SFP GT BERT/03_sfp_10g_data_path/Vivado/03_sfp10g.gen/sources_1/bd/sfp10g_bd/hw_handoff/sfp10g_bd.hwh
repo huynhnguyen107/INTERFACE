@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Oct 13 11:51:04 2026" VIVADOVERSION="2022.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Oct 14 10:55:33 2026" VIVADOVERSION="2022.2">
 
   <SYSTEMINFO ARCH="zynquplus" BOARD="xilinx.com:kr260_som:part0:1.1" DEVICE="xck26" NAME="sfp10g_bd" PACKAGE="sfvc784" SPEEDGRADE="-2LV"/>
 
@@ -698,6 +698,11 @@
         <PORT DIR="O" NAME="done" SIGIS="undef" SIGNAME="frame_generator_0_done">
           <CONNECTIONS>
             <CONNECTION INSTANCE="system_ila_0" PORT="probe2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="debug_beat_cnt" RIGHT="0" SIGIS="undef" SIGNAME="frame_generator_0_debug_beat_cnt">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="system_ila_0" PORT="probe4"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -3331,7 +3336,7 @@
         <PARAMETER NAME="C_PROBE1_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_PROBE0_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_DATA_DEPTH" VALUE="4096"/>
-        <PARAMETER NAME="C_NUM_OF_PROBES" VALUE="4"/>
+        <PARAMETER NAME="C_NUM_OF_PROBES" VALUE="5"/>
         <PARAMETER NAME="C_XLNX_HW_PROBE_INFO" VALUE="DEFAULT"/>
         <PARAMETER NAME="Component_Name" VALUE="sfp10g_bd_system_ila_0_0"/>
         <PARAMETER NAME="C_PROBE70_WIDTH" VALUE="1"/>
@@ -4605,11 +4610,6 @@
             <CONNECTION INSTANCE="xxv_ethernet_1" PORT="tx_clk_out_0"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="resetn" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="util_vector_logic_0_Res">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="util_vector_logic_0" PORT="Res"/>
-          </CONNECTIONS>
-        </PORT>
         <PORT DIR="I" LEFT="0" NAME="probe0" POLARITY="ACTIVE_HIGH" RIGHT="0" SIGIS="undef" SIGNAME="xxv_ethernet_1_user_tx_reset_0">
           <CONNECTIONS>
             <CONNECTION INSTANCE="xxv_ethernet_1" PORT="user_tx_reset_0"/>
@@ -4636,6 +4636,16 @@
         <PORT DIR="I" LEFT="0" NAME="SLOT_0_AXIS_tuser" RIGHT="0" SIGIS="undef"/>
         <PORT DIR="I" NAME="SLOT_0_AXIS_tvalid" SIGIS="undef"/>
         <PORT DIR="I" NAME="SLOT_0_AXIS_tready" SIGIS="undef"/>
+        <PORT DIR="I" NAME="resetn" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="util_vector_logic_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="util_vector_logic_0" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="probe4" RIGHT="0" SIGIS="undef" SIGNAME="frame_generator_0_debug_beat_cnt">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="frame_generator_0" PORT="debug_beat_cnt"/>
+          </CONNECTIONS>
+        </PORT>
       </PORTS>
       <BUSINTERFACES>
         <BUSINTERFACE BUSNAME="frame_generator_0_m_axis" NAME="SLOT_0_AXIS" TYPE="MONITOR" VLNV="xilinx.com:interface:axis:1.0">

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Oct 13 11:51:00 2026" VIVADOVERSION="2022.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Oct 14 10:55:29 2026" VIVADOVERSION="2022.2">
 
   <SYSTEMINFO ARCH="zynquplus" BOARD="xilinx.com:kr260_som:part0:1.1" DEVICE="xck26" NAME="bd_89cf" PACKAGE="sfvc784" SPEEDGRADE="-2LV"/>
 
@@ -28,6 +28,11 @@
     <PORT DIR="I" LEFT="0" NAME="probe3" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_probe3">
       <CONNECTIONS>
         <CONNECTION INSTANCE="ila_lib" PORT="probe3"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="3" NAME="probe4" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_probe4">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ila_lib" PORT="probe4"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="I" NAME="resetn" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_resetn">
@@ -1486,32 +1491,32 @@
         </PORT>
         <PORT DIR="O" NAME="m_slot_0_axis_tvalid" SIGIS="undef" SIGNAME="g_inst_m_slot_0_axis_tvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="ila_lib" PORT="probe7"/>
+            <CONNECTION INSTANCE="ila_lib" PORT="probe8"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="m_slot_0_axis_tready" SIGIS="undef" SIGNAME="g_inst_m_slot_0_axis_tready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="ila_lib" PORT="probe8"/>
+            <CONNECTION INSTANCE="ila_lib" PORT="probe9"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="63" NAME="m_slot_0_axis_tdata" RIGHT="0" SIGIS="undef" SIGNAME="g_inst_m_slot_0_axis_tdata">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="ila_lib" PORT="probe4"/>
+            <CONNECTION INSTANCE="ila_lib" PORT="probe5"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="7" NAME="m_slot_0_axis_tkeep" RIGHT="0" SIGIS="undef" SIGNAME="g_inst_m_slot_0_axis_tkeep">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="ila_lib" PORT="probe5"/>
+            <CONNECTION INSTANCE="ila_lib" PORT="probe6"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="m_slot_0_axis_tlast" SIGIS="undef" SIGNAME="g_inst_m_slot_0_axis_tlast">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="ila_lib" PORT="probe9"/>
+            <CONNECTION INSTANCE="ila_lib" PORT="probe10"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="0" NAME="m_slot_0_axis_tuser" RIGHT="0" SIGIS="undef" SIGNAME="g_inst_m_slot_0_axis_tuser">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="ila_lib" PORT="probe6"/>
+            <CONNECTION INSTANCE="ila_lib" PORT="probe7"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -1584,7 +1589,7 @@
         <PARAMETER NAME="C_SLOT_0_AXI_PROTOCOL" VALUE="AXI4"/>
         <PARAMETER NAME="C_NUM_MONITOR_SLOTS" VALUE="1"/>
         <PARAMETER NAME="C_ENABLE_ILA_AXI_MON" VALUE="0"/>
-        <PARAMETER NAME="C_NUM_OF_PROBES" VALUE="10"/>
+        <PARAMETER NAME="C_NUM_OF_PROBES" VALUE="11"/>
         <PARAMETER NAME="C_DATA_DEPTH" VALUE="4096"/>
         <PARAMETER NAME="C_MAJOR_VERSION" VALUE="2022"/>
         <PARAMETER NAME="C_MINOR_VERSION" VALUE="2"/>
@@ -1599,7 +1604,7 @@
         <PARAMETER NAME="C_RAM_STYLE" VALUE="SUBCORE"/>
         <PARAMETER NAME="C_TRIGOUT_EN" VALUE="0"/>
         <PARAMETER NAME="C_TRIGIN_EN" VALUE="0"/>
-        <PARAMETER NAME="C_SLOT_0_AXIS_TUSER_WIDTH" VALUE="8"/>
+        <PARAMETER NAME="C_SLOT_0_AXIS_TUSER_WIDTH" VALUE="64"/>
         <PARAMETER NAME="C_SLOT_0_AXIS_TDEST_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_SLOT_0_AXIS_TID_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_SLOT_0_AXI_ID_WIDTH" VALUE="1"/>
@@ -1612,9 +1617,9 @@
         <PARAMETER NAME="C_PROBE1_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_PROBE2_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_PROBE3_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="C_PROBE4_WIDTH" VALUE="64"/>
-        <PARAMETER NAME="C_PROBE5_WIDTH" VALUE="8"/>
-        <PARAMETER NAME="C_PROBE6_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_PROBE4_WIDTH" VALUE="4"/>
+        <PARAMETER NAME="C_PROBE5_WIDTH" VALUE="64"/>
+        <PARAMETER NAME="C_PROBE6_WIDTH" VALUE="8"/>
         <PARAMETER NAME="C_PROBE7_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_PROBE8_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_PROBE9_WIDTH" VALUE="1"/>
@@ -4729,32 +4734,37 @@
             <CONNECTION INSTANCE="External_Ports" PORT="probe3"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="63" NAME="probe4" RIGHT="0" SIGIS="undef" SIGNAME="g_inst_m_slot_0_axis_tdata">
+        <PORT DIR="I" LEFT="3" NAME="probe4" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_probe4">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="probe4"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="63" NAME="probe5" RIGHT="0" SIGIS="undef" SIGNAME="g_inst_m_slot_0_axis_tdata">
           <CONNECTIONS>
             <CONNECTION INSTANCE="g_inst" PORT="m_slot_0_axis_tdata"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="7" NAME="probe5" RIGHT="0" SIGIS="undef" SIGNAME="g_inst_m_slot_0_axis_tkeep">
+        <PORT DIR="I" LEFT="7" NAME="probe6" RIGHT="0" SIGIS="undef" SIGNAME="g_inst_m_slot_0_axis_tkeep">
           <CONNECTIONS>
             <CONNECTION INSTANCE="g_inst" PORT="m_slot_0_axis_tkeep"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="0" NAME="probe6" RIGHT="0" SIGIS="undef" SIGNAME="g_inst_m_slot_0_axis_tuser">
+        <PORT DIR="I" LEFT="0" NAME="probe7" RIGHT="0" SIGIS="undef" SIGNAME="g_inst_m_slot_0_axis_tuser">
           <CONNECTIONS>
             <CONNECTION INSTANCE="g_inst" PORT="m_slot_0_axis_tuser"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="0" NAME="probe7" RIGHT="0" SIGIS="undef" SIGNAME="g_inst_m_slot_0_axis_tvalid">
+        <PORT DIR="I" LEFT="0" NAME="probe8" RIGHT="0" SIGIS="undef" SIGNAME="g_inst_m_slot_0_axis_tvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="g_inst" PORT="m_slot_0_axis_tvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="0" NAME="probe8" RIGHT="0" SIGIS="undef" SIGNAME="g_inst_m_slot_0_axis_tready">
+        <PORT DIR="I" LEFT="0" NAME="probe9" RIGHT="0" SIGIS="undef" SIGNAME="g_inst_m_slot_0_axis_tready">
           <CONNECTIONS>
             <CONNECTION INSTANCE="g_inst" PORT="m_slot_0_axis_tready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="0" NAME="probe9" RIGHT="0" SIGIS="undef" SIGNAME="g_inst_m_slot_0_axis_tlast">
+        <PORT DIR="I" LEFT="0" NAME="probe10" RIGHT="0" SIGIS="undef" SIGNAME="g_inst_m_slot_0_axis_tlast">
           <CONNECTIONS>
             <CONNECTION INSTANCE="g_inst" PORT="m_slot_0_axis_tlast"/>
           </CONNECTIONS>

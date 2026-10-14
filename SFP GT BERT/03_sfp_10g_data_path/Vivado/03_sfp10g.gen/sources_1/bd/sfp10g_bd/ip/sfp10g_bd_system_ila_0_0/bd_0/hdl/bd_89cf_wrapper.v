@@ -18,6 +18,7 @@ module bd_89cf_wrapper
     probe1,
     probe2,
     probe3,
+    probe4,
     resetn);
   input [63:0]SLOT_0_AXIS_tdata;
   input [7:0]SLOT_0_AXIS_tkeep;
@@ -30,6 +31,7 @@ module bd_89cf_wrapper
   input [0:0]probe1;
   input [0:0]probe2;
   input [0:0]probe3;
+  input [3:0]probe4;
   input resetn;
 
   wire [63:0]SLOT_0_AXIS_tdata;
@@ -43,6 +45,7 @@ module bd_89cf_wrapper
   wire [0:0]probe1;
   wire [0:0]probe2;
   wire [0:0]probe3;
+  wire [3:0]probe4;
   wire resetn;
 
   bd_89cf bd_89cf_i
@@ -57,5 +60,6 @@ module bd_89cf_wrapper
         .probe1(probe1),
         .probe2(probe2),
         .probe3(probe3),
+        .probe4(probe4),
         .resetn(resetn));
 endmodule

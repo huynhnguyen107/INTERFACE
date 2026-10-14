@@ -59,6 +59,7 @@ module sfp10g_bd_system_ila_0_0 (
   probe1,
   probe2,
   probe3,
+  probe4,
   SLOT_0_AXIS_tdata,
   SLOT_0_AXIS_tkeep,
   SLOT_0_AXIS_tlast,
@@ -75,6 +76,7 @@ input wire [0 : 0] probe0;
 input wire [0 : 0] probe1;
 input wire [0 : 0] probe2;
 input wire [0 : 0] probe3;
+input wire [3 : 0] probe4;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 SLOT_0_AXIS TDATA" *)
 input wire [63 : 0] SLOT_0_AXIS_tdata;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 SLOT_0_AXIS TKEEP" *)
@@ -98,6 +100,7 @@ input wire resetn;
     .probe1(probe1),
     .probe2(probe2),
     .probe3(probe3),
+    .probe4(probe4),
     .SLOT_0_AXIS_tdata(SLOT_0_AXIS_tdata),
     .SLOT_0_AXIS_tkeep(SLOT_0_AXIS_tkeep),
     .SLOT_0_AXIS_tlast(SLOT_0_AXIS_tlast),

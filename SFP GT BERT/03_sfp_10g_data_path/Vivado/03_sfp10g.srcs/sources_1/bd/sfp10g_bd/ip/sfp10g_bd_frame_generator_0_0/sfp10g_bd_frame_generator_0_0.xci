@@ -47,7 +47,8 @@
         "m_axis_tlast": [ { "direction": "out" } ],
         "m_axis_tuser": [ { "direction": "out" } ],
         "m_axis_tready": [ { "direction": "in", "driver_value": "1" } ],
-        "done": [ { "direction": "out" } ]
+        "done": [ { "direction": "out" } ],
+        "debug_beat_cnt": [ { "direction": "out", "size_left": "3", "size_right": "0" } ]
       },
       "interfaces": {
         "m_axis": {

@@ -64,7 +64,8 @@ module sfp10g_bd_frame_generator_0_0 (
   m_axis_tlast,
   m_axis_tuser,
   m_axis_tready,
-  done
+  done,
+  debug_beat_cnt
 );
 
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME clk, ASSOCIATED_BUSIF m_axis, ASSOCIATED_RESET rst, FREQ_HZ 156250000, FREQ_TOLERANCE_HZ 0, PHASE 0, CLK_DOMAIN sfp10g_bd_xxv_ethernet_1_0_tx_clk_out_0, INSERT_VIP 0" *)
@@ -88,6 +89,7 @@ output wire m_axis_tuser;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m_axis TREADY" *)
 input wire m_axis_tready;
 output wire done;
+output wire [3 : 0] debug_beat_cnt;
 
   frame_generator inst (
     .clk(clk),
@@ -99,6 +101,7 @@ output wire done;
     .m_axis_tlast(m_axis_tlast),
     .m_axis_tuser(m_axis_tuser),
     .m_axis_tready(m_axis_tready),
-    .done(done)
+    .done(done),
+    .debug_beat_cnt(debug_beat_cnt)
   );
 endmodule
