@@ -7,7 +7,7 @@
 // Design Name: reset_gen
 // Module Name: reset_gen
 // Project Name: 03_sfp_10g_data_path
-// Target Devices: PC (scapy app) +KRC260
+// Target Devices: KR260 +10Gtek SFP +Bucacoz iotical loopback
 // Tool Versions: Vivado 2022
 // Description: 03_sfp_10g_data_path using ETH 10G +SFP +external lookback
 // 
