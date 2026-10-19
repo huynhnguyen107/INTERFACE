@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="41.950 ns"></ZoomStartTime>
+      <ZoomEndTime time="93.301 ns"></ZoomEndTime>
+      <Cursor1Time time="51.500 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="342"></NameColumnWidth>
+      <ValueColumnWidth column_width="167"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="37" />
+   <wvobject fp_name="/tb/dut_gen/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut_gen/rst_n" type="logic">
+      <obj_property name="ElementShortName">rst_n</obj_property>
+      <obj_property name="ObjectShortName">rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut_gen/tx_word" type="array">
+      <obj_property name="ElementShortName">tx_word[127:0]</obj_property>
+      <obj_property name="ObjectShortName">tx_word[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut_gen/w_index" type="array">
+      <obj_property name="ElementShortName">w_index[3:0]</obj_property>
+      <obj_property name="ObjectShortName">w_index[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut_gen/x_index" type="array">
+      <obj_property name="ElementShortName">x_index[7:0]</obj_property>
+      <obj_property name="ObjectShortName">x_index[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut_gen/z_index" type="array">
+      <obj_property name="ElementShortName">z_index[7:0]</obj_property>
+      <obj_property name="ObjectShortName">z_index[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut_gen/control_word" type="logic">
+      <obj_property name="ElementShortName">control_word</obj_property>
+      <obj_property name="ObjectShortName">control_word</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut_gen/sample_counter" type="array">
+      <obj_property name="ElementShortName">sample_counter[15:0]</obj_property>
+      <obj_property name="ObjectShortName">sample_counter[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut_gen/i0" type="array">
+      <obj_property name="ElementShortName">i0[15:0]</obj_property>
+      <obj_property name="ObjectShortName">i0[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut_gen/i1" type="array">
+      <obj_property name="ElementShortName">i1[15:0]</obj_property>
+      <obj_property name="ObjectShortName">i1[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut_gen/i2" type="array">
+      <obj_property name="ElementShortName">i2[15:0]</obj_property>
+      <obj_property name="ObjectShortName">i2[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut_gen/i3" type="array">
+      <obj_property name="ElementShortName">i3[15:0]</obj_property>
+      <obj_property name="ObjectShortName">i3[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut_gen/q0" type="array">
+      <obj_property name="ElementShortName">q0[15:0]</obj_property>
+      <obj_property name="ObjectShortName">q0[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut_gen/q1" type="array">
+      <obj_property name="ElementShortName">q1[15:0]</obj_property>
+      <obj_property name="ObjectShortName">q1[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut_gen/q2" type="array">
+      <obj_property name="ElementShortName">q2[15:0]</obj_property>
+      <obj_property name="ObjectShortName">q2[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut_gen/q3" type="array">
+      <obj_property name="ElementShortName">q3[15:0]</obj_property>
+      <obj_property name="ObjectShortName">q3[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut_re/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut_re/rst_n" type="logic">
+      <obj_property name="ElementShortName">rst_n</obj_property>
+      <obj_property name="ObjectShortName">rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut_re/rx_word" type="array">
+      <obj_property name="ElementShortName">rx_word[127:0]</obj_property>
+      <obj_property name="ObjectShortName">rx_word[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut_re/sync_locked" type="logic">
+      <obj_property name="ElementShortName">sync_locked</obj_property>
+      <obj_property name="ObjectShortName">sync_locked</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut_re/rx_w_index" type="array">
+      <obj_property name="ElementShortName">rx_w_index[3:0]</obj_property>
+      <obj_property name="ObjectShortName">rx_w_index[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut_re/rx_x_index" type="array">
+      <obj_property name="ElementShortName">rx_x_index[7:0]</obj_property>
+      <obj_property name="ObjectShortName">rx_x_index[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut_re/rx_z_index" type="array">
+      <obj_property name="ElementShortName">rx_z_index[7:0]</obj_property>
+      <obj_property name="ObjectShortName">rx_z_index[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut_re/iq_valid" type="logic">
+      <obj_property name="ElementShortName">iq_valid</obj_property>
+      <obj_property name="ObjectShortName">iq_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut_re/i0" type="array">
+      <obj_property name="ElementShortName">i0[15:0]</obj_property>
+      <obj_property name="ObjectShortName">i0[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut_re/i1" type="array">
+      <obj_property name="ElementShortName">i1[15:0]</obj_property>
+      <obj_property name="ObjectShortName">i1[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut_re/i2" type="array">
+      <obj_property name="ElementShortName">i2[15:0]</obj_property>
+      <obj_property name="ObjectShortName">i2[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut_re/i3" type="array">
+      <obj_property name="ElementShortName">i3[15:0]</obj_property>
+      <obj_property name="ObjectShortName">i3[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut_re/q0" type="array">
+      <obj_property name="ElementShortName">q0[15:0]</obj_property>
+      <obj_property name="ObjectShortName">q0[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut_re/q1" type="array">
+      <obj_property name="ElementShortName">q1[15:0]</obj_property>
+      <obj_property name="ObjectShortName">q1[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut_re/q2" type="array">
+      <obj_property name="ElementShortName">q2[15:0]</obj_property>
+      <obj_property name="ObjectShortName">q2[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut_re/q3" type="array">
+      <obj_property name="ElementShortName">q3[15:0]</obj_property>
+      <obj_property name="ObjectShortName">q3[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut_re/frame_error_count" type="array">
+      <obj_property name="ElementShortName">frame_error_count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">frame_error_count[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut_re/expected_w" type="array">
+      <obj_property name="ElementShortName">expected_w[3:0]</obj_property>
+      <obj_property name="ObjectShortName">expected_w[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut_re/expected_x" type="array">
+      <obj_property name="ElementShortName">expected_x[7:0]</obj_property>
+      <obj_property name="ObjectShortName">expected_x[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut_re/expected_z" type="array">
+      <obj_property name="ElementShortName">expected_z[7:0]</obj_property>
+      <obj_property name="ObjectShortName">expected_z[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut_re/sync_marker" type="logic">
+      <obj_property name="ElementShortName">sync_marker</obj_property>
+      <obj_property name="ObjectShortName">sync_marker</obj_property>
+   </wvobject>
+</wave_config>

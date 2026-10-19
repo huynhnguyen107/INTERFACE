@@ -1,21 +1,23 @@
-## 01 - CPRI Frame Generator
+## 02 - CPRI Frame Receiver
 
-This module implements a simplified CPRI Option 7 frame generator for learning and simulation.
+This module implements a simplified CPRI frame receiver.
 
-The frame structure is organized as:
+The receiver takes a continuous 128-bit word stream and searches for the `0xBC` synchronization marker.
 
-- 150 Hyperframes per 10 ms CPRI frame (`Z = 0...149`)
-- 256 Basic Frames per Hyperframe (`X = 0...255`)
-- 16 Words per Basic Frame (`W = 0...15`)
-- 128 bits per Word
+After synchronization, it internally reconstructs the CPRI frame position:
 
-`W=0` is used as a control word, while `W=1...15` carry IQ user-plane data.
+- Word index (`W = 0...15`)
+- Basic frame index (`X = 0...255`)
+- Hyperframe index (`Z = 0...149`)
 
-For testing, each 128-bit IQ word contains four complex samples:
+For `W=1...15`, the receiver extracts four complex IQ samples from each 128-bit word:
 
 ```text
-1 sample = I[15:0] + Q[15:0] = 32 bits
-4 samples = 128 bits
-The test pattern
-I = sample_counter
-Q = ~I
+IQ sample 0 = {Q0[15:0], I0[15:0]}
+IQ sample 1 = {Q1[15:0], I1[15:0]}
+IQ sample 2 = {Q2[15:0], I2[15:0]}
+IQ sample 3 = {Q3[15:0], I3[15:0]}
+The receiver also provides:
+sync_locked
+iq_valid
+frame_error_count
