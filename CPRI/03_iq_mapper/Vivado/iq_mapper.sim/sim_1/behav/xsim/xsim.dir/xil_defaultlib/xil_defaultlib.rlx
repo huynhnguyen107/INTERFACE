@@ -1,0 +1,8 @@
+0.7
+2020.2
+Oct 14 2022
+05:20:55
+D:/FPGA/Vivaldo Project/INTERFACE/CPRI/03_iq_mapper/Vivado/iq_mapper.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,,,,,,,
+D:/FPGA/Vivaldo Project/INTERFACE/CPRI/03_iq_mapper/Vivado/iq_mapper.srcs/sim_1/new/tb.v,1792503508,verilog,,,,tb_cpri_iq_mapper,,,,,,,,
+D:/FPGA/Vivaldo Project/INTERFACE/CPRI/03_iq_mapper/Vivado/iq_mapper.srcs/sources_1/new/cpri_iq_demapper.v,1792503473,verilog,,D:/FPGA/Vivaldo Project/INTERFACE/CPRI/03_iq_mapper/Vivado/iq_mapper.srcs/sources_1/new/cpri_iq_mapper.v,,cpri_iq_demapper,,,,,,,,
+D:/FPGA/Vivaldo Project/INTERFACE/CPRI/03_iq_mapper/Vivado/iq_mapper.srcs/sources_1/new/cpri_iq_mapper.v,1792502936,verilog,,D:/FPGA/Vivaldo Project/INTERFACE/CPRI/03_iq_mapper/Vivado/iq_mapper.srcs/sim_1/new/tb.v,,cpri_iq_mapper,,,,,,,,

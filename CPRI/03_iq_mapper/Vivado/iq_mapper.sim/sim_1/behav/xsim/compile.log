@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/INTERFACE/CPRI/03_iq_mapper/Vivado/iq_mapper.srcs/sources_1/new/cpri_iq_demapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpri_iq_demapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/INTERFACE/CPRI/03_iq_mapper/Vivado/iq_mapper.srcs/sources_1/new/cpri_iq_mapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpri_iq_mapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/INTERFACE/CPRI/03_iq_mapper/Vivado/iq_mapper.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_cpri_iq_mapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/INTERFACE/CPRI/03_iq_mapper/Vivado/iq_mapper.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
