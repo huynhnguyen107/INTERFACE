@@ -1,0 +1,7 @@
+Running: xsim.dir/tb_cpri_iq_mapper_behav/xsimk.exe -simmode gui -wdb tb_cpri_iq_mapper_behav.wdb -simrunnum 0 -socket 58057
+Design successfully loaded
+Design Loading Memory Usage: 10412 KB (Peak: 10412 KB)
+Design Loading CPU Usage: 31 ms
+Simulation completed
+Simulation Memory Usage: 11068 KB (Peak: 11068 KB)
+Simulation CPU Usage: 46 ms

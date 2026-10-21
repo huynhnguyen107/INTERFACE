@@ -309,3 +309,7 @@ INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_cpri_iq_mapper_behav' lo
 INFO: [USF-XSim-97] XSim simulation ran for 1000ns
 launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1223.570 ; gain = 3.711
 save_wave_config {D:/FPGA/Vivaldo Project/INTERFACE/CPRI/03_iq_mapper/Vivado/tb_cpri_iq_mapper_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 21 08:59:27 2026...

@@ -48,3 +48,4 @@ update_compile_order -fileset sources_1
 launch_simulation
 source tb_cpri_iq_mapper.tcl
 save_wave_config {D:/FPGA/Vivaldo Project/INTERFACE/CPRI/03_iq_mapper/Vivado/tb_cpri_iq_mapper_behav.wcfg}
+close_sim

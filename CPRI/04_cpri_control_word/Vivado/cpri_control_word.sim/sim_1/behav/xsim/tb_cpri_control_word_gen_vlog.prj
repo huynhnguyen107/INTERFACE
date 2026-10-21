@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../cpri_control_word.srcs/sources_1/new/cpri_control_word_gen.v" \
+"../../../../cpri_control_word.srcs/sim_1/new/tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
