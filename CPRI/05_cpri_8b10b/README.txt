@@ -1,18 +1,61 @@
-## 04 - CPRI Control Word Generator
+## 05 - CPRI 8B/10B Encoder
 
-This module implements a simplified CPRI control-word generator.
+This module implements a full combinational 8B/10B encoder for the CPRI link.
 
-Each Hyperframe contains 256 control words (`W=0`), organized into 64 subchannels with four control-word positions:
+Each 8-bit input character is divided into two fields:
 
 ```text
-Ns = X mod 64
-Xs = X / 64
-For synchronization subchannel Ns=0, the module generates:
-X = 0   (Xs=0) → K28.5 synchronization byte (0xBC)
-X = 64  (Xs=1) → Hyperframe Number (HFN / Z)
-X = 128 (Xs=2) → BFN[7:0]
-X = 192 (Xs=3) → BFN[11:8]
-BFN is the 12-bit CPRI 10-ms frame number.
-The k_char output indicates whether a byte must be treated as an 8B/10B K-character. For the synchronization byte:
-control_word[127:120] = 0xBC
-k_char[15]            = 1
+data_in = HGF EDCBA
+
+EDCBA = lower 5 bits
+HGF   = upper 3 bits
+```
+The encoder performs:
+```text
+EDCBA
+  ↓
+5B/6B Encoding
+  ↓
+code_6b
+  ↓
+Running Disparity Update
+  ↓
+rd_mid
+  ↓
+3B/4B Encoding
+  ↓
+code_4b
+  ↓
+Final Running Disparity Update
+  ↓
+rd_out
+```
+
+The final 10-bit encoded symbol is:
+
+```text
+code_out = {code_6b, code_4b}
+         = {abcdei, fghj}
+```
+Running disparity is represented as:
+```text
+rd = 0 → RD-
+rd = 1 → RD+
+```
+The encoder supports both normal data characters and valid 8B/10B K-characters.
+
+For example, `0xBC` with `k_in=1` represents the CPRI synchronization character `K28.5`:
+```text
+K28.5 with RD- → 0011111010
+K28.5 with RD+ → 1100000101
+```
+The same `0xBC` value with `k_in=0` is treated as normal data (`D28.5`) and therefore uses a different encoding.
+
+The encoder also implements Alternate-7 encoding for selected `D.x.7` characters to prevent long runs of identical bits and false comma patterns.
+
+If `k_in=1` with an invalid K-character, the module asserts:
+
+```text
+k_error = 1
+```
+The complete encoder is purely combinational, so `code_out`, `rd_out`, and `k_error` update continuously whenever `data_in`, `k_in`, or `rd_in` changes.
