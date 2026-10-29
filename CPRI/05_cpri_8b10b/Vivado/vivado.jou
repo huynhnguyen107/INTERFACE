@@ -26,3 +26,8 @@ close [ open {D:/FPGA/Vivaldo Project/INTERFACE/CPRI/05_cpri_8b10b/Vivado/cpri_8
 add_files -fileset sim_1 {{D:/FPGA/Vivaldo Project/INTERFACE/CPRI/05_cpri_8b10b/Vivado/cpri_8b10b.srcs/sim_1/new/tb.v}}
 update_compile_order -fileset sim_1
 update_compile_order -fileset sim_1
+launch_simulation
+source tb.tcl
+save_wave_config {D:/FPGA/Vivaldo Project/INTERFACE/CPRI/05_cpri_8b10b/Vivado/tb_behav.wcfg}
+save_wave_config {D:/FPGA/Vivaldo Project/INTERFACE/CPRI/05_cpri_8b10b/Vivado/tb_behav.wcfg}
+close_sim

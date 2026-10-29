@@ -11,9 +11,9 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="599,997 ps"></ZoomStartTime>
-      <ZoomEndTime time="600,008 ps"></ZoomEndTime>
-      <Cursor1Time time="599,999 ps"></Cursor1Time>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="1,027.001 ns"></ZoomEndTime>
+      <Cursor1Time time="500.000 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="342"></NameColumnWidth>
@@ -35,6 +35,7 @@
    <wvobject fp_name="/tb/code_out" type="array">
       <obj_property name="ElementShortName">code_out[9:0]</obj_property>
       <obj_property name="ObjectShortName">code_out[9:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/tb/rd_out" type="logic">
       <obj_property name="ElementShortName">rd_out</obj_property>

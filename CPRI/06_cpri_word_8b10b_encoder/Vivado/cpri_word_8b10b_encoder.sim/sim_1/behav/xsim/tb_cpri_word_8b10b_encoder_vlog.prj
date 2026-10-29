@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../cpri_word_8b10b_encoder.srcs/sources_1/new/cpri_word_8b10b_encoder.v" \
+"../../../../../../05_cpri_8b10b/Vivado/cpri_8b10b.srcs/sources_1/new/encoder_8b10b.v" \
+"../../../../cpri_word_8b10b_encoder.srcs/sim_1/new/tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

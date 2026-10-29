@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/INTERFACE/CPRI/06_cpri_word_8b10b_encoder/Vivado/cpri_word_8b10b_encoder.srcs/sources_1/new/cpri_word_8b10b_encoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpri_word_8b10b_encoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/INTERFACE/CPRI/05_cpri_8b10b/Vivado/cpri_8b10b.srcs/sources_1/new/encoder_8b10b.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encoder_8b10b
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/INTERFACE/CPRI/06_cpri_word_8b10b_encoder/Vivado/cpri_word_8b10b_encoder.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_cpri_word_8b10b_encoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/INTERFACE/CPRI/06_cpri_word_8b10b_encoder/Vivado/cpri_word_8b10b_encoder.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
