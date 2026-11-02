@@ -15,3 +15,10 @@ open_project {D:/FPGA/Vivaldo Project/INTERFACE/CPRI/06_cpri_word_8b10b_encoder/
 close [ open {D:/FPGA/Vivaldo Project/INTERFACE/CPRI/06_cpri_word_8b10b_encoder/Vivado/cpri_word_8b10b_encoder.srcs/sources_1/new/cpri_word_8b10b_encoder.v} w ]
 add_files {{D:/FPGA/Vivaldo Project/INTERFACE/CPRI/06_cpri_word_8b10b_encoder/Vivado/cpri_word_8b10b_encoder.srcs/sources_1/new/cpri_word_8b10b_encoder.v}}
 update_compile_order -fileset sources_1
+add_files -norecurse {{D:/FPGA/Vivaldo Project/INTERFACE/CPRI/05_cpri_8b10b/Vivado/cpri_8b10b.srcs/sources_1/new/encoder_8b10b.v}}
+update_compile_order -fileset sources_1
+launch_simulation
+source tb_cpri_word_8b10b_encoder.tcl
+save_wave_config {D:/FPGA/Vivaldo Project/INTERFACE/CPRI/06_cpri_word_8b10b_encoder/Vivado/tb_cpri_word_8b10b_encoder_behav.wcfg}
+save_wave_config {D:/FPGA/Vivaldo Project/INTERFACE/CPRI/06_cpri_word_8b10b_encoder/Vivado/tb_cpri_word_8b10b_encoder_behav.wcfg}
+close_sim

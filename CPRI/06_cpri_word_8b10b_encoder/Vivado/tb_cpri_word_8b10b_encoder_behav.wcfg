@@ -11,9 +11,9 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="399,997 ps"></ZoomStartTime>
-      <ZoomEndTime time="400,008 ps"></ZoomEndTime>
-      <Cursor1Time time="399,998 ps"></Cursor1Time>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="513.501 ns"></ZoomEndTime>
+      <Cursor1Time time="0.000 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="342"></NameColumnWidth>
@@ -27,6 +27,7 @@
    <wvobject fp_name="/tb_cpri_word_8b10b_encoder/k_char" type="array">
       <obj_property name="ElementShortName">k_char[15:0]</obj_property>
       <obj_property name="ObjectShortName">k_char[15:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_cpri_word_8b10b_encoder/rd_in" type="logic">
       <obj_property name="ElementShortName">rd_in</obj_property>
@@ -35,6 +36,7 @@
    <wvobject fp_name="/tb_cpri_word_8b10b_encoder/code_out" type="array">
       <obj_property name="ElementShortName">code_out[159:0]</obj_property>
       <obj_property name="ObjectShortName">code_out[159:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_cpri_word_8b10b_encoder/rd_out" type="logic">
       <obj_property name="ElementShortName">rd_out</obj_property>
