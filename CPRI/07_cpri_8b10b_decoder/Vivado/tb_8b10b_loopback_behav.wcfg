@@ -11,30 +11,26 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="599,997 ps"></ZoomStartTime>
-      <ZoomEndTime time="600,001 ps"></ZoomEndTime>
-      <Cursor1Time time="600,000 ps"></Cursor1Time>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="1,027.001 ns"></ZoomEndTime>
+      <Cursor1Time time="147.000 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="342"></NameColumnWidth>
       <ValueColumnWidth column_width="167"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="11" />
-   <wvobject fp_name="/tb_8b10b_loopback/data_in" type="array">
-      <obj_property name="ElementShortName">data_in[7:0]</obj_property>
-      <obj_property name="ObjectShortName">data_in[7:0]</obj_property>
+   <WVObjectSize size="12" />
+   <wvobject fp_name="/tb_8b10b_loopback/rd_in" type="logic">
+      <obj_property name="ElementShortName">rd_in</obj_property>
+      <obj_property name="ObjectShortName">rd_in</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_8b10b_loopback/k_in" type="logic">
       <obj_property name="ElementShortName">k_in</obj_property>
       <obj_property name="ObjectShortName">k_in</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_8b10b_loopback/rd_in" type="logic">
-      <obj_property name="ElementShortName">rd_in</obj_property>
-      <obj_property name="ObjectShortName">rd_in</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_8b10b_loopback/encoded_data" type="array">
-      <obj_property name="ElementShortName">encoded_data[9:0]</obj_property>
-      <obj_property name="ObjectShortName">encoded_data[9:0]</obj_property>
+   <wvobject fp_name="/tb_8b10b_loopback/data_in" type="array">
+      <obj_property name="ElementShortName">data_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in[7:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_8b10b_loopback/encoder_rd_out" type="logic">
       <obj_property name="ElementShortName">encoder_rd_out</obj_property>
@@ -44,17 +40,27 @@
       <obj_property name="ElementShortName">k_error</obj_property>
       <obj_property name="ObjectShortName">k_error</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_8b10b_loopback/decoded_data" type="array">
-      <obj_property name="ElementShortName">decoded_data[7:0]</obj_property>
-      <obj_property name="ObjectShortName">decoded_data[7:0]</obj_property>
+   <wvobject fp_name="/tb_8b10b_loopback/encoded_data" type="array">
+      <obj_property name="ElementShortName">encoded_data[9:0]</obj_property>
+      <obj_property name="ObjectShortName">encoded_data[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_8b10b_loopback/rd_in" type="logic">
+      <obj_property name="ElementShortName">rd_in</obj_property>
+      <obj_property name="ObjectShortName">rd_in</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_8b10b_loopback/decoded_k" type="logic">
       <obj_property name="ElementShortName">decoded_k</obj_property>
       <obj_property name="ObjectShortName">decoded_k</obj_property>
    </wvobject>
+   <wvobject fp_name="/tb_8b10b_loopback/decoded_data" type="array">
+      <obj_property name="ElementShortName">decoded_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">decoded_data[7:0]</obj_property>
+   </wvobject>
    <wvobject fp_name="/tb_8b10b_loopback/decoder_rd_out" type="logic">
+      <obj_property name="DisplayName">label</obj_property>
       <obj_property name="ElementShortName">decoder_rd_out</obj_property>
       <obj_property name="ObjectShortName">decoder_rd_out</obj_property>
+      <obj_property name="label">deco/tb_8b10b_loopback/decoder_rd_outder_rd_out</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_8b10b_loopback/code_error" type="logic">
       <obj_property name="ElementShortName">code_error</obj_property>

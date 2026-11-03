@@ -1,0 +1,10 @@
+0.7
+2020.2
+Oct 14 2022
+05:20:55
+D:/FPGA/Vivaldo Project/INTERFACE/CPRI/05_cpri_8b10b/Vivado/cpri_8b10b.srcs/sources_1/new/encoder_8b10b.v,1793210145,verilog,,D:/FPGA/Vivaldo Project/INTERFACE/CPRI/08_cpri_word_8b10b_decoder/Vivado/cpri_word_8b10b_decoder.srcs/sim_1/new/tb.v,,encoder_8b10b,,,,,,,,
+D:/FPGA/Vivaldo Project/INTERFACE/CPRI/06_cpri_word_8b10b_encoder/Vivado/cpri_word_8b10b_encoder.srcs/sources_1/new/cpri_word_8b10b_encoder.v,1793283662,verilog,,D:/FPGA/Vivaldo Project/INTERFACE/CPRI/07_cpri_8b10b_decoder/Vivado/decoder_8b10b.srcs/sources_1/new/decoder_8b10b.v,,cpri_word_8b10b_encoder,,,,,,,,
+D:/FPGA/Vivaldo Project/INTERFACE/CPRI/07_cpri_8b10b_decoder/Vivado/decoder_8b10b.srcs/sources_1/new/decoder_8b10b.v,1793635833,verilog,,D:/FPGA/Vivaldo Project/INTERFACE/CPRI/05_cpri_8b10b/Vivado/cpri_8b10b.srcs/sources_1/new/encoder_8b10b.v,,decoder_8b10b,,,,,,,,
+D:/FPGA/Vivaldo Project/INTERFACE/CPRI/08_cpri_word_8b10b_decoder/Vivado/cpri_word_8b10b_decoder.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,,,,,,,
+D:/FPGA/Vivaldo Project/INTERFACE/CPRI/08_cpri_word_8b10b_decoder/Vivado/cpri_word_8b10b_decoder.srcs/sim_1/new/tb.v,1793715686,verilog,,,,tb_cpri_word_8b10b_loopback,,,,,,,,
+D:/FPGA/Vivaldo Project/INTERFACE/CPRI/08_cpri_word_8b10b_decoder/Vivado/cpri_word_8b10b_decoder.srcs/sources_1/new/cpri_word_8b10b_decoder.v,1793714822,verilog,,D:/FPGA/Vivaldo Project/INTERFACE/CPRI/06_cpri_word_8b10b_encoder/Vivado/cpri_word_8b10b_encoder.srcs/sources_1/new/cpri_word_8b10b_encoder.v,,cpri_word_8b10b_decoder,,,,,,,,
