@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Fri Nov  6 10:00:34 2026
+# Process ID: 35072
+# Current directory: d:/FPGA/Vivaldo Project/INTERFACE/CPRI/09_full_cpri_tx_rx_intergration/gt_ultra_ex/gt_ultra_ex.runs/gt_ultra_vio_0_synth_1
+# Command line: vivado.exe -log gt_ultra_vio_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source gt_ultra_vio_0.tcl
+# Log file: d:/FPGA/Vivaldo Project/INTERFACE/CPRI/09_full_cpri_tx_rx_intergration/gt_ultra_ex/gt_ultra_ex.runs/gt_ultra_vio_0_synth_1/gt_ultra_vio_0.vds
+# Journal file: d:/FPGA/Vivaldo Project/INTERFACE/CPRI/09_full_cpri_tx_rx_intergration/gt_ultra_ex/gt_ultra_ex.runs/gt_ultra_vio_0_synth_1\vivado.jou
+# Running On: LAPTOP-CHCSI1R5, OS: Windows, CPU Frequency: 3194 MHz, CPU Physical cores: 16, Host memory: 21319 MB
+#-----------------------------------------------------------
+source gt_ultra_vio_0.tcl -notrace

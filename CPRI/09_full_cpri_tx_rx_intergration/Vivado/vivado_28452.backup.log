@@ -1,0 +1,1307 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Tue Nov  3 10:57:10 2026
+# Process ID: 28452
+# Current directory: D:/FPGA/Vivaldo Project/INTERFACE/CPRI/09_full_cpri_tx_rx_intergration/Vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent33436 D:\FPGA\Vivaldo Project\INTERFACE\CPRI\09_full_cpri_tx_rx_intergration\Vivado\full_cpri_tx_rx_intergration.xpr
+# Log file: D:/FPGA/Vivaldo Project/INTERFACE/CPRI/09_full_cpri_tx_rx_intergration/Vivado/vivado.log
+# Journal file: D:/FPGA/Vivaldo Project/INTERFACE/CPRI/09_full_cpri_tx_rx_intergration/Vivado\vivado.jou
+# Running On: LAPTOP-CHCSI1R5, OS: Windows, CPU Frequency: 3194 MHz, CPU Physical cores: 16, Host memory: 21319 MB
+#-----------------------------------------------------------
+start_gui
+open_project {D:/FPGA/Vivaldo Project/INTERFACE/CPRI/09_full_cpri_tx_rx_intergration/Vivado/full_cpri_tx_rx_intergration.xpr}
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:ac701:part0:1.4 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/ac701/1.4/board.xml as part xc7a200tfbg676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.4 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.4/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.5 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.5/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu1500/1.2/board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:sp701:part0:1.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/sp701/1.0/board.xml as part xc7s100fgga676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:sp701:part0:1.1 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/sp701/1.1/board.xml as part xc7s100fgga676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.4 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc707/1.4/board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc709:part0:1.8 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc709/1.8/board.xml as part xc7vx690tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/2.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.6/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.7/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu110/1.4/board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.0/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.3 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.3/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.4 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.4/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128:part0:1.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu128/production/1.0/board.xml as part xcvu37p-fsvh2892-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu129/production/1.0/board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu1525:part0:1.3 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu1525/1.3/board.xml as part xcvu9p-fsgd2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_rfsoc:part0:1.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_rfsoc/1.0/board.xml as part xczu21dr-ffvd1156-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/2.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc702:part0:1.4 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zc702/1.4/board.xml as part xc7z020clg484-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.4 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zc706/1.4/board.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.2 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.2/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.3 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.3/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.4 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.4/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1275:part0:1.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1275/1.0/board.xml as part xczu29dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1285/1.0/board.xml as part xczu39dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208:part0:2.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/production/2.0/board.xml as part xczu48dr-fsvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/production/2.0/board.xml as part xczu49dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [Project 1-313] Project file moved from 'D:/FPGA/Vivaldo Project/INTERFACE/CPRI/08_cpri_word_8b10b_decoder/Vivado' since last save.
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'D:/FPGA/Vivaldo Project/INTERFACE/CPRI/09_full_cpri_tx_rx_intergration/Vivado/full_cpri_tx_rx_intergration.gen/sources_1'.
+WARNING: [filemgmt 56-3] IPUserFilesDir: Could not find the directory 'D:/FPGA/Vivaldo Project/INTERFACE/CPRI/09_full_cpri_tx_rx_intergration/Vivado/full_cpri_tx_rx_intergration.ip_user_files'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2022.2/data/ip'.
+open_project: Time (s): cpu = 00:00:26 ; elapsed = 00:00:10 . Memory (MB): peak = 1146.629 ; gain = 182.562
+update_compile_order -fileset sources_1
+create_bd_design "GTH_CPRI_RAW"
+Wrote  : <D:\FPGA\Vivaldo Project\INTERFACE\CPRI\09_full_cpri_tx_rx_intergration\Vivado\full_cpri_tx_rx_intergration.srcs\sources_1\bd\GTH_CPRI_RAW\GTH_CPRI_RAW.bd> 
+create_bd_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1216.367 ; gain = 64.480
+update_compile_order -fileset sources_1
+open_bd_design {D:/FPGA/Vivaldo Project/INTERFACE/CPRI/09_full_cpri_tx_rx_intergration/Vivado/full_cpri_tx_rx_intergration.srcs/sources_1/bd/GTH_CPRI_RAW/GTH_CPRI_RAW.bd}
+INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
+QPLL_SETUP ERROR: Did not find a valid combination of vco, fb div and refclk div
+for vco=10.3125, outdiv=1: (valid div) 16 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 17 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 18 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 19 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 20 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 21 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 22 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 23 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 24 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 25 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 26 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 27 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 28 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 29 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 30 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 31 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 32 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 33 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 34 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 35 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 36 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 37 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 38 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 39 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 40 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 41 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 42 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 43 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 44 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 45 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 46 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 47 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 48 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 49 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 50 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 51 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 52 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 53 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 54 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 55 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 56 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 57 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 58 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 59 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 60 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 61 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 62 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 63 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 64 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 65 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 66 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 67 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 68 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 69 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 70 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 71 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 72 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 73 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 74 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 75 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 76 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 77 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 78 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 79 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 80 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 81 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 82 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 83 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 84 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 85 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 86 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 87 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 88 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 89 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 90 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 91 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 92 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 93 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 94 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 95 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 96 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 97 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 98 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 99 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 100 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 101 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 102 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 103 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 104 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 105 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 106 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 107 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 108 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 109 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 110 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 111 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 112 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 113 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 114 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 115 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 116 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 117 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 118 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 119 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 120 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 121 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 122 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 123 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 124 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 125 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 126 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 127 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 128 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 129 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 130 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 131 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 132 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 133 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 134 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 135 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 136 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 137 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 138 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 139 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 140 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 141 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 142 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 143 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 144 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 145 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 146 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 147 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 148 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 149 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 150 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 151 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 152 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 153 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 154 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 155 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 156 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 157 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 158 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 159 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 160 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 16 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 17 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 18 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 19 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 20 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 21 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 22 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 23 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 24 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 25 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 26 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 27 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 28 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 29 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 30 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 31 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 32 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 33 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 34 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 35 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 36 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 37 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 38 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 39 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 40 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 41 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 42 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 43 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 44 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 45 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 46 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 47 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 48 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 49 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 50 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 51 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 52 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 53 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 54 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 55 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 56 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 57 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 58 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 59 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 60 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 61 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 62 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 63 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 64 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 65 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 66 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 67 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 68 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 69 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 70 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 71 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 72 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 73 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 74 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 75 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 76 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 77 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 78 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 79 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 80 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 81 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 82 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 83 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 84 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 85 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 86 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 87 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 88 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 89 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 90 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 91 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 92 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 93 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 94 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 95 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 96 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 97 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 98 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 99 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 100 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 101 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 102 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 103 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 104 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 105 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 106 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 107 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 108 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 109 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 110 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 111 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 112 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 113 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 114 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 115 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 116 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 117 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 118 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 119 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 120 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 121 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 122 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 123 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 124 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 125 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 126 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 127 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 128 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 129 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 130 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 131 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 132 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 133 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 134 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 135 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 136 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 137 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 138 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 139 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 140 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 141 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 142 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 143 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 144 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 145 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 146 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 147 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 148 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 149 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 150 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 151 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 152 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 153 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 154 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 155 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 156 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 157 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 158 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 159 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 160 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 16 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 17 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 18 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 19 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 20 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 21 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 22 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 23 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 24 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 25 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 26 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 27 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 28 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 29 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 30 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 31 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 32 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 33 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 34 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 35 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 36 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 37 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 38 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 39 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 40 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 41 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 42 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 43 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 44 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 45 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 46 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 47 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 48 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 49 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 50 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 51 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 52 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 53 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 54 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 55 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 56 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 57 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 58 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 59 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 60 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 61 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 62 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 63 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 64 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 65 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 66 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 67 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 68 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 69 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 70 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 71 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 72 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 73 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 74 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 75 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 76 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 77 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 78 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 79 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 80 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 81 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 82 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 83 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 84 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 85 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 86 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 87 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 88 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 89 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 90 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 91 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 92 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 93 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 94 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 95 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 96 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 97 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 98 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 99 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 100 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 101 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 102 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 103 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 104 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 105 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 106 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 107 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 108 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 109 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 110 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 111 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 112 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 113 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 114 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 115 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 116 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 117 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 118 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 119 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 120 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 121 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 122 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 123 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 124 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 125 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 126 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 127 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 128 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 129 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 130 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 131 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 132 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 133 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 134 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 135 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 136 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 137 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 138 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 139 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 140 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 141 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 142 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 143 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 144 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 145 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 146 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 147 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 148 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 149 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 150 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 151 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 152 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 153 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 154 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 155 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 156 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 157 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 158 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 159 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 160 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 16 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 17 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 18 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 19 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 20 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 21 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 22 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 23 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 24 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 25 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 26 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 27 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 28 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 29 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 30 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 31 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 32 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 33 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 34 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 35 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 36 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 37 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 38 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 39 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 40 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 41 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 42 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 43 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 44 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 45 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 46 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 47 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 48 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 49 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 50 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 51 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 52 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 53 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 54 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 55 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 56 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 57 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 58 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 59 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 60 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 61 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 62 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 63 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 64 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 65 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 66 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 67 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 68 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 69 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 70 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 71 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 72 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 73 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 74 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 75 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 76 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 77 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 78 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 79 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 80 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 81 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 82 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 83 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 84 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 85 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 86 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 87 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 88 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 89 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 90 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 91 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 92 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 93 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 94 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 95 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 96 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 97 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 98 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 99 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 100 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 101 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 102 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 103 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 104 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 105 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 106 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 107 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 108 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 109 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 110 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 111 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 112 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 113 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 114 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 115 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 116 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 117 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 118 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 119 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 120 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 121 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 122 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 123 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 124 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 125 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 126 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 127 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 128 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 129 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 130 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 131 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 132 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 133 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 134 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 135 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 136 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 137 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 138 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 139 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 140 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 141 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 142 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 143 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 144 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 145 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 146 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 147 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 148 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 149 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 150 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 151 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 152 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 153 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 154 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 155 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 156 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 157 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 158 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 159 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 160 != (target div) 671.39
+pll_type=QPLL0, line rate=10.3125, refclk=61.44
+ERROR: [xilinx.com:ip:gtwizard_ultrascale:1.7-1000] gtwizard_ultrascale_0:  rule output INT_QPLL0_FB_DIV is not set in 'rule "QPLL0_SETUP" {INT_DEV_CONST_ARGS INT_ENABLE_TEST_FEATURE INT_QPLL0_FRACN INT_QPLL0_LINE_RATE INT_QPLL0_REFCLK} {INT_QPLL0_CLKOUT INT_QPLL0_CLKOUT_RATE INT_QPLL0_FB_DIV INT_QPLL0_OUTDIV INT_QPLL0_REF_DIV INT_QPLL0_VCO_RATE}' at line 322
+ rule output INT_QPLL0_FB_DIV is not set in 'rule "QPLL0_SETUP" {INT_DEV_CONST_ARGS INT_ENABLE_TEST_FEATURE INT_QPLL0_FRACN INT_QPLL0_LINE_RATE INT_QPLL0_REFCLK} {INT_QPLL0_CLKOUT INT_QPLL0_CLKOUT_RATE INT_QPLL0_FB_DIV INT_QPLL0_OUTDIV INT_QPLL0_REF_DIV INT_QPLL0_VCO_RATE}' at line 322
+CRITICAL WARNING: [IP_Flow 19-1747] Failed to deliver file 'd:/Xilinx/Vivado/2022.2/data/ip/xilinx/gtwizard_ultrascale_v1_7/xit/gtwizard_ultrascale_v1_7_update_top.xit':  rule output INT_QPLL0_FB_DIV is not set in 'rule "QPLL0_SETUP" {INT_DEV_CONST_ARGS INT_ENABLE_TEST_FEATURE INT_QPLL0_FRACN INT_QPLL0_LINE_RATE INT_QPLL0_REFCLK} {INT_QPLL0_CLKOUT INT_QPLL0_CLKOUT_RATE INT_QPLL0_FB_DIV INT_QPLL0_OUTDIV INT_QPLL0_REF_DIV INT_QPLL0_VCO_RATE}' at line 322
+ERROR: [IP_Flow 19-167] Failed to deliver one or more file(s).
+ERROR: [IP_Flow 19-3541] IP Elaboration error: Failed to generate IP 'gtwizard_ultrascale_0'. Failed to generate 'Elaborate Ports' outputs: 
+QPLL_SETUP ERROR: Did not find a valid combination of vco, fb div and refclk div
+for vco=10.3125, outdiv=1: (valid div) 16 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 17 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 18 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 19 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 20 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 21 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 22 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 23 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 24 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 25 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 26 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 27 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 28 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 29 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 30 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 31 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 32 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 33 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 34 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 35 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 36 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 37 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 38 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 39 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 40 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 41 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 42 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 43 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 44 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 45 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 46 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 47 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 48 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 49 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 50 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 51 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 52 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 53 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 54 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 55 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 56 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 57 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 58 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 59 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 60 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 61 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 62 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 63 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 64 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 65 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 66 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 67 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 68 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 69 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 70 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 71 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 72 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 73 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 74 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 75 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 76 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 77 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 78 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 79 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 80 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 81 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 82 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 83 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 84 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 85 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 86 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 87 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 88 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 89 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 90 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 91 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 92 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 93 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 94 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 95 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 96 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 97 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 98 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 99 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 100 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 101 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 102 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 103 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 104 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 105 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 106 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 107 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 108 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 109 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 110 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 111 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 112 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 113 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 114 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 115 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 116 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 117 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 118 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 119 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 120 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 121 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 122 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 123 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 124 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 125 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 126 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 127 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 128 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 129 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 130 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 131 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 132 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 133 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 134 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 135 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 136 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 137 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 138 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 139 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 140 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 141 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 142 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 143 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 144 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 145 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 146 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 147 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 148 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 149 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 150 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 151 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 152 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 153 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 154 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 155 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 156 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 157 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 158 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 159 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 160 != (target div) 167.85  
+for vco=10.3125, outdiv=1: (valid div) 16 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 17 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 18 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 19 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 20 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 21 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 22 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 23 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 24 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 25 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 26 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 27 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 28 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 29 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 30 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 31 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 32 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 33 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 34 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 35 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 36 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 37 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 38 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 39 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 40 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 41 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 42 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 43 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 44 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 45 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 46 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 47 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 48 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 49 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 50 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 51 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 52 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 53 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 54 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 55 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 56 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 57 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 58 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 59 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 60 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 61 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 62 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 63 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 64 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 65 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 66 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 67 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 68 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 69 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 70 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 71 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 72 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 73 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 74 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 75 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 76 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 77 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 78 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 79 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 80 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 81 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 82 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 83 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 84 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 85 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 86 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 87 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 88 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 89 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 90 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 91 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 92 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 93 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 94 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 95 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 96 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 97 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 98 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 99 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 100 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 101 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 102 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 103 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 104 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 105 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 106 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 107 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 108 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 109 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 110 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 111 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 112 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 113 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 114 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 115 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 116 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 117 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 118 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 119 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 120 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 121 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 122 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 123 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 124 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 125 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 126 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 127 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 128 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 129 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 130 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 131 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 132 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 133 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 134 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 135 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 136 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 137 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 138 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 139 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 140 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 141 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 142 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 143 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 144 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 145 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 146 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 147 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 148 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 149 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 150 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 151 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 152 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 153 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 154 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 155 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 156 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 157 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 158 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 159 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 160 != (target div) 335.69  
+for vco=10.3125, outdiv=1: (valid div) 16 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 17 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 18 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 19 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 20 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 21 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 22 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 23 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 24 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 25 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 26 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 27 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 28 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 29 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 30 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 31 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 32 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 33 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 34 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 35 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 36 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 37 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 38 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 39 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 40 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 41 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 42 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 43 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 44 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 45 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 46 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 47 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 48 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 49 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 50 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 51 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 52 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 53 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 54 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 55 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 56 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 57 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 58 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 59 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 60 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 61 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 62 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 63 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 64 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 65 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 66 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 67 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 68 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 69 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 70 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 71 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 72 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 73 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 74 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 75 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 76 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 77 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 78 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 79 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 80 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 81 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 82 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 83 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 84 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 85 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 86 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 87 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 88 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 89 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 90 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 91 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 92 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 93 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 94 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 95 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 96 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 97 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 98 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 99 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 100 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 101 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 102 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 103 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 104 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 105 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 106 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 107 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 108 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 109 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 110 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 111 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 112 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 113 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 114 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 115 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 116 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 117 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 118 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 119 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 120 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 121 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 122 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 123 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 124 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 125 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 126 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 127 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 128 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 129 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 130 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 131 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 132 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 133 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 134 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 135 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 136 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 137 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 138 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 139 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 140 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 141 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 142 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 143 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 144 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 145 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 146 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 147 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 148 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 149 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 150 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 151 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 152 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 153 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 154 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 155 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 156 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 157 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 158 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 159 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 160 != (target div) 503.54  
+for vco=10.3125, outdiv=1: (valid div) 16 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 17 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 18 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 19 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 20 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 21 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 22 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 23 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 24 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 25 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 26 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 27 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 28 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 29 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 30 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 31 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 32 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 33 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 34 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 35 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 36 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 37 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 38 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 39 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 40 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 41 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 42 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 43 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 44 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 45 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 46 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 47 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 48 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 49 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 50 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 51 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 52 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 53 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 54 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 55 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 56 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 57 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 58 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 59 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 60 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 61 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 62 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 63 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 64 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 65 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 66 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 67 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 68 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 69 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 70 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 71 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 72 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 73 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 74 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 75 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 76 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 77 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 78 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 79 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 80 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 81 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 82 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 83 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 84 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 85 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 86 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 87 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 88 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 89 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 90 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 91 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 92 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 93 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 94 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 95 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 96 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 97 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 98 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 99 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 100 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 101 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 102 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 103 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 104 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 105 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 106 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 107 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 108 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 109 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 110 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 111 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 112 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 113 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 114 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 115 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 116 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 117 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 118 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 119 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 120 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 121 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 122 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 123 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 124 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 125 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 126 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 127 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 128 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 129 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 130 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 131 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 132 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 133 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 134 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 135 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 136 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 137 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 138 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 139 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 140 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 141 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 142 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 143 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 144 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 145 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 146 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 147 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 148 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 149 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 150 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 151 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 152 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 153 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 154 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 155 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 156 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 157 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 158 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 159 != (target div) 671.39  
+for vco=10.3125, outdiv=1: (valid div) 160 != (target div) 671.39
+pll_type=QPLL0, line rate=10.3125, refclk=61.44
+ERROR: [xilinx.com:ip:gtwizard_ultrascale:1.7-1000] gtwizard_ultrascale_0:  rule output INT_QPLL0_FB_DIV is not set in 'rule "QPLL0_SETUP" {INT_DEV_CONST_ARGS INT_ENABLE_TEST_FEATURE INT_QPLL0_FRACN INT_QPLL0_LINE_RATE INT_QPLL0_REFCLK} {INT_QPLL0_CLKOUT INT_QPLL0_CLKOUT_RATE INT_QPLL0_FB_DIV INT_QPLL0_OUTDIV INT_QPLL0_REF_DIV INT_QPLL0_VCO_RATE}' at line 322
+ rule output INT_QPLL0_FB_DIV is not set in 'rule "QPLL0_SETUP" {INT_DEV_CONST_ARGS INT_ENABLE_TEST_FEATURE INT_QPLL0_FRACN INT_QPLL0_LINE_RATE INT_QPLL0_REFCLK} {INT_QPLL0_CLKOUT INT_QPLL0_CLKOUT_RATE INT_QPLL0_FB_DIV INT_QPLL0_OUTDIV INT_QPLL0_REF_DIV INT_QPLL0_VCO_RATE}' at line 322
+CRITICAL WARNING: [IP_Flow 19-1747] Failed to deliver file 'd:/Xilinx/Vivado/2022.2/data/ip/xilinx/gtwizard_ultrascale_v1_7/xit/gtwizard_ultrascale_v1_7_update_top.xit':  rule output INT_QPLL0_FB_DIV is not set in 'rule "QPLL0_SETUP" {INT_DEV_CONST_ARGS INT_ENABLE_TEST_FEATURE INT_QPLL0_FRACN INT_QPLL0_LINE_RATE INT_QPLL0_REFCLK} {INT_QPLL0_CLKOUT INT_QPLL0_CLKOUT_RATE INT_QPLL0_FB_DIV INT_QPLL0_OUTDIV INT_QPLL0_REF_DIV INT_QPLL0_VCO_RATE}' at line 322
+ERROR: [IP_Flow 19-167] Failed to deliver one or more file(s).
+ERROR: [IP_Flow 19-3541] IP Elaboration error: Failed to generate IP 'gtwizard_ultrascale_0'. Failed to generate 'Elaborate Ports' outputs: 
+create_ip -name gtwizard_ultrascale -vendor xilinx.com -library ip -version 1.7 -module_name gtwizard_ultrascale_0
+set_property -dict [list \
+  CONFIG.RX_LINE_RATE {9.8304} \
+  CONFIG.RX_REFCLK_FREQUENCY {156.2500001} \
+  CONFIG.RX_USER_DATA_WIDTH {80} \
+  CONFIG.TX_LINE_RATE {9.8304} \
+  CONFIG.TX_QPLL_FRACN_NUMERATOR {15343770} \
+  CONFIG.TX_USER_DATA_WIDTH {80} \
+] [get_ips gtwizard_ultrascale_0]
+ERROR: [IP_Flow 19-3478] Validation failed for parameter 'Receiver reference clock source(RX_REFCLK_SOURCE)' with value 'X0Y4 clk1' for IP 'gtwizard_ultrascale_0'. The TX and RX REFCLK sources must match for each quad in order to use QPLL0, see channels X0Y4 (some TX channels use the default REFCLK source of clk0)
+ERROR: [IP_Flow 19-3478] Validation failed for parameter 'Transmitter reference clock source(TX_REFCLK_SOURCE)' with value '' for IP 'gtwizard_ultrascale_0'. The TX and RX REFCLK sources must match for each quad in order to use QPLL0, see channels X0Y4 (some TX channels use the default REFCLK source of clk0)
+ERROR: [IP_Flow 19-3478] Validation failed for parameter 'Actual Reference clock (MHz)(RX_REFCLK_FREQUENCY)' with value '156.2500001' for IP 'gtwizard_ultrascale_0'. RX and TX frequencies do not allow for PLL sharing
+INFO: [IP_Flow 19-3438] Customization errors found on 'gtwizard_ultrascale_0'. Restoring to previous valid configuration.
+INFO: [Common 17-17] undo 'set_property -dict [list \
+  CONFIG.RX_LINE_RATE {9.8304} \
+  CONFIG.RX_REFCLK_FREQUENCY {156.2500001} \
+  CONFIG.RX_USER_DATA_WIDTH {80} \
+  CONFIG.TX_LINE_RATE {9.8304} \
+  CONFIG.TX_QPLL_FRACN_NUMERATOR {15343770} \
+  CONFIG.TX_USER_DATA_WIDTH {80} \
+] [get_ips gtwizard_ultrascale_0]'
+ERROR: [Common 17-39] 'set_property' failed due to earlier errors.
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{D:/FPGA/Vivaldo Project/INTERFACE/CPRI/09_full_cpri_tx_rx_intergration/Vivado/full_cpri_tx_rx_intergration.srcs/sources_1/bd/GTH_CPRI_RAW/GTH_CPRI_RAW.bd}}] -no_script -reset -force -quiet
+remove_files  {{D:/FPGA/Vivaldo Project/INTERFACE/CPRI/09_full_cpri_tx_rx_intergration/Vivado/full_cpri_tx_rx_intergration.srcs/sources_1/bd/GTH_CPRI_RAW/GTH_CPRI_RAW.bd}}
+Wrote  : <D:/FPGA/Vivaldo Project/INTERFACE/CPRI/09_full_cpri_tx_rx_intergration/Vivado/full_cpri_tx_rx_intergration.srcs/sources_1/bd/GTH_CPRI_RAW/ui/bd_47c1d1f1.ui> 
+file delete -force {D:/FPGA/Vivaldo Project/INTERFACE/CPRI/09_full_cpri_tx_rx_intergration/Vivado/full_cpri_tx_rx_intergration.srcs/sources_1/bd/GTH_CPRI_RAW}
+file delete -force {d:/FPGA/Vivaldo Project/INTERFACE/CPRI/09_full_cpri_tx_rx_intergration/Vivado/full_cpri_tx_rx_intergration.gen/sources_1/bd/GTH_CPRI_RAW}
+set_property -dict [list \
+  CONFIG.CHANNEL_ENABLE {X0Y6} \
+  CONFIG.FREERUN_FREQUENCY {100} \
+  CONFIG.LOCATE_RX_USER_CLOCKING {CORE} \
+  CONFIG.LOCATE_TX_USER_CLOCKING {CORE} \
+  CONFIG.RX_LINE_RATE {9.8304} \
+  CONFIG.RX_MASTER_CHANNEL {X0Y6} \
+  CONFIG.RX_QPLL_FRACN_NUMERATOR {15343770} \
+  CONFIG.RX_REFCLK_SOURCE {} \
+  CONFIG.RX_USER_DATA_WIDTH {80} \
+  CONFIG.TX_LINE_RATE {9.8304} \
+  CONFIG.TX_MASTER_CHANNEL {X0Y6} \
+  CONFIG.TX_QPLL_FRACN_NUMERATOR {15343770} \
+  CONFIG.TX_USER_DATA_WIDTH {80} \
+] [get_ips gtwizard_ultrascale_0]
+set_property generate_synth_checkpoint false [get_files  {{d:/FPGA/Vivaldo Project/INTERFACE/CPRI/09_full_cpri_tx_rx_intergration/Vivado/full_cpri_tx_rx_intergration.srcs/sources_1/ip/gtwizard_ultrascale_0/gtwizard_ultrascale_0.xci}}]
+generate_target all [get_files  {{d:/FPGA/Vivaldo Project/INTERFACE/CPRI/09_full_cpri_tx_rx_intergration/Vivado/full_cpri_tx_rx_intergration.srcs/sources_1/ip/gtwizard_ultrascale_0/gtwizard_ultrascale_0.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'gtwizard_ultrascale_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'gtwizard_ultrascale_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'gtwizard_ultrascale_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'gtwizard_ultrascale_0'...
+export_ip_user_files -of_objects [get_files {{d:/FPGA/Vivaldo Project/INTERFACE/CPRI/09_full_cpri_tx_rx_intergration/Vivado/full_cpri_tx_rx_intergration.srcs/sources_1/ip/gtwizard_ultrascale_0/gtwizard_ultrascale_0.xci}}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{d:/FPGA/Vivaldo Project/INTERFACE/CPRI/09_full_cpri_tx_rx_intergration/Vivado/full_cpri_tx_rx_intergration.srcs/sources_1/ip/gtwizard_ultrascale_0/gtwizard_ultrascale_0.xci}}] -directory {D:/FPGA/Vivaldo Project/INTERFACE/CPRI/09_full_cpri_tx_rx_intergration/Vivado/full_cpri_tx_rx_intergration.ip_user_files/sim_scripts} -ip_user_files_dir {D:/FPGA/Vivaldo Project/INTERFACE/CPRI/09_full_cpri_tx_rx_intergration/Vivado/full_cpri_tx_rx_intergration.ip_user_files} -ipstatic_source_dir {D:/FPGA/Vivaldo Project/INTERFACE/CPRI/09_full_cpri_tx_rx_intergration/Vivado/full_cpri_tx_rx_intergration.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/FPGA/Vivaldo Project/INTERFACE/CPRI/09_full_cpri_tx_rx_intergration/Vivado/full_cpri_tx_rx_intergration.cache/compile_simlib/modelsim} {questa=D:/FPGA/Vivaldo Project/INTERFACE/CPRI/09_full_cpri_tx_rx_intergration/Vivado/full_cpri_tx_rx_intergration.cache/compile_simlib/questa} {riviera=D:/FPGA/Vivaldo Project/INTERFACE/CPRI/09_full_cpri_tx_rx_intergration/Vivado/full_cpri_tx_rx_intergration.cache/compile_simlib/riviera} {activehdl=D:/FPGA/Vivaldo Project/INTERFACE/CPRI/09_full_cpri_tx_rx_intergration/Vivado/full_cpri_tx_rx_intergration.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+open_example_project -force -dir {D:/FPGA/Vivaldo Project/INTERFACE/CPRI/09_full_cpri_tx_rx_intergration} [get_ips  gtwizard_ultrascale_0]
+INFO: [IP_Flow 19-1686] Generating 'Examples' target for IP 'gtwizard_ultrascale_0'...
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Nov  4 12:47:44 2026...
